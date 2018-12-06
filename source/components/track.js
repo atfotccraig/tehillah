@@ -29,14 +29,20 @@ class Track extends Component {
         isPlaying: false,
     }
 
-    async componentDidMount() {
-        const { music } = this.props
+    componentDidMount() {
+        const { music, onFinished, isPlaying } = this.props
 
-        // TODO
-        // we need a better way of waiting
-        // for the file to load, so we don't
-        // desync the music and words
-        SoundPlayer.playSoundFile(music, "mp3")
+        if (isPlaying) {
+            // TODO
+            // we need a better way of waiting
+            // for the file to load, so we don't
+            // desync the music and words
+            SoundPlayer.playSoundFile(music, "mp3")
+
+            if (onFinished) {
+                SoundPlayer.onFinishedPlaying(onFinished)
+            }
+        }
 
         this.startedAt = new Date()
 
@@ -49,7 +55,35 @@ class Track extends Component {
         }, 250)
     }
 
+    componentDidUpdate(previousProps) {
+        const { music, isPlaying, onFinished } = this.props
+
+        if (previousProps.isPlaying && !isPlaying) {
+            SoundPlayer.stop()
+            SoundPlayer.unmount()
+        }
+
+        if (!previousProps.isPlaying && isPlaying) {
+            // TODO
+            // we need a better way of waiting
+            // for the file to load, so we don't
+            // desync the music and words
+            SoundPlayer.playSoundFile(music, "mp3")
+
+            if (onFinished) {
+                SoundPlayer.onFinishedPlaying(onFinished)
+            }
+        }
+    }
+
     componentWillUnmount() {
+        const { isPlaying } = this.props
+
+        if (isPlaying) {
+            SoundPlayer.stop()
+            SoundPlayer.unmount()
+        }
+
         clearTimeout(this.forceUpdateTimer)
     }
 
