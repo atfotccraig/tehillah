@@ -6,6 +6,7 @@ const Text = styled.Text`
     font-family: "Noto Serif";
     font-size: 50px;
     writing-direction: ltr;
+    line-height: 75px;
 `
 
 const RepeatText = styled.Text`

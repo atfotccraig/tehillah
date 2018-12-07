@@ -11,6 +11,7 @@ import { WhoHeIs } from "./who-he-is"
 import { YahwehWhoMovesMountains } from "./yahweh-who-moves-mountains"
 import { YahwehsBlessing } from "./yahwehs-blessing"
 import { YomKippur } from "./yom-kippur"
+import labels from "./labels"
 
 export {
     AllThingsNew,
@@ -26,6 +27,7 @@ export {
     YahwehWhoMovesMountains,
     YahwehsBlessing,
     YomKippur,
+    labels,
 }
 
 export default {
@@ -42,4 +44,5 @@ export default {
     YahwehWhoMovesMountains,
     YahwehsBlessing,
     YomKippur,
+    labels,
 }

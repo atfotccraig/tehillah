@@ -3,11 +3,11 @@ import styled from "styled-components/native"
 
 const Text = styled.Text`
     font-family: "Noto Serif Hebrew";
-    font-size: 55px;
+    font-size: ${({ size }) => (size ? `${size}px` : "55px")};
     font-weight: 700;
     writing-direction: ltr;
 `
 
-const Yahweh = () => <Text>יהוה</Text>
+const Yahweh = ({ size }) => <Text size={size}>יהוה</Text>
 
 export { Yahweh }

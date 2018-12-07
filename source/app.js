@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component, createElement } from "react"
 import styled, { css } from "styled-components/native"
 import { StatusBar, TouchableWithoutFeedback, View } from "react-native"
 import tracks from "./tracks"
@@ -27,6 +27,7 @@ const TrackView = styled.View`
 const TrackText = styled.Text`
     font-family: "Noto Serif";
     font-size: 30px;
+    writing-direction: ltr;
 `
 
 class App extends Component {
@@ -49,16 +50,30 @@ class App extends Component {
             let number = 1
 
             for (const track in tracks[album]) {
+                if (track == "labels") {
+                    continue
+                }
+
+                let TextComponent = (
+                    <TrackText>
+                        {number}. {track.replace(/([A-Z])/g, " $1").trim()}
+                    </TrackText>
+                )
+
+                if (tracks[album].labels[track]) {
+                    TextComponent = createElement(tracks[album].labels[track], {
+                        Wrapper: TrackText,
+                        number,
+                        size: 40,
+                    })
+                }
+
                 children.push(
                     <TouchableWithoutFeedback
                         key={album + track}
                         onPress={() => this.setState({ track: [album, track] })}
                     >
-                        <TrackView>
-                            <TrackText>
-                                {number}. {track.replace(/([A-Z])/g, " $1").trim()}
-                            </TrackText>
-                        </TrackView>
+                        <TrackView>{TextComponent}</TrackView>
                     </TouchableWithoutFeedback>,
                 )
 

@@ -36,7 +36,7 @@ const PrayUntilSomethingHappens = props => (
         <Repeat>Lift your voice high</Repeat>
         <Repeat>Pray until something happens</Repeat>
         <Verse>
-            <Line>Pray until something happens.</Line>
+            <Line>Pray until something happens</Line>
         </Verse>
     </Track>
 )
