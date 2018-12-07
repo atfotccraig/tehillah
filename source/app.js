@@ -1,13 +1,17 @@
 import React, { Component } from "react"
-import styled from "styled-components/native"
+import styled, { css } from "styled-components/native"
 import { StatusBar, TouchableWithoutFeedback, View } from "react-native"
 import tracks from "./tracks"
 
-const Container = styled.ScrollView`
+const Container = styled.ScrollView.attrs(() => ({
+    contentContainerStyle: {
+        padding: 250,
+        alignItems: "flex-start",
+    },
+}))`
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 100px;
 `
 
 const Text = styled.Text`
@@ -16,7 +20,8 @@ const Text = styled.Text`
 `
 
 const TrackView = styled.View`
-    padding: 10px;
+    display: flex;
+    padding: 15px;
 `
 
 const TrackText = styled.Text`

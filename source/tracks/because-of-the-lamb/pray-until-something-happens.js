@@ -26,7 +26,7 @@ const PrayUntilSomethingHappens = props => (
         <Repeat>Pray until something happens</Repeat>
         <Verse repeat>
             <Line>Lift your voice high</Line>
-            <Line>To the heavens</Line>
+            <Line>to the heavens</Line>
             <Line>He is faithful</Line>
             <Line>He will hear you</Line>
         </Verse>

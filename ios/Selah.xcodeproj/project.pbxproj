@@ -121,6 +121,18 @@
 		DEBB14A61CFC4B2CB1519D7A /* Noto-Serif-Semi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E60B49562B1B4C9EABEC791A /* Noto-Serif-Semi-Bold.ttf */; };
 		DFF3AD7B21B9638E001AE33E /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		DFF3AD8121B99143001AE33E /* because-of-the-lamb-pray-until-something-happens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AD8021B99143001AE33E /* because-of-the-lamb-pray-until-something-happens.mp3 */; };
+		DFF3AE0421BA30CE001AE33E /* because-of-the-lamb-yom-kippur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADD221BA30CC001AE33E /* because-of-the-lamb-yom-kippur.mp3 */; };
+		DFF3AE0521BA30CE001AE33E /* because-of-the-lamb-shout-with-joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADF921BA30CC001AE33E /* because-of-the-lamb-shout-with-joy.mp3 */; };
+		DFF3AE0621BA30CE001AE33E /* because-of-the-lamb-who-he-is.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFA21BA30CC001AE33E /* because-of-the-lamb-who-he-is.mp3 */; };
+		DFF3AE0721BA30CE001AE33E /* because-of-the-lamb-all-things-new.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFB21BA30CC001AE33E /* because-of-the-lamb-all-things-new.mp3 */; };
+		DFF3AE0821BA30CE001AE33E /* because-of-the-lamb-yahweh-who-moves-mountains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFC21BA30CD001AE33E /* because-of-the-lamb-yahweh-who-moves-mountains.mp3 */; };
+		DFF3AE0921BA30CE001AE33E /* because-of-the-lamb-blessed-are-you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFD21BA30CD001AE33E /* because-of-the-lamb-blessed-are-you.mp3 */; };
+		DFF3AE0A21BA30CE001AE33E /* because-of-the-lamb-tehillim-91.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFE21BA30CD001AE33E /* because-of-the-lamb-tehillim-91.mp3 */; };
+		DFF3AE0B21BA30CE001AE33E /* because-of-the-lamb-tehillim-89.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3ADFF21BA30CD001AE33E /* because-of-the-lamb-tehillim-89.mp3 */; };
+		DFF3AE0C21BA30CE001AE33E /* because-of-the-lamb-because-of-the-lamb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AE0021BA30CD001AE33E /* because-of-the-lamb-because-of-the-lamb.mp3 */; };
+		DFF3AE0D21BA30CE001AE33E /* because-of-the-lamb-on-my-knees.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AE0121BA30CD001AE33E /* because-of-the-lamb-on-my-knees.mp3 */; };
+		DFF3AE0E21BA30CE001AE33E /* because-of-the-lamb-tehillim-131.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AE0221BA30CE001AE33E /* because-of-the-lamb-tehillim-131.mp3 */; };
+		DFF3AE0F21BA30CE001AE33E /* because-of-the-lamb-yahwehs-blessing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AE0321BA30CE001AE33E /* because-of-the-lamb-yahwehs-blessing.mp3 */; };
 		E2D366E3646E4607B2C45B21 /* Noto-Serif-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53214AC9AEA547F9A7FA871B /* Noto-Serif-Bold-Italic.ttf */; };
 		EA22FC8C8A4344B98C1C40E0 /* Noto-Serif-Hebrew-Semi-Condensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F8FE2B4F394A74839CB845 /* Noto-Serif-Hebrew-Semi-Condensed-Black.ttf */; };
 		EA3D3BDAF74B45ECBAD09855 /* Noto-Serif-Condensed-Semi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E3E062C090748A694D838A5 /* Noto-Serif-Condensed-Semi-Bold.ttf */; };
@@ -523,6 +535,18 @@
 		DBEE3E7EDDAB4F9FBFFF0EF3 /* Noto-Serif-Extra-Condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed.ttf"; sourceTree = "<group>"; };
 		DE70CEF585A147E2A8FD6028 /* Noto-Serif-Extra-Condensed-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed-Italic.ttf"; sourceTree = "<group>"; };
 		DFF3AD8021B99143001AE33E /* because-of-the-lamb-pray-until-something-happens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-pray-until-something-happens.mp3"; path = "../resources/tracks/because-of-the-lamb-pray-until-something-happens.mp3"; sourceTree = "<group>"; };
+		DFF3ADD221BA30CC001AE33E /* because-of-the-lamb-yom-kippur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-yom-kippur.mp3"; path = "../resources/tracks/because-of-the-lamb-yom-kippur.mp3"; sourceTree = "<group>"; };
+		DFF3ADF921BA30CC001AE33E /* because-of-the-lamb-shout-with-joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-shout-with-joy.mp3"; path = "../resources/tracks/because-of-the-lamb-shout-with-joy.mp3"; sourceTree = "<group>"; };
+		DFF3ADFA21BA30CC001AE33E /* because-of-the-lamb-who-he-is.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-who-he-is.mp3"; path = "../resources/tracks/because-of-the-lamb-who-he-is.mp3"; sourceTree = "<group>"; };
+		DFF3ADFB21BA30CC001AE33E /* because-of-the-lamb-all-things-new.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-all-things-new.mp3"; path = "../resources/tracks/because-of-the-lamb-all-things-new.mp3"; sourceTree = "<group>"; };
+		DFF3ADFC21BA30CD001AE33E /* because-of-the-lamb-yahweh-who-moves-mountains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-yahweh-who-moves-mountains.mp3"; path = "../resources/tracks/because-of-the-lamb-yahweh-who-moves-mountains.mp3"; sourceTree = "<group>"; };
+		DFF3ADFD21BA30CD001AE33E /* because-of-the-lamb-blessed-are-you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-blessed-are-you.mp3"; path = "../resources/tracks/because-of-the-lamb-blessed-are-you.mp3"; sourceTree = "<group>"; };
+		DFF3ADFE21BA30CD001AE33E /* because-of-the-lamb-tehillim-91.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-tehillim-91.mp3"; path = "../resources/tracks/because-of-the-lamb-tehillim-91.mp3"; sourceTree = "<group>"; };
+		DFF3ADFF21BA30CD001AE33E /* because-of-the-lamb-tehillim-89.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-tehillim-89.mp3"; path = "../resources/tracks/because-of-the-lamb-tehillim-89.mp3"; sourceTree = "<group>"; };
+		DFF3AE0021BA30CD001AE33E /* because-of-the-lamb-because-of-the-lamb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-because-of-the-lamb.mp3"; path = "../resources/tracks/because-of-the-lamb-because-of-the-lamb.mp3"; sourceTree = "<group>"; };
+		DFF3AE0121BA30CD001AE33E /* because-of-the-lamb-on-my-knees.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-on-my-knees.mp3"; path = "../resources/tracks/because-of-the-lamb-on-my-knees.mp3"; sourceTree = "<group>"; };
+		DFF3AE0221BA30CE001AE33E /* because-of-the-lamb-tehillim-131.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-tehillim-131.mp3"; path = "../resources/tracks/because-of-the-lamb-tehillim-131.mp3"; sourceTree = "<group>"; };
+		DFF3AE0321BA30CE001AE33E /* because-of-the-lamb-yahwehs-blessing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "because-of-the-lamb-yahwehs-blessing.mp3"; path = "../resources/tracks/because-of-the-lamb-yahwehs-blessing.mp3"; sourceTree = "<group>"; };
 		E1107D6CBFB3436087E27D97 /* Noto-Serif-Semi-Condensed-Light-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Semi-Condensed-Light-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Semi-Condensed-Light-Italic.ttf"; sourceTree = "<group>"; };
 		E1FBEEF8447B4D6EA19E072E /* Noto-Serif-Extra-Condensed-Extra-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed-Extra-Bold-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed-Extra-Bold-Italic.ttf"; sourceTree = "<group>"; };
 		E25931F947244991B10F7C06 /* Noto-Serif-Semi-Condensed-Extra-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Semi-Condensed-Extra-Bold-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Semi-Condensed-Extra-Bold-Italic.ttf"; sourceTree = "<group>"; };
@@ -768,6 +792,18 @@
 		EB285F5CF9F146F6AED47EF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DFF3ADFB21BA30CC001AE33E /* because-of-the-lamb-all-things-new.mp3 */,
+				DFF3AE0021BA30CD001AE33E /* because-of-the-lamb-because-of-the-lamb.mp3 */,
+				DFF3ADFD21BA30CD001AE33E /* because-of-the-lamb-blessed-are-you.mp3 */,
+				DFF3AE0121BA30CD001AE33E /* because-of-the-lamb-on-my-knees.mp3 */,
+				DFF3ADF921BA30CC001AE33E /* because-of-the-lamb-shout-with-joy.mp3 */,
+				DFF3ADFF21BA30CD001AE33E /* because-of-the-lamb-tehillim-89.mp3 */,
+				DFF3ADFE21BA30CD001AE33E /* because-of-the-lamb-tehillim-91.mp3 */,
+				DFF3AE0221BA30CE001AE33E /* because-of-the-lamb-tehillim-131.mp3 */,
+				DFF3ADFA21BA30CC001AE33E /* because-of-the-lamb-who-he-is.mp3 */,
+				DFF3ADFC21BA30CD001AE33E /* because-of-the-lamb-yahweh-who-moves-mountains.mp3 */,
+				DFF3AE0321BA30CE001AE33E /* because-of-the-lamb-yahwehs-blessing.mp3 */,
+				DFF3ADD221BA30CC001AE33E /* because-of-the-lamb-yom-kippur.mp3 */,
 				DFF3AD8021B99143001AE33E /* because-of-the-lamb-pray-until-something-happens.mp3 */,
 				9D55B60425AE4220A8FD2B57 /* Noto-Serif-Black-Italic.ttf */,
 				46999FC0158344BFA20E89F6 /* Noto-Serif-Black.ttf */,
@@ -1257,6 +1293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF3AE0D21BA30CE001AE33E /* because-of-the-lamb-on-my-knees.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				9B310ACA56E446FE8DF87BFD /* Noto-Serif-Black-Italic.ttf in Resources */,
@@ -1275,10 +1312,12 @@
 				F0CA8C89E4E54C6F8626E162 /* Noto-Serif-Condensed-Light-Italic.ttf in Resources */,
 				ADE12837FA5A44D190253A58 /* Noto-Serif-Condensed-Light.ttf in Resources */,
 				8E417D2758324A48AC279F24 /* Noto-Serif-Condensed-Medium-Italic.ttf in Resources */,
+				DFF3AE0A21BA30CE001AE33E /* because-of-the-lamb-tehillim-91.mp3 in Resources */,
 				B262814D268E49A3B092E202 /* Noto-Serif-Condensed-Medium.ttf in Resources */,
 				5641F67C4A9C43728B0EE780 /* Noto-Serif-Condensed-Semi-Bold-Italic.ttf in Resources */,
 				EA3D3BDAF74B45ECBAD09855 /* Noto-Serif-Condensed-Semi-Bold.ttf in Resources */,
 				83699AD1A62A4381A93F3E77 /* Noto-Serif-Condensed-Thin-Italic.ttf in Resources */,
+				DFF3AE0B21BA30CE001AE33E /* because-of-the-lamb-tehillim-89.mp3 in Resources */,
 				033EA9DB38FC4C8FAB3D830C /* Noto-Serif-Condensed-Thin.ttf in Resources */,
 				B19493BAB07141A09432399D /* Noto-Serif-Condensed.ttf in Resources */,
 				41B5EDE9FE2B4C6199F87C34 /* Noto-Serif-Extra-Bold-Italic.ttf in Resources */,
@@ -1310,6 +1349,7 @@
 				95ED398F7B7A46DEBC66876A /* Noto-Serif-Hebrew-Condensed-Extra-Bold.ttf in Resources */,
 				B424E81DA9864CE682A703AA /* Noto-Serif-Hebrew-Condensed-Extra-Light.ttf in Resources */,
 				667685552D0B4BD6A92D6DD3 /* Noto-Serif-Hebrew-Condensed-Light.ttf in Resources */,
+				DFF3AE0821BA30CE001AE33E /* because-of-the-lamb-yahweh-who-moves-mountains.mp3 in Resources */,
 				26616AB630B14CD4A5A37EF7 /* Noto-Serif-Hebrew-Condensed-Medium.ttf in Resources */,
 				B7225549A83A464CBAA9ACD6 /* Noto-Serif-Hebrew-Condensed-Semi-Bold.ttf in Resources */,
 				FBDA81B6895646A491DC4B0E /* Noto-Serif-Hebrew-Condensed-Thin.ttf in Resources */,
@@ -1318,6 +1358,7 @@
 				B7C5135238314C40855B5B6D /* Noto-Serif-Hebrew-Extra-Condensed-Black.ttf in Resources */,
 				D4D3970C082C4CDDAEF33FE3 /* Noto-Serif-Hebrew-Extra-Condensed-Bold.ttf in Resources */,
 				09E16D72656F4589BD223A7F /* Noto-Serif-Hebrew-Extra-Condensed-Extra-Bold.ttf in Resources */,
+				DFF3AE0C21BA30CE001AE33E /* because-of-the-lamb-because-of-the-lamb.mp3 in Resources */,
 				80BE108522AD4976B09CAD39 /* Noto-Serif-Hebrew-Extra-Condensed-Extra-Light.ttf in Resources */,
 				5CE601DDD0004AB6BCB12DC2 /* Noto-Serif-Hebrew-Extra-Condensed-Light.ttf in Resources */,
 				59B36E7B11A143389FB4E6A7 /* Noto-Serif-Hebrew-Extra-Condensed-Medium.ttf in Resources */,
@@ -1328,16 +1369,20 @@
 				D86664BB65D84225A2F2E43E /* Noto-Serif-Hebrew-Light.ttf in Resources */,
 				52148657BF0245E088030AF1 /* Noto-Serif-Hebrew-Medium.ttf in Resources */,
 				F5A5F54250184EDF8165E43B /* Noto-Serif-Hebrew-Regular.ttf in Resources */,
+				DFF3AE0421BA30CE001AE33E /* because-of-the-lamb-yom-kippur.mp3 in Resources */,
 				B0096C343B464155A40AC09F /* Noto-Serif-Hebrew-Semi-Bold.ttf in Resources */,
 				EA22FC8C8A4344B98C1C40E0 /* Noto-Serif-Hebrew-Semi-Condensed-Black.ttf in Resources */,
 				FCB4D3BE49944B37B71AC44E /* Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf in Resources */,
 				401FD8AF7E594230A0B4B278 /* Noto-Serif-Hebrew-Semi-Condensed-Extra-Bold.ttf in Resources */,
+				DFF3AE0521BA30CE001AE33E /* because-of-the-lamb-shout-with-joy.mp3 in Resources */,
 				BAC86D90909B43AAA5A9AD1F /* Noto-Serif-Hebrew-Semi-Condensed-Extra-Light.ttf in Resources */,
 				3D75F96B6F664923B1443E80 /* Noto-Serif-Hebrew-Semi-Condensed-Light.ttf in Resources */,
 				9B959CF263E34EADA848EAA9 /* Noto-Serif-Hebrew-Semi-Condensed-Medium.ttf in Resources */,
 				253A9069C74B42FC8FCC340B /* Noto-Serif-Hebrew-Semi-Condensed-Semi-Bold.ttf in Resources */,
+				DFF3AE0F21BA30CE001AE33E /* because-of-the-lamb-yahwehs-blessing.mp3 in Resources */,
 				9F2EA75E8602429F980117B4 /* Noto-Serif-Hebrew-Semi-Condensed-Thin.ttf in Resources */,
 				DE78FB16C5AA4FE380C1FEEC /* Noto-Serif-Hebrew-Semi-Condensed.ttf in Resources */,
+				DFF3AE0E21BA30CE001AE33E /* because-of-the-lamb-tehillim-131.mp3 in Resources */,
 				633007E759204E87A47FC371 /* Noto-Serif-Hebrew-Thin.ttf in Resources */,
 				91A33ABFDCE94FD2ADAE6B9F /* Noto-Serif-Italic.ttf in Resources */,
 				B18C01B52F58441897C66D20 /* Noto-Serif-Light-Italic.ttf in Resources */,
@@ -1345,8 +1390,10 @@
 				3088D69577154A51A0291281 /* Noto-Serif-Medium-Italic.ttf in Resources */,
 				2711F017E47642B79AA0762C /* Noto-Serif-Medium.ttf in Resources */,
 				32A39788066B4EB9B68D1504 /* Noto-Serif-Regular.ttf in Resources */,
+				DFF3AE0621BA30CE001AE33E /* because-of-the-lamb-who-he-is.mp3 in Resources */,
 				4B6DDA399C29401889FAD8A9 /* Noto-Serif-Semi-Bold-Italic.ttf in Resources */,
 				DEBB14A61CFC4B2CB1519D7A /* Noto-Serif-Semi-Bold.ttf in Resources */,
+				DFF3AE0721BA30CE001AE33E /* because-of-the-lamb-all-things-new.mp3 in Resources */,
 				09E1FD96874A4B319FCB543A /* Noto-Serif-Semi-Condensed-Black-Italic.ttf in Resources */,
 				F80C4EFE5852426D816F9AED /* Noto-Serif-Semi-Condensed-Black.ttf in Resources */,
 				5812C03004BA466A962EC3FA /* Noto-Serif-Semi-Condensed-Bold-Italic.ttf in Resources */,
@@ -1367,6 +1414,7 @@
 				157E96B621724BEA8870507F /* Noto-Serif-Semi-Condensed-Thin.ttf in Resources */,
 				54F0B08E34C74E15B77EAE38 /* Noto-Serif-Semi-Condensed.ttf in Resources */,
 				CD70F6E2742D4E59BEA96FD3 /* Noto-Serif-Thin-Italic.ttf in Resources */,
+				DFF3AE0921BA30CE001AE33E /* because-of-the-lamb-blessed-are-you.mp3 in Resources */,
 				B17340B05DEA4FEDB18ADE70 /* Noto-Serif-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

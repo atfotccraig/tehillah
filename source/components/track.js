@@ -33,6 +33,10 @@ class Track extends Component {
         const { music, onFinished, isPlaying } = this.props
 
         if (isPlaying) {
+            SoundPlayer.onFinishedLoading(() => {
+                this.startedAt = new Date()
+            })
+
             // TODO
             // we need a better way of waiting
             // for the file to load, so we don't
@@ -43,8 +47,6 @@ class Track extends Component {
                 SoundPlayer.onFinishedPlaying(onFinished)
             }
         }
-
-        this.startedAt = new Date()
 
         this.forceUpdateTimer = setInterval(() => {
             const { isPlaying } = this.props
@@ -61,9 +63,15 @@ class Track extends Component {
         if (previousProps.isPlaying && !isPlaying) {
             SoundPlayer.stop()
             SoundPlayer.unmount()
+
+            this.startedAt = undefined
         }
 
         if (!previousProps.isPlaying && isPlaying) {
+            SoundPlayer.onFinishedLoading(() => {
+                this.startedAt = new Date()
+            })
+
             // TODO
             // we need a better way of waiting
             // for the file to load, so we don't
@@ -144,10 +152,14 @@ class Track extends Component {
     renderAnimatedChildren = () => {
         this.process()
 
+        if (!this.startedAt) {
+            return []
+        }
+
         const children = this.processedChildren
         const limits = this.processedLimits
 
-        const diff = (new Date().getTime() - (this.startedAt || new Date()).getTime()) / 1000
+        const diff = (new Date().getTime() - this.startedAt.getTime()) / 1000
 
         const shown = []
 
