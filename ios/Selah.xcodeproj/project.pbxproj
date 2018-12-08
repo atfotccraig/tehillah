@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -81,6 +82,7 @@
 		8EDC64A2D5614621B3EBDE70 /* Noto-Serif-Hebrew-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A9443A60134459980C4D00E /* Noto-Serif-Hebrew-Black.ttf */; };
 		91A33ABFDCE94FD2ADAE6B9F /* Noto-Serif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46011A28E17D455F971AF510 /* Noto-Serif-Italic.ttf */; };
 		91FDAC1219C64FC18CB9B7F9 /* Noto-Serif-Semi-Condensed-Medium-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCA1D120CA43D586568EC5 /* Noto-Serif-Semi-Condensed-Medium-Italic.ttf */; };
+		939514966558431AAC7FE49F /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A4AF3CF869486989C489D7 /* libRNSVG.a */; };
 		95ED398F7B7A46DEBC66876A /* Noto-Serif-Hebrew-Condensed-Extra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0835BFB374D8DAC086894 /* Noto-Serif-Hebrew-Condensed-Extra-Bold.ttf */; };
 		9AF2128ECBA546A8842871CD /* Noto-Serif-Extra-Condensed-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E95E528413D4F4698718898 /* Noto-Serif-Extra-Condensed-Light-Italic.ttf */; };
 		9B310ACA56E446FE8DF87BFD /* Noto-Serif-Black-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D55B60425AE4220A8FD2B57 /* Noto-Serif-Black-Italic.ttf */; };
@@ -144,7 +146,6 @@
 		F8E5FACA68C7440B94DE3114 /* Noto-Serif-Condensed-Extra-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A3D8ABF2B048759C5F2C20 /* Noto-Serif-Condensed-Extra-Light-Italic.ttf */; };
 		FBDA81B6895646A491DC4B0E /* Noto-Serif-Hebrew-Condensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6AC225B7034493A1D2A967 /* Noto-Serif-Hebrew-Condensed-Thin.ttf */; };
 		FCB4D3BE49944B37B71AC44E /* Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B983DBC3179140EAA2ADCE53 /* Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf */; };
-		939514966558431AAC7FE49F /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A4AF3CF869486989C489D7 /* libRNSVG.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -407,6 +408,20 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		DFC8C1ED21BC2859005B27AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = RNSVG;
+		};
+		DFC8C1EF21BC2859005B27AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
+			remoteInfo = "RNSVG-tvOS";
+		};
 		DFF3ADC321B994A9001AE33E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */;
@@ -504,6 +519,7 @@
 		913D6C17B56F491881230FB9 /* Noto-Serif-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Thin.ttf"; path = "../resources/fonts/Noto-Serif-Thin.ttf"; sourceTree = "<group>"; };
 		9189D9B60A984D0CA027679B /* Noto-Serif-Hebrew-Extra-Condensed-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Extra-Condensed-Thin.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Extra-Condensed-Thin.ttf"; sourceTree = "<group>"; };
 		93C9E4B75BB54830A4A62D12 /* Noto-Serif-Extra-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Light.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Light.ttf"; sourceTree = "<group>"; };
+		94A4AF3CF869486989C489D7 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 		952BF2116AD64C5496D7BF09 /* Noto-Serif-Hebrew-Extra-Condensed-Extra-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Extra-Condensed-Extra-Bold.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Extra-Condensed-Extra-Bold.ttf"; sourceTree = "<group>"; };
 		96FD09E735A349FA854E68B1 /* Noto-Serif-Condensed-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Condensed-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Condensed-Italic.ttf"; sourceTree = "<group>"; };
 		992A7F95372D4730AEF99861 /* Noto-Serif-Condensed-Thin-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Condensed-Thin-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Condensed-Thin-Italic.ttf"; sourceTree = "<group>"; };
@@ -530,6 +546,7 @@
 		D2624CA96A6E4DB590ABA8D9 /* Noto-Serif-Hebrew-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Thin.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Thin.ttf"; sourceTree = "<group>"; };
 		D351EC1F346C4D6284407807 /* Noto-Serif-Condensed-Extra-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Condensed-Extra-Bold-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Condensed-Extra-Bold-Italic.ttf"; sourceTree = "<group>"; };
 		D6BBE2281F9D42678410867B /* Noto-Serif-Hebrew-Semi-Condensed-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Semi-Condensed-Medium.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Semi-Condensed-Medium.ttf"; sourceTree = "<group>"; };
+		D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSVG.xcodeproj; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; };
 		D976D28FF96F4F049997D292 /* Noto-Serif-Hebrew-Condensed-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Condensed-Medium.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Condensed-Medium.ttf"; sourceTree = "<group>"; };
 		DBB62DAEE4724E9882055636 /* Noto-Serif-Semi-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Semi-Bold-Italic.ttf"; path = "../resources/fonts/Noto-Serif-Semi-Bold-Italic.ttf"; sourceTree = "<group>"; };
 		DBEE3E7EDDAB4F9FBFFF0EF3 /* Noto-Serif-Extra-Condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed.ttf"; sourceTree = "<group>"; };
@@ -561,8 +578,6 @@
 		F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSoundPlayer.xcodeproj; path = "../node_modules/react-native-sound-player/ios/RNSoundPlayer.xcodeproj"; sourceTree = "<group>"; };
 		FAE4547B12FE4B558285247B /* Noto-Serif-Hebrew-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Regular.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Regular.ttf"; sourceTree = "<group>"; };
 		FE8EB165F6C04A86852BB78B /* Noto-Serif-Extra-Condensed-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed-Bold.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed-Bold.ttf"; sourceTree = "<group>"; };
-		D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		94A4AF3CF869486989C489D7 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -777,10 +792,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DFC8C1E921BC2859005B27AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFC8C1EE21BC2859005B27AC /* libRNSVG.a */,
+				DFC8C1F021BC2859005B27AC /* libRNSVG-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DFF3AD9A21B994A7001AE33E /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				72828B5C696C4390820B3340 /* libRNSoundPlayer.a */,
+				94A4AF3CF869486989C489D7 /* libRNSVG.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1014,6 +1039,10 @@
 				{
 					ProductGroup = DFF3ADC021B994A9001AE33E /* Products */;
 					ProjectRef = F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */;
+				},
+				{
+					ProductGroup = DFC8C1E921BC2859005B27AC /* Products */;
+					ProjectRef = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1281,6 +1310,20 @@
 			fileType = archive.ar;
 			path = libRCTBlob.a;
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFC8C1EE21BC2859005B27AC /* libRNSVG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSVG.a;
+			remoteRef = DFC8C1ED21BC2859005B27AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFC8C1F021BC2859005B27AC /* libRNSVG-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNSVG-tvOS.a";
+			remoteRef = DFC8C1EF21BC2859005B27AC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */ = {

@@ -48,28 +48,18 @@ class Track extends Component {
     onClose = () => {
         const { onClosed } = this.props
 
+        this.stopMusic()
+
         if (onClosed) {
             onClosed()
         }
     }
 
     componentDidMount() {
-        const { music, onFinished, isPlaying } = this.props
+        const { isPlaying } = this.props
 
         if (isPlaying) {
-            SoundPlayer.onFinishedLoading(() => {
-                this.startedAt = new Date()
-            })
-
-            // TODO
-            // we need a better way of waiting
-            // for the file to load, so we don't
-            // desync the music and words
-            SoundPlayer.playSoundFile(music, "mp3")
-
-            if (onFinished) {
-                SoundPlayer.onFinishedPlaying(onFinished)
-            }
+            this.playMusic()
         }
 
         this.forceUpdateTimer = setInterval(() => {
@@ -78,57 +68,96 @@ class Track extends Component {
             if (isPlaying) {
                 this.forceUpdate()
             }
-        }, 250)
+        }, 500)
+
+        this.cacheVerses()
+    }
+
+    playMusic = () => {
+        const { music, onFinished } = this.props
+
+        SoundPlayer.onFinishedLoading(() => {
+            this.startedAt = new Date()
+        })
+
+        // TODO
+        // we need a better way of waiting
+        // for the file to load, so we don't
+        // desync the music and words
+        SoundPlayer.playSoundFile(music, "mp3")
+
+        if (onFinished) {
+            SoundPlayer.onFinishedPlaying(onFinished)
+        }
+    }
+
+    stopMusic = () => {
+        try {
+            SoundPlayer.stop()
+            SoundPlayer.unmount()
+        } catch (e) {
+            // this fails if executed multiple times
+            // which can happen with props change AND unmount
+        }
+
+        this.startedAt = undefined
+    }
+
+    shouldComponentUpdate() {
+        return new Date().getSeconds() !== this.startedAt.getSeconds()
     }
 
     componentDidUpdate(previousProps) {
-        const { music, isPlaying, onFinished } = this.props
+        const { isPlaying } = this.props
 
         if (previousProps.isPlaying && !isPlaying) {
-            SoundPlayer.stop()
-            SoundPlayer.unmount()
-
-            this.startedAt = undefined
+            this.stopMusic()
         }
 
         if (!previousProps.isPlaying && isPlaying) {
-            SoundPlayer.onFinishedLoading(() => {
-                this.startedAt = new Date()
-            })
-
-            // TODO
-            // we need a better way of waiting
-            // for the file to load, so we don't
-            // desync the music and words
-            SoundPlayer.playSoundFile(music, "mp3")
-
-            if (onFinished) {
-                SoundPlayer.onFinishedPlaying(onFinished)
-            }
-        }
-    }
-
-    componentWillUnmount() {
-        const { isPlaying } = this.props
-
-        if (isPlaying) {
-            SoundPlayer.stop()
-            SoundPlayer.unmount()
+            this.playMusic()
         }
 
-        clearTimeout(this.forceUpdateTimer)
+        this.cacheVerses()
     }
 
-    process = () => {
+    cacheVerses = () => {
         const { children, cues } = this.props
 
         const verses = []
+        const limits = []
 
         Children.forEach(children, child => {
             if (child.type.name === "Verse") {
                 verses.push(child)
             }
         })
+
+        for (let i = 0; i < cues.length; i++) {
+            if (i < cues.length - 1) {
+                limits.push([seconds(cues[i]), seconds(cues[i + 1])])
+            } else {
+                limits.push([seconds(cues[i]), 999999])
+            }
+        }
+
+        this.verses = verses
+        this.limits = limits
+    }
+
+    componentWillUnmount() {
+        const { isPlaying } = this.props
+
+        if (isPlaying) {
+            this.stopMusic()
+        }
+
+        clearTimeout(this.forceUpdateTimer)
+    }
+
+    processChildren = () => {
+        const { children } = this.props
+        const { verses, limits } = this
 
         const processed = []
 
@@ -152,88 +181,7 @@ class Track extends Component {
             }
         })
 
-        // const verses = []
-        // const repeats = []
-
-        // const processed = []
-
-        // Children.forEach(children, (child, i) => {
-        //     const props = {
-        //         key: i,
-        //     }
-
-        //     if (child.type.name === "Verse") {
-        //         processed.push(cloneElement(child, props))
-        //         verses.push(child)
-        //     }
-
-        //     if (child.type.name === "Repeat") {
-        //         const verse = this.verseFromRepeatOf(child, verses)
-        //         processed.push(cloneElement(verse, props))
-        //     }
-        // })
-
-        const limits = []
-
-        for (let i = 0; i < cues.length; i++) {
-            if (i < cues.length - 1) {
-                limits.push([seconds(cues[i]), seconds(cues[i + 1])])
-            } else {
-                limits.push([seconds(cues[i]), 999999])
-            }
-        }
-
         return [processed, limits]
-
-        // this.processedChildren = processed
-        // this.processedLimits = limits
-    }
-
-    verseFromRepeatOf = (target, verses) => {
-        const matching = verses.filter(verse => {
-            return (
-                verse.props.children[0].props.children === target.props.children
-            )
-        })
-
-        if (matching.length !== 1) {
-            console.error("no single verse found matching repeat")
-        }
-
-        return matching[0]
-    }
-
-    renderStaticChildren = () => {
-        // this.process()
-
-        const [children] = this.process()
-
-        return children
-    }
-
-    renderAnimatedChildren = () => {
-        // this.process()
-
-        if (!this.startedAt) {
-            return []
-        }
-
-        const [children, limits] = this.process()
-
-        // const children = this.processedChildren
-        // const limits = this.processedLimits
-
-        const diff = (new Date().getTime() - this.startedAt.getTime()) / 1000
-
-        const shown = []
-
-        for (let i = 0; i < children.length; i++) {
-            if (diff >= limits[i][0] && diff < limits[i][1]) {
-                shown.push(cloneElement(children[i]))
-            }
-        }
-
-        return shown
     }
 
     render() {
@@ -243,11 +191,7 @@ class Track extends Component {
             return (
                 <Container>
                     {this.renderAnimatedChildren()}
-                    <TouchableWithoutFeedback onPress={this.onClose}>
-                        <CloseButton>
-                            <Times />
-                        </CloseButton>
-                    </TouchableWithoutFeedback>
+                    {this.renderCloseButton()}
                 </Container>
             )
         }
@@ -255,12 +199,42 @@ class Track extends Component {
         return (
             <ScrollContainer>
                 {this.renderStaticChildren()}
-                <TouchableWithoutFeedback onPress={this.onClose}>
-                    <CloseButton>
-                        <Times />
-                    </CloseButton>
-                </TouchableWithoutFeedback>
+                {this.renderCloseButton()}
             </ScrollContainer>
+        )
+    }
+
+    renderStaticChildren = () => {
+        const [children] = this.processChildren()
+        return children
+    }
+
+    renderAnimatedChildren = () => {
+        if (!this.startedAt) {
+            return []
+        }
+
+        const [children, limits] = this.processChildren()
+
+        const diff = (new Date().getTime() - this.startedAt.getTime()) / 1000
+        const shown = []
+
+        for (let i = 0; i < children.length; i++) {
+            if (diff >= limits[i][0] && diff < limits[i][1]) {
+                shown.push(children[i])
+            }
+        }
+
+        return shown
+    }
+
+    renderCloseButton = () => {
+        return (
+            <TouchableWithoutFeedback onPress={this.onClose}>
+                <CloseButton>
+                    <Times />
+                </CloseButton>
+            </TouchableWithoutFeedback>
         )
     }
 }

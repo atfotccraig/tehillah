@@ -32,11 +32,13 @@ class Verse extends Component {
 Verse.propTypes = {
     repeat: PropTypes.bool,
     repeatText: PropTypes.string,
+    name: PropTypes.string,
 }
 
 Verse.defaultProps = {
     repeat: false,
     repeatText: "x2",
+    name: undefined,
 }
 
 export { Verse }

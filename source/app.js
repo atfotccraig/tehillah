@@ -56,7 +56,7 @@ class App extends Component {
 
                 let TextComponent = (
                     <TrackText>
-                        {number}. {track.replace(/([A-Z])/g, " $1").trim()}
+                        {number}. {track.replace(/([A-Z0-9]+)/g, " $1").trim()}
                     </TrackText>
                 )
 
