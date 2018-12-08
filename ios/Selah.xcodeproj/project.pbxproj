@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -145,6 +144,7 @@
 		F8E5FACA68C7440B94DE3114 /* Noto-Serif-Condensed-Extra-Light-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20A3D8ABF2B048759C5F2C20 /* Noto-Serif-Condensed-Extra-Light-Italic.ttf */; };
 		FBDA81B6895646A491DC4B0E /* Noto-Serif-Hebrew-Condensed-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6AC225B7034493A1D2A967 /* Noto-Serif-Hebrew-Condensed-Thin.ttf */; };
 		FCB4D3BE49944B37B71AC44E /* Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B983DBC3179140EAA2ADCE53 /* Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf */; };
+		939514966558431AAC7FE49F /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A4AF3CF869486989C489D7 /* libRNSVG.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -561,6 +561,8 @@
 		F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSoundPlayer.xcodeproj; path = "../node_modules/react-native-sound-player/ios/RNSoundPlayer.xcodeproj"; sourceTree = "<group>"; };
 		FAE4547B12FE4B558285247B /* Noto-Serif-Hebrew-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Hebrew-Regular.ttf"; path = "../resources/fonts/Noto-Serif-Hebrew-Regular.ttf"; sourceTree = "<group>"; };
 		FE8EB165F6C04A86852BB78B /* Noto-Serif-Extra-Condensed-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Noto-Serif-Extra-Condensed-Bold.ttf"; path = "../resources/fonts/Noto-Serif-Extra-Condensed-Bold.ttf"; sourceTree = "<group>"; };
+		D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		94A4AF3CF869486989C489D7 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -581,6 +583,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				F75AE1B6272A461280693923 /* libRNSoundPlayer.a in Frameworks */,
+				939514966558431AAC7FE49F /* libRNSVG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +731,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */,
+				D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1472,11 +1476,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = Selah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Selah\"",
 					"\"$(SRCROOT)/Selah\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1499,11 +1505,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = Selah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Selah\"",
 					"\"$(SRCROOT)/Selah\"",
 				);
 				OTHER_LDFLAGS = (

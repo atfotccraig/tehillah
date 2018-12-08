@@ -4,8 +4,6 @@ import PropTypes from "prop-types"
 
 const Container = styled.View`
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
 `
 

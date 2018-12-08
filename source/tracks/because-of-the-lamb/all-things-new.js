@@ -3,7 +3,16 @@ import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
 
 const AllThingsNew = props => (
     <Track
-        cues={["00:12", "00:36", "01:01", "01:13", "01:26", "01:53", "02:30", "02:58", "03:32"]}
+        cues={[
+            "00:12",
+            "00:36",
+            "01:01",
+            "01:13",
+            "01:26",
+            "01:53",
+            "02:30",
+            "02:58",
+        ]}
         music="because-of-the-lamb-all-things-new"
         {...props}
     >
@@ -31,7 +40,7 @@ const AllThingsNew = props => (
             <Line>Conquered my sin</Line>
             <Line>there you made me alive</Line>
         </Verse>
-        <Verse repeat>
+        <Verse repeat name="one">
             <Line>You took it all</Line>
             <Line>all I was, all I’ve done</Line>
             <Line>You gave me yourself</Line>
@@ -48,7 +57,7 @@ const AllThingsNew = props => (
                 <Yahweh /> you make all things new, yeah
             </Line>
         </Verse>
-        <Repeat>You took it all</Repeat>
+        <Repeat name="one" />
         <Verse>
             <Line>So let my life declare your splendour</Line>
             <Line>Let my lips sing praise to you</Line>

@@ -1,8 +1,10 @@
 import React, { Children, Component, cloneElement } from "react"
+import { TouchableWithoutFeedback } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
 import { seconds } from "../helpers"
+import { Times } from "./icons"
 
 const Container = styled.View`
     display: flex;
@@ -18,6 +20,20 @@ const ScrollContainer = styled.ScrollView`
     height: 100%;
 `
 
+const CloseButton = styled.View`
+    display: flex;
+    width: 64px;
+    height: 64px;
+    border-radius: 64;
+    background-color: #999;
+    opacity: 0.05;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    align-items: center;
+    justify-content: center;
+`
+
 class Track extends Component {
     static propTypes = {
         isAnimating: PropTypes.bool,
@@ -27,6 +43,14 @@ class Track extends Component {
     static defaultProps = {
         isAnimating: false,
         isPlaying: false,
+    }
+
+    onClose = () => {
+        const { onClosed } = this.props
+
+        if (onClosed) {
+            onClosed()
+        }
     }
 
     componentDidMount() {
@@ -99,23 +123,55 @@ class Track extends Component {
         const { children, cues } = this.props
 
         const verses = []
+
+        Children.forEach(children, child => {
+            if (child.type.name === "Verse") {
+                verses.push(child)
+            }
+        })
+
         const processed = []
 
-        Children.forEach(children, (child, i) => {
-            const props = {
-                key: i,
-            }
-
+        Children.forEach(children, (child, key) => {
             if (child.type.name === "Verse") {
-                processed.push(cloneElement(child, props))
-                verses.push(child)
+                processed.push(
+                    cloneElement(child, {
+                        key,
+                    }),
+                )
             }
 
             if (child.type.name === "Repeat") {
-                const verse = this.verseFromRepeatOf(child, verses)
-                processed.push(cloneElement(verse, props))
+                processed.push(
+                    cloneElement(child, {
+                        ...child.props,
+                        verses: verses,
+                        key,
+                    }),
+                )
             }
         })
+
+        // const verses = []
+        // const repeats = []
+
+        // const processed = []
+
+        // Children.forEach(children, (child, i) => {
+        //     const props = {
+        //         key: i,
+        //     }
+
+        //     if (child.type.name === "Verse") {
+        //         processed.push(cloneElement(child, props))
+        //         verses.push(child)
+        //     }
+
+        //     if (child.type.name === "Repeat") {
+        //         const verse = this.verseFromRepeatOf(child, verses)
+        //         processed.push(cloneElement(verse, props))
+        //     }
+        // })
 
         const limits = []
 
@@ -127,13 +183,17 @@ class Track extends Component {
             }
         }
 
-        this.processedChildren = processed
-        this.processedLimits = limits
+        return [processed, limits]
+
+        // this.processedChildren = processed
+        // this.processedLimits = limits
     }
 
     verseFromRepeatOf = (target, verses) => {
         const matching = verses.filter(verse => {
-            return verse.props.children[0].props.children === target.props.children
+            return (
+                verse.props.children[0].props.children === target.props.children
+            )
         })
 
         if (matching.length !== 1) {
@@ -144,20 +204,24 @@ class Track extends Component {
     }
 
     renderStaticChildren = () => {
-        this.process()
+        // this.process()
 
-        return this.processedChildren
+        const [children] = this.process()
+
+        return children
     }
 
     renderAnimatedChildren = () => {
-        this.process()
+        // this.process()
 
         if (!this.startedAt) {
             return []
         }
 
-        const children = this.processedChildren
-        const limits = this.processedLimits
+        const [children, limits] = this.process()
+
+        // const children = this.processedChildren
+        // const limits = this.processedLimits
 
         const diff = (new Date().getTime() - this.startedAt.getTime()) / 1000
 
@@ -176,10 +240,28 @@ class Track extends Component {
         const { isAnimating } = this.props
 
         if (isAnimating) {
-            return <Container>{this.renderAnimatedChildren()}</Container>
+            return (
+                <Container>
+                    {this.renderAnimatedChildren()}
+                    <TouchableWithoutFeedback onPress={this.onClose}>
+                        <CloseButton>
+                            <Times />
+                        </CloseButton>
+                    </TouchableWithoutFeedback>
+                </Container>
+            )
         }
 
-        return <ScrollContainer>{this.renderStaticChildren()}</ScrollContainer>
+        return (
+            <ScrollContainer>
+                {this.renderStaticChildren()}
+                <TouchableWithoutFeedback onPress={this.onClose}>
+                    <CloseButton>
+                        <Times />
+                    </CloseButton>
+                </TouchableWithoutFeedback>
+            </ScrollContainer>
+        )
     }
 }
 

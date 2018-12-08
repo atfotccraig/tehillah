@@ -3,7 +3,7 @@ import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
 
 const YomKippur = props => (
     <Track cues={["00:05"]} music="because-of-the-lamb-yom-kippur" {...props}>
-        <Verse repeat>
+        <Verse>
             <Line>words</Line>
         </Verse>
     </Track>

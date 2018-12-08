@@ -3,17 +3,28 @@ import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
 
 const PrayUntilSomethingHappens = props => (
     <Track
-        cues={["00:06", "00:28", "00:41", "01:02", "01:25", "01:47", "02:00", "02:22", "02:45", "03:06", "03:12"]}
+        cues={[
+            "00:06",
+            "00:28",
+            "00:41",
+            "01:02",
+            "01:25",
+            "01:47",
+            "02:00",
+            "02:22",
+            "02:45",
+            "03:06",
+        ]}
         music="because-of-the-lamb-pray-until-something-happens"
         {...props}
     >
-        <Verse repeat>
+        <Verse repeat name="one">
             <Line>Pray until something happens</Line>
             <Line>Don’t ever stop</Line>
             <Line>Pray until you have your answer</Line>
             <Line>Don’t ever give up</Line>
         </Verse>
-        <Verse>
+        <Verse name="two">
             <Line>‘Cause the heavens are filled</Line>
             <Line>with the prayers of the saints</Line>
             <Line>and the angels respond to their power</Line>
@@ -23,18 +34,18 @@ const PrayUntilSomethingHappens = props => (
             <Line>from a faith-filled heart</Line>
             <Line>He’ll never let you down</Line>
         </Verse>
-        <Repeat>Pray until something happens</Repeat>
-        <Verse repeat>
+        <Repeat name="one" />
+        <Verse repeat name="three">
             <Line>Lift your voice high</Line>
             <Line>to the heavens</Line>
             <Line>He is faithful</Line>
             <Line>He will hear you</Line>
         </Verse>
-        <Repeat>Pray until something happens</Repeat>
-        <Repeat>‘Cause the heavens are filled</Repeat>
-        <Repeat>Pray until something happens</Repeat>
-        <Repeat>Lift your voice high</Repeat>
-        <Repeat>Pray until something happens</Repeat>
+        <Repeat name="one" />
+        <Repeat name="two" />
+        <Repeat name="one" />
+        <Repeat name="three" />
+        <Repeat name="one" />
         <Verse>
             <Line>Pray until something happens</Line>
         </Verse>

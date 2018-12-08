@@ -95,7 +95,12 @@ class App extends Component {
         return (
             <View>
                 <StatusBar hidden />
-                <Track isAnimating isPlaying onFinished={() => this.setState({ track: undefined })} />
+                <Track
+                    isAnimating
+                    isPlaying
+                    onFinished={() => this.setState({ track: undefined })}
+                    onClosed={() => this.setState({ track: undefined })}
+                />
             </View>
         )
     }
