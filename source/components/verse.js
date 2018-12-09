@@ -9,20 +9,19 @@ const Container = styled.View`
 
 class Verse extends Component {
     render() {
-        const { children, repeat, repeatText } = this.props
-        const count = Children.count(children)
+        const count = Children.count(this.props.children)
 
         return (
             <Container>
-                {Children.map(children, (child, i) => {
-                    const props = {}
-
-                    if (repeat && i === count - 1) {
-                        props.repeat = repeat
-                        props.repeatText = repeatText
+                {Children.map(this.props.children, (child, i) => {
+                    if (this.props.repeat && i === count - 1) {
+                        return cloneElement(child, {
+                            repeat: this.props.repeat,
+                            repeatText: this.props.repeatText,
+                        })
                     }
 
-                    return cloneElement(child, props)
+                    return child
                 })}
             </Container>
         )

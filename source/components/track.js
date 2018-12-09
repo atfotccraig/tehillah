@@ -45,28 +45,26 @@ class Track extends Component {
         isPlaying: false,
     }
 
-    onClose = () => {
-        const { onClosed } = this.props
+    state = {
+        nowAt: new Date(),
+    }
 
+    onClose = () => {
         this.stopMusic()
 
-        if (onClosed) {
-            onClosed()
+        if (this.props.onClosed) {
+            this.props.onClosed()
         }
     }
 
     componentDidMount() {
-        const { isPlaying } = this.props
-
-        if (isPlaying) {
+        if (this.props.isPlaying) {
             this.playMusic()
         }
 
         this.forceUpdateTimer = setInterval(() => {
-            const { isPlaying } = this.props
-
-            if (isPlaying) {
-                this.forceUpdate()
+            if (this.props.isPlaying) {
+                this.setState({ nowAt: new Date() })
             }
         }, 500)
 
@@ -74,8 +72,6 @@ class Track extends Component {
     }
 
     playMusic = () => {
-        const { music, onFinished } = this.props
-
         SoundPlayer.onFinishedLoading(() => {
             this.startedAt = new Date()
         })
@@ -84,10 +80,10 @@ class Track extends Component {
         // we need a better way of waiting
         // for the file to load, so we don't
         // desync the music and words
-        SoundPlayer.playSoundFile(music, "mp3")
+        SoundPlayer.playSoundFile(this.props.music, "mp3")
 
-        if (onFinished) {
-            SoundPlayer.onFinishedPlaying(onFinished)
+        if (this.props.onFinished) {
+            SoundPlayer.onFinishedPlaying(this.props.onFinished)
         }
     }
 
@@ -104,17 +100,23 @@ class Track extends Component {
     }
 
     shouldComponentUpdate() {
-        return new Date().getSeconds() !== this.startedAt.getSeconds()
+        if (
+            this.state.nowAt &&
+            this.startedAt &&
+            this.state.nowAt.getSeconds() !== this.startedAt.getSeconds()
+        ) {
+            return true
+        }
+
+        return false
     }
 
     componentDidUpdate(previousProps) {
-        const { isPlaying } = this.props
-
-        if (previousProps.isPlaying && !isPlaying) {
+        if (previousProps.isPlaying && !this.props.isPlaying) {
             this.stopMusic()
         }
 
-        if (!previousProps.isPlaying && isPlaying) {
+        if (!previousProps.isPlaying && this.props.isPlaying) {
             this.playMusic()
         }
 
@@ -122,16 +124,16 @@ class Track extends Component {
     }
 
     cacheVerses = () => {
-        const { children, cues } = this.props
-
         const verses = []
         const limits = []
 
-        Children.forEach(children, child => {
+        Children.forEach(this.props.children, child => {
             if (child.type.name === "Verse") {
                 verses.push(child)
             }
         })
+
+        const { cues } = this.props
 
         for (let i = 0; i < cues.length; i++) {
             if (i < cues.length - 1) {
@@ -146,9 +148,7 @@ class Track extends Component {
     }
 
     componentWillUnmount() {
-        const { isPlaying } = this.props
-
-        if (isPlaying) {
+        if (this.props.isPlaying) {
             this.stopMusic()
         }
 
@@ -156,12 +156,11 @@ class Track extends Component {
     }
 
     processChildren = () => {
-        const { children } = this.props
         const { verses, limits } = this
 
         const processed = []
 
-        Children.forEach(children, (child, key) => {
+        Children.forEach(this.props.children, (child, key) => {
             if (child.type.name === "Verse") {
                 processed.push(
                     cloneElement(child, {
@@ -185,9 +184,7 @@ class Track extends Component {
     }
 
     render() {
-        const { isAnimating } = this.props
-
-        if (isAnimating) {
+        if (this.props.isAnimating) {
             return (
                 <Container>
                     {this.renderAnimatedChildren()}
@@ -216,7 +213,9 @@ class Track extends Component {
 
         const [children, limits] = this.processChildren()
 
-        const diff = (new Date().getTime() - this.startedAt.getTime()) / 1000
+        const diff =
+            (this.state.nowAt.getTime() - this.startedAt.getTime()) / 1000
+
         const shown = []
 
         for (let i = 0; i < children.length; i++) {
