@@ -1,8 +1,13 @@
-import React from "react"
+import React, { Fragment } from "react"
 import styled from "styled-components/native"
 import { relativeSize, selectCss } from "../helpers"
 
-const Text = styled.Text`
+const InvisibleText = styled.Text`
+    color: #fdfdfd;
+    font-size: 0px;
+`
+
+const HebrewText = styled.Text`
     ${selectCss(
         `writing-direction: ltr; font-family: Noto Serif Hebrew; font-weight: 700;`,
         `font-family: noto_serif_hebrew_bold;`,
@@ -11,6 +16,11 @@ const Text = styled.Text`
         size ? relativeSize(size) : relativeSize(55)}px;
 `
 
-const Yahshua = ({ size }) => <Text size={size}>יהושע</Text>
+const Yahshua = ({ size }) => (
+    <Fragment>
+        <InvisibleText>f</InvisibleText>
+        <HebrewText size={size}>יהושע</HebrewText>
+    </Fragment>
+)
 
 export { Yahshua }
