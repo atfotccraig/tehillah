@@ -1,10 +1,11 @@
 import React, { Children, Component, cloneElement } from "react"
-import { TouchableWithoutFeedback } from "react-native"
+import { AppState, TouchableWithoutFeedback } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
 import { relativeSize, seconds } from "../helpers"
 import { Times } from "./icons"
+import moment from "moment"
 
 const Container = styled.View`
     display: flex;
@@ -67,9 +68,11 @@ class Track extends Component {
             if (this.props.isPlaying) {
                 this.setState({ nowAt: new Date() })
             }
-        }, 500)
+        }, 250)
 
         this.cacheVerses()
+
+        AppState.addEventListener("change", this.onChangeAppState)
     }
 
     playMusic = () => {
@@ -149,8 +152,40 @@ class Track extends Component {
     }
 
     componentWillUnmount() {
-        this.stopMusic()
+        if (this.props.isPlaying) {
+            this.stopMusic()
+        }
+
         clearTimeout(this.forceUpdateTimer)
+
+        AppState.removeEventListener("change", this.onChangeAppState)
+    }
+
+    onChangeAppState = state => {
+        if (this.props.isPlaying) {
+            if (state === "active") {
+                this.onResume()
+            } else {
+                this.onPause()
+            }
+        }
+    }
+
+    onPause = () => {
+        const delta = this.state.nowAt.getTime() - this.startedAt.getTime()
+        this.seconds = delta / 1000
+
+        SoundPlayer.pause()
+    }
+
+    onResume = () => {
+        this.startedAt = moment()
+            .subtract(this.seconds, "seconds")
+            .toDate()
+
+        this.seconds = undefined
+
+        SoundPlayer.resume()
     }
 
     processChildren = () => {
