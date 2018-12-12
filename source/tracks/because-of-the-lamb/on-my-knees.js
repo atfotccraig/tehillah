@@ -13,7 +13,7 @@ const OnMyKnees = props => (
             "03:28",
             "04:13",
         ]}
-        music="because-of-the-lamb-on-my-knees"
+        music="because_of_the_lamb_on_my_knees"
         {...props}
     >
         <Verse>

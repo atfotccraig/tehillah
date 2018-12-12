@@ -1,33 +1,44 @@
 import React, { Component, createElement } from "react"
-import styled, { css } from "styled-components/native"
+import { I18nManager } from "react-native"
+import styled from "styled-components/native"
 import { StatusBar, TouchableWithoutFeedback, View } from "react-native"
 import tracks from "./tracks"
+import { relativeSize, selectCss } from "./helpers"
+
+I18nManager.allowRTL(false)
 
 const Container = styled.ScrollView.attrs(() => ({
     contentContainerStyle: {
-        padding: 250,
+        padding: relativeSize(250),
         alignItems: "flex-start",
     },
 }))`
     display: flex;
     width: 100%;
     height: 100%;
+    background-color: #ffffff;
 `
 
 const Text = styled.Text`
-    font-family: "Noto Serif";
-    font-size: 40px;
+    ${selectCss(
+        `font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
+    )};
+    font-size: ${relativeSize(40)}px;
 `
 
 const TrackView = styled.View`
     display: flex;
-    padding: 15px;
+    flex-direction: row;
+    padding: ${relativeSize(15)}px;
 `
 
 const TrackText = styled.Text`
-    font-family: "Noto Serif";
-    font-size: 30px;
-    writing-direction: ltr;
+    ${selectCss(
+        `writing-direction: ltr; font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
+    )};
+    font-size: ${relativeSize(30)}px;
 `
 
 class App extends Component {
@@ -84,7 +95,10 @@ class App extends Component {
         if (!track) {
             return (
                 <Container>
-                    <StatusBar />
+                    <StatusBar
+                        barStyle="dark-content"
+                        backgroundColor="#ffffff"
+                    />
                     {children}
                 </Container>
             )

@@ -13,7 +13,7 @@ const AllThingsNew = props => (
             "02:30",
             "02:58",
         ]}
-        music="because-of-the-lamb-all-things-new"
+        music="because_of_the_lamb_all_things_new"
         {...props}
     >
         <Verse>

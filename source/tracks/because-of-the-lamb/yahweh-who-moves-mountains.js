@@ -4,7 +4,7 @@ import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
 const YahwehWhoMovesMountains = props => (
     <Track
         cues={["00:05"]}
-        music="because-of-the-lamb-yahweh-who-moves-mountains"
+        music="because_of_the_lamb_yahweh_who_moves_mountains"
         {...props}
     >
         <Verse>

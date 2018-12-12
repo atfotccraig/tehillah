@@ -15,7 +15,7 @@ const BecauseOfTheLamb = props => (
             "01:53",
             "02:08",
         ]}
-        music="because-of-the-lamb-because-of-the-lamb"
+        music="because_of_the_lamb_because_of_the_lamb"
         {...props}
     >
         <Verse>

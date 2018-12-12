@@ -15,7 +15,7 @@ const ShoutWithJoy = props => (
             "02:15",
             "02:26",
         ]}
-        music="because-of-the-lamb-shout-with-joy"
+        music="because_of_the_lamb_shout_with_joy"
         {...props}
     >
         <Verse name="one">

@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Noto-Naskh-Arabic-Bold.ttf</string>
@@ -151,6 +151,114 @@
 		<string>Noto-Serif-Semi-Condensed.ttf</string>
 		<string>Noto-Serif-Thin-Italic.ttf</string>
 		<string>Noto-Serif-Thin.ttf</string>
+		<string>noto_serif_black_italic.ttf</string>
+		<string>noto_serif_black.ttf</string>
+		<string>noto_serif_bold_italic.ttf</string>
+		<string>noto_serif_bold.ttf</string>
+		<string>noto_serif_condensed_black_italic.ttf</string>
+		<string>noto_serif_condensed_black.ttf</string>
+		<string>noto_serif_condensed_bold_italic.ttf</string>
+		<string>noto_serif_condensed_bold.ttf</string>
+		<string>noto_serif_condensed_extra_bold_italic.ttf</string>
+		<string>noto_serif_condensed_extra_bold.ttf</string>
+		<string>noto_serif_condensed_extra_light_italic.ttf</string>
+		<string>noto_serif_condensed_extra_light.ttf</string>
+		<string>noto_serif_condensed_italic.ttf</string>
+		<string>noto_serif_condensed_light_italic.ttf</string>
+		<string>noto_serif_condensed_light.ttf</string>
+		<string>noto_serif_condensed_medium_italic.ttf</string>
+		<string>noto_serif_condensed_medium.ttf</string>
+		<string>noto_serif_condensed_semi_bold_italic.ttf</string>
+		<string>noto_serif_condensed_semi_bold.ttf</string>
+		<string>noto_serif_condensed_thin_italic.ttf</string>
+		<string>noto_serif_condensed_thin.ttf</string>
+		<string>noto_serif_condensed.ttf</string>
+		<string>noto_serif_extra_bold_italic.ttf</string>
+		<string>noto_serif_extra_bold.ttf</string>
+		<string>noto_serif_extra_condensed_black_italic.ttf</string>
+		<string>noto_serif_extra_condensed_black.ttf</string>
+		<string>noto_serif_extra_condensed_bold_italic.ttf</string>
+		<string>noto_serif_extra_condensed_bold.ttf</string>
+		<string>noto_serif_extra_condensed_extra_bold_italic.ttf</string>
+		<string>noto_serif_extra_condensed_extra_bold.ttf</string>
+		<string>noto_serif_extra_condensed_extra_light_italic.ttf</string>
+		<string>noto_serif_extra_condensed_extra_light.ttf</string>
+		<string>noto_serif_extra_condensed_italic.ttf</string>
+		<string>noto_serif_extra_condensed_light_italic.ttf</string>
+		<string>noto_serif_extra_condensed_light.ttf</string>
+		<string>noto_serif_extra_condensed_medium_italic.ttf</string>
+		<string>noto_serif_extra_condensed_medium.ttf</string>
+		<string>noto_serif_extra_condensed_semi_bold_italic.ttf</string>
+		<string>noto_serif_extra_condensed_semi_bold.ttf</string>
+		<string>noto_serif_extra_condensed_thin_italic.ttf</string>
+		<string>noto_serif_extra_condensed_thin.ttf</string>
+		<string>noto_serif_extra_condensed.ttf</string>
+		<string>noto_serif_extra_light_italic.ttf</string>
+		<string>noto_serif_extra_light.ttf</string>
+		<string>noto_serif_hebrew_black.ttf</string>
+		<string>noto_serif_hebrew_bold.ttf</string>
+		<string>noto_serif_hebrew_condensed_black.ttf</string>
+		<string>noto_serif_hebrew_condensed_bold.ttf</string>
+		<string>noto_serif_hebrew_condensed_extra_bold.ttf</string>
+		<string>noto_serif_hebrew_condensed_extra_light.ttf</string>
+		<string>noto_serif_hebrew_condensed_light.ttf</string>
+		<string>noto_serif_hebrew_condensed_medium.ttf</string>
+		<string>noto_serif_hebrew_condensed_semi_bold.ttf</string>
+		<string>noto_serif_hebrew_condensed_thin.ttf</string>
+		<string>noto_serif_hebrew_condensed.ttf</string>
+		<string>noto_serif_hebrew_extra_bold.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_black.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_bold.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_extra_bold.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_extra_light.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_light.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_medium.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_semi_bold.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed_thin.ttf</string>
+		<string>noto_serif_hebrew_extra_condensed.ttf</string>
+		<string>noto_serif_hebrew_extra_light.ttf</string>
+		<string>noto_serif_hebrew_light.ttf</string>
+		<string>noto_serif_hebrew_medium.ttf</string>
+		<string>noto_serif_hebrew_regular.ttf</string>
+		<string>noto_serif_hebrew_semi_bold.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_black.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_bold.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_extra_bold.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_extra_light.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_light.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_medium.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_semi_bold.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed_thin.ttf</string>
+		<string>noto_serif_hebrew_semi_condensed.ttf</string>
+		<string>noto_serif_hebrew_thin.ttf</string>
+		<string>noto_serif_italic.ttf</string>
+		<string>noto_serif_light_italic.ttf</string>
+		<string>noto_serif_light.ttf</string>
+		<string>noto_serif_medium_italic.ttf</string>
+		<string>noto_serif_medium.ttf</string>
+		<string>noto_serif_regular.ttf</string>
+		<string>noto_serif_semi_bold_italic.ttf</string>
+		<string>noto_serif_semi_bold.ttf</string>
+		<string>noto_serif_semi_condensed_black_italic.ttf</string>
+		<string>noto_serif_semi_condensed_black.ttf</string>
+		<string>noto_serif_semi_condensed_bold_italic.ttf</string>
+		<string>noto_serif_semi_condensed_bold.ttf</string>
+		<string>noto_serif_semi_condensed_extra_bold_italic.ttf</string>
+		<string>noto_serif_semi_condensed_extra_bold.ttf</string>
+		<string>noto_serif_semi_condensed_extra_light_italic.ttf</string>
+		<string>noto_serif_semi_condensed_extra_light.ttf</string>
+		<string>noto_serif_semi_condensed_italic.ttf</string>
+		<string>noto_serif_semi_condensed_light_italic.ttf</string>
+		<string>noto_serif_semi_condensed_light.ttf</string>
+		<string>noto_serif_semi_condensed_medium_italic.ttf</string>
+		<string>noto_serif_semi_condensed_medium.ttf</string>
+		<string>noto_serif_semi_condensed_semi_bold_italic.ttf</string>
+		<string>noto_serif_semi_condensed_semi_bold.ttf</string>
+		<string>noto_serif_semi_condensed_thin_italic.ttf</string>
+		<string>noto_serif_semi_condensed_thin.ttf</string>
+		<string>noto_serif_semi_condensed.ttf</string>
+		<string>noto_serif_thin_italic.ttf</string>
+		<string>noto_serif_thin.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -160,10 +268,8 @@
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

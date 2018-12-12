@@ -1,18 +1,23 @@
 import React from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
+import { relativeSize, selectCss } from "../helpers"
 
 const Text = styled.Text`
-    font-family: "Noto Serif";
-    font-size: 50px;
-    writing-direction: ltr;
-    line-height: 75px;
+    ${selectCss(
+        `writing-direction: ltr; font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
+    )};
+    font-size: ${relativeSize(50)}px;
+    line-height: ${relativeSize(75)}px;
 `
 
 const RepeatText = styled.Text`
-    font-family: "Noto Serif";
-    font-size: 30px;
-    font-weight: 700;
+    ${selectCss(
+        `font-family: Noto Serif; font-weight: 700;`,
+        `font-family: noto_serif_bold;`,
+    )};
+    font-size: ${relativeSize(30)}px;
     color: #2779bd;
 `
 

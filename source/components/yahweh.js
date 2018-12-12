@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components/native"
+import { relativeSize, selectCss } from "../helpers"
 
 const Text = styled.Text`
-    font-family: "Noto Serif Hebrew";
-    font-size: ${({ size }) => (size ? `${size}px` : "55px")};
-    font-weight: 700;
-    writing-direction: ltr;
+    ${selectCss(
+        `writing-direction: ltr; font-family: Noto Serif Hebrew; font-weight: 700;`,
+        `font-family: noto_serif_hebrew_bold;`,
+    )};
+    font-size: ${({ size }) =>
+        size ? relativeSize(size) : relativeSize(55)}px;
 `
 
 const Yahweh = ({ size }) => <Text size={size}>יהוה</Text>

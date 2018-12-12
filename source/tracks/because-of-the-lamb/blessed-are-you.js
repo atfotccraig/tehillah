@@ -15,7 +15,7 @@ const BlessedAreYou = props => (
             "02:15",
             "02:27",
         ]}
-        music="because-of-the-lamb-blessed-are-you"
+        music="because_of_the_lamb_blessed_are_you"
         {...props}
     >
         <Verse repeat>

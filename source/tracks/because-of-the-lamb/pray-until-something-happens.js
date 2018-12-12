@@ -15,7 +15,7 @@ const PrayUntilSomethingHappens = props => (
             "02:45",
             "03:06",
         ]}
-        music="because-of-the-lamb-pray-until-something-happens"
+        music="because_of_the_lamb_pray_until_something_happens"
         {...props}
     >
         <Verse repeat name="one">

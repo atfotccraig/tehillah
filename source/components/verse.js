@@ -1,10 +1,11 @@
 import React, { Component, Children, cloneElement } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
+import { relativeSize } from "../helpers"
 
 const Container = styled.View`
     display: flex;
-    margin: 20px;
+    margin: ${relativeSize(20)}px;
 `
 
 class Verse extends Component {

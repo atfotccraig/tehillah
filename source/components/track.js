@@ -3,7 +3,7 @@ import { TouchableWithoutFeedback } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
-import { seconds } from "../helpers"
+import { relativeSize, seconds } from "../helpers"
 import { Times } from "./icons"
 
 const Container = styled.View`
@@ -22,14 +22,14 @@ const ScrollContainer = styled.ScrollView`
 
 const CloseButton = styled.View`
     display: flex;
-    width: 64px;
-    height: 64px;
-    border-radius: 64;
+    width: ${relativeSize(64)}px;
+    height: ${relativeSize(64)}px;
+    border-radius: ${relativeSize(64)};
     background-color: #999;
     opacity: 0.05;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: ${relativeSize(16)}px;
+    right: ${relativeSize(64)}px;
     align-items: center;
     justify-content: center;
 `
@@ -148,10 +148,7 @@ class Track extends Component {
     }
 
     componentWillUnmount() {
-        if (this.props.isPlaying) {
-            this.stopMusic()
-        }
-
+        this.stopMusic()
         clearTimeout(this.forceUpdateTimer)
     }
 
@@ -231,7 +228,7 @@ class Track extends Component {
         return (
             <TouchableWithoutFeedback onPress={this.onClose}>
                 <CloseButton>
-                    <Times />
+                    <Times width={relativeSize(48)} height={relativeSize(48)} />
                 </CloseButton>
             </TouchableWithoutFeedback>
         )

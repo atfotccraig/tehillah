@@ -1,11 +1,15 @@
-import React from "react"
+import React, { Fragment } from "react"
+import { Text } from "react-native"
 import { Yahweh } from "../../../components"
 
 const YahwehWhoMovesMountains = ({ Wrapper, number, size }) => (
-    <Wrapper>
-        {number ? number + ". " : null}
-        <Yahweh size={size} /> Who Moves Mountains
-    </Wrapper>
+    <Fragment>
+        <Wrapper>{number ? number + ". " : null}</Wrapper>
+        <Text> </Text>
+        <Yahweh size={size} />
+        <Text> </Text>
+        <Wrapper>Who Moves Mountains</Wrapper>
+    </Fragment>
 )
 
 export { YahwehWhoMovesMountains }
