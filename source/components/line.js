@@ -10,6 +10,7 @@ const Text = styled.Text`
     )};
     font-size: ${relativeSize(50)}px;
     line-height: ${relativeSize(75)}px;
+    color: #22292f;
 `
 
 const RepeatText = styled.Text`

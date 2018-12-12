@@ -1,7 +1,14 @@
 import React, { Component, createElement } from "react"
-import { I18nManager } from "react-native"
+
+import {
+    I18nManager,
+    StatusBar,
+    TouchableWithoutFeedback,
+    View,
+} from "react-native"
+
 import styled from "styled-components/native"
-import { StatusBar, TouchableWithoutFeedback, View } from "react-native"
+import SplashScreen from "react-native-splash-screen"
 import tracks from "./tracks"
 import { relativeSize, selectCss } from "./helpers"
 
@@ -16,7 +23,7 @@ const Container = styled.ScrollView.attrs(() => ({
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #fdfdfd;
 `
 
 const Text = styled.Text`
@@ -25,6 +32,7 @@ const Text = styled.Text`
         `font-family: noto_serif_regular;`,
     )};
     font-size: ${relativeSize(40)}px;
+    color: #22292f;
 `
 
 const TrackView = styled.View`
@@ -39,11 +47,16 @@ const TrackText = styled.Text`
         `font-family: noto_serif_regular;`,
     )};
     font-size: ${relativeSize(30)}px;
+    color: #22292f;
 `
 
 class App extends Component {
     state = {
         track: undefined,
+    }
+
+    componentDidMount() {
+        SplashScreen.hide()
     }
 
     render() {

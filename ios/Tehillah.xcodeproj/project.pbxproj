@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0000654CB2414214A67A2634 /* noto_serif_semi_condensed_extra_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5760A7ADA74CF28A3D485F /* noto_serif_semi_condensed_extra_light_italic.ttf */; };
 		0026D38B6DEA4969840DDEE6 /* noto_serif_extra_condensed_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17EA56DEE244F65AAC89E56 /* noto_serif_extra_condensed_bold_italic.ttf */; };
@@ -114,6 +113,7 @@
 		D40BAD2588294B3EA6CDA845 /* noto_serif_hebrew_extra_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B69C49F8B26346628C0311CF /* noto_serif_hebrew_extra_light.ttf */; };
 		D944E64857104A5E8414C570 /* noto_serif_condensed_extra_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B4760FB15A94071802DAF86 /* noto_serif_condensed_extra_light.ttf */; };
 		DC2B76F79B624FA1A6F4A006 /* noto_serif_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0951660BD0149DF87F49D22 /* noto_serif_regular.ttf */; };
+		DF445D1721C1786C00C842D6 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF445CDE21C1773000C842D6 /* libSplashScreen.a */; };
 		DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */; };
 		DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8C1EE21BC2859005B27AC /* libRNSVG.a */; };
 		DFCF8E8821C146780069ED7D /* because_of_the_lamb_shout_with_joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */; };
@@ -408,6 +408,13 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		DF445CDD21C1773000C842D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D7682761D8E76B80014119E;
+			remoteInfo = SplashScreen;
+		};
 		DFC8C1ED21BC2859005B27AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
@@ -447,13 +454,13 @@
 		113515EB2108437EB66E4437 /* noto_serif_semi_condensed_thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_thin.ttf; path = ../resources/fonts/noto_serif_semi_condensed_thin.ttf; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Selah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selah.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Selah/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Selah/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Tehillah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tehillah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Tehillah/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Tehillah/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Selah/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Selah/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Selah/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Tehillah/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tehillah/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Tehillah/main.m; sourceTree = "<group>"; };
 		13DF5F20BC2C41FEAC16DAA6 /* noto_serif_condensed_black_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_black_italic.ttf; path = ../resources/fonts/noto_serif_condensed_black_italic.ttf; sourceTree = "<group>"; };
 		13FD1942697540128F09E582 /* noto_serif_hebrew_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_black.ttf; path = ../resources/fonts/noto_serif_hebrew_black.ttf; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
@@ -485,6 +492,7 @@
 		531A969494D5495D9C5BFE94 /* noto_serif_extra_light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_light_italic.ttf; path = ../resources/fonts/noto_serif_extra_light_italic.ttf; sourceTree = "<group>"; };
 		55F7E8639F554EC0B6094628 /* noto_serif_condensed_extra_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_extra_bold_italic.ttf; path = ../resources/fonts/noto_serif_condensed_extra_bold_italic.ttf; sourceTree = "<group>"; };
 		56854580E4084A1BBA4FEDA4 /* noto_serif_extra_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_bold_italic.ttf; path = ../resources/fonts/noto_serif_extra_bold_italic.ttf; sourceTree = "<group>"; };
+		56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SplashScreen.xcodeproj; path = "../node_modules/react-native-splash-screen/ios/SplashScreen.xcodeproj"; sourceTree = "<group>"; };
 		56CE0B72EDB6494DA601CB76 /* noto_serif_hebrew_semi_condensed_thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_semi_condensed_thin.ttf; path = ../resources/fonts/noto_serif_hebrew_semi_condensed_thin.ttf; sourceTree = "<group>"; };
 		57947A9F059040D885688E3D /* noto_serif_extra_condensed_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_medium.ttf; path = ../resources/fonts/noto_serif_extra_condensed_medium.ttf; sourceTree = "<group>"; };
 		586BE646657D4904A784161A /* noto_serif_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_black.ttf; path = ../resources/fonts/noto_serif_condensed_black.ttf; sourceTree = "<group>"; };
@@ -583,6 +591,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF445D1721C1786C00C842D6 /* libSplashScreen.a in Frameworks */,
 				DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */,
 				DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */,
 				DFF3AD7B21B9638E001AE33E /* libReact.a in Frameworks */,
@@ -665,7 +674,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Selah */ = {
+		13B07FAE1A68108700A75B9A /* Tehillah */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -676,7 +685,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Selah;
+			name = Tehillah;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -745,6 +754,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */,
 				D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */,
+				56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -761,7 +771,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Selah */,
+				13B07FAE1A68108700A75B9A /* Tehillah */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -775,7 +785,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Selah.app */,
+				13B07F961A680F5B00A75B9A /* Tehillah.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -785,6 +795,14 @@
 			children = (
 				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF445CDA21C1773000C842D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF445CDE21C1773000C842D6 /* libSplashScreen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -937,9 +955,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* Selah */ = {
+		13B07F861A680F5B00A75B9A /* Tehillah */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Selah" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Tehillah" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -950,9 +968,9 @@
 			);
 			dependencies = (
 			);
-			name = Selah;
+			name = Tehillah;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Selah.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Tehillah.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -969,7 +987,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Selah" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Tehillah" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1037,10 +1055,14 @@
 					ProductGroup = DFC8C1E921BC2859005B27AC /* Products */;
 					ProjectRef = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
 				},
+				{
+					ProductGroup = DF445CDA21C1773000C842D6 /* Products */;
+					ProjectRef = 56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Selah */,
+				13B07F861A680F5B00A75B9A /* Tehillah */,
 			);
 		};
 /* End PBXProject section */
@@ -1305,6 +1327,13 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DF445CDE21C1773000C842D6 /* libSplashScreen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSplashScreen.a;
+			remoteRef = DF445CDD21C1773000C842D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DFC8C1EE21BC2859005B27AC /* libRNSVG.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1497,7 +1526,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Selah;
+			path = Tehillah;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1514,21 +1543,23 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
-				INFOPLIST_FILE = Selah/Info.plist;
+				INFOPLIST_FILE = Tehillah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Selah\"",
-					"\"$(SRCROOT)/Selah\"",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Selah;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atfotc.tehillah;
+				PRODUCT_NAME = Tehillah;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1544,21 +1575,23 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
-				INFOPLIST_FILE = Selah/Info.plist;
+				INFOPLIST_FILE = Tehillah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Selah\"",
-					"\"$(SRCROOT)/Selah\"",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Selah;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atfotc.tehillah;
+				PRODUCT_NAME = Tehillah;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1666,7 +1699,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Selah" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Tehillah" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1675,7 +1708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Selah" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Tehillah" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -45,12 +45,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.selah",
+    package = "com.atfotc.tehillah",
 )
 
 android_resource(
     name = "res",
-    package = "com.selah",
+    package = "com.atfotc.tehillah",
     res = "src/main/res",
 )
 
