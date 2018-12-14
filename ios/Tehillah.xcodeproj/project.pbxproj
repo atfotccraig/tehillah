@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0000654CB2414214A67A2634 /* noto_serif_semi_condensed_extra_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B5760A7ADA74CF28A3D485F /* noto_serif_semi_condensed_extra_light_italic.ttf */; };
 		0026D38B6DEA4969840DDEE6 /* noto_serif_extra_condensed_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B17EA56DEE244F65AAC89E56 /* noto_serif_extra_condensed_bold_italic.ttf */; };
@@ -114,6 +115,7 @@
 		D944E64857104A5E8414C570 /* noto_serif_condensed_extra_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B4760FB15A94071802DAF86 /* noto_serif_condensed_extra_light.ttf */; };
 		DC2B76F79B624FA1A6F4A006 /* noto_serif_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0951660BD0149DF87F49D22 /* noto_serif_regular.ttf */; };
 		DF445D1721C1786C00C842D6 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF445CDE21C1773000C842D6 /* libSplashScreen.a */; };
+		DF636A0021C3DE62007AB258 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */; };
 		DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8C1EE21BC2859005B27AC /* libRNSVG.a */; };
 		DFCF8E8821C146780069ED7D /* because_of_the_lamb_shout_with_joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */; };
@@ -1373,6 +1375,7 @@
 				DFCF8E8E21C146780069ED7D /* because_of_the_lamb_tehillim_89.mp3 in Resources */,
 				83EE5C4B55D34533B1098F5C /* noto_serif_condensed_bold_italic.ttf in Resources */,
 				640CA8BED39B4F18AF5643E0 /* noto_serif_condensed_bold.ttf in Resources */,
+				DF636A0021C3DE62007AB258 /* main.jsbundle in Resources */,
 				A4AC7584BC93480EA7CC3AD6 /* noto_serif_condensed_extra_bold_italic.ttf in Resources */,
 				24687E19265145B1B02ACFBA /* noto_serif_condensed_extra_bold.ttf in Resources */,
 				B358D628655E42E4B023B4C1 /* noto_serif_condensed_extra_light_italic.ttf in Resources */,
@@ -1546,6 +1549,7 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1578,6 +1582,7 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

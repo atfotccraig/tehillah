@@ -3,7 +3,7 @@ import { Yahweh } from "../../../components"
 
 const YahwehWhoMovesMountains = ({ Wrapper, number, size }) => (
     <Wrapper>
-        {number ? number + ". " : null} <Yahweh size={size} /> Who Moves
+        {number ? number + "." : null} <Yahweh size={size} /> Who Moves
         Mountains
     </Wrapper>
 )
