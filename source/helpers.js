@@ -34,4 +34,22 @@ const selectCss = (ios, android) => {
     })
 }
 
-export { relativeSize, seconds, selectCss }
+const joinWithOxford = items => {
+    switch (items.length) {
+        case 0: {
+            return null
+        }
+        case 1: {
+            return items[0]
+        }
+        case 2: {
+            return items.join(" and ")
+        }
+        default: {
+            const [last, ...rest] = items.slice(0).reverse()
+            return rest.reverse().join(", ") + ", and " + last
+        }
+    }
+}
+
+export { joinWithOxford, relativeSize, seconds, selectCss }

@@ -1,9 +1,10 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
+import { Line, Repeat, Title, Track, Verse, Yahweh } from "../../components"
 
 const BlessedAreYou = props => (
     <Track
         cues={[
+            "00:00",
             "00:20",
             "00:54",
             "01:04",
@@ -18,6 +19,9 @@ const BlessedAreYou = props => (
         music="because_of_the_lamb_blessed_are_you"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
+            Blessed Are You
+        </Title>
         <Verse repeat>
             <Line>
                 Blessed are you <Yahweh />

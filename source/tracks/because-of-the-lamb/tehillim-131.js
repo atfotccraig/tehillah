@@ -1,12 +1,15 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
+import { Line, Repeat, Title, Track, Verse, Yahweh } from "../../components"
 
 const Tehillim131 = props => (
     <Track
-        cues={["00:14", "00:38", "01:03", "01:28", "01:54", "02:43"]}
+        cues={["00:00", "00:14", "00:38", "01:03", "01:28", "01:54", "02:43"]}
         music="because_of_the_lamb_tehillim_131"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
+            Tehillim 131
+        </Title>
         <Verse name="one">
             <Line>
                 <Yahweh />, my heart is not lifted up

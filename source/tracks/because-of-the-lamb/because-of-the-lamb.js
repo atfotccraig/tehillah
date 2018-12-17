@@ -1,9 +1,18 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahshua, Yahweh } from "../../components"
+import {
+    Line,
+    Repeat,
+    Title,
+    Track,
+    Verse,
+    Yahshua,
+    Yahweh,
+} from "../../components"
 
 const BecauseOfTheLamb = props => (
     <Track
         cues={[
+            "00:00",
             "00:12",
             "00:35",
             "00:46",
@@ -18,6 +27,9 @@ const BecauseOfTheLamb = props => (
         music="because_of_the_lamb_because_of_the_lamb"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
+            Because Of The Lamb
+        </Title>
         <Verse>
             <Line>Today is the day we repent</Line>
             <Line>of all sin, of all sin, of all sin</Line>

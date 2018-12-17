@@ -1,9 +1,10 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
+import { Line, Repeat, Title, Track, Verse, Yahweh } from "../../components"
 
 const AllThingsNew = props => (
     <Track
         cues={[
+            "00:00",
             "00:12",
             "00:36",
             "01:01",
@@ -16,6 +17,9 @@ const AllThingsNew = props => (
         music="because_of_the_lamb_all_things_new"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
+            All Things New
+        </Title>
         <Verse>
             <Line>You, you take my suffering</Line>
             <Line>Turn it into blessing</Line>

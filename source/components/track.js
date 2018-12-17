@@ -6,7 +6,7 @@ import SoundPlayer from "react-native-sound-player"
 import { relativeSize, seconds } from "../helpers"
 import { Times } from "./icons"
 import moment from "moment"
-import { Verse, Repeat } from "."
+import { Title, Repeat, Verse } from "."
 
 const Container = styled.View`
     display: flex;
@@ -133,7 +133,7 @@ class Track extends Component {
         const limits = []
 
         Children.forEach(this.props.children, child => {
-            if (child.type === Verse) {
+            if (child.type === Verse || child.type === Title) {
                 verses.push(child)
             }
         })
@@ -195,7 +195,7 @@ class Track extends Component {
         const processed = []
 
         Children.forEach(this.props.children, (child, key) => {
-            if (child.type === Verse) {
+            if (child.type === Verse || child.type === Title) {
                 processed.push(
                     cloneElement(child, {
                         key,
@@ -247,12 +247,13 @@ class Track extends Component {
 
         const [children, limits] = this.processChildren()
 
-        const diff =
-            (this.state.nowAt.getTime() - this.startedAt.getTime()) / 1000
+        const delta = this.state.nowAt.getTime() - this.startedAt.getTime()
+        const seconds = delta / 1000
+
         const shown = []
 
         for (let i = 0; i < children.length; i++) {
-            if (diff >= limits[i][0] && diff < limits[i][1]) {
+            if (seconds >= limits[i][0] && seconds < limits[i][1]) {
                 shown.push(children[i])
             }
         }

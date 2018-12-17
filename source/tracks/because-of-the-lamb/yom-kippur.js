@@ -1,9 +1,19 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahweh, Yahshua } from "../../components"
+
+import {
+    Line,
+    Repeat,
+    Title,
+    Track,
+    Verse,
+    Yahweh,
+    Yahshua,
+} from "../../components"
 
 const YomKippur = props => (
     <Track
         cues={[
+            "00:00",
             "00:14",
             "00:28",
             "00:40",
@@ -16,6 +26,9 @@ const YomKippur = props => (
         music="because_of_the_lamb_yom_kippur"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
+            Yom Kippur
+        </Title>
         <Verse name="one">
             <Line>Yom Kippur is here</Line>
             <Line>

@@ -1,9 +1,10 @@
 import React from "react"
-import { Line, Repeat, Track, Verse, Yahweh } from "../../components"
+import { Line, Repeat, Title, Track, Verse, Yahweh } from "../../components"
 
 const PrayUntilSomethingHappens = props => (
     <Track
         cues={[
+            "00:00",
             "00:06",
             "00:28",
             "00:41",
@@ -18,6 +19,9 @@ const PrayUntilSomethingHappens = props => (
         music="because_of_the_lamb_pray_until_something_happens"
         {...props}
     >
+        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
+            Pray Until Something Happens
+        </Title>
         <Verse repeat name="one">
             <Line>Pray until something happens</Line>
             <Line>Don’t ever stop</Line>
