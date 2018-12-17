@@ -1,33 +1,43 @@
 import React from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
+import { SizeContext } from "../context"
 import { relativeSize, selectCss } from "../helpers"
+import { NormalColor, NormalLightColor } from "../colors"
 
 const Text = styled.Text`
     ${selectCss(
-        `writing-direction: ltr; font-family: Noto Serif;`,
+        `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${relativeSize(50)}px;
-    line-height: ${relativeSize(75)}px;
-    color: #22292f;
+    font-size: ${props => relativeSize(50, props.context)}px;
+    line-height: ${props => relativeSize(75, props.context)}px;
+    color: ${NormalColor};
 `
 
 const RepeatText = styled.Text`
     ${selectCss(
-        `font-family: Noto Serif; font-weight: 700;`,
-        `font-family: noto_serif_bold;`,
+        `font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
     )};
-    font-size: ${relativeSize(30)}px;
-    color: #2779bd;
+    font-size: ${props => relativeSize(30, props.context)}px;
+    color: ${NormalLightColor};
 `
 
 const Line = ({ children, repeat, repeatText }) => {
     return (
-        <Text>
-            {children}
-            {repeat && <RepeatText>{" " + repeatText}</RepeatText>}
-        </Text>
+        <SizeContext.Consumer>
+            {context => (
+                <Text context={context}>
+                    {children}
+                    {repeat && (
+                        <RepeatText context={context}>
+                            {" " + repeatText}
+                        </RepeatText>
+                    )}
+                </Text>
+            )}
+        </SizeContext.Consumer>
     )
 }
 

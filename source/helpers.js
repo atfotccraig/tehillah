@@ -1,4 +1,4 @@
-import { Dimensions, Platform } from "react-native"
+import { Platform } from "react-native"
 import { css } from "styled-components/native"
 
 const seconds = timestamp => {
@@ -11,15 +11,13 @@ const seconds = timestamp => {
 }
 
 const relativeSize = (
-    originalSize,
-    originalWidth = 1024,
-    originalHeight = 768,
+    size,
+    context,
+    original = { width: 1024, height: 768 },
 ) => {
-    const { width, height } = Dimensions.get("window")
-
     return Math.min(
-        (width / originalWidth) * originalSize,
-        (height / originalHeight) * originalSize,
+        (context.width / original.width) * size,
+        (context.height / original.height) * size,
     )
 }
 
@@ -52,4 +50,8 @@ const joinWithOxford = items => {
     }
 }
 
-export { joinWithOxford, relativeSize, seconds, selectCss }
+const randomItem = items => {
+    return items[Math.floor(Math.random() * items.length)]
+}
+
+export { joinWithOxford, randomItem, relativeSize, seconds, selectCss }

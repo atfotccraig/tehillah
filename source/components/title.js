@@ -1,32 +1,34 @@
 import React, { Component } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
+import { SizeContext } from "../context"
 import { joinWithOxford, relativeSize, selectCss } from "../helpers"
+import { NormalColor, NormalLightColor } from "../colors"
 
 const Container = styled.View`
     display: flex;
-    margin: ${relativeSize(20)}px;
+    margin: ${props => relativeSize(20, props.context)}px;
 `
 
 const Name = styled.Text`
     ${selectCss(
-        `writing-direction: ltr; font-family: Noto Serif;`,
+        `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${relativeSize(50)}px;
-    line-height: ${relativeSize(75)}px;
-    color: #22292f;
+    font-size: ${props => relativeSize(50, props.context)}px;
+    line-height: ${props => relativeSize(75, props.context)}px;
+    color: ${NormalColor};
     text-align: center;
 `
 
 const Contributors = styled.Text`
     ${selectCss(
-        `writing-direction: ltr; font-family: Noto Serif;`,
+        `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${relativeSize(30)}px;
-    line-height: ${relativeSize(45)}px;
-    color: #22292f;
+    font-size: ${props => relativeSize(30, props.context)}px;
+    line-height: ${props => relativeSize(45, props.context)}px;
+    color: ${NormalLightColor};
     text-align: center;
 `
 
@@ -43,12 +45,18 @@ class Title extends Component {
         const { contributors, children } = this.props
 
         return (
-            <Container>
-                <Name>{children}</Name>
-                {contributors && (
-                    <Contributors>{joinWithOxford(contributors)}</Contributors>
+            <SizeContext.Consumer>
+                {context => (
+                    <Container context={context}>
+                        <Name context={context}>{children}</Name>
+                        {contributors && (
+                            <Contributors context={context}>
+                                {joinWithOxford(contributors)}
+                            </Contributors>
+                        )}
+                    </Container>
                 )}
-            </Container>
+            </SizeContext.Consumer>
         )
     }
 }

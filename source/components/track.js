@@ -1,12 +1,20 @@
 import React, { Children, Component, cloneElement } from "react"
-import { AppState, TouchableWithoutFeedback } from "react-native"
+import { AppState } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
-import { relativeSize, seconds } from "../helpers"
-import { Times } from "./icons"
 import moment from "moment"
-import { Title, Repeat, Verse } from "."
+import KeepAwake from "react-native-keep-awake"
+import Orientation from "react-native-orientation"
+import { BackgroundColor } from "../colors"
+import { SizeContext } from "../context"
+import { seconds } from "../helpers"
+import { StepBackward, StepForward, Times } from "../icons"
+import { Button } from "./button"
+import { Buttons } from "./buttons"
+import { Title } from "./title"
+import { Repeat } from "./repeat"
+import { Verse } from "./verse"
 
 const Container = styled.View`
     display: flex;
@@ -14,49 +22,92 @@ const Container = styled.View`
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #fdfdfd;
-`
-
-const ScrollContainer = styled.ScrollView`
-    display: flex;
-    width: 100%;
-    height: 100%;
-`
-
-const CloseButton = styled.View`
-    display: flex;
-    width: ${relativeSize(64)}px;
-    height: ${relativeSize(64)}px;
-    border-radius: ${relativeSize(64)};
-    background-color: #999;
-    opacity: 0.05;
-    position: absolute;
-    top: ${relativeSize(16)}px;
-    right: ${relativeSize(64)}px;
-    align-items: center;
-    justify-content: center;
+    background-color: ${BackgroundColor};
 `
 
 class Track extends Component {
+    static contextType = SizeContext
+
     static propTypes = {
         isAnimating: PropTypes.bool,
         isPlaying: PropTypes.bool,
+        showSkip: PropTypes.bool,
+        showClose: PropTypes.bool,
+        showRestart: PropTypes.bool,
+        onPause: PropTypes.func,
+        onResume: PropTypes.func,
+        onRestart: PropTypes.func,
+        onSkip: PropTypes.func,
+        onClose: PropTypes.func,
+        onFinish: PropTypes.func,
     }
 
     static defaultProps = {
         isAnimating: false,
         isPlaying: false,
+        showSkip: false,
+        showClose: true,
+        showRestart: true,
+        onPause: undefined,
+        onResume: undefined,
+        onRestart: undefined,
+        onSkip: undefined,
+        onClose: undefined,
+        onFinish: undefined,
     }
 
     state = {
         nowAt: new Date(),
     }
 
+    onPause = () => {
+        const delta = this.state.nowAt.getTime() - this.startedAt.getTime()
+        this.seconds = delta / 1000
+
+        SoundPlayer.pause()
+
+        if (this.props.onPause) {
+            this.props.onPause()
+        }
+    }
+
+    onResume = () => {
+        this.startedAt = moment()
+            .subtract(this.seconds, "seconds")
+            .toDate()
+
+        this.seconds = undefined
+
+        SoundPlayer.resume()
+
+        if (this.props.onResume) {
+            this.props.onResume()
+        }
+    }
+
+    onRestart = () => {
+        this.stopMusic()
+        this.playMusic()
+        this.startedAt = new Date()
+
+        if (this.props.onRestart) {
+            this.props.onRestart()
+        }
+    }
+
     onClose = () => {
         this.stopMusic()
 
-        if (this.props.onClosed) {
-            this.props.onClosed()
+        if (this.props.onClose) {
+            this.props.onClose()
+        }
+    }
+
+    onSkip = () => {
+        this.stopMusic()
+
+        if (this.props.onSkip) {
+            this.props.onSkip()
         }
     }
 
@@ -74,6 +125,10 @@ class Track extends Component {
         this.cacheVerses()
 
         AppState.addEventListener("change", this.onChangeAppState)
+
+        KeepAwake.activate()
+
+        Orientation.addOrientationListener(this.onOrientationChange)
     }
 
     playMusic = () => {
@@ -87,8 +142,8 @@ class Track extends Component {
         // desync the music and words
         SoundPlayer.playSoundFile(this.props.music, "mp3")
 
-        if (this.props.onFinished) {
-            SoundPlayer.onFinishedPlaying(this.props.onFinished)
+        if (this.props.onFinish) {
+            SoundPlayer.onFinishedPlaying(this.props.onFinish)
         }
     }
 
@@ -160,6 +215,14 @@ class Track extends Component {
         clearTimeout(this.forceUpdateTimer)
 
         AppState.removeEventListener("change", this.onChangeAppState)
+
+        KeepAwake.deactivate()
+
+        Orientation.removeOrientationListener(this.onOrientationChange)
+    }
+
+    onOrientationChange = () => {
+        this.forceUpdate()
     }
 
     onChangeAppState = state => {
@@ -170,23 +233,6 @@ class Track extends Component {
                 this.onPause()
             }
         }
-    }
-
-    onPause = () => {
-        const delta = this.state.nowAt.getTime() - this.startedAt.getTime()
-        this.seconds = delta / 1000
-
-        SoundPlayer.pause()
-    }
-
-    onResume = () => {
-        this.startedAt = moment()
-            .subtract(this.seconds, "seconds")
-            .toDate()
-
-        this.seconds = undefined
-
-        SoundPlayer.resume()
     }
 
     processChildren = () => {
@@ -218,20 +264,32 @@ class Track extends Component {
     }
 
     render() {
-        if (this.props.isAnimating) {
-            return (
-                <Container>
-                    {this.renderAnimatedChildren()}
-                    {this.renderCloseButton()}
-                </Container>
-            )
-        }
+        const { width, height } = this.context
+        const { showSkip, showClose, showRestart } = this.props
 
         return (
-            <ScrollContainer>
-                {this.renderStaticChildren()}
-                {this.renderCloseButton()}
-            </ScrollContainer>
+            <Container>
+                {this.props.isAnimating
+                    ? this.renderAnimatedChildren()
+                    : this.renderStaticChildren()}
+                <Buttons fadeBackground={false}>
+                    {showClose && (
+                        <Button onPress={this.onClose}>
+                            <Times width={48} height={48} />
+                        </Button>
+                    )}
+                    {showRestart && (
+                        <Button onPress={this.onRestart}>
+                            <StepBackward width={42} height={42} />
+                        </Button>
+                    )}
+                    {showSkip && (
+                        <Button onPress={this.onSkip}>
+                            <StepForward width={42} height={42} />
+                        </Button>
+                    )}
+                </Buttons>
+            </Container>
         )
     }
 
@@ -259,16 +317,6 @@ class Track extends Component {
         }
 
         return shown
-    }
-
-    renderCloseButton = () => {
-        return (
-            <TouchableWithoutFeedback onPress={this.onClose}>
-                <CloseButton>
-                    <Times width={relativeSize(48)} height={relativeSize(48)} />
-                </CloseButton>
-            </TouchableWithoutFeedback>
-        )
     }
 }
 

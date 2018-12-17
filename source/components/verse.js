@@ -1,11 +1,12 @@
 import React, { Component, Children, cloneElement } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
+import { SizeContext } from "../context"
 import { relativeSize } from "../helpers"
 
 const Container = styled.View`
     display: flex;
-    margin: ${relativeSize(20)}px;
+    margin: ${props => relativeSize(20, props.context)}px;
 `
 
 class Verse extends Component {
@@ -13,18 +14,22 @@ class Verse extends Component {
         const count = Children.count(this.props.children)
 
         return (
-            <Container>
-                {Children.map(this.props.children, (child, i) => {
-                    if (this.props.repeat && i === count - 1) {
-                        return cloneElement(child, {
-                            repeat: this.props.repeat,
-                            repeatText: this.props.repeatText,
-                        })
-                    }
+            <SizeContext.Consumer>
+                {context => (
+                    <Container context={context}>
+                        {Children.map(this.props.children, (child, i) => {
+                            if (this.props.repeat && i === count - 1) {
+                                return cloneElement(child, {
+                                    repeat: this.props.repeat,
+                                    repeatText: this.props.repeatText,
+                                })
+                            }
 
-                    return child
-                })}
-            </Container>
+                            return child
+                        })}
+                    </Container>
+                )}
+            </SizeContext.Consumer>
         )
     }
 }

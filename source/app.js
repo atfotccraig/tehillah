@@ -1,134 +1,166 @@
-import React, { Component, createElement } from "react"
-
-import {
-    I18nManager,
-    StatusBar,
-    TouchableWithoutFeedback,
-    View,
-} from "react-native"
-
+import React, { Component, Fragment } from "react"
+import { Dimensions, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
+import Orientation from "react-native-orientation"
 import tracks from "./tracks"
-import { relativeSize, selectCss } from "./helpers"
+import labels from "./labels"
+import { randomItem, relativeSize } from "./helpers"
+import { Button, Buttons, TrackListAlbum, TrackListTrack } from "./components"
+import { Random } from "./icons"
+import { SizeContext } from "./context"
+import { BackgroundColor } from "./colors"
 
-I18nManager.allowRTL(false)
+const AppContainer = styled.View`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+`
 
-const Container = styled.ScrollView.attrs(() => ({
+const TrackContainer = styled.ScrollView.attrs(props => ({
     contentContainerStyle: {
-        padding: relativeSize(250),
+        padding: relativeSize(150, props.context),
         alignItems: "flex-start",
     },
 }))`
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #fdfdfd;
+    background-color: ${BackgroundColor};
 `
 
-const Text = styled.Text`
-    ${selectCss(
-        `font-family: Noto Serif;`,
-        `font-family: noto_serif_regular;`,
-    )};
-    font-size: ${relativeSize(40)}px;
-    color: #22292f;
-`
-
-const TrackView = styled.View`
-    display: flex;
-    flex-direction: row;
-    padding: ${relativeSize(15)}px;
-`
-
-const TrackText = styled.Text`
-    ${selectCss(
-        `writing-direction: ltr; font-family: Noto Serif;`,
-        `font-family: noto_serif_regular;`,
-    )};
-    font-size: ${relativeSize(30)}px;
-    color: #22292f;
-`
+const { height, width } = Dimensions.get("window")
 
 class App extends Component {
     state = {
         track: undefined,
+        width,
+        height,
     }
 
     componentDidMount() {
+        Orientation.addOrientationListener(this.onOrientationChange)
         SplashScreen.hide()
     }
 
-    render() {
-        const { track } = this.state
+    componentWillUnmount() {
+        Orientation.removeOrientationListener(this.onOrientationChange)
+    }
 
-        const children = []
+    onOrientationChange = () => {
+        this.forceUpdate()
+    }
 
-        for (const album in tracks) {
-            children.push(
-                <View key={album}>
-                    <Text>{album.replace(/([A-Z])/g, " $1").trim()}</Text>
-                </View>,
-            )
+    onClose = () => {
+        this.setState({ isRandom: false, track: undefined })
+    }
 
-            let number = 1
+    onFinish = () => {
+        const { isRandom } = this.state
 
-            for (const track in tracks[album]) {
-                if (track == "labels") {
-                    continue
-                }
-
-                let TextComponent = (
-                    <TrackText>
-                        {number}. {track.replace(/([A-Z0-9]+)/g, " $1").trim()}
-                    </TrackText>
-                )
-
-                if (tracks[album].labels[track]) {
-                    TextComponent = createElement(tracks[album].labels[track], {
-                        Wrapper: TrackText,
-                        number,
-                        size: 40,
-                    })
-                }
-
-                children.push(
-                    <TouchableWithoutFeedback
-                        key={album + track}
-                        onPress={() => this.setState({ track: [album, track] })}
-                    >
-                        <TrackView>{TextComponent}</TrackView>
-                    </TouchableWithoutFeedback>,
-                )
-
-                number++
-            }
+        if (isRandom) {
+            this.onRandom()
+        } else {
+            this.setState({ track: undefined })
         }
+    }
+
+    onRandom = () => {
+        const album = randomItem(Object.keys(tracks))
+        const track = randomItem(Object.keys(tracks[album]))
+
+        return this.setState({ isRandom: true, track: [album, track] })
+    }
+
+    onLayout = event => {
+        const { width, height } = event.nativeEvent.layout
+
+        this.setState({
+            width,
+            height,
+        })
+    }
+
+    render() {
+        const { track, width, height } = this.state
 
         if (!track) {
             return (
-                <Container>
-                    <StatusBar
-                        barStyle="dark-content"
-                        backgroundColor="#ffffff"
-                    />
-                    {children}
-                </Container>
+                <AppContainer onLayout={this.onLayout}>
+                    <SizeContext.Provider value={{ width, height }}>
+                        {this.renderTrackList()}
+                    </SizeContext.Provider>
+                </AppContainer>
             )
         }
 
-        const Track = tracks[track[0]][track[1]]
+        return (
+            <AppContainer onLayout={this.onLayout}>
+                <SizeContext.Provider value={{ width, height }}>
+                    {this.renderTrack()}
+                </SizeContext.Provider>
+            </AppContainer>
+        )
+    }
+
+    renderTrackList = () => {
+        const { width, height } = this.state
 
         return (
-            <View>
+            <Fragment>
+                <TrackContainer context={{ width, height }}>
+                    <StatusBar
+                        barStyle="dark-content"
+                        backgroundColor={BackgroundColor}
+                    />
+                    {this.renderAlbums()}
+                </TrackContainer>
+                <Buttons>
+                    <Button onPress={this.onRandom}>
+                        <Random />
+                    </Button>
+                </Buttons>
+            </Fragment>
+        )
+    }
+
+    renderAlbums = () => {
+        return Object.keys(tracks).map(album => (
+            <Fragment key={album}>
+                <TrackListAlbum label={labels[album].Album} />
+                {this.renderTracksForAlbum(album)}
+            </Fragment>
+        ))
+    }
+
+    renderTracksForAlbum = album => {
+        return Object.keys(tracks[album]).map(track => (
+            <TrackListTrack
+                key={album + track}
+                label={labels[album][track]}
+                onPress={() => this.setState({ track: [album, track] })}
+            />
+        ))
+    }
+
+    renderTrack = () => {
+        const { track, isRandom } = this.state
+        const TrackComponent = tracks[track[0]][track[1]]
+
+        return (
+            <Fragment>
                 <StatusBar hidden />
-                <Track
+                <TrackComponent
                     isAnimating
                     isPlaying
-                    onFinished={() => this.setState({ track: undefined })}
-                    onClosed={() => this.setState({ track: undefined })}
+                    showSkip={isRandom}
+                    onFinish={this.onFinish}
+                    onClose={this.onClose}
+                    onSkip={this.onRandom}
                 />
-            </View>
+            </Fragment>
         )
     }
 }

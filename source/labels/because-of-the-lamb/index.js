@@ -12,6 +12,8 @@ import { YahwehWhoMovesMountains } from "./yahweh-who-moves-mountains"
 import { YahwehsBlessing } from "./yahwehs-blessing"
 import { YomKippur } from "./yom-kippur"
 
+const Album = () => "Because Of The Lamb"
+
 export {
     AllThingsNew,
     BecauseOfTheLamb,
@@ -26,6 +28,7 @@ export {
     YahwehWhoMovesMountains,
     YahwehsBlessing,
     YomKippur,
+    Album,
 }
 
 export default {
@@ -42,4 +45,5 @@ export default {
     YahwehWhoMovesMountains,
     YahwehsBlessing,
     YomKippur,
+    Album,
 }

@@ -61,6 +61,7 @@
 		6897B00E905D42F294485CBB /* noto_serif_hebrew_thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 052E9CBE175C4A3FA16C7035 /* noto_serif_hebrew_thin.ttf */; };
 		6F8A17A15BC24412A51541E8 /* noto_serif_condensed_medium_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDED799ACF6741D6AA6CC6F1 /* noto_serif_condensed_medium_italic.ttf */; };
 		703E4B964ED24C01955FFE7B /* noto_serif_semi_condensed_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FF5FC034773427887C58D72 /* noto_serif_semi_condensed_light.ttf */; };
+		7142935EEB554361B0EB77BA /* libKCKeepAwake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD067B3FD1443F99B3EDFDC /* libKCKeepAwake.a */; };
 		73E94D823C5447D3AE22538F /* noto_serif_semi_condensed_black_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBF75312A5444169822F99E4 /* noto_serif_semi_condensed_black_italic.ttf */; };
 		760F4256881743A1B617D7D1 /* noto_serif_hebrew_semi_condensed_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECBC7EFF66274F5D8CEA4628 /* noto_serif_hebrew_semi_condensed_medium.ttf */; };
 		781A9787184C475296029CEE /* noto_serif_hebrew_condensed_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B581CA862A946BEB4F54929 /* noto_serif_hebrew_condensed_medium.ttf */; };
@@ -92,6 +93,7 @@
 		A99DA4E85C4D454D80702DA8 /* noto_serif_semi_condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61968A66C4D042DE9890619C /* noto_serif_semi_condensed.ttf */; };
 		AA8531221BC6443CAFF17E2D /* noto_serif_hebrew_condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9340DCBEC2A945299DE87002 /* noto_serif_hebrew_condensed.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B064BBA19BC1449F817EF84F /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B0FE2FE8704C78BFE96603 /* libRCTOrientation.a */; };
 		B1FAABDD0A1743BEB25465D5 /* noto_serif_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA1B01469DC8476A8251A33B /* noto_serif_bold_italic.ttf */; };
 		B246A3F863A54368907BBD7A /* noto_serif_condensed_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9B3FA297DA6401083697066 /* noto_serif_condensed_light_italic.ttf */; };
 		B2F940FD5D054EE880B9DC7C /* noto_serif_hebrew_black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13FD1942697540128F09E582 /* noto_serif_hebrew_black.ttf */; };
@@ -410,6 +412,20 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		DF092CCB21C807440052B69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = KCKeepAwake;
+		};
+		DF092CCE21C807440052B69F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTOrientation;
+		};
 		DF445CDD21C1773000C842D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */;
@@ -470,6 +486,7 @@
 		1B5760A7ADA74CF28A3D485F /* noto_serif_semi_condensed_extra_light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_extra_light_italic.ttf; path = ../resources/fonts/noto_serif_semi_condensed_extra_light_italic.ttf; sourceTree = "<group>"; };
 		1C3A63994DCB424490E7B963 /* noto_serif_semi_condensed_semi_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_semi_bold_italic.ttf; path = ../resources/fonts/noto_serif_semi_condensed_semi_bold_italic.ttf; sourceTree = "<group>"; };
 		1FE1CC01B51F4CCCAAD2002D /* noto_serif_extra_condensed_medium_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_medium_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_medium_italic.ttf; sourceTree = "<group>"; };
+		22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		258024B6EFD5418E821BBBBA /* noto_serif_semi_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_black.ttf; path = ../resources/fonts/noto_serif_semi_condensed_black.ttf; sourceTree = "<group>"; };
 		29FD4FFBEBBE46109F75A2CF /* noto_serif_extra_condensed_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_bold.ttf; path = ../resources/fonts/noto_serif_extra_condensed_bold.ttf; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -499,6 +516,7 @@
 		57947A9F059040D885688E3D /* noto_serif_extra_condensed_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_medium.ttf; path = ../resources/fonts/noto_serif_extra_condensed_medium.ttf; sourceTree = "<group>"; };
 		586BE646657D4904A784161A /* noto_serif_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_black.ttf; path = ../resources/fonts/noto_serif_condensed_black.ttf; sourceTree = "<group>"; };
 		5B581CA862A946BEB4F54929 /* noto_serif_hebrew_condensed_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_condensed_medium.ttf; path = ../resources/fonts/noto_serif_hebrew_condensed_medium.ttf; sourceTree = "<group>"; };
+		5DD067B3FD1443F99B3EDFDC /* libKCKeepAwake.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libKCKeepAwake.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5FF5FC034773427887C58D72 /* noto_serif_semi_condensed_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_light.ttf; path = ../resources/fonts/noto_serif_semi_condensed_light.ttf; sourceTree = "<group>"; };
 		61968A66C4D042DE9890619C /* noto_serif_semi_condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed.ttf; path = ../resources/fonts/noto_serif_semi_condensed.ttf; sourceTree = "<group>"; };
@@ -523,6 +541,7 @@
 		914E34D95D074F449656120D /* noto_serif_hebrew_semi_condensed_extra_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_semi_condensed_extra_bold.ttf; path = ../resources/fonts/noto_serif_hebrew_semi_condensed_extra_bold.ttf; sourceTree = "<group>"; };
 		9340DCBEC2A945299DE87002 /* noto_serif_hebrew_condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_condensed.ttf; path = ../resources/fonts/noto_serif_hebrew_condensed.ttf; sourceTree = "<group>"; };
 		989D994737C348DE996496DC /* noto_serif_semi_condensed_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_bold.ttf; path = ../resources/fonts/noto_serif_semi_condensed_bold.ttf; sourceTree = "<group>"; };
+		98B0FE2FE8704C78BFE96603 /* libRCTOrientation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTOrientation.a; sourceTree = "<group>"; };
 		990898E5195A45C78A80B94F /* noto_serif_condensed_semi_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_semi_bold.ttf; path = ../resources/fonts/noto_serif_condensed_semi_bold.ttf; sourceTree = "<group>"; };
 		998979469CED4D768F1E880C /* noto_serif_hebrew_extra_condensed_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_medium.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_medium.ttf; sourceTree = "<group>"; };
 		9B9B252096BE466B8A773853 /* noto_serif_extra_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_bold.ttf; path = ../resources/fonts/noto_serif_extra_bold.ttf; sourceTree = "<group>"; };
@@ -547,6 +566,7 @@
 		CBFE569BD1934BC8B4B02A12 /* noto_serif_hebrew_semi_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_semi_condensed_black.ttf; path = ../resources/fonts/noto_serif_hebrew_semi_condensed_black.ttf; sourceTree = "<group>"; };
 		CD7BC15B7A724ECCA7A996D3 /* noto_serif_hebrew_extra_condensed_extra_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_extra_light.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_extra_light.ttf; sourceTree = "<group>"; };
 		CDED799ACF6741D6AA6CC6F1 /* noto_serif_condensed_medium_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_medium_italic.ttf; path = ../resources/fonts/noto_serif_condensed_medium_italic.ttf; sourceTree = "<group>"; };
+		CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = KCKeepAwake.xcodeproj; path = "../node_modules/react-native-keep-awake/ios/KCKeepAwake.xcodeproj"; sourceTree = "<group>"; };
 		CFF469EE4BC6468380F029AF /* noto_serif_hebrew_condensed_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_condensed_bold.ttf; path = ../resources/fonts/noto_serif_hebrew_condensed_bold.ttf; sourceTree = "<group>"; };
 		D0031DF16E114703A6BE2C83 /* noto_serif_black_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_black_italic.ttf; path = ../resources/fonts/noto_serif_black_italic.ttf; sourceTree = "<group>"; };
 		D0966CC8E3DD40DBA1A1418F /* noto_serif_extra_condensed_light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_light_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_light_italic.ttf; sourceTree = "<group>"; };
@@ -608,6 +628,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				7142935EEB554361B0EB77BA /* libKCKeepAwake.a in Frameworks */,
+				B064BBA19BC1449F817EF84F /* libRCTOrientation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,6 +779,8 @@
 				F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */,
 				D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */,
 				56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */,
+				CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */,
+				22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -778,6 +802,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				EB285F5CF9F146F6AED47EF2 /* Resources */,
+				DF092C9C21C807420052B69F /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -797,6 +822,31 @@
 			children = (
 				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF092C9C21C807420052B69F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5DD067B3FD1443F99B3EDFDC /* libKCKeepAwake.a */,
+				98B0FE2FE8704C78BFE96603 /* libRCTOrientation.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DF092CC621C807440052B69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF092CCC21C807440052B69F /* libKCKeepAwake.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF092CC821C807440052B69F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF092CCF21C807440052B69F /* libRCTOrientation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1002,6 +1052,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = DF092CC621C807440052B69F /* Products */;
+					ProjectRef = CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -1028,6 +1082,10 @@
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = DF092CC821C807440052B69F /* Products */;
+					ProjectRef = 22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */;
 				},
 				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
@@ -1329,6 +1387,20 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DF092CCC21C807440052B69F /* libKCKeepAwake.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKCKeepAwake.a;
+			remoteRef = DF092CCB21C807440052B69F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF092CCF21C807440052B69F /* libRCTOrientation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTOrientation.a;
+			remoteRef = DF092CCE21C807440052B69F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DF445CDE21C1773000C842D6 /* libSplashScreen.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1547,12 +1619,16 @@
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
@@ -1580,12 +1656,16 @@
 					"$(SRCROOT)/../node_modules/react-native-sound-player/ios",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
+					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
