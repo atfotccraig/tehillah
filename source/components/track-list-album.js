@@ -5,7 +5,9 @@ import { SizeContext } from "../context"
 import { selectCss, relativeSize } from "../helpers"
 import { NormalColor } from "../colors"
 
-const AlbumNameView = styled.View``
+const AlbumNameView = styled.View`
+    padding-top: ${props => relativeSize(32, props.context)}px;
+`
 
 const AlbumNameText = styled.Text`
     ${selectCss(

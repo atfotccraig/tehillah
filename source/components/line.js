@@ -17,8 +17,8 @@ const Text = styled.Text`
 
 const RepeatText = styled.Text`
     ${selectCss(
-        `font-family: Noto Serif;`,
-        `font-family: noto_serif_regular;`,
+        `font-family: Noto Serif; font-weight: 700`,
+        `font-family: noto_serif_bold;`,
     )};
     font-size: ${props => relativeSize(30, props.context)}px;
     color: ${NormalLightColor};

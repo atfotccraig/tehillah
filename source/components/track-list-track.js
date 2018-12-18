@@ -9,7 +9,8 @@ import { AccentColor, AccentLightColor } from "../colors"
 const TrackNameView = styled.View`
     display: flex;
     flex-direction: row;
-    padding: ${props => relativeSize(15, props.context)}px;
+    padding-top: ${props => relativeSize(16, props.context)}px;
+    padding-left: ${props => relativeSize(16, props.context)}px;
     padding-bottom: ${props => relativeSize(4, props.context)}px;
     margin-bottom: ${props => relativeSize(4, props.context)}px;
 `
@@ -28,7 +29,7 @@ const TrackPressView = styled(Animated.View)`
     display: flex;
     position: absolute;
     bottom: 0;
-    left: ${props => relativeSize(15, props.context)}px;
+    left: ${props => relativeSize(16, props.context)}px;
     height: ${props => relativeSize(4, props.context)}px;
     width: 4px;
     background-color: ${AccentLightColor};
@@ -54,7 +55,7 @@ class TrackListTrack extends Component {
             this.animation = Animated.timing(animated, {
                 duration: 650,
                 easing: Easing.in,
-                toValue: width - relativeSize(15, context) * 2,
+                toValue: width - relativeSize(16, context),
             })
 
             this.animation.start(({ finished }) => {
