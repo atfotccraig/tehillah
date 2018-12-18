@@ -24,7 +24,7 @@ class Hebrew extends Component {
     }
 
     static defaultProps = {
-        fontSize: 55,
+        fontSize: 56,
     }
 
     render() {

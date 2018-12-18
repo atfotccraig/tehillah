@@ -19,7 +19,7 @@ const WhoHeIs = props => (
         music="because_of_the_lamb_who_he_is"
         {...props}
     >
-        <Title>Who Is He</Title>
+        <Title>Who He Is</Title>
         <Verse name="three">
             <Line>
                 <Yahweh /> up in heaven

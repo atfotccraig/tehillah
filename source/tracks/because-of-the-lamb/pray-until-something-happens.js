@@ -38,10 +38,8 @@ const PrayUntilSomethingHappens = props => (
         </Verse>
         <Repeat name="one" />
         <Verse repeat name="three">
-            <Line>Lift your voice high</Line>
-            <Line>to the heavens</Line>
-            <Line>He is faithful</Line>
-            <Line>He will hear you</Line>
+            <Line>Lift your voice high, to the heavens</Line>
+            <Line>He is faithful, He will hear you</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />

@@ -6,7 +6,7 @@ import { relativeSize } from "../helpers"
 
 const Container = styled.View`
     display: flex;
-    margin: ${props => relativeSize(20, props.context)}px;
+    margin: ${props => relativeSize(16, props.context)}px;
 `
 
 class Verse extends Component {

@@ -1,3 +1,3 @@
-const WhoHeIs = () => "How He Is"
+const WhoHeIs = () => "Who He Is"
 
 export { WhoHeIs }

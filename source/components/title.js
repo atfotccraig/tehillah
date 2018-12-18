@@ -15,8 +15,8 @@ const Name = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(50, props.context)}px;
-    line-height: ${props => relativeSize(75, props.context)}px;
+    font-size: ${props => relativeSize(48, props.context)}px;
+    line-height: ${props => relativeSize(72, props.context)}px;
     color: ${NormalColor};
     text-align: center;
 `
@@ -26,8 +26,8 @@ const Contributors = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(30, props.context)}px;
-    line-height: ${props => relativeSize(45, props.context)}px;
+    font-size: ${props => relativeSize(32, props.context)}px;
+    line-height: ${props => relativeSize(48, props.context)}px;
     color: ${NormalLightColor};
     text-align: center;
 `

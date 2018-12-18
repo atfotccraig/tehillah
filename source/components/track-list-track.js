@@ -20,8 +20,8 @@ const TrackNameText = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(30, props.context)}px;
-    line-height: ${props => relativeSize(45, props.context)}px;
+    font-size: ${props => relativeSize(32, props.context)}px;
+    line-height: ${props => relativeSize(48, props.context)}px;
     color: ${AccentColor};
 `
 

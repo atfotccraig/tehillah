@@ -10,8 +10,8 @@ const Text = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(50, props.context)}px;
-    line-height: ${props => relativeSize(75, props.context)}px;
+    font-size: ${props => relativeSize(48, props.context)}px;
+    line-height: ${props => relativeSize(72, props.context)}px;
     color: ${NormalColor};
 `
 

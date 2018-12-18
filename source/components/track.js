@@ -261,17 +261,17 @@ class Track extends Component {
                 <Buttons fadeBackground={false}>
                     {showClose && (
                         <Button onPress={this.onClose}>
-                            <Times width={48} height={48} />
+                            <Times />
                         </Button>
                     )}
                     {showRestart && (
                         <Button onPress={this.onRestart}>
-                            <StepBackward width={42} height={42} />
+                            <StepBackward />
                         </Button>
                     )}
                     {showSkip && (
                         <Button onPress={this.onSkip}>
-                            <StepForward width={42} height={42} />
+                            <StepForward />
                         </Button>
                     )}
                 </Buttons>

@@ -27,9 +27,9 @@ const OnMyKnees = props => (
         <Verse>
             <Line>So I come to you now</Line>
             <Line>seeking grace to hold on</Line>
-            <Line>Cause you’re the one</Line>
+            <Line>‘Cause you’re the one</Line>
             <Line>who makes me strong</Line>
-            <Line>You’re the One</Line>
+            <Line>You’re the one</Line>
             <Line>who makes me strong</Line>
         </Verse>
         <Verse repeat name="one">
