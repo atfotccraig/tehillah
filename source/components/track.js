@@ -21,12 +21,9 @@ const Container = styled.View`
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: ${BackgroundColor};
 `
 
 class Track extends Component {
-    static contextType = SizeContext
-
     static propTypes = {
         isAnimating: PropTypes.bool,
         isPlaying: PropTypes.bool,
@@ -259,21 +256,21 @@ class Track extends Component {
                     ? this.renderAnimatedChildren()
                     : this.renderStaticChildren()}
                 <Buttons fadeBackground={false}>
-                    {showClose && (
+                    {showClose ? (
                         <Button onPress={this.onClose}>
                             <Times />
                         </Button>
-                    )}
-                    {showRestart && (
+                    ) : null}
+                    {showRestart ? (
                         <Button onPress={this.onRestart}>
                             <StepBackward />
                         </Button>
-                    )}
-                    {showSkip && (
+                    ) : null}
+                    {showSkip ? (
                         <Button onPress={this.onSkip}>
                             <StepForward />
                         </Button>
-                    )}
+                    ) : null}
                 </Buttons>
             </Container>
         )

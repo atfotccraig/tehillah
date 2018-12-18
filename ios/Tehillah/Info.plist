@@ -38,119 +38,9 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Noto-Naskh-Arabic-Bold.ttf</string>
-		<string>Noto-Naskh-Arabic-Regular.ttf</string>
-		<string>Noto-Serif-Black-Italic.ttf</string>
-		<string>Noto-Serif-Black.ttf</string>
-		<string>Noto-Serif-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Bold.ttf</string>
-		<string>Noto-Serif-Condensed-Black-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Condensed-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Condensed-Extra-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Condensed-Extra-Light-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Condensed-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Light-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Condensed-Medium-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Condensed-Semi-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Condensed-Thin-Italic.ttf</string>
-		<string>Noto-Serif-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Condensed.ttf</string>
-		<string>Noto-Serif-Extra-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Black-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Extra-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Extra-Light-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Light-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Medium-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Semi-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Thin-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Extra-Condensed.ttf</string>
-		<string>Noto-Serif-Extra-Light-Italic.ttf</string>
-		<string>Noto-Serif-Extra-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Black.ttf</string>
-		<string>Noto-Serif-Hebrew-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Hebrew-Condensed.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Condensed.ttf</string>
-		<string>Noto-Serif-Hebrew-Extra-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Medium.ttf</string>
-		<string>Noto-Serif-Hebrew-Regular.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Hebrew-Semi-Condensed.ttf</string>
-		<string>Noto-Serif-Hebrew-Thin.ttf</string>
-		<string>Noto-Serif-Italic.ttf</string>
-		<string>Noto-Serif-Light-Italic.ttf</string>
-		<string>Noto-Serif-Light.ttf</string>
-		<string>Noto-Serif-Medium-Italic.ttf</string>
-		<string>Noto-Serif-Medium.ttf</string>
-		<string>Noto-Serif-Regular.ttf</string>
-		<string>Noto-Serif-Semi-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Black-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Black.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Bold.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Extra-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Extra-Bold.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Extra-Light-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Extra-Light.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Light-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Light.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Medium-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Medium.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Semi-Bold-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Semi-Bold.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Thin-Italic.ttf</string>
-		<string>Noto-Serif-Semi-Condensed-Thin.ttf</string>
-		<string>Noto-Serif-Semi-Condensed.ttf</string>
-		<string>Noto-Serif-Thin-Italic.ttf</string>
-		<string>Noto-Serif-Thin.ttf</string>
 		<string>noto_serif_black_italic.ttf</string>
 		<string>noto_serif_black.ttf</string>
 		<string>noto_serif_bold_italic.ttf</string>
@@ -259,6 +149,7 @@
 		<string>noto_serif_semi_condensed.ttf</string>
 		<string>noto_serif_thin_italic.ttf</string>
 		<string>noto_serif_thin.ttf</string>
+		<string>patrick_hand_regular.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

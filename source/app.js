@@ -1,17 +1,26 @@
 import React, { Component, Fragment } from "react"
-import { Dimensions, Linking, StatusBar } from "react-native"
+import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
 import tracks from "./tracks"
 import labels from "./labels"
 import { randomItem, relativeSize } from "./helpers"
-import { Button, Buttons, TrackListAlbum, TrackListTrack } from "./components"
+
+import {
+    ButtonIntro,
+    Button,
+    Buttons,
+    ScrollIntro,
+    TrackListAlbum,
+    TrackListTrack,
+} from "./components"
+
 import { Cloud, Random } from "./icons"
 import { SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
 
-const AppContainer = styled.View`
+const AppContainer = styled.SafeAreaView`
     display: flex;
     width: 100%;
     height: 100%;
@@ -41,11 +50,29 @@ class App extends Component {
         width,
         height,
         showLink: false,
+        hasSeenButtonIntro: false,
+        hasSeenScrollIntro: false,
     }
 
     async componentDidMount() {
+        // DEBUG
+        // await AsyncStorage.setItem("has-seen-button-intro", "no")
+        // await AsyncStorage.setItem("has-seen-scroll-intro", "no")
+
+        const hasSeenButtonIntro = await AsyncStorage.getItem(
+            "has-seen-button-intro",
+        )
+
+        const hasSeenScrollIntro = await AsyncStorage.getItem(
+            "has-seen-scroll-intro",
+        )
+
+        this.setState({
+            hasSeenButtonIntro: hasSeenButtonIntro === "yes",
+            hasSeenScrollIntro: hasSeenScrollIntro === "yes",
+        })
+
         Orientation.addOrientationListener(this.onOrientationChange)
-        SplashScreen.hide()
 
         try {
             if (await Linking.canOpenURL(uri)) {
@@ -54,6 +81,8 @@ class App extends Component {
         } catch (e) {
             // can't really do anything about this...
         }
+
+        SplashScreen.hide()
     }
 
     componentWillUnmount() {
@@ -99,13 +128,32 @@ class App extends Component {
     }
 
     render() {
-        const { track, width, height } = this.state
+        const {
+            track,
+            width,
+            height,
+            hasSeenButtonIntro,
+            hasSeenScrollIntro,
+        } = this.state
 
         if (!track) {
             return (
                 <AppContainer onLayout={this.onLayout}>
                     <SizeContext.Provider value={{ width, height }}>
                         {this.renderTrackList()}
+                        {hasSeenScrollIntro ? null : <ScrollIntro />}
+                        {hasSeenButtonIntro ? null : (
+                            <ButtonIntro
+                                onPress={async () => {
+                                    this.setState({ hasSeenButtonIntro: true })
+
+                                    await AsyncStorage.setItem(
+                                        "has-seen-button-intro",
+                                        "yes",
+                                    )
+                                }}
+                            />
+                        )}
                     </SizeContext.Provider>
                 </AppContainer>
             )
@@ -125,7 +173,18 @@ class App extends Component {
 
         return (
             <Fragment>
-                <TrackContainer context={{ width, height }}>
+                <TrackContainer
+                    context={{ width, height }}
+                    onScroll={async () => {
+                        this.setState({ hasSeenScrollIntro: true })
+
+                        await AsyncStorage.setItem(
+                            "has-seen-scroll-intro",
+                            "yes",
+                        )
+                    }}
+                    scrollEventThrottle={250}
+                >
                     <StatusBar
                         barStyle="dark-content"
                         backgroundColor={BackgroundColor}
@@ -136,11 +195,11 @@ class App extends Component {
                     <Button onPress={this.onRandom}>
                         <Random />
                     </Button>
-                    {showLink && (
+                    {showLink ? (
                         <Button onPress={this.onBrowse}>
                             <Cloud />
                         </Button>
-                    )}
+                    ) : null}
                 </Buttons>
             </Fragment>
         )

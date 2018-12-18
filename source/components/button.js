@@ -65,7 +65,7 @@ class Button extends Component {
                     >
                         <Container context={context}>
                             <CircleContainer>
-                                {showProgress && (
+                                {showProgress ? (
                                     <AnimatedCircularProgress
                                         size={relativeSize(64, context)}
                                         width={relativeSize(4, context)}
@@ -77,7 +77,7 @@ class Button extends Component {
                                         }
                                         easing={Easing.in}
                                     />
-                                )}
+                                ) : null}
                             </CircleContainer>
                             {children}
                         </Container>

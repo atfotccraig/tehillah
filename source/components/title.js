@@ -49,11 +49,11 @@ class Title extends Component {
                 {context => (
                     <Container context={context}>
                         <Name context={context}>{children}</Name>
-                        {contributors && (
+                        {contributors ? (
                             <Contributors context={context}>
                                 {joinWithOxford(contributors)}
                             </Contributors>
-                        )}
+                        ) : null}
                     </Container>
                 )}
             </SizeContext.Consumer>

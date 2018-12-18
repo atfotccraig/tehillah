@@ -48,7 +48,7 @@ class Buttons extends Component {
             <SizeContext.Consumer>
                 {context => (
                     <Fragment>
-                        {fadeBackground && (
+                        {fadeBackground ? (
                             <BackgroundContainer
                                 context={context}
                                 pointerEvents={"none"}
@@ -57,7 +57,7 @@ class Buttons extends Component {
                                     source={require("../../resources/images/gradient.png")}
                                 />
                             </BackgroundContainer>
-                        )}
+                        ) : null}
                         <ButtonContainer context={context}>
                             {children}
                         </ButtonContainer>

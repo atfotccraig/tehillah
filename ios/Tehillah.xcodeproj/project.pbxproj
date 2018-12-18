@@ -130,6 +130,7 @@
 		DF64AD9E21C9120F003DADA5 /* peace_with_you_tehillah_138.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */; };
 		DF64AD9F21C9120F003DADA5 /* peace_with_you_come_yahshua_come.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */; };
 		DF64ADA021C9120F003DADA5 /* peace_with_you_i_am_free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */; };
+		DFB1582F21C96AB800167F56 /* patrick_hand_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */; };
 		DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */; };
 		DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8C1EE21BC2859005B27AC /* libRNSVG.a */; };
 		DFCF8E8821C146780069ED7D /* because_of_the_lamb_shout_with_joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */; };
@@ -599,6 +600,7 @@
 		DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_tehillah_138.mp3; path = ../resources/tracks/peace_with_you_tehillah_138.mp3; sourceTree = "<group>"; };
 		DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_come_yahshua_come.mp3; path = ../resources/tracks/peace_with_you_come_yahshua_come.mp3; sourceTree = "<group>"; };
 		DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_i_am_free.mp3; path = ../resources/tracks/peace_with_you_i_am_free.mp3; sourceTree = "<group>"; };
+		DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = patrick_hand_regular.ttf; path = ../resources/fonts/patrick_hand_regular.ttf; sourceTree = "<group>"; };
 		DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_shout_with_joy.mp3; path = ../resources/tracks/because_of_the_lamb_shout_with_joy.mp3; sourceTree = "<group>"; };
 		DFCF8E7C21C146760069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_yahwehs_blessing.mp3; path = ../resources/tracks/because_of_the_lamb_yahwehs_blessing.mp3; sourceTree = "<group>"; };
 		DFCF8E7D21C146760069ED7D /* because_of_the_lamb_blessed_are_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_blessed_are_you.mp3; path = ../resources/tracks/because_of_the_lamb_blessed_are_you.mp3; sourceTree = "<group>"; };
@@ -891,6 +893,7 @@
 		EB285F5CF9F146F6AED47EF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */,
 				DF64AD8E21C9120E003DADA5 /* peace_with_you_a_time_for_everything.mp3 */,
 				DF64AD8C21C9120D003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 */,
 				DF64AD5E21C9120D003DADA5 /* peace_with_you_city_of_yah.mp3 */,
@@ -1460,6 +1463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB1582F21C96AB800167F56 /* patrick_hand_regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				56B524F8975E4F93BF7A0F66 /* noto_serif_black_italic.ttf in Resources */,

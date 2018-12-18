@@ -30,11 +30,11 @@ const Line = ({ children, repeat, repeatText }) => {
             {context => (
                 <Text context={context}>
                     {children}
-                    {repeat && (
+                    {repeat ? (
                         <RepeatText context={context}>
                             {" " + repeatText}
                         </RepeatText>
-                    )}
+                    ) : null}
                 </Text>
             )}
         </SizeContext.Consumer>
