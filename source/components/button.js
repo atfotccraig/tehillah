@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { TouchableWithoutFeedback, View } from "react-native"
+import { Easing, TouchableWithoutFeedback } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import { AnimatedCircularProgress } from "react-native-circular-progress"
@@ -68,13 +68,14 @@ class Button extends Component {
                                 {showProgress && (
                                     <AnimatedCircularProgress
                                         size={relativeSize(64, context)}
-                                        width={relativeSize(5, context)}
+                                        width={relativeSize(4, context)}
                                         fill={100}
                                         tintColor={AccentLightColor}
                                         duration={650}
                                         onAnimationComplete={
                                             this.onAnimationComplete
                                         }
+                                        easing={Easing.in}
                                     />
                                 )}
                             </CircleContainer>

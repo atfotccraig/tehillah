@@ -1,15 +1,17 @@
 import React, { Component } from "react"
 import styled from "styled-components/native"
-import { TouchableWithoutFeedback } from "react-native"
+import { Animated, Easing, TouchableWithoutFeedback } from "react-native"
 import PropTypes from "prop-types"
 import { SizeContext } from "../context"
 import { selectCss, relativeSize } from "../helpers"
-import { AccentColor } from "../colors"
+import { AccentColor, AccentLightColor } from "../colors"
 
 const TrackNameView = styled.View`
     display: flex;
     flex-direction: row;
     padding: ${props => relativeSize(15, props.context)}px;
+    padding-bottom: ${props => relativeSize(4, props.context)}px;
+    margin-bottom: ${props => relativeSize(4, props.context)}px;
 `
 
 const TrackNameText = styled.Text`
@@ -18,7 +20,18 @@ const TrackNameText = styled.Text`
         `font-family: noto_serif_regular;`,
     )};
     font-size: ${props => relativeSize(30, props.context)}px;
+    line-height: ${props => relativeSize(45, props.context)}px;
     color: ${AccentColor};
+`
+
+const TrackPressView = styled(Animated.View)`
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: ${props => relativeSize(15, props.context)}px;
+    height: ${props => relativeSize(4, props.context)}px;
+    width: 4px;
+    background-color: ${AccentLightColor};
 `
 
 class TrackListTrack extends Component {
@@ -28,14 +41,68 @@ class TrackListTrack extends Component {
             .isRequired,
     }
 
+    state = {
+        width: undefined,
+        animated: new Animated.Value(0),
+    }
+
+    onPressIn = context => {
+        const { animated, width } = this.state
+        const { onPress } = this.props
+
+        if (width) {
+            this.animation = Animated.timing(animated, {
+                duration: 650,
+                easing: Easing.in,
+                toValue: width - relativeSize(15, context) * 2,
+            })
+
+            this.animation.start(({ finished }) => {
+                if (finished) {
+                    onPress()
+                }
+            })
+        }
+    }
+
+    onPressOut = () => {
+        const { animated } = this.state
+
+        this.animation.stop()
+
+        this.animation = Animated.timing(animated, {
+            duration: 0,
+            easing: Easing.in,
+            toValue: 0,
+        })
+
+        this.animation.start()
+    }
+
+    onLayout = event => {
+        const { width } = event.nativeEvent.layout
+        this.setState({ width })
+    }
+
     render() {
-        const { onPress, label: LabelComponent } = this.props
+        const { animated } = this.state
+        const { label: LabelComponent } = this.props
 
         return (
             <SizeContext.Consumer>
                 {context => (
-                    <TouchableWithoutFeedback onPress={onPress}>
+                    <TouchableWithoutFeedback
+                        onPressIn={() => this.onPressIn(context)}
+                        onPressOut={() => this.onPressOut()}
+                        onLayout={this.onLayout}
+                    >
                         <TrackNameView context={context}>
+                            <TrackPressView
+                                context={context}
+                                style={{
+                                    width: animated,
+                                }}
+                            />
                             <TrackNameText context={context}>
                                 <LabelComponent fontSize={35} />
                             </TrackNameText>

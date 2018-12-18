@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react"
-import { Dimensions, StatusBar } from "react-native"
+import { Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
@@ -7,7 +7,7 @@ import tracks from "./tracks"
 import labels from "./labels"
 import { randomItem, relativeSize } from "./helpers"
 import { Button, Buttons, TrackListAlbum, TrackListTrack } from "./components"
-import { Random } from "./icons"
+import { Cloud, Random } from "./icons"
 import { SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
 
@@ -33,16 +33,27 @@ const TrackContainer = styled.ScrollView.attrs(props => ({
 
 const { height, width } = Dimensions.get("window")
 
+const uri = "http://atfotc.com"
+
 class App extends Component {
     state = {
         track: undefined,
         width,
         height,
+        showLink: false,
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         Orientation.addOrientationListener(this.onOrientationChange)
         SplashScreen.hide()
+
+        try {
+            if (await Linking.canOpenURL(uri)) {
+                this.setState({ showLink: true })
+            }
+        } catch (e) {
+            // can't really do anything about this...
+        }
     }
 
     componentWillUnmount() {
@@ -55,6 +66,10 @@ class App extends Component {
 
     onClose = () => {
         this.setState({ isRandom: false, track: undefined })
+    }
+
+    onBrowse = () => {
+        Linking.openURL(uri)
     }
 
     onFinish = () => {
@@ -106,7 +121,7 @@ class App extends Component {
     }
 
     renderTrackList = () => {
-        const { width, height } = this.state
+        const { width, height, showLink } = this.state
 
         return (
             <Fragment>
@@ -121,6 +136,11 @@ class App extends Component {
                     <Button onPress={this.onRandom}>
                         <Random />
                     </Button>
+                    {showLink && (
+                        <Button onPress={this.onBrowse}>
+                            <Cloud />
+                        </Button>
+                    )}
                 </Buttons>
             </Fragment>
         )
