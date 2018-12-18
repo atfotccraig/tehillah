@@ -17,9 +17,7 @@ const AllThingsNew = props => (
         music="because_of_the_lamb_all_things_new"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
-            All Things New
-        </Title>
+        <Title>All Things New</Title>
         <Verse>
             <Line>You, you take my suffering</Line>
             <Line>Turn it into blessing</Line>

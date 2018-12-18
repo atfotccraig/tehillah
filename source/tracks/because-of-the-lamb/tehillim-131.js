@@ -7,9 +7,7 @@ const Tehillim131 = props => (
         music="because_of_the_lamb_tehillim_131"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
-            Tehillim 131
-        </Title>
+        <Title>Tehillim 131</Title>
         <Verse name="one">
             <Line>
                 <Yahweh />, my heart is not lifted up

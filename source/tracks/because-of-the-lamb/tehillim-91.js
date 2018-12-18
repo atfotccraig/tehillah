@@ -18,9 +18,7 @@ const Tehillim91 = props => (
         music="because_of_the_lamb_tehillim_91"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
-            Tehillim 91
-        </Title>
+        <Title>Tehillim 91</Title>
         <Verse repeat>
             <Line>He who dwells in the secret place</Line>
             <Line>of the most high</Line>

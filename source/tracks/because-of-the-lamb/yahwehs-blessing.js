@@ -7,7 +7,7 @@ const YahwehsBlessing = props => (
         music="because_of_the_lamb_yahwehs_blessing"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
+        <Title>
             <Yahweh />
             ’s Blessing
         </Title>

@@ -7,7 +7,7 @@ const IWillLoveYouYahweh = props => (
         music="peace_with_you_i_will_love_you_yahweh"
         {...props}
     >
-        <Title contributors={["The Stevensons"]}>
+        <Title>
             I Will Love You <Yahweh />
         </Title>
         <Verse>

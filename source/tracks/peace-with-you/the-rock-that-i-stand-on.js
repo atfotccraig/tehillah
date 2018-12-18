@@ -7,9 +7,7 @@ const TheRockThatIStandOn = props => (
         music="peace_with_you_the_rock_that_i_stand_on"
         {...props}
     >
-        <Title contributors={["The Stevensons"]}>
-            The Rock That I Stand On
-        </Title>
+        <Title>The Rock That I Stand On</Title>
         <Verse>
             <Line>words</Line>
         </Verse>

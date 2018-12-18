@@ -17,7 +17,7 @@ const OnMyKnees = props => (
         music="because_of_the_lamb_on_my_knees"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>On My Knees</Title>
+        <Title>On My Knees</Title>
         <Verse>
             <Line>You never told me</Line>
             <Line>that this life would be easy</Line>

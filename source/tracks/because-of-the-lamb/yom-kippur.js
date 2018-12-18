@@ -26,9 +26,7 @@ const YomKippur = props => (
         music="because_of_the_lamb_yom_kippur"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
-            Yom Kippur
-        </Title>
+        <Title>Yom Kippur</Title>
         <Verse name="one">
             <Line>Yom Kippur is here</Line>
             <Line>

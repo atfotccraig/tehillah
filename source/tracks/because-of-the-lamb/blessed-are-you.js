@@ -19,9 +19,7 @@ const BlessedAreYou = props => (
         music="because_of_the_lamb_blessed_are_you"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
-            Blessed Are You
-        </Title>
+        <Title>Blessed Are You</Title>
         <Verse repeat>
             <Line>
                 Blessed are you <Yahweh />

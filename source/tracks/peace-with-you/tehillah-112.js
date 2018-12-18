@@ -7,7 +7,7 @@ const Tehillah112 = props => (
         music="peace_with_you_tehillah_112"
         {...props}
     >
-        <Title contributors={["The Stevensons"]}>Tehillah 112</Title>
+        <Title>Tehillah 112</Title>
         <Verse>
             <Line>words</Line>
         </Verse>

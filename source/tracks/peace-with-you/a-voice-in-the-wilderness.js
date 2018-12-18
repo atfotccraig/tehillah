@@ -7,9 +7,7 @@ const AVoiceInTheWilderness = props => (
         music="peace_with_you_a_voice_in_the_wilderness"
         {...props}
     >
-        <Title contributors={["The Stevensons"]}>
-            A Voice In The Wilderness
-        </Title>
+        <Title>A Voice In The Wilderness</Title>
         <Verse>
             <Line>words</Line>
         </Verse>

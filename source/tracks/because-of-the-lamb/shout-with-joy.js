@@ -19,9 +19,7 @@ const ShoutWithJoy = props => (
         music="because_of_the_lamb_shout_with_joy"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
-            Shout With Joy
-        </Title>
+        <Title>Shout With Joy</Title>
         <Verse name="one">
             <Line>Shout with joy to Elohim</Line>
             <Line>Shout with joy to Elohim</Line>

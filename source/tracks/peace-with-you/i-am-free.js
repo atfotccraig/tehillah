@@ -7,7 +7,7 @@ const IAmFree = props => (
         music="peace_with_you_i_am_free"
         {...props}
     >
-        <Title contributors={["The Stevensons"]}>I Am Free</Title>
+        <Title>I Am Free</Title>
         <Verse>
             <Line>words</Line>
         </Verse>

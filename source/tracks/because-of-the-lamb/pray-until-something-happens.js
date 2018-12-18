@@ -19,9 +19,7 @@ const PrayUntilSomethingHappens = props => (
         music="because_of_the_lamb_pray_until_something_happens"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
-            Pray Until Something Happens
-        </Title>
+        <Title>Pray Until Something Happens</Title>
         <Verse repeat name="one">
             <Line>Pray until something happens</Line>
             <Line>Don’t ever stop</Line>

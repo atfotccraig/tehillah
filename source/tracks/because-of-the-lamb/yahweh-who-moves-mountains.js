@@ -23,7 +23,7 @@ const YahwehWhoMovesMountains = props => (
         music="because_of_the_lamb_yahweh_who_moves_mountains"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>
+        <Title>
             <Yahweh /> Who Moves Mountains
         </Title>
         <Verse name="one">

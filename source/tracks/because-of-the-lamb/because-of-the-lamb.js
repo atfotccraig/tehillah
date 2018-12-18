@@ -28,9 +28,7 @@ const BecauseOfTheLamb = props => (
         music="because_of_the_lamb_because_of_the_lamb"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson", "E. Smit"]}>
-            Because Of The Lamb
-        </Title>
+        <Title>Because Of The Lamb</Title>
         <Verse>
             <Line>Today is the day we repent</Line>
             <Line>of all sin, of all sin, of all sin</Line>

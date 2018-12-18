@@ -19,7 +19,7 @@ const WhoHeIs = props => (
         music="because_of_the_lamb_who_he_is"
         {...props}
     >
-        <Title contributors={["M. Rheeder", "C. Stevenson"]}>Who Is He</Title>
+        <Title>Who Is He</Title>
         <Verse name="three">
             <Line>
                 <Yahweh /> up in heaven
