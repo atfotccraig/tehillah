@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
 import moment from "moment"
 import KeepAwake from "react-native-keep-awake"
-import Orientation from "react-native-orientation"
 import { BackgroundColor } from "../colors"
 import { SizeContext } from "../context"
 import { seconds } from "../helpers"
@@ -123,12 +122,8 @@ class Track extends Component {
         }, 250)
 
         this.cacheVerses()
-
         AppState.addEventListener("change", this.onChangeAppState)
-
         KeepAwake.activate()
-
-        Orientation.addOrientationListener(this.onOrientationChange)
     }
 
     playMusic = () => {
@@ -213,16 +208,8 @@ class Track extends Component {
         }
 
         clearTimeout(this.forceUpdateTimer)
-
         AppState.removeEventListener("change", this.onChangeAppState)
-
         KeepAwake.deactivate()
-
-        Orientation.removeOrientationListener(this.onOrientationChange)
-    }
-
-    onOrientationChange = () => {
-        this.forceUpdate()
     }
 
     onChangeAppState = state => {
@@ -264,7 +251,6 @@ class Track extends Component {
     }
 
     render() {
-        const { width, height } = this.context
         const { showSkip, showClose, showRestart } = this.props
 
         return (
