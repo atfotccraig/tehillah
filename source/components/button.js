@@ -71,7 +71,7 @@ class Button extends Component {
                                         width={relativeSize(4, context)}
                                         fill={100}
                                         tintColor={AccentLightColor}
-                                        duration={650}
+                                        duration={400}
                                         onAnimationComplete={
                                             this.onAnimationComplete
                                         }
