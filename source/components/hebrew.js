@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { BackgroundColor } from "../colors"
-import { SizeContext } from "../context"
-import { relativeSize, selectCss } from "../helpers"
+import { BackgroundColor } from "app/colors"
+import { SizeContext } from "app/context"
+import { relativeSize, selectCss } from "app/helpers"
 
 const InvisibleText = styled.Text`
     color: ${BackgroundColor};

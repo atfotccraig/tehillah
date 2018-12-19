@@ -2,9 +2,9 @@ import React, { Component } from "react"
 import styled from "styled-components/native"
 import { Animated, Easing, TouchableWithoutFeedback } from "react-native"
 import PropTypes from "prop-types"
-import { SizeContext } from "../context"
-import { selectCss, relativeSize } from "../helpers"
-import { AccentColor, AccentLightColor } from "../colors"
+import { SizeContext } from "app/context"
+import { selectCss, relativeSize } from "app/helpers"
+import { AccentColor, AccentLightColor } from "app/colors"
 
 const TrackNameView = styled.View`
     display: flex;

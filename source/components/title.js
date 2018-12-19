@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
-import { SizeContext } from "../context"
-import { joinWithOxford, relativeSize, selectCss } from "../helpers"
-import { NormalColor, NormalLightColor } from "../colors"
+import { SizeContext } from "app/context"
+import { joinWithOxford, relativeSize, selectCss } from "app/helpers"
+import { NormalColor, NormalLightColor } from "app/colors"
 
 const Container = styled.View`
     display: flex;

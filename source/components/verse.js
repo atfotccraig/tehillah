@@ -1,8 +1,8 @@
 import React, { Component, Children, cloneElement } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
-import { SizeContext } from "../context"
-import { relativeSize } from "../helpers"
+import { SizeContext } from "app/context"
+import { relativeSize } from "app/helpers"
 
 const Container = styled.View`
     display: flex;

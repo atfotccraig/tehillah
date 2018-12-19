@@ -3,9 +3,9 @@ import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
-import tracks from "./tracks"
-import labels from "./labels"
-import { randomItem, relativeSize } from "./helpers"
+import tracks from "app/tracks"
+import labels from "app/labels"
+import { randomItem, relativeSize } from "app/helpers"
 
 import {
     ButtonIntro,

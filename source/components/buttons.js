@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components/native"
-import { SizeContext } from "../context"
-import { relativeSize } from "../helpers"
+import { SizeContext } from "app/context"
+import { relativeSize } from "app/helpers"
 
 const ButtonContainer = styled.View`
     display: flex;

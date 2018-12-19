@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
-import { SizeContext } from "../context"
-import { relativeSize, selectCss } from "../helpers"
-import { NormalColor, NormalLightColor } from "../colors"
+import { SizeContext } from "app/context"
+import { relativeSize, selectCss } from "app/helpers"
+import { NormalColor, NormalLightColor } from "app/colors"
 
 const Text = styled.Text`
     ${selectCss(

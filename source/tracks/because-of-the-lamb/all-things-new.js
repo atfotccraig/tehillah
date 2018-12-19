@@ -1,5 +1,5 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "../../components"
+import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
 
 const AllThingsNew = props => (
     <Track

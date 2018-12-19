@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import { View } from "react-native"
 import styled from "styled-components/native"
 import { Button } from "./button"
-import { BackgroundColor, NormalLightColor } from "../colors"
-import { Check, HandDrawnArrowUp } from "../icons"
-import { SizeContext } from "../context"
-import { relativeSize, selectCss } from "../helpers"
+import { BackgroundColor, NormalLightColor, AccentColorName } from "app/colors"
+import { Check, HandDrawnArrowUp } from "app/icons"
+import { SizeContext } from "app/context"
+import { relativeSize, selectCss } from "app/helpers"
 
 const Container = styled.View`
     display: flex;
@@ -54,7 +54,7 @@ class ButtonIntro extends Component {
                     <Container context={context}>
                         <Section>
                             <InstructionText context={context}>
-                                Every blue thing is a button,
+                                Every {AccentColorName} thing is a button,
                             </InstructionText>
                             <InstructionText context={context}>
                                 but you have to hold it down...

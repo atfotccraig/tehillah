@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { Yahweh } from "../../components"
+import { Yahweh } from "app/components"
 
 const YahwehWhoMovesMountains = ({ fontSize }) => (
     <Fragment>

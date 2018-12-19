@@ -8,7 +8,7 @@ import {
     Verse,
     Yahweh,
     Yahshua,
-} from "../../components"
+} from "app/components"
 
 const YomKippur = props => (
     <Track

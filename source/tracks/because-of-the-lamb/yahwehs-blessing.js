@@ -1,5 +1,5 @@
 import React from "react"
-import { Line, Title, Track, Verse, Yahweh } from "../../components"
+import { Line, Title, Track, Verse, Yahweh } from "app/components"
 
 const YahwehsBlessing = props => (
     <Track

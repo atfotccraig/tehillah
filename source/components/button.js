@@ -3,9 +3,9 @@ import { Easing, TouchableWithoutFeedback } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import { AnimatedCircularProgress } from "react-native-circular-progress"
-import { SizeContext } from "../context"
-import { relativeSize } from "../helpers"
-import { AccentLightColor } from "../colors"
+import { SizeContext } from "app/context"
+import { relativeSize } from "app/helpers"
+import { AccentLightColor } from "app/colors"
 
 const Container = styled.View`
     display: flex;

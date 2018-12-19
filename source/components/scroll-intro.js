@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import { View } from "react-native"
 import styled from "styled-components/native"
-import { NormalLightColor } from "../colors"
-import { HandDrawnArrowUp } from "../icons"
-import { SizeContext } from "../context"
-import { relativeSize, selectCss } from "../helpers"
+import { NormalLightColor } from "app/colors"
+import { HandDrawnArrowUp } from "app/icons"
+import { SizeContext } from "app/context"
+import { relativeSize, selectCss } from "app/helpers"
 
 const Container = styled.View`
     display: flex;

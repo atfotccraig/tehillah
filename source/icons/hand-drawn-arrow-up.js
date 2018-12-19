@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import Svg, { Path } from "react-native-svg"
-import { SizeContext } from "../context"
-import { relativeSize } from "../helpers"
-import { AccentLightColor } from "../colors"
+import { SizeContext } from "app/context"
+import { relativeSize } from "app/helpers"
+import { AccentLightColor } from "app/colors"
 
 class HandDrawnArrowUp extends Component {
     static propTypes = {

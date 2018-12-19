@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
-import { SizeContext } from "../context"
-import { selectCss, relativeSize } from "../helpers"
-import { NormalColor } from "../colors"
+import { SizeContext } from "app/context"
+import { selectCss, relativeSize } from "app/helpers"
+import { NormalColor } from "app/colors"
 
 const AlbumNameView = styled.View`
     padding-top: ${props => relativeSize(32, props.context)}px;
