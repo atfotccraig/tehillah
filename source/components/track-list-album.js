@@ -1,12 +1,12 @@
 import React, { Component } from "react"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
-import { SizeContext } from "app/context"
+import { IsPlayListContext, SizeContext } from "app/context"
 import { selectCss, relativeSize } from "app/helpers"
 import { NormalColor } from "app/colors"
 
 const AlbumNameView = styled.View`
-    padding-top: ${props => relativeSize(32, props.context)}px;
+    padding-top: ${props => relativeSize(32, props.size)}px;
 `
 
 const AlbumNameText = styled.Text`
@@ -14,7 +14,10 @@ const AlbumNameText = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(40, props.context)}px;
+    font-size: ${props =>
+        props.isPlaylist
+            ? relativeSize(32, props.size)
+            : relativeSize(40, props.size)}px;
     color: ${NormalColor};
 `
 
@@ -29,12 +32,19 @@ class TrackListAlbum extends Component {
 
         return (
             <SizeContext.Consumer>
-                {context => (
-                    <AlbumNameView context={context}>
-                        <AlbumNameText context={context}>
-                            <LabelComponent fontSize={30} />
-                        </AlbumNameText>
-                    </AlbumNameView>
+                {size => (
+                    <IsPlayListContext.Consumer>
+                        {isPlaylist => (
+                            <AlbumNameView size={size}>
+                                <AlbumNameText
+                                    size={size}
+                                    isPlaylist={isPlaylist}
+                                >
+                                    <LabelComponent fontSize={30} />
+                                </AlbumNameText>
+                            </AlbumNameView>
+                        )}
+                    </IsPlayListContext.Consumer>
                 )}
             </SizeContext.Consumer>
         )

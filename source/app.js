@@ -1,31 +1,13 @@
 import React, { Component, Fragment } from "react"
-
-import {
-    AsyncStorage,
-    Dimensions,
-    Linking,
-    Platform,
-    StatusBar,
-} from "react-native"
-
+import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
 import tracks from "app/tracks"
 import labels from "app/labels"
-import { randomItem, relativeSize } from "app/helpers"
-
-import {
-    ButtonIntro,
-    Button,
-    Buttons,
-    ScrollIntro,
-    TrackListAlbum,
-    TrackListTrack,
-} from "./components"
-
-import { Chrome, Random, Safari } from "./icons"
-import { SizeContext } from "./context"
+import { randomItem } from "app/helpers"
+import { ButtonIntro, PlayList, ScrollIntro, TrackList } from "./components"
+import { IsPlayListContext, IsRandomContext, SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
 
 const AppContainer = styled.SafeAreaView`
@@ -36,30 +18,44 @@ const AppContainer = styled.SafeAreaView`
     align-items: center;
 `
 
-const TrackContainer = styled.ScrollView.attrs(props => ({
-    contentContainerStyle: {
-        padding: relativeSize(150, props.context),
-        alignItems: "flex-start",
-    },
-}))`
+const Columns = styled.View`
     display: flex;
     width: 100%;
     height: 100%;
     background-color: ${BackgroundColor};
 `
 
+const Column = styled.View`
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+`
+
+const LeftColumn = styled(Column)`
+    left: 0;
+`
+
+const RightColumn = styled(Column)`
+    right: 0;
+`
+
 const { height, width } = Dimensions.get("window")
 
-const uri = "http://atfotc.com"
+const uri = "http://atfotc.com/index.php/music"
 
 class App extends Component {
     state = {
         track: undefined,
         width,
         height,
-        showLink: false,
+        showBrowseButton: false,
         hasSeenButtonIntro: false,
         hasSeenScrollIntro: false,
+        isPlayList: false,
+        playList: [],
+        playListPosition: 0,
     }
 
     async componentDidMount() {
@@ -84,7 +80,7 @@ class App extends Component {
 
         try {
             if (await Linking.canOpenURL(uri)) {
-                this.setState({ showLink: true })
+                this.setState({ showBrowseButton: true })
             }
         } catch (e) {
             // can't really do anything about this...
@@ -110,20 +106,39 @@ class App extends Component {
     }
 
     onFinish = () => {
-        const { isRandom } = this.state
+        const { isPlayList, playList, playListPosition, isRandom } = this.state
+
+        if (isPlayList && playListPosition < playList.length) {
+            return this.setState({
+                track: playList[playListPosition],
+                playListPosition: playListPosition + 1,
+            })
+        }
 
         if (isRandom) {
-            this.onRandom()
-        } else {
-            this.setState({ track: undefined })
+            return this.onRandom()
         }
+
+        this.setState({ track: undefined })
     }
 
     onRandom = () => {
         const album = randomItem(Object.keys(tracks))
         const track = randomItem(Object.keys(tracks[album]))
 
-        return this.setState({ isRandom: true, track: [album, track] })
+        return this.setState({
+            isPlayList: false,
+            isRandom: true,
+            track: [album, track],
+        })
+    }
+
+    onOpenPlayList = () => {
+        this.setState({ isPlayList: true })
+    }
+
+    onClosePlayList = () => {
+        this.setState({ isPlayList: false })
     }
 
     onLayout = event => {
@@ -135,108 +150,128 @@ class App extends Component {
         })
     }
 
-    render() {
-        const {
-            track,
-            width,
-            height,
-            hasSeenButtonIntro,
-            hasSeenScrollIntro,
-        } = this.state
+    onScroll = async () => {
+        this.setState({
+            hasSeenScrollIntro: true,
+        })
 
-        if (!track) {
-            return (
-                <AppContainer onLayout={this.onLayout}>
-                    <SizeContext.Provider value={{ width, height }}>
-                        {this.renderTrackList()}
-                        {hasSeenScrollIntro ? null : <ScrollIntro />}
-                        {hasSeenButtonIntro ? null : (
-                            <ButtonIntro
-                                onPress={async () => {
-                                    this.setState({ hasSeenButtonIntro: true })
+        await AsyncStorage.setItem("has-seen-scroll-intro", "yes")
+    }
 
-                                    await AsyncStorage.setItem(
-                                        "has-seen-button-intro",
-                                        "yes",
-                                    )
-                                }}
-                            />
-                        )}
-                    </SizeContext.Provider>
-                </AppContainer>
-            )
+    onPlayTrack = (album, track) => {
+        return this.setState({ track: [album, track] })
+    }
+
+    onQueueTrack = (album, track) => {
+        const now = new Date()
+
+        this.setState(state => ({
+            playList: [...state.playList, [album, track, now.getTime()]],
+        }))
+    }
+
+    onDequeueTrack = (album, track, time) => {
+        this.setState(state => ({
+            playList: state.playList.filter(
+                item =>
+                    item[0] !== album || item[1] !== track || item[2] !== time,
+            ),
+        }))
+    }
+
+    onPlayPlayList = () => {
+        let { playList } = this.state
+
+        if (playList.length > 0) {
+            this.setState({
+                track: playList[0],
+                playListPosition: 1,
+            })
         }
+    }
+
+    render() {
+        const { track, width, height, isPlayList, isRandom } = this.state
+        const content = track ? this.renderTrack() : this.renderTrackList()
 
         return (
             <AppContainer onLayout={this.onLayout}>
                 <SizeContext.Provider value={{ width, height }}>
-                    {this.renderTrack()}
+                    <IsPlayListContext.Provider value={isPlayList}>
+                        <IsRandomContext.Provider value={isRandom}>
+                            {content}
+                        </IsRandomContext.Provider>
+                    </IsPlayListContext.Provider>
                 </SizeContext.Provider>
             </AppContainer>
         )
     }
 
     renderTrackList = () => {
-        const { width, height, showLink } = this.state
+        const { isPlayList, playList, showBrowseButton } = this.state
+
+        const trackList = (
+            <TrackList
+                tracks={tracks}
+                labels={labels}
+                showBrowseButton={showBrowseButton}
+                onBrowse={this.onBrowse}
+                onOpenPlayList={this.onOpenPlayList}
+                onRandom={this.onRandom}
+                onScroll={this.onScroll}
+                onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
+            />
+        )
 
         return (
             <Fragment>
-                <TrackContainer
-                    context={{ width, height }}
-                    onScroll={async () => {
-                        this.setState({ hasSeenScrollIntro: true })
-
-                        await AsyncStorage.setItem(
-                            "has-seen-scroll-intro",
-                            "yes",
-                        )
-                    }}
-                    scrollEventThrottle={250}
-                >
-                    <StatusBar
-                        barStyle="dark-content"
-                        backgroundColor={BackgroundColor}
-                    />
-                    {this.renderAlbums()}
-                </TrackContainer>
-                <Buttons>
-                    <Button onPress={this.onRandom}>
-                        <Random />
-                    </Button>
-                    {showLink ? (
-                        <Button onPress={this.onBrowse}>
-                            {Platform.select({
-                                ios: <Safari />,
-                                android: <Chrome />,
-                            })}
-                        </Button>
-                    ) : null}
-                </Buttons>
+                {isPlayList ? (
+                    <Columns>
+                        <LeftColumn>{trackList}</LeftColumn>
+                        <RightColumn>
+                            <PlayList
+                                onClose={this.onClosePlayList}
+                                onPlay={this.onPlayPlayList}
+                                onDequeue={this.onDequeueTrack}
+                                items={playList}
+                                labels={labels}
+                            />
+                        </RightColumn>
+                    </Columns>
+                ) : (
+                    trackList
+                )}
+                {this.renderIntros()}
             </Fragment>
         )
     }
 
-    renderAlbums = () => {
-        return Object.keys(tracks).map(album => (
-            <Fragment key={album}>
-                <TrackListAlbum label={labels[album].Album} />
-                {this.renderTracksForAlbum(album)}
-            </Fragment>
-        ))
-    }
+    renderIntros = () => {
+        const { hasSeenScrollIntro, hasSeenButtonIntro } = this.state
 
-    renderTracksForAlbum = album => {
-        return Object.keys(tracks[album]).map(track => (
-            <TrackListTrack
-                key={album + track}
-                label={labels[album][track]}
-                onPress={() => this.setState({ track: [album, track] })}
-            />
-        ))
+        return (
+            <Fragment>
+                {hasSeenScrollIntro ? null : <ScrollIntro />}
+                {hasSeenButtonIntro ? null : (
+                    <ButtonIntro
+                        onPress={async () => {
+                            this.setState({
+                                hasSeenButtonIntro: true,
+                            })
+
+                            await AsyncStorage.setItem(
+                                "has-seen-button-intro",
+                                "yes",
+                            )
+                        }}
+                    />
+                )}
+            </Fragment>
+        )
     }
 
     renderTrack = () => {
-        const { track, isRandom } = this.state
+        const { track, isRandom, isPlayList } = this.state
         const TrackComponent = tracks[track[0]][track[1]]
 
         return (
@@ -246,6 +281,7 @@ class App extends Component {
                     isAnimating
                     isPlaying
                     showSkip={isRandom}
+                    showRestart={!isPlayList}
                     onFinish={this.onFinish}
                     onClose={this.onClose}
                     onSkip={this.onRandom}

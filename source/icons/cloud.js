@@ -14,8 +14,8 @@ class Cloud extends Component {
 
     static defaultProps = {
         fill: AccentLightColor,
-        width: 42,
-        height: 33.6,
+        width: 36,
+        height: 28.8,
     }
 
     render() {

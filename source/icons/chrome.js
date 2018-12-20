@@ -14,8 +14,8 @@ class Chrome extends Component {
 
     static defaultProps = {
         fill: AccentLightColor,
-        width: 40.6875,
-        height: 42,
+        width: 34.875,
+        height: 36,
     }
 
     render() {

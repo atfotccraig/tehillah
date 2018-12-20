@@ -6,9 +6,9 @@ import SoundPlayer from "react-native-sound-player"
 import moment from "moment"
 import KeepAwake from "react-native-keep-awake"
 import { seconds } from "app/helpers"
-import { StepBackward, StepForward, Times } from "app/icons"
+import { Pause, Play, StepBackward, StepForward, Times } from "app/icons"
 import { Button } from "./button"
-import { Buttons } from "./buttons"
+import { ButtonContainer } from "./button-container"
 import { Title } from "./title"
 import { Repeat } from "./repeat"
 import { Verse } from "./verse"
@@ -52,6 +52,7 @@ class Track extends Component {
 
     state = {
         nowAt: new Date(),
+        isPaused: false,
     }
 
     onPause = () => {
@@ -59,6 +60,10 @@ class Track extends Component {
         this.seconds = delta / 1000
 
         SoundPlayer.pause()
+
+        this.setState({
+            isPaused: true,
+        })
 
         if (this.props.onPause) {
             this.props.onPause()
@@ -74,6 +79,10 @@ class Track extends Component {
 
         SoundPlayer.resume()
 
+        this.setState({
+            isPaused: false,
+        })
+
         if (this.props.onResume) {
             this.props.onResume()
         }
@@ -82,7 +91,12 @@ class Track extends Component {
     onRestart = () => {
         this.stopMusic()
         this.playMusic()
+
         this.startedAt = new Date()
+
+        this.setState({
+            isPaused: false,
+        })
 
         if (this.props.onRestart) {
             this.props.onRestart()
@@ -92,6 +106,10 @@ class Track extends Component {
     onClose = () => {
         this.stopMusic()
 
+        this.setState({
+            isPaused: false,
+        })
+
         if (this.props.onClose) {
             this.props.onClose()
         }
@@ -99,6 +117,10 @@ class Track extends Component {
 
     onSkip = () => {
         this.stopMusic()
+
+        this.setState({
+            isPaused: false,
+        })
 
         if (this.props.onSkip) {
             this.props.onSkip()
@@ -247,13 +269,14 @@ class Track extends Component {
 
     render() {
         const { showSkip, showClose, showRestart } = this.props
+        const { isPaused } = this.state
 
         return (
             <Container>
                 {this.props.isAnimating
                     ? this.renderAnimatedChildren()
                     : this.renderStaticChildren()}
-                <Buttons fadeBackground={false}>
+                <ButtonContainer fadeBackground={false}>
                     {showClose ? (
                         <Button onPress={this.onClose}>
                             <Times />
@@ -264,12 +287,21 @@ class Track extends Component {
                             <StepBackward />
                         </Button>
                     ) : null}
+                    {isPaused ? (
+                        <Button onPress={this.onResume}>
+                            <Play />
+                        </Button>
+                    ) : (
+                        <Button onPress={this.onPause}>
+                            <Pause />
+                        </Button>
+                    )}
                     {showSkip ? (
                         <Button onPress={this.onSkip}>
                             <StepForward />
                         </Button>
                     ) : null}
-                </Buttons>
+                </ButtonContainer>
             </Container>
         )
     }

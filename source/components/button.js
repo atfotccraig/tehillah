@@ -25,6 +25,11 @@ const CircleContainer = styled.View`
 class Button extends Component {
     static propTypes = {
         onPress: PropTypes.func.isRequired,
+        isDisabled: PropTypes.bool,
+    }
+
+    static defaultProps = {
+        isDisabled: false,
     }
 
     state = {
@@ -32,9 +37,13 @@ class Button extends Component {
     }
 
     onPressIn = () => {
-        this.setState({
-            showProgress: true,
-        })
+        const { isDisabled } = this.props
+
+        if (!isDisabled) {
+            this.setState({
+                showProgress: true,
+            })
+        }
     }
 
     onPressOut = () => {

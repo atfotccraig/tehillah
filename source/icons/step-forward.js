@@ -14,8 +14,8 @@ class StepForward extends Component {
 
     static defaultProps = {
         fill: AccentLightColor,
-        width: 36.75,
-        height: 42,
+        width: 31.5,
+        height: 36,
     }
 
     render() {

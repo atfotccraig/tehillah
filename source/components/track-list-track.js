@@ -2,17 +2,16 @@ import React, { Component } from "react"
 import styled from "styled-components/native"
 import { Animated, Easing, TouchableWithoutFeedback } from "react-native"
 import PropTypes from "prop-types"
-import { SizeContext } from "app/context"
+import { IsPlayListContext, SizeContext } from "app/context"
 import { selectCss, relativeSize } from "app/helpers"
 import { AccentColor, AccentLightColor } from "app/colors"
 
 const TrackNameView = styled.View`
     display: flex;
     flex-direction: row;
-    padding-top: ${props => relativeSize(16, props.context)}px;
-    padding-left: ${props => relativeSize(16, props.context)}px;
-    padding-bottom: ${props => relativeSize(4, props.context)}px;
-    margin-bottom: ${props => relativeSize(4, props.context)}px;
+    padding-top: ${props => relativeSize(16, props.size)}px;
+    padding-bottom: ${props => relativeSize(4, props.size)}px;
+    margin-bottom: ${props => relativeSize(4, props.size)}px;
 `
 
 const TrackNameText = styled.Text`
@@ -20,8 +19,14 @@ const TrackNameText = styled.Text`
         `font-family: Noto Serif;`,
         `font-family: noto_serif_regular;`,
     )};
-    font-size: ${props => relativeSize(32, props.context)}px;
-    line-height: ${props => relativeSize(48, props.context)}px;
+    font-size: ${props =>
+        props.isPlaylist
+            ? relativeSize(24, props.size)
+            : relativeSize(32, props.size)}px;
+    line-height: ${props =>
+        props.isPlaylist
+            ? relativeSize(32, props.size)
+            : relativeSize(48, props.size)}px;
     color: ${AccentColor};
 `
 
@@ -29,8 +34,8 @@ const TrackPressView = styled(Animated.View)`
     display: flex;
     position: absolute;
     bottom: 0;
-    left: ${props => relativeSize(16, props.context)}px;
-    height: ${props => relativeSize(4, props.context)}px;
+    left: 0;
+    height: ${props => relativeSize(4, props.size)}px;
     width: 4px;
     background-color: ${AccentLightColor};
 `
@@ -47,7 +52,7 @@ class TrackListTrack extends Component {
         animated: new Animated.Value(0),
     }
 
-    onPressIn = context => {
+    onPressIn = size => {
         const { animated, width } = this.state
         const { onPress } = this.props
 
@@ -55,7 +60,7 @@ class TrackListTrack extends Component {
             this.animation = Animated.timing(animated, {
                 duration: 400,
                 easing: Easing.in,
-                toValue: width - relativeSize(16, context),
+                toValue: width,
             })
 
             this.animation.start(({ finished }) => {
@@ -91,24 +96,33 @@ class TrackListTrack extends Component {
 
         return (
             <SizeContext.Consumer>
-                {context => (
-                    <TouchableWithoutFeedback
-                        onPressIn={() => this.onPressIn(context)}
-                        onPressOut={() => this.onPressOut()}
-                        onLayout={this.onLayout}
-                    >
-                        <TrackNameView context={context}>
-                            <TrackPressView
-                                context={context}
-                                style={{
-                                    width: animated,
-                                }}
-                            />
-                            <TrackNameText context={context}>
-                                <LabelComponent fontSize={35} />
-                            </TrackNameText>
-                        </TrackNameView>
-                    </TouchableWithoutFeedback>
+                {size => (
+                    <IsPlayListContext.Consumer>
+                        {isPlaylist => (
+                            <TouchableWithoutFeedback
+                                onPressIn={() => this.onPressIn(size)}
+                                onPressOut={() => this.onPressOut()}
+                                onLayout={this.onLayout}
+                            >
+                                <TrackNameView size={size}>
+                                    <TrackPressView
+                                        size={size}
+                                        style={{
+                                            width: animated,
+                                        }}
+                                    />
+                                    <TrackNameText
+                                        size={size}
+                                        isPlaylist={isPlaylist}
+                                    >
+                                        <LabelComponent
+                                            fontSize={isPlaylist ? 28 : 36}
+                                        />
+                                    </TrackNameText>
+                                </TrackNameView>
+                            </TouchableWithoutFeedback>
+                        )}
+                    </IsPlayListContext.Consumer>
                 )}
             </SizeContext.Consumer>
         )
