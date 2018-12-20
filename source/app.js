@@ -1,5 +1,13 @@
 import React, { Component, Fragment } from "react"
-import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
+
+import {
+    AsyncStorage,
+    Dimensions,
+    Linking,
+    Platform,
+    StatusBar,
+} from "react-native"
+
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
@@ -16,7 +24,7 @@ import {
     TrackListTrack,
 } from "./components"
 
-import { Cloud, Random } from "./icons"
+import { Chrome, Random, Safari } from "./icons"
 import { SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
 
@@ -197,7 +205,10 @@ class App extends Component {
                     </Button>
                     {showLink ? (
                         <Button onPress={this.onBrowse}>
-                            <Cloud />
+                            {Platform.select({
+                                ios: <Safari />,
+                                android: <Chrome />,
+                            })}
                         </Button>
                     ) : null}
                 </Buttons>
