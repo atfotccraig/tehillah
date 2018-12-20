@@ -6,40 +6,40 @@ import { PrayUntilSomethingHappens } from "./pray-until-something-happens"
 import { ShoutWithJoy } from "./shout-with-joy"
 import { Tehillim89 } from "./tehillim-89"
 import { Tehillim91 } from "./tehillim-91"
-import { Tehillim131 } from "./tehillim-131"
+// import { Tehillim131 } from "./tehillim-131" ← move to Living Waters
 import { WhoHeIs } from "./who-he-is"
 import { YahwehWhoMovesMountains } from "./yahweh-who-moves-mountains"
 import { YahwehsBlessing } from "./yahwehs-blessing"
 import { YomKippur } from "./yom-kippur"
 
 export {
-    AllThingsNew,
-    BecauseOfTheLamb,
-    BlessedAreYou,
-    OnMyKnees,
     PrayUntilSomethingHappens,
+    OnMyKnees,
     ShoutWithJoy,
     Tehillim89,
-    Tehillim91,
-    Tehillim131,
-    WhoHeIs,
-    YahwehWhoMovesMountains,
-    YahwehsBlessing,
+    AllThingsNew,
+    BecauseOfTheLamb,
     YomKippur,
+    WhoHeIs,
+    BlessedAreYou,
+    YahwehWhoMovesMountains,
+    Tehillim91,
+    YahwehsBlessing,
+    // Tehillim131, ← move to Living Waters
 }
 
 export default {
-    AllThingsNew,
-    BecauseOfTheLamb,
-    BlessedAreYou,
-    OnMyKnees,
     PrayUntilSomethingHappens,
+    OnMyKnees,
     ShoutWithJoy,
     Tehillim89,
-    Tehillim91,
-    Tehillim131,
-    WhoHeIs,
-    YahwehWhoMovesMountains,
-    YahwehsBlessing,
+    AllThingsNew,
+    BecauseOfTheLamb,
     YomKippur,
+    WhoHeIs,
+    BlessedAreYou,
+    YahwehWhoMovesMountains,
+    Tehillim91,
+    YahwehsBlessing,
+    // Tehillim131, ← move to Living Waters
 }
