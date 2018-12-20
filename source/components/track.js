@@ -5,8 +5,9 @@ import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
 import moment from "moment"
 import KeepAwake from "react-native-keep-awake"
-import { seconds } from "app/helpers"
+import { seconds, selectCss } from "app/helpers"
 import { Pause, Play, StepBackward, StepForward, Times } from "app/icons"
+import { NormalColor } from "app/colors"
 import { Button } from "./button"
 import { ButtonContainer } from "./button-container"
 import { Title } from "./title"
@@ -19,6 +20,21 @@ const Container = styled.View`
     align-items: center;
     width: 100%;
     height: 100%;
+`
+
+const DebugTimerView = styled.View`
+    position: absolute;
+    top: 32px;
+    right: 32px;
+`
+
+const DebugTimerText = styled.Text`
+    ${selectCss(
+        `font-family: Patrick Hand;`,
+        `font-family: patrick_hand_regular;`,
+    )};
+    color: ${NormalColor}
+    font-size: 60px;
 `
 
 class Track extends Component {
@@ -271,11 +287,29 @@ class Track extends Component {
         const { showSkip, showClose, showRestart } = this.props
         const { isPaused } = this.state
 
+        // DEBUG
+        const delta = this.startedAt
+            ? (this.state.nowAt.getTime() - this.startedAt.getTime()) / 1000
+            : 0
+
         return (
             <Container>
                 {this.props.isAnimating
                     ? this.renderAnimatedChildren()
                     : this.renderStaticChildren()}
+                {__DEV__ ? (
+                    <DebugTimerView>
+                        <DebugTimerText>
+                            {Math.floor(delta / 60)
+                                .toString()
+                                .padStart(2, "0")}
+                            :
+                            {Math.round(delta % 60)
+                                .toString()
+                                .padStart(2, "0")}
+                        </DebugTimerText>
+                    </DebugTimerView>
+                ) : null}
                 <ButtonContainer fadeBackground={false}>
                     {showClose ? (
                         <Button onPress={this.onClose}>

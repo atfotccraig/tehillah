@@ -251,7 +251,11 @@ class App extends Component {
 
         return (
             <Fragment>
-                {hasSeenScrollIntro ? null : <ScrollIntro />}
+                {/*
+                 * don't know how I feel about this
+                 * so I'm disabling it for now
+                 * {hasSeenScrollIntro ? null : <ScrollIntro />}
+                 */}
                 {hasSeenButtonIntro ? null : (
                     <ButtonIntro
                         onPress={async () => {

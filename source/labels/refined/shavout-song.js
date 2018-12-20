@@ -1,3 +1,3 @@
-const ShavoutSong = () => "Shavout Song"
+const ShavoutSong = () => "Shaḇuoth Song"
 
 export { ShavoutSong }

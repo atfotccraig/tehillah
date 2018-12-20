@@ -1,5 +1,15 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+
+import {
+    Line,
+    Repeat,
+    Title,
+    Track,
+    Verse,
+    Yahweh,
+    Yisrael,
+} from "app/components"
+
 import Labels from "app/labels"
 
 const AVoiceInTheWilderness = props => (
@@ -40,9 +50,13 @@ const AVoiceInTheWilderness = props => (
             <Line>the furnace of affliction</Line>
         </Verse>
         <Verse repeat>
-            <Line>Yisra’ěl, Yisra’ěl!</Line>
+            <Line>
+                <Yisrael />, <Yisrael />!
+            </Line>
             <Line>Come out! Oh, hear me calling!</Line>
-            <Line>Yisra’ěl, His chosen son</Line>
+            <Line>
+                <Yisrael />, His chosen son
+            </Line>
             <Line>flee from idolatry</Line>
         </Verse>
         <Verse>
@@ -64,9 +78,13 @@ const AVoiceInTheWilderness = props => (
             <Line>‘cause you’re precious in His eyes</Line>
         </Verse>
         <Verse name="one" repeat>
-            <Line>Yisra’ěl, Yisra’ěl!</Line>
+            <Line>
+                <Yisrael />, <Yisrael />!
+            </Line>
             <Line>Come out! Oh, hear me calling!</Line>
-            <Line>Yisra’ěl, oh favoured one</Line>
+            <Line>
+                <Yisrael />, oh favoured one
+            </Line>
             <Line>flee from idolatry</Line>
         </Verse>
         <Verse repeat>

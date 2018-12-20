@@ -13,8 +13,10 @@ import { TrackListAlbum } from "./track-list-album"
 import { TrackListContainer } from "./track-list-container"
 import { TrackListTrack } from "./track-list-track"
 import { Verse } from "./verse"
+import { Yaaqob } from "./yaaqob"
 import { Yahshua } from "./yahshua"
 import { Yahweh } from "./yahweh"
+import { Yisrael } from "./yisrael"
 
 export {
     Button,
@@ -32,6 +34,8 @@ export {
     TrackListContainer,
     TrackListTrack,
     Verse,
+    Yaaqob,
     Yahshua,
     Yahweh,
+    Yisrael,
 }

@@ -1,5 +1,15 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+
+import {
+    Line,
+    Repeat,
+    Title,
+    Track,
+    Verse,
+    Yahweh,
+    Yisrael,
+} from "app/components"
+
 import Labels from "app/labels"
 
 const Tehillim131 = props => (
@@ -30,13 +40,13 @@ const Tehillim131 = props => (
         <Repeat name="two" />
         <Verse repeat>
             <Line>
-                Oh Israel, hope in <Yahweh />
+                Oh <Yisrael />, hope in <Yahweh />
             </Line>
             <Line>
-                Oh Israel, hope in <Yahweh />
+                Oh <Yisrael />, hope in <Yahweh />
             </Line>
             <Line>
-                Oh Israel, hope in <Yahweh />
+                Oh <Yisrael />, hope in <Yahweh />
             </Line>
             <Line>From this time and forevermore</Line>
         </Verse>
