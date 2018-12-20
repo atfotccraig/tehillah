@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const ATimeForEverything = props => (
     <Track
@@ -17,7 +18,9 @@ const ATimeForEverything = props => (
         music="peace_with_you_a_time_for_everything"
         {...props}
     >
-        <Title>A Time For Everything</Title>
+        <Title>
+            <Labels.PeaceWithYou.ATimeForEverything />
+        </Title>
         <Verse>
             <Line>There is a time for everything</Line>
             <Line>for mourning cry, for joy to sing</Line>

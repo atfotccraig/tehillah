@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const ShoutWithJoy = props => (
     <Track
@@ -19,7 +20,9 @@ const ShoutWithJoy = props => (
         music="because_of_the_lamb_shout_with_joy"
         {...props}
     >
-        <Title>Shout With Joy</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.ShoutWithJoy />
+        </Title>
         <Verse name="one">
             <Line>Shout with joy to Elohim</Line>
             <Line>Shout with joy to Elohim</Line>

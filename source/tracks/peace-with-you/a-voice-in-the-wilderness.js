@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const AVoiceInTheWilderness = props => (
     <Track
@@ -19,7 +20,9 @@ const AVoiceInTheWilderness = props => (
         music="peace_with_you_a_voice_in_the_wilderness"
         {...props}
     >
-        <Title>A Voice In The Wilderness</Title>
+        <Title>
+            <Labels.PeaceWithYou.AVoiceInTheWilderness />
+        </Title>
         <Verse>
             <Line>You call to the Master</Line>
             <Line>and profess to know Him</Line>

@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahshua } from "app/components"
+import Labels from "app/labels"
 
 const IAmFree = props => (
     <Track
@@ -21,7 +22,9 @@ const IAmFree = props => (
         music="peace_with_you_i_am_free"
         {...props}
     >
-        <Title>I Am Free</Title>
+        <Title>
+            <Labels.PeaceWithYou.IAmFree />
+        </Title>
         <Verse>
             <Line>Sometimes your words cut deep and sore</Line>
             <Line>and I wonder what I did</Line>

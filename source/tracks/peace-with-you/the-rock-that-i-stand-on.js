@@ -1,5 +1,6 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import { Line, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const TheRockThatIStandOn = props => (
     <Track
@@ -17,7 +18,9 @@ const TheRockThatIStandOn = props => (
         music="peace_with_you_the_rock_that_i_stand_on"
         {...props}
     >
-        <Title>The Rock That I Stand On</Title>
+        <Title>
+            <Labels.PeaceWithYou.TheRockThatIStandOn />
+        </Title>
         <Verse>
             <Line>Even when the windmill never turns</Line>
             <Line>Even when we’re trampled in defeat</Line>

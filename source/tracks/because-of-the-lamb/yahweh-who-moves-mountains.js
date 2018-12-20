@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const YahwehWhoMovesMountains = props => (
     <Track
@@ -24,7 +25,7 @@ const YahwehWhoMovesMountains = props => (
         {...props}
     >
         <Title>
-            <Yahweh /> Who Moves Mountains
+            <Labels.BecauseOfTheLamb.YahwehWhoMovesMountains />
         </Title>
         <Verse name="one">
             <Line>

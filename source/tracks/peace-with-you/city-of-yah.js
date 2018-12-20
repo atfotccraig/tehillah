@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const CityOfYah = props => (
     <Track
@@ -17,7 +18,9 @@ const CityOfYah = props => (
         music="peace_with_you_city_of_yah"
         {...props}
     >
-        <Title>City Of Yah</Title>
+        <Title>
+            <Labels.PeaceWithYou.CityOfYah />
+        </Title>
         <Verse name="one" repeat>
             <Line>I will not fear, I will have faith</Line>
             <Line>

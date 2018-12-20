@@ -1,5 +1,6 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import { Line, Repeat, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const YourLove = props => (
     <Track
@@ -18,7 +19,9 @@ const YourLove = props => (
         music="peace_with_you_your_love"
         {...props}
     >
-        <Title>Your Love</Title>
+        <Title>
+            <Labels.PeaceWithYou.YourLove />
+        </Title>
         <Verse name="one">
             <Line>Your love is a fountain</Line>
             <Line>It pours living water deep into my soul</Line>

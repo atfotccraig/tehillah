@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const PrayUntilSomethingHappens = props => (
     <Track
@@ -19,7 +20,9 @@ const PrayUntilSomethingHappens = props => (
         music="because_of_the_lamb_pray_until_something_happens"
         {...props}
     >
-        <Title>Pray Until Something Happens</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.PrayUntilSomethingHappens />
+        </Title>
         <Verse repeat name="one">
             <Line>Pray until something happens</Line>
             <Line>Don’t ever stop</Line>

@@ -10,6 +10,8 @@ import {
     Yahshua,
 } from "app/components"
 
+import Labels from "app/labels"
+
 const ComeYahshuaCome = props => (
     <Track
         cues={[
@@ -33,7 +35,7 @@ const ComeYahshuaCome = props => (
         {...props}
     >
         <Title>
-            Come <Yahshua /> Come
+            <Labels.PeaceWithYou.ComeYahshuaCome />
         </Title>
         <Verse>
             <Line>

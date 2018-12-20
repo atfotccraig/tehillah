@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const YahwehsBlessing = props => (
     <Track
@@ -8,8 +9,7 @@ const YahwehsBlessing = props => (
         {...props}
     >
         <Title>
-            <Yahweh />
-            ’s Blessing
+            <Labels.BecauseOfTheLamb.YahwehsBlessing />
         </Title>
         <Verse repeat repeatText="x4">
             <Line>

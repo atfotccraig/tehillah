@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const OnMyKnees = props => (
     <Track
@@ -17,7 +18,9 @@ const OnMyKnees = props => (
         music="because_of_the_lamb_on_my_knees"
         {...props}
     >
-        <Title>On My Knees</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.OnMyKnees />
+        </Title>
         <Verse>
             <Line>You never told me</Line>
             <Line>that this life would be easy</Line>

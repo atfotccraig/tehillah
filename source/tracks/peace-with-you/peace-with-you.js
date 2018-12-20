@@ -1,5 +1,6 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import { Line, Repeat, Title, Track, Verse } from "app/components"
+import Labels from "app/labels"
 
 const PeaceWithYou = props => (
     <Track
@@ -22,7 +23,9 @@ const PeaceWithYou = props => (
         music="peace_with_you_peace_with_you"
         {...props}
     >
-        <Title>Peace With You</Title>
+        <Title>
+            <Labels.PeaceWithYou.PeaceWithYou />
+        </Title>
         <Verse>
             <Line>Deep in the heart of my soul</Line>
             <Line>I know you’ll never forsake me</Line>

@@ -133,7 +133,7 @@ class Track extends Component {
         }
 
         this.forceUpdateTimer = setInterval(() => {
-            if (this.props.isPlaying) {
+            if (this.props.isPlaying && !this.state.isPaused) {
                 this.setState({ nowAt: new Date() })
             }
         }, 250)

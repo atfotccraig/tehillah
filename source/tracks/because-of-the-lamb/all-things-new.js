@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const AllThingsNew = props => (
     <Track
@@ -17,7 +18,9 @@ const AllThingsNew = props => (
         music="because_of_the_lamb_all_things_new"
         {...props}
     >
-        <Title>All Things New</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.AllThingsNew />
+        </Title>
         <Verse>
             <Line>You, you take my suffering</Line>
             <Line>Turn it into blessing</Line>

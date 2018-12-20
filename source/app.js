@@ -3,8 +3,8 @@ import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
-import tracks from "app/tracks"
-import labels from "app/labels"
+import Tracks from "app/tracks"
+import Labels from "app/labels"
 import { randomItem } from "app/helpers"
 import { ButtonIntro, PlayList, ScrollIntro, TrackList } from "./components"
 import { IsPlayListContext, IsRandomContext, SizeContext } from "./context"
@@ -123,8 +123,8 @@ class App extends Component {
     }
 
     onRandom = () => {
-        const album = randomItem(Object.keys(tracks))
-        const track = randomItem(Object.keys(tracks[album]))
+        const album = randomItem(Object.keys(Tracks))
+        const track = randomItem(Object.keys(Tracks[album]))
 
         return this.setState({
             isPlayList: false,
@@ -212,8 +212,8 @@ class App extends Component {
 
         const trackList = (
             <TrackList
-                tracks={tracks}
-                labels={labels}
+                tracks={Tracks}
+                labels={Labels}
                 showBrowseButton={showBrowseButton}
                 onBrowse={this.onBrowse}
                 onOpenPlayList={this.onOpenPlayList}
@@ -234,7 +234,7 @@ class App extends Component {
                                 onPlay={this.onPlayPlayList}
                                 onDequeue={this.onDequeueTrack}
                                 items={playList}
-                                labels={labels}
+                                labels={Labels}
                             />
                         </RightColumn>
                     </Columns>
@@ -272,7 +272,7 @@ class App extends Component {
 
     renderTrack = () => {
         const { track, isRandom, isPlayList } = this.state
-        const TrackComponent = tracks[track[0]][track[1]]
+        const TrackComponent = Tracks[track[0]][track[1]]
 
         return (
             <Fragment>

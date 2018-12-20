@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const Tehillah112 = props => (
     <Track
@@ -20,7 +21,9 @@ const Tehillah112 = props => (
         music="peace_with_you_tehillah_112"
         {...props}
     >
-        <Title>Tehillah 112</Title>
+        <Title>
+            <Labels.PeaceWithYou.Tehillah112 />
+        </Title>
         <Verse name="one">
             <Line>Blessed is the man who fears Yah</Line>
             <Line>who delights himself in His commands</Line>

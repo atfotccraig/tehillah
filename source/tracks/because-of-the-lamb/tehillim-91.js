@@ -1,5 +1,6 @@
 import React from "react"
 import { Line, Repeat, Title, Track, Verse, Yahweh } from "app/components"
+import Labels from "app/labels"
 
 const Tehillim91 = props => (
     <Track
@@ -18,7 +19,9 @@ const Tehillim91 = props => (
         music="because_of_the_lamb_tehillim_91"
         {...props}
     >
-        <Title>Tehillim 91</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.Tehillim91 />
+        </Title>
         <Verse repeat>
             <Line>He who dwells in the secret place</Line>
             <Line>of the most high</Line>

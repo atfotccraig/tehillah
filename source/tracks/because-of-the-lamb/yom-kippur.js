@@ -10,6 +10,8 @@ import {
     Yahshua,
 } from "app/components"
 
+import Labels from "app/labels"
+
 const YomKippur = props => (
     <Track
         cues={[
@@ -26,7 +28,9 @@ const YomKippur = props => (
         music="because_of_the_lamb_yom_kippur"
         {...props}
     >
-        <Title>Yom Kippur</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.YomKippur />
+        </Title>
         <Verse name="one">
             <Line>Yom Kippur is here</Line>
             <Line>

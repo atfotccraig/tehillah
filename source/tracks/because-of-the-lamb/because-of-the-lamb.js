@@ -10,6 +10,8 @@ import {
     Yahweh,
 } from "app/components"
 
+import Labels from "app/labels"
+
 const BecauseOfTheLamb = props => (
     <Track
         cues={[
@@ -28,7 +30,9 @@ const BecauseOfTheLamb = props => (
         music="because_of_the_lamb_because_of_the_lamb"
         {...props}
     >
-        <Title>Because Of The Lamb</Title>
+        <Title>
+            <Labels.BecauseOfTheLamb.BecauseOfTheLamb />
+        </Title>
         <Verse>
             <Line>Today is the day we repent</Line>
             <Line>of all sin, of all sin, of all sin</Line>
