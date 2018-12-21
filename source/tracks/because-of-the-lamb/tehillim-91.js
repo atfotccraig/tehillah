@@ -50,10 +50,8 @@ const Tehillim91 = props => (
             <Line>my Elohim in whom I trust</Line>
         </Verse>
         <Verse repeat name="two">
-            <Line>When I call on you</Line>
-            <Line>you just answer me</Line>
-            <Line>When I’m in distress</Line>
-            <Line>you deliver me</Line>
+            <Line>When I call on you, you just answer me</Line>
+            <Line>When I’m in distress you deliver me</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />

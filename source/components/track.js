@@ -304,7 +304,7 @@ class Track extends Component {
                                 .toString()
                                 .padStart(2, "0")}
                             :
-                            {Math.round(delta % 60)
+                            {Math.floor(delta % 60)
                                 .toString()
                                 .padStart(2, "0")}
                         </DebugTimerText>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { View } from "react-native"
 import styled from "styled-components/native"
 import { Button } from "./button"
-import { BackgroundColor, NormalLightColor, AccentColorName } from "app/colors"
+import { BackgroundColor, NormalColor, AccentColorName } from "app/colors"
 import { Check, HandDrawnArrowUp } from "app/icons"
 import { SizeContext } from "app/context"
 import { relativeSize, selectCss } from "app/helpers"
@@ -25,7 +25,7 @@ const Text = styled.Text`
         `font-family: Patrick Hand;`,
         `font-family: patrick_hand_regular;`,
     )};
-    color: ${NormalLightColor};
+    color: ${NormalColor};
     text-align: center;
 `
 
@@ -69,7 +69,7 @@ class ButtonIntro extends Component {
                                 <HandDrawnArrowUp
                                     width={64}
                                     height={64}
-                                    fill={NormalLightColor}
+                                    fill={NormalColor}
                                 />
                             </View>
                         </Section>

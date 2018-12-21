@@ -130,6 +130,8 @@
 		DF64AD9E21C9120F003DADA5 /* peace_with_you_tehillah_138.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */; };
 		DF64AD9F21C9120F003DADA5 /* peace_with_you_come_yahshua_come.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */; };
 		DF64ADA021C9120F003DADA5 /* peace_with_you_i_am_free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */; };
+		DFA42D4321CCCDA7003A7AA7 /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA42D4221CCCD29003A7AA7 /* libBugsnagReactNative.a */; };
+		DFA42D4421CCCDAE003A7AA7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4546A166254A4DB1A6F419EA /* libz.tbd */; };
 		DFB1582F21C96AB800167F56 /* patrick_hand_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */; };
 		DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */; };
 		DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8C1EE21BC2859005B27AC /* libRNSVG.a */; };
@@ -458,6 +460,13 @@
 			remoteGlobalIDString = 3D7682761D8E76B80014119E;
 			remoteInfo = SplashScreen;
 		};
+		DFA42D4121CCCD29003A7AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F9C1119D601436B8F1EC265 /* BugsnagReactNative.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8AD256131D6DE5F600C7D842;
+			remoteInfo = BugsnagReactNative;
+		};
 		DFC8C1ED21BC2859005B27AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
@@ -526,6 +535,7 @@
 		3F658D01DF5F43E9A7F9CFFC /* noto_serif_condensed_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_light.ttf; path = ../resources/fonts/noto_serif_condensed_light.ttf; sourceTree = "<group>"; };
 		4160284C3B0A479AAEDF9A94 /* noto_serif_extra_condensed_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_light.ttf; path = ../resources/fonts/noto_serif_extra_condensed_light.ttf; sourceTree = "<group>"; };
 		4443FBF28FFC4B5DBDB8FF0F /* noto_serif_semi_condensed_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_bold_italic.ttf; path = ../resources/fonts/noto_serif_semi_condensed_bold_italic.ttf; sourceTree = "<group>"; };
+		4546A166254A4DB1A6F419EA /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4790EE2AC2044C2F919CC259 /* noto_serif_condensed_semi_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_semi_bold_italic.ttf; path = ../resources/fonts/noto_serif_condensed_semi_bold_italic.ttf; sourceTree = "<group>"; };
 		47A1521AD94D4D84A538BEA3 /* noto_serif_extra_condensed_semi_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_semi_bold.ttf; path = ../resources/fonts/noto_serif_extra_condensed_semi_bold.ttf; sourceTree = "<group>"; };
 		47F3F8C634024896827E7083 /* noto_serif_hebrew_extra_condensed_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_light.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_light.ttf; sourceTree = "<group>"; };
@@ -556,6 +566,7 @@
 		7AE7BD47DA5B4FE2AF08ECB4 /* noto_serif_extra_condensed_extra_bold_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_extra_bold_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_extra_bold_italic.ttf; sourceTree = "<group>"; };
 		7E63EA231B314EAA9E507B4A /* noto_serif_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_medium.ttf; path = ../resources/fonts/noto_serif_medium.ttf; sourceTree = "<group>"; };
 		7E6603CDAF7342C18BE770E1 /* noto_serif_hebrew_extra_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_black.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_black.ttf; sourceTree = "<group>"; };
+		7F9C1119D601436B8F1EC265 /* BugsnagReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BugsnagReactNative.xcodeproj; path = "../node_modules/bugsnag-react-native/cocoa/BugsnagReactNative.xcodeproj"; sourceTree = "<group>"; };
 		7FB02487C2F84F3E919A391E /* noto_serif_extra_condensed_thin_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_thin_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_thin_italic.ttf; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		83E5C86D7AF2442285013E5A /* noto_serif_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_black.ttf; path = ../resources/fonts/noto_serif_black.ttf; sourceTree = "<group>"; };
@@ -661,6 +672,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA42D4421CCCDAE003A7AA7 /* libz.tbd in Frameworks */,
+				DFA42D4321CCCDA7003A7AA7 /* libBugsnagReactNative.a in Frameworks */,
 				DF64AD3B21C90989003DADA5 /* libRCTOrientation.a in Frameworks */,
 				DF64AD3A21C90983003DADA5 /* libKCKeepAwake.a in Frameworks */,
 				DF445D1721C1786C00C842D6 /* libSplashScreen.a in Frameworks */,
@@ -787,6 +800,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				4546A166254A4DB1A6F419EA /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -829,6 +843,7 @@
 				56C2CC7A21ED41DDA6A5F3FF /* SplashScreen.xcodeproj */,
 				CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */,
 				22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */,
+				7F9C1119D601436B8F1EC265 /* BugsnagReactNative.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -893,6 +908,14 @@
 			isa = PBXGroup;
 			children = (
 				DF445CDE21C1773000C842D6 /* libSplashScreen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFA42D3E21CCCD29003A7AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFA42D4221CCCD29003A7AA7 /* libBugsnagReactNative.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1114,6 +1137,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = DFA42D3E21CCCD29003A7AA7 /* Products */;
+					ProjectRef = 7F9C1119D601436B8F1EC265 /* BugsnagReactNative.xcodeproj */;
+				},
 				{
 					ProductGroup = DF092CC621C807440052B69F /* Products */;
 					ProjectRef = CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */;
@@ -1471,6 +1498,13 @@
 			remoteRef = DF445CDD21C1773000C842D6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DFA42D4221CCCD29003A7AA7 /* libBugsnagReactNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBugsnagReactNative.a;
+			remoteRef = DFA42D4121CCCD29003A7AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DFC8C1EE21BC2859005B27AC /* libRNSVG.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1709,16 +1743,13 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
+					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1746,16 +1777,13 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
+					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
-					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (

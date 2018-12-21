@@ -58,7 +58,7 @@ class TrackListTrack extends Component {
 
         if (width) {
             this.animation = Animated.timing(animated, {
-                duration: 500,
+                duration: 450,
                 easing: Easing.in,
                 toValue: width,
             })

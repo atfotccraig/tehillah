@@ -1,5 +1,6 @@
 import { Platform } from "react-native"
 import { css } from "styled-components/native"
+import { Client } from "bugsnag-react-native"
 
 const seconds = timestamp => {
     const parts = timestamp.split(":")
@@ -54,4 +55,10 @@ const randomItem = items => {
     return items[Math.floor(Math.random() * items.length)]
 }
 
-export { joinWithOxford, randomItem, relativeSize, seconds, selectCss }
+const bugsnag = new Client("76f340b931b6023fa5a6c6b85c2b05d2")
+
+const notify = error => {
+    bugsnag.notify(error)
+}
+
+export { joinWithOxford, notify, randomItem, relativeSize, seconds, selectCss }

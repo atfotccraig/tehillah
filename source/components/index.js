@@ -2,6 +2,7 @@ import { Button } from "./button"
 import { ButtonContainer } from "./button-container"
 import { ButtonIntro } from "./button-intro"
 import { Hebrew } from "./hebrew"
+import { Immanuel } from "./immanuel"
 import { Line } from "./line"
 import { PlayList } from "./play-list"
 import { Repeat } from "./repeat"
@@ -23,6 +24,7 @@ export {
     ButtonContainer,
     ButtonIntro,
     Hebrew,
+    Immanuel,
     Line,
     PlayList,
     Repeat,
