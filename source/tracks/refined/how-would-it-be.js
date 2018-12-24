@@ -1,15 +1,5 @@
 import React from "react"
-
-import {
-    Line,
-    Repeat,
-    Title,
-    Track,
-    Verse,
-    Yahweh,
-    Yahshua,
-} from "app/components"
-
+import { Line, Repeat, Title, Track, Verse } from "app/components"
 import Labels from "app/labels"
 
 const HowWouldItBe = props => (

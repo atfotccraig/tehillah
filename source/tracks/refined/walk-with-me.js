@@ -13,7 +13,7 @@ import {
 import Labels from "app/labels"
 
 const WalkWithMe = props => (
-    <Track cues={["00:00"]} music="refined_walk_with_me" {...props}>
+    <Track cues={["00:00", "00:05"]} music="refined_walk_with_me" {...props}>
         <Title>
             <Labels.Refined.WalkWithMe />
         </Title>

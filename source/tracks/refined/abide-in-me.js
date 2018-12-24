@@ -13,7 +13,7 @@ import {
 import Labels from "app/labels"
 
 const AbideInMe = props => (
-    <Track cues={["00:00"]} music="refined_abide_in_me" {...props}>
+    <Track cues={["00:00", "00:05"]} music="refined_abide_in_me" {...props}>
         <Title>
             <Labels.Refined.AbideInMe />
         </Title>
