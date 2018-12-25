@@ -3,7 +3,7 @@ import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import { SizeContext } from "app/context"
 import { relativeSize, selectCss } from "app/helpers"
-import { NormalColor, NormalLightColor } from "app/colors"
+import { NormalColor } from "app/colors"
 
 const Text = styled.Text`
     ${selectCss(
@@ -17,11 +17,11 @@ const Text = styled.Text`
 
 const RepeatText = styled.Text`
     ${selectCss(
-        `font-family: Noto Serif; font-weight: 700`,
-        `font-family: noto_serif_bold;`,
+        `font-family: Noto Serif; font-weight: 500;`,
+        `font-family: noto_serif_semi_bold;`,
     )};
-    font-size: ${props => relativeSize(30, props.context)}px;
-    color: ${NormalLightColor};
+    font-size: ${props => relativeSize(24, props.context)}px;
+    color: ${NormalColor};
 `
 
 const Line = ({ children, repeat, repeatText }) => {
