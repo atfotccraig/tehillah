@@ -1,16 +1,5 @@
 import React from "react"
-
-import {
-    Line,
-    Repeat,
-    Title,
-    Track,
-    Verse,
-    Yahshua,
-    Yahweh,
-    Yisrael,
-} from "app/components"
-
+import { Line, Repeat, Title, Track, Verse, Yisrael } from "app/components"
 import Labels from "app/labels"
 
 const ShepherdOfYisrael = props => (

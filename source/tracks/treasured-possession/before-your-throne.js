@@ -1,15 +1,5 @@
 import React from "react"
-
-import {
-    Line,
-    Repeat,
-    Title,
-    Track,
-    Verse,
-    Yahshua,
-    Yahweh,
-} from "app/components"
-
+import { Line, Title, Track, Verse, Yahweh } from "app/components"
 import Labels from "app/labels"
 
 const BeforeYourThrone = props => (
