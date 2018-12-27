@@ -1,29 +1,52 @@
 import React from "react"
-
-import {
-    Line,
-    Repeat,
-    Title,
-    Track,
-    Verse,
-    Yahshua,
-    Yahweh,
-} from "app/components"
-
+import { Line, Repeat, Title, Track, Verse, Yahshua } from "app/components"
 import Labels from "app/labels"
 
 const ComeSingASongWithMe = props => (
     <Track
-        cues={["00:00", "00:05"]}
+        cues={[
+            "00:00",
+            "00:03",
+            "00:22",
+            "00:41",
+            "01:01",
+            "01:20",
+            "01:38",
+            "01:58",
+            "02:17",
+            "02:36",
+            "02:55",
+        ]}
         music="treasured_possession_come_sing_a_song_with_me"
         {...props}
     >
         <Title>
             <Labels.TreasuredPossession.ComeSingASongWithMe />
         </Title>
-        <Verse>
-            <Line>words</Line>
+        <Verse repeat name="one">
+            <Line>Come sing a song with me</Line>
+            <Line>Come sing a song of praise</Line>
+            <Line>Come sing a song to the ancient of days</Line>
         </Verse>
+        <Verse repeat name="two">
+            <Line>
+                Oh <Yahshua />, you are, you are my king
+            </Line>
+            <Line>You are my master and my elohim</Line>
+        </Verse>
+        <Verse name="three">
+            <Line>Come sing a song with me</Line>
+            <Line>Praise from the earth, echoes on high</Line>
+            <Line>Come and rejoice and sing</Line>
+            <Line>Come sing a song, come sing a song</Line>
+        </Verse>
+        <Repeat name="one" />
+        <Repeat name="two" />
+        <Repeat name="three" />
+        <Repeat name="one" />
+        <Repeat name="two" />
+        <Repeat name="three" />
+        <Repeat name="one" />
     </Track>
 )
 
