@@ -3,6 +3,8 @@ package com.atfotc.tehillah;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rnziparchive.RNZipArchivePackage;
+import com.eko.RNBackgroundDownloaderPackage;
 import com.bugsnag.BugsnagReactNative;
 import com.github.yamill.orientation.OrientationPackage;
 import com.corbt.keepawake.KCKeepAwakePackage;
@@ -28,8 +30,10 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
           BugsnagReactNative.getPackage(),
+          new MainReactPackage(),
+          new RNZipArchivePackage(),
+          new RNBackgroundDownloaderPackage(),
           new OrientationPackage(),
           new KCKeepAwakePackage(),
           new SvgPackage(),

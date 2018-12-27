@@ -4,7 +4,7 @@ import { Animated, Easing, TouchableWithoutFeedback } from "react-native"
 import PropTypes from "prop-types"
 import { IsPlayListContext, SizeContext } from "app/context"
 import { selectCss, relativeSize } from "app/helpers"
-import { AccentColor, AccentLightColor } from "app/colors"
+import { NormalLightColor, AccentColor, AccentLightColor } from "app/colors"
 
 const TrackNameView = styled.View`
     display: flex;
@@ -27,7 +27,7 @@ const TrackNameText = styled.Text`
         props.isPlaylist
             ? relativeSize(32, props.size)
             : relativeSize(48, props.size)}px;
-    color: ${AccentColor};
+    color: ${props => (props.isDisabled ? NormalLightColor : AccentColor)};
 `
 
 const TrackPressView = styled(Animated.View)`
@@ -45,6 +45,11 @@ class TrackListTrack extends Component {
         onPress: PropTypes.func.isRequired,
         label: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
             .isRequired,
+        isDisabled: PropTypes.bool,
+    }
+
+    static defaultProps = {
+        isDisabled: false,
     }
 
     state = {
@@ -54,9 +59,9 @@ class TrackListTrack extends Component {
 
     onPressIn = size => {
         const { animated, width } = this.state
-        const { onPress } = this.props
+        const { onPress, isDisabled } = this.props
 
-        if (width) {
+        if (width && !isDisabled) {
             this.animation = Animated.timing(animated, {
                 duration: 450,
                 easing: Easing.in,
@@ -73,16 +78,19 @@ class TrackListTrack extends Component {
 
     onPressOut = () => {
         const { animated } = this.state
+        const { isDisabled } = this.props
 
-        this.animation.stop()
+        if (!isDisabled) {
+            this.animation.stop()
 
-        this.animation = Animated.timing(animated, {
-            duration: 0,
-            easing: Easing.in,
-            toValue: 0,
-        })
+            this.animation = Animated.timing(animated, {
+                duration: 0,
+                easing: Easing.in,
+                toValue: 0,
+            })
 
-        this.animation.start()
+            this.animation.start()
+        }
     }
 
     onLayout = event => {
@@ -92,7 +100,7 @@ class TrackListTrack extends Component {
 
     render() {
         const { animated } = this.state
-        const { label: LabelComponent } = this.props
+        const { label: LabelComponent, isDisabled } = this.props
 
         return (
             <SizeContext.Consumer>
@@ -114,6 +122,7 @@ class TrackListTrack extends Component {
                                     <TrackNameText
                                         size={size}
                                         isPlaylist={isPlaylist}
+                                        isDisabled={isDisabled}
                                     >
                                         <LabelComponent
                                             fontSize={isPlaylist ? 28 : 36}

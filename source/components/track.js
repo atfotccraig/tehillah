@@ -168,7 +168,23 @@ class Track extends Component {
         // we need a better way of waiting
         // for the file to load, so we don't
         // desync the music and words
+
         SoundPlayer.playSoundFile(this.props.music, "mp3")
+
+        /*
+         *
+         * The iOS RNSoundPlayer lib needs the following modification:
+         *
+         * NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
+         *
+         * if (soundFilePath == nil) {
+         *     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+         *
+         *     NSString *documentsDirectory = [paths objectAtIndex:0];
+         *
+         *     soundFilePath = [NSString stringWithFormat:@"%@.%@", [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",name]], type];
+         * }
+         */
 
         if (this.props.onFinish) {
             SoundPlayer.onFinishedPlaying(this.props.onFinish)

@@ -118,48 +118,13 @@
 		DF636A0021C3DE62007AB258 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		DF64AD3A21C90983003DADA5 /* libKCKeepAwake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF092CCC21C807440052B69F /* libKCKeepAwake.a */; };
 		DF64AD3B21C90989003DADA5 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF092CCF21C807440052B69F /* libRCTOrientation.a */; };
-		DF64AD9521C9120F003DADA5 /* peace_with_you_city_of_yah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD5E21C9120D003DADA5 /* peace_with_you_city_of_yah.mp3 */; };
-		DF64AD9621C9120F003DADA5 /* peace_with_you_tehillah_67.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8A21C9120D003DADA5 /* peace_with_you_tehillah_67.mp3 */; };
-		DF64AD9721C9120F003DADA5 /* peace_with_you_i_will_love_you_yahweh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8B21C9120D003DADA5 /* peace_with_you_i_will_love_you_yahweh.mp3 */; };
-		DF64AD9821C9120F003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8C21C9120D003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 */; };
-		DF64AD9921C9120F003DADA5 /* peace_with_you_the_rock_that_i_stand_on.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8D21C9120D003DADA5 /* peace_with_you_the_rock_that_i_stand_on.mp3 */; };
-		DF64AD9A21C9120F003DADA5 /* peace_with_you_a_time_for_everything.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8E21C9120E003DADA5 /* peace_with_you_a_time_for_everything.mp3 */; };
-		DF64AD9B21C9120F003DADA5 /* peace_with_you_your_love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD8F21C9120E003DADA5 /* peace_with_you_your_love.mp3 */; };
-		DF64AD9C21C9120F003DADA5 /* peace_with_you_tehillah_112.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9021C9120E003DADA5 /* peace_with_you_tehillah_112.mp3 */; };
-		DF64AD9D21C9120F003DADA5 /* peace_with_you_peace_with_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9121C9120E003DADA5 /* peace_with_you_peace_with_you.mp3 */; };
-		DF64AD9E21C9120F003DADA5 /* peace_with_you_tehillah_138.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */; };
-		DF64AD9F21C9120F003DADA5 /* peace_with_you_come_yahshua_come.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */; };
-		DF64ADA021C9120F003DADA5 /* peace_with_you_i_am_free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */; };
 		DFA42D4321CCCDA7003A7AA7 /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA42D4221CCCD29003A7AA7 /* libBugsnagReactNative.a */; };
 		DFA42D4421CCCDAE003A7AA7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4546A166254A4DB1A6F419EA /* libz.tbd */; };
 		DFB1582F21C96AB800167F56 /* patrick_hand_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */; };
+		DFCBA8B121D4B229000D76BA /* libRNBackgroundDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBA8B021D4ADAF000D76BA /* libRNBackgroundDownloader.a */; };
+		DFCBA8FA21D4B65D000D76BA /* libRNZipArchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBA8F921D4B649000D76BA /* libRNZipArchive.a */; };
 		DFCF8E2921C1462E0069ED7D /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */; };
 		DFCF8E2A21C146330069ED7D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8C1EE21BC2859005B27AC /* libRNSVG.a */; };
-		DFCF8E8821C146780069ED7D /* because_of_the_lamb_shout_with_joy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */; };
-		DFCF8E8921C146780069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7C21C146760069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 */; };
-		DFCF8E8A21C146780069ED7D /* because_of_the_lamb_blessed_are_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7D21C146760069ED7D /* because_of_the_lamb_blessed_are_you.mp3 */; };
-		DFCF8E8B21C146780069ED7D /* because_of_the_lamb_pray_until_something_happens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7E21C146760069ED7D /* because_of_the_lamb_pray_until_something_happens.mp3 */; };
-		DFCF8E8C21C146780069ED7D /* because_of_the_lamb_tehillim_91.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E7F21C146760069ED7D /* because_of_the_lamb_tehillim_91.mp3 */; };
-		DFCF8E8D21C146780069ED7D /* because_of_the_lamb_because_of_the_lamb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8021C146760069ED7D /* because_of_the_lamb_because_of_the_lamb.mp3 */; };
-		DFCF8E8E21C146780069ED7D /* because_of_the_lamb_tehillim_89.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8121C146770069ED7D /* because_of_the_lamb_tehillim_89.mp3 */; };
-		DFCF8E8F21C146780069ED7D /* because_of_the_lamb_on_my_knees.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8221C146770069ED7D /* because_of_the_lamb_on_my_knees.mp3 */; };
-		DFCF8E9021C146780069ED7D /* because_of_the_lamb_yom_kippur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8321C146770069ED7D /* because_of_the_lamb_yom_kippur.mp3 */; };
-		DFCF8E9121C146780069ED7D /* because_of_the_lamb_tehillim_131.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8421C146770069ED7D /* because_of_the_lamb_tehillim_131.mp3 */; };
-		DFCF8E9221C146780069ED7D /* because_of_the_lamb_who_he_is.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8521C146780069ED7D /* because_of_the_lamb_who_he_is.mp3 */; };
-		DFCF8E9321C146780069ED7D /* because_of_the_lamb_all_things_new.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8621C146780069ED7D /* because_of_the_lamb_all_things_new.mp3 */; };
-		DFCF8E9421C146780069ED7D /* because_of_the_lamb_yahweh_who_moves_mountains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFCF8E8721C146780069ED7D /* because_of_the_lamb_yahweh_who_moves_mountains.mp3 */; };
-		DFE2B2A221CBD8C900DD0CCB /* refined_youre_my_defender.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29621CBD8C700DD0CCB /* refined_youre_my_defender.mp3 */; };
-		DFE2B2A321CBD8C900DD0CCB /* refined_set_me_free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29721CBD8C700DD0CCB /* refined_set_me_free.mp3 */; };
-		DFE2B2A421CBD8C900DD0CCB /* refined_how_would_it_be.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29821CBD8C700DD0CCB /* refined_how_would_it_be.mp3 */; };
-		DFE2B2A521CBD8C900DD0CCB /* refined_tehillah_81.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29921CBD8C700DD0CCB /* refined_tehillah_81.mp3 */; };
-		DFE2B2A621CBD8C900DD0CCB /* refined_i_surrender.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29A21CBD8C800DD0CCB /* refined_i_surrender.mp3 */; };
-		DFE2B2A721CBD8C900DD0CCB /* refined_abide_in_me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29B21CBD8C800DD0CCB /* refined_abide_in_me.mp3 */; };
-		DFE2B2A821CBD8C900DD0CCB /* refined_eternity_sings_of_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29C21CBD8C800DD0CCB /* refined_eternity_sings_of_you.mp3 */; };
-		DFE2B2A921CBD8C900DD0CCB /* refined_ill_follow_you.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29D21CBD8C800DD0CCB /* refined_ill_follow_you.mp3 */; };
-		DFE2B2AA21CBD8C900DD0CCB /* refined_the_way_of_man.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29E21CBD8C800DD0CCB /* refined_the_way_of_man.mp3 */; };
-		DFE2B2AB21CBD8C900DD0CCB /* refined_walk_with_me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B29F21CBD8C800DD0CCB /* refined_walk_with_me.mp3 */; };
-		DFE2B2AC21CBD8C900DD0CCB /* refined_shavout_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B2A021CBD8C800DD0CCB /* refined_shavout_song.mp3 */; };
-		DFE2B2AD21CBD8C900DD0CCB /* refined_eternal_king.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFE2B2A121CBD8C900DD0CCB /* refined_eternal_king.mp3 */; };
 		DFF3AD7B21B9638E001AE33E /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		E0178CBBEC264552BB84E900 /* noto_serif_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA01B32C1F10474F8D8AF7DA /* noto_serif_italic.ttf */; };
 		E28F523F114F442DBADE7064 /* noto_serif_hebrew_condensed_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFF469EE4BC6468380F029AF /* noto_serif_hebrew_condensed_bold.ttf */; };
@@ -481,6 +446,20 @@
 			remoteGlobalIDString = 94DDAC5C1F3D024300EED511;
 			remoteInfo = "RNSVG-tvOS";
 		};
+		DFCBA8AF21D4ADAF000D76BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54950BB58224A0E9087EDA0 /* RNBackgroundDownloader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNBackgroundDownloader;
+		};
+		DFCBA8F821D4B649000D76BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10586E2EEF854134904A3AC0 /* RNZipArchive.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D061F22A1E4887C4000350B4;
+			remoteInfo = RNZipArchive;
+		};
 		DFF3ADC321B994A9001AE33E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */;
@@ -503,6 +482,7 @@
 		0942123787E04235BB86B2E0 /* noto_serif_hebrew_condensed_thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_condensed_thin.ttf; path = ../resources/fonts/noto_serif_hebrew_condensed_thin.ttf; sourceTree = "<group>"; };
 		0C74AC2DBB8747A2B21D396F /* noto_serif_hebrew_extra_condensed_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_bold.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_bold.ttf; sourceTree = "<group>"; };
 		0E9A22A0F8904E279511E124 /* noto_serif_semi_condensed_light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_light_italic.ttf; path = ../resources/fonts/noto_serif_semi_condensed_light_italic.ttf; sourceTree = "<group>"; };
+		10586E2EEF854134904A3AC0 /* RNZipArchive.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNZipArchive.xcodeproj; path = "../node_modules/react-native-zip-archive/ios/RNZipArchive.xcodeproj"; sourceTree = "<group>"; };
 		113515EB2108437EB66E4437 /* noto_serif_semi_condensed_thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_thin.ttf; path = ../resources/fonts/noto_serif_semi_condensed_thin.ttf; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -596,6 +576,7 @@
 		BFE2A70CC6AA445A830C0AE5 /* noto_serif_extra_condensed_extra_light_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_extra_light_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_extra_light_italic.ttf; sourceTree = "<group>"; };
 		C0951660BD0149DF87F49D22 /* noto_serif_regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_regular.ttf; path = ../resources/fonts/noto_serif_regular.ttf; sourceTree = "<group>"; };
 		C4E7AF83A4524CDAB4608E12 /* noto_serif_hebrew_semi_condensed_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_semi_condensed_light.ttf; path = ../resources/fonts/noto_serif_hebrew_semi_condensed_light.ttf; sourceTree = "<group>"; };
+		C54950BB58224A0E9087EDA0 /* RNBackgroundDownloader.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNBackgroundDownloader.xcodeproj; path = "../node_modules/react-native-background-downloader/ios/RNBackgroundDownloader.xcodeproj"; sourceTree = "<group>"; };
 		C71F46C255E3468AB03055AF /* noto_serif_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_bold.ttf; path = ../resources/fonts/noto_serif_bold.ttf; sourceTree = "<group>"; };
 		CBFE569BD1934BC8B4B02A12 /* noto_serif_hebrew_semi_condensed_black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_semi_condensed_black.ttf; path = ../resources/fonts/noto_serif_hebrew_semi_condensed_black.ttf; sourceTree = "<group>"; };
 		CD7BC15B7A724ECCA7A996D3 /* noto_serif_hebrew_extra_condensed_extra_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_extra_condensed_extra_light.ttf; path = ../resources/fonts/noto_serif_hebrew_extra_condensed_extra_light.ttf; sourceTree = "<group>"; };
@@ -611,44 +592,7 @@
 		DBF75312A5444169822F99E4 /* noto_serif_semi_condensed_black_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_semi_condensed_black_italic.ttf; path = ../resources/fonts/noto_serif_semi_condensed_black_italic.ttf; sourceTree = "<group>"; };
 		DD4FD5E0EAA54256B1F0E041 /* noto_serif_extra_condensed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed.ttf; path = ../resources/fonts/noto_serif_extra_condensed.ttf; sourceTree = "<group>"; };
 		DDFBE7B5F0A54F08B29717BF /* noto_serif_light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_light.ttf; path = ../resources/fonts/noto_serif_light.ttf; sourceTree = "<group>"; };
-		DF64AD5E21C9120D003DADA5 /* peace_with_you_city_of_yah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_city_of_yah.mp3; path = ../resources/tracks/peace_with_you_city_of_yah.mp3; sourceTree = "<group>"; };
-		DF64AD8A21C9120D003DADA5 /* peace_with_you_tehillah_67.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_tehillah_67.mp3; path = ../resources/tracks/peace_with_you_tehillah_67.mp3; sourceTree = "<group>"; };
-		DF64AD8B21C9120D003DADA5 /* peace_with_you_i_will_love_you_yahweh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_i_will_love_you_yahweh.mp3; path = ../resources/tracks/peace_with_you_i_will_love_you_yahweh.mp3; sourceTree = "<group>"; };
-		DF64AD8C21C9120D003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_a_voice_in_the_wilderness.mp3; path = ../resources/tracks/peace_with_you_a_voice_in_the_wilderness.mp3; sourceTree = "<group>"; };
-		DF64AD8D21C9120D003DADA5 /* peace_with_you_the_rock_that_i_stand_on.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_the_rock_that_i_stand_on.mp3; path = ../resources/tracks/peace_with_you_the_rock_that_i_stand_on.mp3; sourceTree = "<group>"; };
-		DF64AD8E21C9120E003DADA5 /* peace_with_you_a_time_for_everything.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_a_time_for_everything.mp3; path = ../resources/tracks/peace_with_you_a_time_for_everything.mp3; sourceTree = "<group>"; };
-		DF64AD8F21C9120E003DADA5 /* peace_with_you_your_love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_your_love.mp3; path = ../resources/tracks/peace_with_you_your_love.mp3; sourceTree = "<group>"; };
-		DF64AD9021C9120E003DADA5 /* peace_with_you_tehillah_112.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_tehillah_112.mp3; path = ../resources/tracks/peace_with_you_tehillah_112.mp3; sourceTree = "<group>"; };
-		DF64AD9121C9120E003DADA5 /* peace_with_you_peace_with_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_peace_with_you.mp3; path = ../resources/tracks/peace_with_you_peace_with_you.mp3; sourceTree = "<group>"; };
-		DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_tehillah_138.mp3; path = ../resources/tracks/peace_with_you_tehillah_138.mp3; sourceTree = "<group>"; };
-		DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_come_yahshua_come.mp3; path = ../resources/tracks/peace_with_you_come_yahshua_come.mp3; sourceTree = "<group>"; };
-		DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = peace_with_you_i_am_free.mp3; path = ../resources/tracks/peace_with_you_i_am_free.mp3; sourceTree = "<group>"; };
 		DF64ADA121C96630003DADA5 /* patrick_hand_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = patrick_hand_regular.ttf; path = ../resources/fonts/patrick_hand_regular.ttf; sourceTree = "<group>"; };
-		DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_shout_with_joy.mp3; path = ../resources/tracks/because_of_the_lamb_shout_with_joy.mp3; sourceTree = "<group>"; };
-		DFCF8E7C21C146760069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_yahwehs_blessing.mp3; path = ../resources/tracks/because_of_the_lamb_yahwehs_blessing.mp3; sourceTree = "<group>"; };
-		DFCF8E7D21C146760069ED7D /* because_of_the_lamb_blessed_are_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_blessed_are_you.mp3; path = ../resources/tracks/because_of_the_lamb_blessed_are_you.mp3; sourceTree = "<group>"; };
-		DFCF8E7E21C146760069ED7D /* because_of_the_lamb_pray_until_something_happens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_pray_until_something_happens.mp3; path = ../resources/tracks/because_of_the_lamb_pray_until_something_happens.mp3; sourceTree = "<group>"; };
-		DFCF8E7F21C146760069ED7D /* because_of_the_lamb_tehillim_91.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_tehillim_91.mp3; path = ../resources/tracks/because_of_the_lamb_tehillim_91.mp3; sourceTree = "<group>"; };
-		DFCF8E8021C146760069ED7D /* because_of_the_lamb_because_of_the_lamb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_because_of_the_lamb.mp3; path = ../resources/tracks/because_of_the_lamb_because_of_the_lamb.mp3; sourceTree = "<group>"; };
-		DFCF8E8121C146770069ED7D /* because_of_the_lamb_tehillim_89.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_tehillim_89.mp3; path = ../resources/tracks/because_of_the_lamb_tehillim_89.mp3; sourceTree = "<group>"; };
-		DFCF8E8221C146770069ED7D /* because_of_the_lamb_on_my_knees.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_on_my_knees.mp3; path = ../resources/tracks/because_of_the_lamb_on_my_knees.mp3; sourceTree = "<group>"; };
-		DFCF8E8321C146770069ED7D /* because_of_the_lamb_yom_kippur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_yom_kippur.mp3; path = ../resources/tracks/because_of_the_lamb_yom_kippur.mp3; sourceTree = "<group>"; };
-		DFCF8E8421C146770069ED7D /* because_of_the_lamb_tehillim_131.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_tehillim_131.mp3; path = ../resources/tracks/because_of_the_lamb_tehillim_131.mp3; sourceTree = "<group>"; };
-		DFCF8E8521C146780069ED7D /* because_of_the_lamb_who_he_is.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_who_he_is.mp3; path = ../resources/tracks/because_of_the_lamb_who_he_is.mp3; sourceTree = "<group>"; };
-		DFCF8E8621C146780069ED7D /* because_of_the_lamb_all_things_new.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_all_things_new.mp3; path = ../resources/tracks/because_of_the_lamb_all_things_new.mp3; sourceTree = "<group>"; };
-		DFCF8E8721C146780069ED7D /* because_of_the_lamb_yahweh_who_moves_mountains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = because_of_the_lamb_yahweh_who_moves_mountains.mp3; path = ../resources/tracks/because_of_the_lamb_yahweh_who_moves_mountains.mp3; sourceTree = "<group>"; };
-		DFE2B29621CBD8C700DD0CCB /* refined_youre_my_defender.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_youre_my_defender.mp3; path = ../resources/tracks/refined_youre_my_defender.mp3; sourceTree = "<group>"; };
-		DFE2B29721CBD8C700DD0CCB /* refined_set_me_free.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_set_me_free.mp3; path = ../resources/tracks/refined_set_me_free.mp3; sourceTree = "<group>"; };
-		DFE2B29821CBD8C700DD0CCB /* refined_how_would_it_be.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_how_would_it_be.mp3; path = ../resources/tracks/refined_how_would_it_be.mp3; sourceTree = "<group>"; };
-		DFE2B29921CBD8C700DD0CCB /* refined_tehillah_81.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_tehillah_81.mp3; path = ../resources/tracks/refined_tehillah_81.mp3; sourceTree = "<group>"; };
-		DFE2B29A21CBD8C800DD0CCB /* refined_i_surrender.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_i_surrender.mp3; path = ../resources/tracks/refined_i_surrender.mp3; sourceTree = "<group>"; };
-		DFE2B29B21CBD8C800DD0CCB /* refined_abide_in_me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_abide_in_me.mp3; path = ../resources/tracks/refined_abide_in_me.mp3; sourceTree = "<group>"; };
-		DFE2B29C21CBD8C800DD0CCB /* refined_eternity_sings_of_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_eternity_sings_of_you.mp3; path = ../resources/tracks/refined_eternity_sings_of_you.mp3; sourceTree = "<group>"; };
-		DFE2B29D21CBD8C800DD0CCB /* refined_ill_follow_you.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_ill_follow_you.mp3; path = ../resources/tracks/refined_ill_follow_you.mp3; sourceTree = "<group>"; };
-		DFE2B29E21CBD8C800DD0CCB /* refined_the_way_of_man.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_the_way_of_man.mp3; path = ../resources/tracks/refined_the_way_of_man.mp3; sourceTree = "<group>"; };
-		DFE2B29F21CBD8C800DD0CCB /* refined_walk_with_me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_walk_with_me.mp3; path = ../resources/tracks/refined_walk_with_me.mp3; sourceTree = "<group>"; };
-		DFE2B2A021CBD8C800DD0CCB /* refined_shavout_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_shavout_song.mp3; path = ../resources/tracks/refined_shavout_song.mp3; sourceTree = "<group>"; };
-		DFE2B2A121CBD8C900DD0CCB /* refined_eternal_king.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = refined_eternal_king.mp3; path = ../resources/tracks/refined_eternal_king.mp3; sourceTree = "<group>"; };
 		E2793BEB323B412CBC00A64B /* noto_serif_hebrew_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_hebrew_medium.ttf; path = ../resources/fonts/noto_serif_hebrew_medium.ttf; sourceTree = "<group>"; };
 		E46B2F4619B7428485E7ACBF /* noto_serif_condensed_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_condensed_italic.ttf; path = ../resources/fonts/noto_serif_condensed_italic.ttf; sourceTree = "<group>"; };
 		E5270C01A29648D294F24BC1 /* noto_serif_extra_condensed_black_italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = noto_serif_extra_condensed_black_italic.ttf; path = ../resources/fonts/noto_serif_extra_condensed_black_italic.ttf; sourceTree = "<group>"; };
@@ -673,6 +617,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA42D4421CCCDAE003A7AA7 /* libz.tbd in Frameworks */,
+				DFCBA8FA21D4B65D000D76BA /* libRNZipArchive.a in Frameworks */,
+				DFCBA8B121D4B229000D76BA /* libRNBackgroundDownloader.a in Frameworks */,
 				DFA42D4321CCCDA7003A7AA7 /* libBugsnagReactNative.a in Frameworks */,
 				DF64AD3B21C90989003DADA5 /* libRCTOrientation.a in Frameworks */,
 				DF64AD3A21C90983003DADA5 /* libKCKeepAwake.a in Frameworks */,
@@ -844,6 +790,8 @@
 				CEF9F647AB1843B39244323A /* KCKeepAwake.xcodeproj */,
 				22E9B2C47427488EBD0DC89D /* RCTOrientation.xcodeproj */,
 				7F9C1119D601436B8F1EC265 /* BugsnagReactNative.xcodeproj */,
+				C54950BB58224A0E9087EDA0 /* RNBackgroundDownloader.xcodeproj */,
+				10586E2EEF854134904A3AC0 /* RNZipArchive.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -929,6 +877,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DFCBA8AC21D4ADAF000D76BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFCBA8B021D4ADAF000D76BA /* libRNBackgroundDownloader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFCBA8F521D4B649000D76BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFCBA8F921D4B649000D76BA /* libRNZipArchive.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		DFF3ADC021B994A9001AE33E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -940,43 +904,6 @@
 		EB285F5CF9F146F6AED47EF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DFCF8E8621C146780069ED7D /* because_of_the_lamb_all_things_new.mp3 */,
-				DFCF8E8021C146760069ED7D /* because_of_the_lamb_because_of_the_lamb.mp3 */,
-				DFCF8E7D21C146760069ED7D /* because_of_the_lamb_blessed_are_you.mp3 */,
-				DFCF8E8221C146770069ED7D /* because_of_the_lamb_on_my_knees.mp3 */,
-				DFCF8E7E21C146760069ED7D /* because_of_the_lamb_pray_until_something_happens.mp3 */,
-				DFCF8E7B21C146750069ED7D /* because_of_the_lamb_shout_with_joy.mp3 */,
-				DFCF8E8121C146770069ED7D /* because_of_the_lamb_tehillim_89.mp3 */,
-				DFCF8E7F21C146760069ED7D /* because_of_the_lamb_tehillim_91.mp3 */,
-				DFCF8E8421C146770069ED7D /* because_of_the_lamb_tehillim_131.mp3 */,
-				DFCF8E8521C146780069ED7D /* because_of_the_lamb_who_he_is.mp3 */,
-				DFCF8E8721C146780069ED7D /* because_of_the_lamb_yahweh_who_moves_mountains.mp3 */,
-				DFCF8E7C21C146760069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 */,
-				DFCF8E8321C146770069ED7D /* because_of_the_lamb_yom_kippur.mp3 */,
-				DF64AD8E21C9120E003DADA5 /* peace_with_you_a_time_for_everything.mp3 */,
-				DF64AD8C21C9120D003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 */,
-				DF64AD5E21C9120D003DADA5 /* peace_with_you_city_of_yah.mp3 */,
-				DF64AD9321C9120E003DADA5 /* peace_with_you_come_yahshua_come.mp3 */,
-				DF64AD9421C9120E003DADA5 /* peace_with_you_i_am_free.mp3 */,
-				DF64AD8B21C9120D003DADA5 /* peace_with_you_i_will_love_you_yahweh.mp3 */,
-				DF64AD9121C9120E003DADA5 /* peace_with_you_peace_with_you.mp3 */,
-				DF64AD8A21C9120D003DADA5 /* peace_with_you_tehillah_67.mp3 */,
-				DF64AD9021C9120E003DADA5 /* peace_with_you_tehillah_112.mp3 */,
-				DF64AD9221C9120E003DADA5 /* peace_with_you_tehillah_138.mp3 */,
-				DF64AD8D21C9120D003DADA5 /* peace_with_you_the_rock_that_i_stand_on.mp3 */,
-				DF64AD8F21C9120E003DADA5 /* peace_with_you_your_love.mp3 */,
-				DFE2B29B21CBD8C800DD0CCB /* refined_abide_in_me.mp3 */,
-				DFE2B2A121CBD8C900DD0CCB /* refined_eternal_king.mp3 */,
-				DFE2B29C21CBD8C800DD0CCB /* refined_eternity_sings_of_you.mp3 */,
-				DFE2B29821CBD8C700DD0CCB /* refined_how_would_it_be.mp3 */,
-				DFE2B29A21CBD8C800DD0CCB /* refined_i_surrender.mp3 */,
-				DFE2B29D21CBD8C800DD0CCB /* refined_ill_follow_you.mp3 */,
-				DFE2B29721CBD8C700DD0CCB /* refined_set_me_free.mp3 */,
-				DFE2B2A021CBD8C800DD0CCB /* refined_shavout_song.mp3 */,
-				DFE2B29921CBD8C700DD0CCB /* refined_tehillah_81.mp3 */,
-				DFE2B29E21CBD8C800DD0CCB /* refined_the_way_of_man.mp3 */,
-				DFE2B29F21CBD8C800DD0CCB /* refined_walk_with_me.mp3 */,
-				DFE2B29621CBD8C700DD0CCB /* refined_youre_my_defender.mp3 */,
 				D0031DF16E114703A6BE2C83 /* noto_serif_black_italic.ttf */,
 				83E5C86D7AF2442285013E5A /* noto_serif_black.ttf */,
 				AA1B01469DC8476A8251A33B /* noto_serif_bold_italic.ttf */,
@@ -1198,12 +1125,20 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = DFCBA8AC21D4ADAF000D76BA /* Products */;
+					ProjectRef = C54950BB58224A0E9087EDA0 /* RNBackgroundDownloader.xcodeproj */;
+				},
+				{
 					ProductGroup = DFF3ADC021B994A9001AE33E /* Products */;
 					ProjectRef = F86E72C4386448A3A8983E77 /* RNSoundPlayer.xcodeproj */;
 				},
 				{
 					ProductGroup = DFC8C1E921BC2859005B27AC /* Products */;
 					ProjectRef = D6FA4DCE065C470681F80A62 /* RNSVG.xcodeproj */;
+				},
+				{
+					ProductGroup = DFCBA8F521D4B649000D76BA /* Products */;
+					ProjectRef = 10586E2EEF854134904A3AC0 /* RNZipArchive.xcodeproj */;
 				},
 				{
 					ProductGroup = DF445CDA21C1773000C842D6 /* Products */;
@@ -1519,6 +1454,20 @@
 			remoteRef = DFC8C1EF21BC2859005B27AC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DFCBA8B021D4ADAF000D76BA /* libRNBackgroundDownloader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNBackgroundDownloader.a;
+			remoteRef = DFCBA8AF21D4ADAF000D76BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFCBA8F921D4B649000D76BA /* libRNZipArchive.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNZipArchive.a;
+			remoteRef = DFCBA8F821D4B649000D76BA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DFF3ADC421B994A9001AE33E /* libRNSoundPlayer.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1540,22 +1489,16 @@
 				C872DE4547E14A18ABE2646F /* noto_serif_black.ttf in Resources */,
 				B1FAABDD0A1743BEB25465D5 /* noto_serif_bold_italic.ttf in Resources */,
 				5F69871BF65F4F2690D74209 /* noto_serif_bold.ttf in Resources */,
-				DFE2B2A421CBD8C900DD0CCB /* refined_how_would_it_be.mp3 in Resources */,
 				C68B12042F924367BA272D65 /* noto_serif_condensed_black_italic.ttf in Resources */,
 				4452C2AFF6334B92AC6E1886 /* noto_serif_condensed_black.ttf in Resources */,
-				DFCF8E8E21C146780069ED7D /* because_of_the_lamb_tehillim_89.mp3 in Resources */,
 				83EE5C4B55D34533B1098F5C /* noto_serif_condensed_bold_italic.ttf in Resources */,
 				640CA8BED39B4F18AF5643E0 /* noto_serif_condensed_bold.ttf in Resources */,
-				DF64AD9B21C9120F003DADA5 /* peace_with_you_your_love.mp3 in Resources */,
 				DF636A0021C3DE62007AB258 /* main.jsbundle in Resources */,
 				A4AC7584BC93480EA7CC3AD6 /* noto_serif_condensed_extra_bold_italic.ttf in Resources */,
-				DF64AD9A21C9120F003DADA5 /* peace_with_you_a_time_for_everything.mp3 in Resources */,
 				24687E19265145B1B02ACFBA /* noto_serif_condensed_extra_bold.ttf in Resources */,
-				DFE2B2AC21CBD8C900DD0CCB /* refined_shavout_song.mp3 in Resources */,
 				B358D628655E42E4B023B4C1 /* noto_serif_condensed_extra_light_italic.ttf in Resources */,
 				D944E64857104A5E8414C570 /* noto_serif_condensed_extra_light.ttf in Resources */,
 				236ED168A0DB45128D9683A1 /* noto_serif_condensed_italic.ttf in Resources */,
-				DF64AD9E21C9120F003DADA5 /* peace_with_you_tehillah_138.mp3 in Resources */,
 				B246A3F863A54368907BBD7A /* noto_serif_condensed_light_italic.ttf in Resources */,
 				A3DD46B8DF564D02BA53AB31 /* noto_serif_condensed_light.ttf in Resources */,
 				6F8A17A15BC24412A51541E8 /* noto_serif_condensed_medium_italic.ttf in Resources */,
@@ -1563,10 +1506,8 @@
 				14BB853E08BE4DEF92C3BA99 /* noto_serif_condensed_semi_bold_italic.ttf in Resources */,
 				9D71D8DCA940474380A53541 /* noto_serif_condensed_semi_bold.ttf in Resources */,
 				79FCF66BC3194CC3BA4B5495 /* noto_serif_condensed_thin_italic.ttf in Resources */,
-				DFE2B2A921CBD8C900DD0CCB /* refined_ill_follow_you.mp3 in Resources */,
 				79E199AA1F314F7D9359FC4A /* noto_serif_condensed_thin.ttf in Resources */,
 				5AEEE970F9EC4ED8BB0123B0 /* noto_serif_condensed.ttf in Resources */,
-				DFE2B2AA21CBD8C900DD0CCB /* refined_the_way_of_man.mp3 in Resources */,
 				EDF23FC97632458B94DAA337 /* noto_serif_extra_bold_italic.ttf in Resources */,
 				3171F1BF90744ADAA2FB40F1 /* noto_serif_extra_bold.ttf in Resources */,
 				8A3E4571262B488698AA049C /* noto_serif_extra_condensed_black_italic.ttf in Resources */,
@@ -1579,40 +1520,31 @@
 				B6BDE6B55E204F7C8C701237 /* noto_serif_extra_condensed_extra_light.ttf in Resources */,
 				845A9EDB5C9B4A248E16550F /* noto_serif_extra_condensed_italic.ttf in Resources */,
 				ED74EDCCA4EE4CFDB934403E /* noto_serif_extra_condensed_light_italic.ttf in Resources */,
-				DFE2B2A621CBD8C900DD0CCB /* refined_i_surrender.mp3 in Resources */,
 				5915E1A7722B431D9AF7A5A9 /* noto_serif_extra_condensed_light.ttf in Resources */,
 				C002214621D042269416B446 /* noto_serif_extra_condensed_medium_italic.ttf in Resources */,
 				3333494E1B944AB0929B665C /* noto_serif_extra_condensed_medium.ttf in Resources */,
 				940CDF8627D24767AD71457C /* noto_serif_extra_condensed_semi_bold_italic.ttf in Resources */,
-				DFCF8E8C21C146780069ED7D /* because_of_the_lamb_tehillim_91.mp3 in Resources */,
 				A2E1AD5CD866485782F40AF1 /* noto_serif_extra_condensed_semi_bold.ttf in Resources */,
-				DF64AD9F21C9120F003DADA5 /* peace_with_you_come_yahshua_come.mp3 in Resources */,
 				F4218B215B8A4DA0A6C507C5 /* noto_serif_extra_condensed_thin_italic.ttf in Resources */,
 				D02EE081FA4B423797FCB1E1 /* noto_serif_extra_condensed_thin.ttf in Resources */,
-				DFCF8E8921C146780069ED7D /* because_of_the_lamb_yahwehs_blessing.mp3 in Resources */,
 				A650C859EE084DDEA7DAFF0E /* noto_serif_extra_condensed.ttf in Resources */,
 				139ADDA121DB46668373E010 /* noto_serif_extra_light_italic.ttf in Resources */,
 				5D446693154041EF9443C465 /* noto_serif_extra_light.ttf in Resources */,
 				B2F940FD5D054EE880B9DC7C /* noto_serif_hebrew_black.ttf in Resources */,
 				C4EEE509343544E181F97533 /* noto_serif_hebrew_bold.ttf in Resources */,
 				09CE6CE6E55B4CADB18F2555 /* noto_serif_hebrew_condensed_black.ttf in Resources */,
-				DFCF8E9121C146780069ED7D /* because_of_the_lamb_tehillim_131.mp3 in Resources */,
 				E28F523F114F442DBADE7064 /* noto_serif_hebrew_condensed_bold.ttf in Resources */,
 				CCFBAB7FD5D9452AA66EA037 /* noto_serif_hebrew_condensed_extra_bold.ttf in Resources */,
 				EAD5EC0B1B654A48AF954716 /* noto_serif_hebrew_condensed_extra_light.ttf in Resources */,
 				2AF181C79C5C454FA4E22054 /* noto_serif_hebrew_condensed_light.ttf in Resources */,
-				DFCF8E8F21C146780069ED7D /* because_of_the_lamb_on_my_knees.mp3 in Resources */,
 				781A9787184C475296029CEE /* noto_serif_hebrew_condensed_medium.ttf in Resources */,
 				BC271CF37D2447538B28EF08 /* noto_serif_hebrew_condensed_semi_bold.ttf in Resources */,
-				DF64AD9521C9120F003DADA5 /* peace_with_you_city_of_yah.mp3 in Resources */,
-				DFE2B2A321CBD8C900DD0CCB /* refined_set_me_free.mp3 in Resources */,
 				E8E81F8087F542E78D0825DE /* noto_serif_hebrew_condensed_thin.ttf in Resources */,
 				AA8531221BC6443CAFF17E2D /* noto_serif_hebrew_condensed.ttf in Resources */,
 				A88CF6502CDF4E15A22D3D02 /* noto_serif_hebrew_extra_bold.ttf in Resources */,
 				FF55D524E4334D6CBD86CB73 /* noto_serif_hebrew_extra_condensed_black.ttf in Resources */,
 				D31E8E652217423D9455A5D8 /* noto_serif_hebrew_extra_condensed_bold.ttf in Resources */,
 				95E4F6748F6345239CCBBF1F /* noto_serif_hebrew_extra_condensed_extra_bold.ttf in Resources */,
-				DFE2B2A721CBD8C900DD0CCB /* refined_abide_in_me.mp3 in Resources */,
 				9FB94252F5514D82ACA7CDC8 /* noto_serif_hebrew_extra_condensed_extra_light.ttf in Resources */,
 				1B5F84505910441FAEFC3A99 /* noto_serif_hebrew_extra_condensed_light.ttf in Resources */,
 				7ADF6C97F6C94EC0AD785B8F /* noto_serif_hebrew_extra_condensed_medium.ttf in Resources */,
@@ -1622,10 +1554,8 @@
 				D40BAD2588294B3EA6CDA845 /* noto_serif_hebrew_extra_light.ttf in Resources */,
 				EFF5A7EE3F594AFFBA043DAA /* noto_serif_hebrew_light.ttf in Resources */,
 				6684884F8ED74E1895E0F0F9 /* noto_serif_hebrew_medium.ttf in Resources */,
-				DFE2B2A821CBD8C900DD0CCB /* refined_eternity_sings_of_you.mp3 in Resources */,
 				BE4A323DD1C045C6A25CE03B /* noto_serif_hebrew_regular.ttf in Resources */,
 				4B1C486F3E47492E906EDCC4 /* noto_serif_hebrew_semi_bold.ttf in Resources */,
-				DFCF8E9021C146780069ED7D /* because_of_the_lamb_yom_kippur.mp3 in Resources */,
 				810DF9562BD34D28A0E1F199 /* noto_serif_hebrew_semi_condensed_black.ttf in Resources */,
 				2984922B1DB44260A0B564B4 /* noto_serif_hebrew_semi_condensed_bold.ttf in Resources */,
 				1575DD7E7B76490F89B36F5D /* noto_serif_hebrew_semi_condensed_extra_bold.ttf in Resources */,
@@ -1634,54 +1564,36 @@
 				760F4256881743A1B617D7D1 /* noto_serif_hebrew_semi_condensed_medium.ttf in Resources */,
 				25433DED72E94F628476948A /* noto_serif_hebrew_semi_condensed_semi_bold.ttf in Resources */,
 				8FA4CB382A6047C8BD584438 /* noto_serif_hebrew_semi_condensed_thin.ttf in Resources */,
-				DF64AD9921C9120F003DADA5 /* peace_with_you_the_rock_that_i_stand_on.mp3 in Resources */,
 				3B43ADB7C3B14519A5DDDCFE /* noto_serif_hebrew_semi_condensed.ttf in Resources */,
-				DFE2B2A521CBD8C900DD0CCB /* refined_tehillah_81.mp3 in Resources */,
-				DF64AD9D21C9120F003DADA5 /* peace_with_you_peace_with_you.mp3 in Resources */,
 				6897B00E905D42F294485CBB /* noto_serif_hebrew_thin.ttf in Resources */,
 				E0178CBBEC264552BB84E900 /* noto_serif_italic.ttf in Resources */,
-				DFCF8E8B21C146780069ED7D /* because_of_the_lamb_pray_until_something_happens.mp3 in Resources */,
-				DFCF8E9321C146780069ED7D /* because_of_the_lamb_all_things_new.mp3 in Resources */,
 				A4D3694C35CF44C894B606D9 /* noto_serif_light_italic.ttf in Resources */,
 				EF81EA71D54F4A5C879F66FE /* noto_serif_light.ttf in Resources */,
-				DF64ADA021C9120F003DADA5 /* peace_with_you_i_am_free.mp3 in Resources */,
-				DF64AD9621C9120F003DADA5 /* peace_with_you_tehillah_67.mp3 in Resources */,
 				A8B0297B961C49FB919183AB /* noto_serif_medium_italic.ttf in Resources */,
-				DFE2B2AD21CBD8C900DD0CCB /* refined_eternal_king.mp3 in Resources */,
 				3C8B384231D44CF29EE90D1F /* noto_serif_medium.ttf in Resources */,
-				DFCF8E8D21C146780069ED7D /* because_of_the_lamb_because_of_the_lamb.mp3 in Resources */,
 				DC2B76F79B624FA1A6F4A006 /* noto_serif_regular.ttf in Resources */,
 				439CBF1239854EB6BC020226 /* noto_serif_semi_bold_italic.ttf in Resources */,
-				DFCF8E9221C146780069ED7D /* because_of_the_lamb_who_he_is.mp3 in Resources */,
 				4B40609DBA7446328A7B0A99 /* noto_serif_semi_bold.ttf in Resources */,
 				73E94D823C5447D3AE22538F /* noto_serif_semi_condensed_black_italic.ttf in Resources */,
-				DFE2B2A221CBD8C900DD0CCB /* refined_youre_my_defender.mp3 in Resources */,
-				DFCF8E8821C146780069ED7D /* because_of_the_lamb_shout_with_joy.mp3 in Resources */,
-				DF64AD9821C9120F003DADA5 /* peace_with_you_a_voice_in_the_wilderness.mp3 in Resources */,
 				1B115F33C7434CC8901AEDD5 /* noto_serif_semi_condensed_black.ttf in Resources */,
 				A66B518584964993B4DDA486 /* noto_serif_semi_condensed_bold_italic.ttf in Resources */,
 				FE8FB885D6384A68AB075AF2 /* noto_serif_semi_condensed_bold.ttf in Resources */,
 				2F6CB21B056445F4926BE3C0 /* noto_serif_semi_condensed_extra_bold_italic.ttf in Resources */,
 				FFEAD5D6671E4D27AE557037 /* noto_serif_semi_condensed_extra_bold.ttf in Resources */,
 				0000654CB2414214A67A2634 /* noto_serif_semi_condensed_extra_light_italic.ttf in Resources */,
-				DFCF8E8A21C146780069ED7D /* because_of_the_lamb_blessed_are_you.mp3 in Resources */,
 				9605CAE803E54B7BAADDD86B /* noto_serif_semi_condensed_extra_light.ttf in Resources */,
 				107A4E008E0641F8A14132B2 /* noto_serif_semi_condensed_italic.ttf in Resources */,
 				A899451E373E46C586DAEA6D /* noto_serif_semi_condensed_light_italic.ttf in Resources */,
-				DFCF8E9421C146780069ED7D /* because_of_the_lamb_yahweh_who_moves_mountains.mp3 in Resources */,
 				703E4B964ED24C01955FFE7B /* noto_serif_semi_condensed_light.ttf in Resources */,
 				10D57D02123A4D6D8A3A8833 /* noto_serif_semi_condensed_medium_italic.ttf in Resources */,
 				0982BC5F9A3048CC801274A3 /* noto_serif_semi_condensed_medium.ttf in Resources */,
-				DF64AD9721C9120F003DADA5 /* peace_with_you_i_will_love_you_yahweh.mp3 in Resources */,
 				1AE97C115B3D4239A57EDCD8 /* noto_serif_semi_condensed_semi_bold_italic.ttf in Resources */,
 				059570A1340249EDB3C3452A /* noto_serif_semi_condensed_semi_bold.ttf in Resources */,
 				4BB291F797B64F388775918C /* noto_serif_semi_condensed_thin_italic.ttf in Resources */,
 				C1E4275674074B37BEFF625F /* noto_serif_semi_condensed_thin.ttf in Resources */,
 				A99DA4E85C4D454D80702DA8 /* noto_serif_semi_condensed.ttf in Resources */,
 				63B2A2A6F8834569B1B1A09F /* noto_serif_thin_italic.ttf in Resources */,
-				DFE2B2AB21CBD8C900DD0CCB /* refined_walk_with_me.mp3 in Resources */,
 				BC7D7F68E13B417093D241F6 /* noto_serif_thin.ttf in Resources */,
-				DF64AD9C21C9120F003DADA5 /* peace_with_you_tehillah_112.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1744,12 +1656,16 @@
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-background-downloader/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1778,12 +1694,16 @@
 					"$(SRCROOT)/../node_modules/react-native-keep-awake/ios",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/bugsnag-react-native/cocoa/**",
+					"$(SRCROOT)/../node_modules/react-native-background-downloader/ios",
+					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
 				);
 				INFOPLIST_FILE = Tehillah/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Tehillah\"",
+					"\"$(SRCROOT)/Tehillah\"",
 					"\"$(SRCROOT)/Tehillah\"",
 				);
 				OTHER_LDFLAGS = (

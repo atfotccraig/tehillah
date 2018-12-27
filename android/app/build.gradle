@@ -101,7 +101,7 @@ android {
         applicationId "com.atfotc.tehillah"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 3
+        versionCode 4
         versionName "1.2"
         ndk {
             abiFilters "armeabi-v7a", "x86"
@@ -148,6 +148,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-zip-archive')
+    implementation project(':react-native-background-downloader')
     implementation project(':bugsnag-react-native')
     implementation project(':react-native-orientation')
     implementation project(':react-native-keep-awake')

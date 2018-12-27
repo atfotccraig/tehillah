@@ -3454,6 +3454,11 @@ react-is@^16.6.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.6.3.tgz#d2d7462fcfcbe6ec0da56ad69047e47e56e7eac0"
   integrity sha512-u7FDWtthB4rWibG/+mFbVd5FvdI20yde86qKGx4lVUTWmPlSWQ4QxbBIrrs+HnXGbxOUlUzTAP/VDmvCwaP2yA==
 
+react-native-background-downloader@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-background-downloader/-/react-native-background-downloader-1.1.0.tgz#486359b52a27eafb7f02b338054cb2383ca865a1"
+  integrity sha512-65P7gDLNh/TumVaTSHPo9wJmYfUbS+tWvpNbYNKYxXqrLhGKVFGqs7MIhL0FsciOQBdhAbFvwZZgsxZpMVZNKA==
+
 react-native-circular-progress@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-native-circular-progress/-/react-native-circular-progress-1.0.1.tgz#94a0e9b1f2ec28ce0fa56665ef29dfba99d1d2d6"
@@ -3488,6 +3493,11 @@ react-native-svg@^8.0.8:
     color "^2.0.1"
     lodash "^4.16.6"
     pegjs "^0.10.0"
+
+react-native-zip-archive@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-zip-archive/-/react-native-zip-archive-3.0.1.tgz#68295d7d3167b78ba0a2eac13c2d18b947f73dd2"
+  integrity sha512-2GZkbh4FBjU62/5yx+fWqR1XhP///dbAQi++f6Bp4bCMZUz31JlnPybbKpw7w34lRgg9voHIEX01CqCzHCO2QQ==
 
 react-native@0.57.7:
   version "0.57.7"

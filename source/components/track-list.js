@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react"
-import { Platform, StatusBar } from "react-native"
+import { AsyncStorage, Platform, StatusBar } from "react-native"
 import PropTypes from "prop-types"
 import { IsPlayListContext } from "app/context"
 import { BackgroundColor } from "app/colors"
@@ -9,6 +9,8 @@ import { ButtonContainer } from "./button-container"
 import { TrackListAlbum } from "./track-list-album"
 import { TrackListContainer } from "./track-list-container"
 import { TrackListTrack } from "./track-list-track"
+import Downloads from "app/downloads"
+import { AccentColor, NormalLightColor } from "../colors"
 
 class TrackList extends Component {
     static propTypes = {
@@ -42,6 +44,56 @@ class TrackList extends Component {
         return true
     }
 
+    state = {
+        hasDownloadedAny: false,
+    }
+
+    constructor(...params) {
+        super(...params)
+
+        for (const album in Object.keys(this.props.tracks)) {
+            this.state[`hasDownloaded${album}`] = false
+        }
+    }
+
+    async componentDidMount() {
+        const { tracks } = this.props
+        const albums = Object.keys(tracks)
+
+        const hasDownloaded = await Promise.all(
+            albums.map(album =>
+                AsyncStorage.getItem(
+                    `has-downloaded-${Downloads[`${album}Name`]}`,
+                ),
+            ),
+        )
+
+        const hasDownloadedAny = hasDownloaded.some(album => album === "yes")
+
+        let state = {
+            hasDownloadedAny,
+        }
+
+        for (let i = 0; i < albums.length; i++) {
+            state = {
+                ...state,
+                [`hasDownloaded${albums[i]}`]: hasDownloaded[i] === "yes",
+            }
+        }
+
+        this.setState(state)
+    }
+
+    onDownloaded = async album => {
+        const name = Downloads[`${album}Name`]
+
+        await AsyncStorage.setItem(`has-downloaded-${name}`, `yes`)
+
+        this.setState({
+            [`hasDownloaded${album}`]: true,
+        })
+    }
+
     render() {
         const {
             onScroll,
@@ -50,6 +102,8 @@ class TrackList extends Component {
             onBrowse,
             showBrowseButton,
         } = this.props
+
+        const { hasDownloadedAny } = this.state
 
         return (
             <IsPlayListContext.Consumer>
@@ -66,12 +120,30 @@ class TrackList extends Component {
                             {this.renderAlbums()}
                         </TrackListContainer>
                         <ButtonContainer>
-                            <Button onPress={onRandom}>
-                                <Random />
+                            <Button
+                                onPress={onRandom}
+                                isDisabled={!hasDownloadedAny}
+                            >
+                                <Random
+                                    fill={
+                                        hasDownloadedAny
+                                            ? AccentColor
+                                            : NormalLightColor
+                                    }
+                                />
                             </Button>
                             {!isPlayList && this.isPlayListAllowed() ? (
-                                <Button onPress={onOpenPlayList}>
-                                    <OrderedList />
+                                <Button
+                                    onPress={onOpenPlayList}
+                                    isDisabled={!hasDownloadedAny}
+                                >
+                                    <OrderedList
+                                        fill={
+                                            hasDownloadedAny
+                                                ? AccentColor
+                                                : NormalLightColor
+                                        }
+                                    />
                                 </Button>
                             ) : null}
                             {showBrowseButton ? (
@@ -90,17 +162,30 @@ class TrackList extends Component {
     }
 
     renderAlbums = () => {
-        const { tracks, labels } = this.props
+        const { tracks } = this.props
 
-        return Object.keys(tracks).map(album => (
-            <Fragment key={album}>
-                <TrackListAlbum label={labels[album].Album} />
-                {this.renderTracksForAlbum(album)}
-            </Fragment>
-        ))
+        return Object.keys(tracks).map(album => this.renderAlbum(album))
     }
 
-    renderTracksForAlbum = album => {
+    renderAlbum = album => {
+        const { labels } = this.props
+
+        const hasDownloaded = this.state[`hasDownloaded${album}`]
+
+        return (
+            <Fragment key={album}>
+                <TrackListAlbum
+                    name={album}
+                    label={labels[album].Album}
+                    isDownloaded={hasDownloaded}
+                    onDownloaded={this.onDownloaded}
+                />
+                {this.renderTracksForAlbum(album, hasDownloaded)}
+            </Fragment>
+        )
+    }
+
+    renderTracksForAlbum = (album, hasDownloaded) => {
         const { tracks, labels, onPlay } = this.props
 
         return Object.keys(tracks[album]).map(track => {
@@ -109,6 +194,7 @@ class TrackList extends Component {
                     key={album + track}
                     label={labels[album][track]}
                     onPress={() => onPlay(album, track)}
+                    isDisabled={!hasDownloaded}
                 />
             )
         })
