@@ -2,6 +2,7 @@
 #import "RNSplashScreen.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <RNBackgroundDownloader.h>
 
 @implementation AppDelegate
 
@@ -32,6 +33,11 @@
   [RNSplashScreen show];
 
   return YES;
+}
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler
+{
+  [RNBackgroundDownloader setCompletionHandlerWithIdentifier:identifier completionHandler:completionHandler];
 }
 
 @end

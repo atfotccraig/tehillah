@@ -3,6 +3,7 @@ import { AppState } from "react-native"
 import styled from "styled-components/native"
 import PropTypes from "prop-types"
 import SoundPlayer from "react-native-sound-player"
+import BackgroundDownloader from "react-native-background-downloader"
 import moment from "moment"
 import KeepAwake from "react-native-keep-awake"
 import { seconds, selectCss } from "app/helpers"
@@ -164,27 +165,7 @@ class Track extends Component {
             this.startedAt = new Date()
         })
 
-        // TODO
-        // we need a better way of waiting
-        // for the file to load, so we don't
-        // desync the music and words
-
         SoundPlayer.playSoundFile(this.props.music, "mp3")
-
-        /*
-         *
-         * The iOS RNSoundPlayer lib needs the following modification:
-         *
-         * NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:name ofType:type];
-         *
-         * if (soundFilePath == nil) {
-         *     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-         *
-         *     NSString *documentsDirectory = [paths objectAtIndex:0];
-         *
-         *     soundFilePath = [NSString stringWithFormat:@"%@.%@", [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",name]], type];
-         * }
-         */
 
         if (this.props.onFinish) {
             SoundPlayer.onFinishedPlaying(this.props.onFinish)
@@ -303,7 +284,6 @@ class Track extends Component {
         const { showSkip, showClose, showRestart } = this.props
         const { isPaused } = this.state
 
-        // DEBUG
         const delta = this.startedAt
             ? (this.state.nowAt.getTime() - this.startedAt.getTime()) / 1000
             : 0
