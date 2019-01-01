@@ -94,6 +94,16 @@ class TrackList extends Component {
         })
     }
 
+    onDeleted = async album => {
+        const name = Downloads[`${album}Name`]
+
+        await AsyncStorage.setItem(`has-downloaded-${name}`, `no`)
+
+        this.setState({
+            [`hasDownloaded${album}`]: false,
+        })
+    }
+
     render() {
         const {
             onScroll,
@@ -179,6 +189,7 @@ class TrackList extends Component {
                     label={labels[album].Album}
                     isDownloaded={hasDownloaded}
                     onDownloaded={this.onDownloaded}
+                    onDeleted={this.onDeleted}
                 />
                 {this.renderTracksForAlbum(album, hasDownloaded)}
             </Fragment>

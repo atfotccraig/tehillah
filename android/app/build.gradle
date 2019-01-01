@@ -148,6 +148,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-fs')
     implementation project(':react-native-zip-archive')
     implementation project(':react-native-background-downloader')
     implementation project(':bugsnag-react-native')

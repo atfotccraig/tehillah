@@ -3,6 +3,7 @@ import { AsyncStorage, Dimensions, Linking, StatusBar } from "react-native"
 import styled from "styled-components/native"
 import SplashScreen from "react-native-splash-screen"
 import Orientation from "react-native-orientation"
+import BackgroundDownloader from "react-native-background-downloader"
 import Tracks from "app/tracks"
 import Labels from "app/labels"
 import { randomItem } from "app/helpers"
@@ -60,6 +61,7 @@ class App extends Component {
 
     async componentDidMount() {
         // DEBUG
+        // console.log("filter", BackgroundDownloader.directories.documents)
         // await AsyncStorage.setItem("has-seen-button-intro", "no")
         // await AsyncStorage.setItem("has-seen-scroll-intro", "no")
 
