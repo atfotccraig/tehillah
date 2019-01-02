@@ -20,6 +20,19 @@ export const BecauseOfTheLambFiles = [
     "because_of_the_lamb_yom_kippur.mp3",
 ]
 
+export const NewSongsName = "new_songs_2019_01_02"
+export const NewSongsUri = `${BaseUri}/${NewSongsName}.zip`
+export const NewSongsSize = "15.1mb"
+
+export const NewSongsFiles = [
+    "new_songs_2019_01_02.zip",
+    "new_songs_here_i_am.mp3",
+    "new_songs_hoshianah.mp3",
+    "new_songs_shabbat_shalom.mp3",
+    "new_songs_song_of_deliverance.mp3",
+    "new_songs_your_presence.mp3",
+]
+
 export const PeaceWithYouName = "peace_with_you_2018_12_27"
 export const PeaceWithYouUri = `${BaseUri}/${PeaceWithYouName}.zip`
 export const PeaceWithYouSize = "48.3mb"
@@ -106,6 +119,10 @@ export default {
     BecauseOfTheLambUri,
     BecauseOfTheLambSize,
     BecauseOfTheLambFiles,
+    NewSongsName,
+    NewSongsUri,
+    NewSongsSize,
+    NewSongsFiles,
     PeaceWithYouName,
     PeaceWithYouUri,
     PeaceWithYouSize,
