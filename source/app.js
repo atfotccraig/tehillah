@@ -7,15 +7,10 @@ import BackgroundDownloader from "react-native-background-downloader"
 import Tracks from "app/tracks"
 import Labels from "app/labels"
 import { randomItem } from "app/helpers"
-import {
-    ButtonIntro,
-    ErrorBoundary,
-    PlayList,
-    ScrollIntro,
-    TrackList,
-} from "./components"
+import { ButtonIntro, ErrorBoundary, PlayList, TrackList } from "./components"
 import { IsPlayListContext, IsRandomContext, SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
+import Downloads from "./downloads"
 
 const AppContainer = styled.SafeAreaView`
     display: flex;
@@ -133,8 +128,22 @@ class App extends Component {
         this.setState({ track: undefined })
     }
 
-    onRandom = () => {
-        const album = randomItem(Object.keys(Tracks))
+    onRandom = async () => {
+        const albums = Object.keys(Tracks)
+
+        const downloads = await Promise.all(
+            albums.map(album =>
+                AsyncStorage.getItem(
+                    `has-downloaded-${Downloads[`${album}Name`]}`,
+                ),
+            ),
+        )
+
+        const downloadedAlbums = albums.filter(
+            (_, index) => downloads[index] === "yes",
+        )
+
+        const album = randomItem(downloadedAlbums)
         const track = randomItem(Object.keys(Tracks[album]))
 
         return this.setState({

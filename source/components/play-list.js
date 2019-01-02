@@ -31,7 +31,10 @@ class PlayList extends Component {
                                     size={size}
                                     isPlaylist={isPlayList}
                                 >
-                                    <TrackListAlbum label={() => "Playlist"} />
+                                    <TrackListAlbum
+                                        label={() => "Playlist"}
+                                        showMeta={false}
+                                    />
                                     {items.map(([album, track, time]) => (
                                         <TrackListTrack
                                             key={album + track + time}

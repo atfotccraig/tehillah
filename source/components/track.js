@@ -32,8 +32,8 @@ const DebugTimerView = styled.View`
 
 const DebugTimerText = styled.Text`
     ${selectCss(
-        `font-family: Patrick Hand;`,
-        `font-family: patrick_hand_regular;`,
+        `font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
     )};
     color: ${NormalColor}
     font-size: 60px;

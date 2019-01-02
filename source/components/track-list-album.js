@@ -53,7 +53,8 @@ const AlbumNameIcon = styled.View`
 
 class TrackListAlbum extends Component {
     static propTypes = {
-        name: PropTypes.string.isRequired,
+        showMeta: PropTypes.bool,
+        name: PropTypes.string,
         label: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
             .isRequired,
         isDownloaded: PropTypes.bool,
@@ -62,6 +63,7 @@ class TrackListAlbum extends Component {
     }
 
     static defaultProps = {
+        showMeta: true,
         isDownloaded: false,
         onDownloaded: undefined,
         onDeleted: undefined,
@@ -147,7 +149,7 @@ class TrackListAlbum extends Component {
     }
 
     render() {
-        const { label: LabelComponent } = this.props
+        const { showMeta, label: LabelComponent } = this.props
 
         return (
             <SizeContext.Consumer>
@@ -161,7 +163,9 @@ class TrackListAlbum extends Component {
                                 >
                                     <LabelComponent fontSize={30} />
                                 </AlbumNameText>
-                                {this.renderMeta(size, isPlaylist)}
+                                {showMeta
+                                    ? this.renderMeta(size, isPlaylist)
+                                    : null}
                             </AlbumNameView>
                         )}
                     </IsPlayListContext.Consumer>

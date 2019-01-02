@@ -25,8 +25,8 @@ const AlignmentContainer = styled.View`
 
 const Text = styled.Text`
     ${selectCss(
-        `font-family: Patrick Hand;`,
-        `font-family: patrick_hand_regular;`,
+        `font-family: Noto Serif;`,
+        `font-family: noto_serif_regular;`,
     )};
     color: ${NormalLightColor};
     text-align: center;
