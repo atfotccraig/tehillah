@@ -181,11 +181,17 @@ class TrackListAlbum extends Component {
         return (
             <AlbumNameMeta>
                 {isDownloaded ? (
-                    <AlbumNameIcon>
-                        <Button onPress={this.onDelete} thickness={3} size={48}>
-                            <Trash width={23.625} height={27} />
-                        </Button>
-                    </AlbumNameIcon>
+                    isPlaylist ? null : (
+                        <AlbumNameIcon>
+                            <Button
+                                onPress={this.onDelete}
+                                thickness={3}
+                                size={48}
+                            >
+                                <Trash width={23.625} height={27} />
+                            </Button>
+                        </AlbumNameIcon>
+                    )
                 ) : isDownloading ? (
                     <AlbumNameIcon>
                         <HourglassHalf width={18} height={24} />
