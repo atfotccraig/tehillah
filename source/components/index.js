@@ -1,5 +1,6 @@
 import { Button } from "./button"
 import { ButtonContainer } from "./button-container"
+import { ErrorBoundary } from "./error-boundary"
 import { ButtonIntro } from "./button-intro"
 import { Hebrew } from "./hebrew"
 import { Immanuel } from "./immanuel"
@@ -22,6 +23,7 @@ import { Yisrael } from "./yisrael"
 export {
     Button,
     ButtonContainer,
+    ErrorBoundary,
     ButtonIntro,
     Hebrew,
     Immanuel,

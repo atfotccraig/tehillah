@@ -7,7 +7,13 @@ import BackgroundDownloader from "react-native-background-downloader"
 import Tracks from "app/tracks"
 import Labels from "app/labels"
 import { randomItem } from "app/helpers"
-import { ButtonIntro, PlayList, ScrollIntro, TrackList } from "./components"
+import {
+    ButtonIntro,
+    ErrorBoundary,
+    PlayList,
+    ScrollIntro,
+    TrackList,
+} from "./components"
 import { IsPlayListContext, IsRandomContext, SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
 
@@ -61,7 +67,10 @@ class App extends Component {
 
     async componentDidMount() {
         // DEBUG
-        // console.log("filter", BackgroundDownloader.directories.documents)
+        console.log(
+            "filter files at:",
+            BackgroundDownloader.directories.documents,
+        )
         // await AsyncStorage.setItem("has-seen-button-intro", "no")
         // await AsyncStorage.setItem("has-seen-scroll-intro", "no")
 
@@ -194,7 +203,12 @@ class App extends Component {
 
     render() {
         const { track, width, height, isPlayList, isRandom } = this.state
-        const content = track ? this.renderTrack() : this.renderTrackList()
+
+        const content = (
+            <ErrorBoundary>
+                {track ? this.renderTrack() : this.renderTrackList()}
+            </ErrorBoundary>
+        )
 
         return (
             <AppContainer onLayout={this.onLayout}>
@@ -279,6 +293,10 @@ class App extends Component {
     renderTrack = () => {
         const { track, isRandom, isPlayList } = this.state
         const TrackComponent = Tracks[track[0]][track[1]]
+
+        if (!TrackComponent) {
+            console.log("filter can't find component:", track[0], track[1])
+        }
 
         return (
             <Fragment>

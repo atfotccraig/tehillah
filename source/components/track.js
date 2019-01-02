@@ -14,6 +14,7 @@ import { ButtonContainer } from "./button-container"
 import { Title } from "./title"
 import { Repeat } from "./repeat"
 import { Verse } from "./verse"
+import { ErrorBoundary } from "./error-boundary"
 
 const Container = styled.View`
     display: flex;
@@ -290,48 +291,54 @@ class Track extends Component {
 
         return (
             <Container>
-                {this.props.isAnimating
-                    ? this.renderAnimatedChildren()
-                    : this.renderStaticChildren()}
+                <ErrorBoundary>
+                    {this.props.isAnimating
+                        ? this.renderAnimatedChildren()
+                        : this.renderStaticChildren()}
+                </ErrorBoundary>
                 {__DEV__ ? (
-                    <DebugTimerView>
-                        <DebugTimerText>
-                            {Math.floor(delta / 60)
-                                .toString()
-                                .padStart(2, "0")}
-                            :
-                            {Math.floor(delta % 60)
-                                .toString()
-                                .padStart(2, "0")}
-                        </DebugTimerText>
-                    </DebugTimerView>
+                    <ErrorBoundary>
+                        <DebugTimerView>
+                            <DebugTimerText>
+                                {Math.floor(delta / 60)
+                                    .toString()
+                                    .padStart(2, "0")}
+                                :
+                                {Math.floor(delta % 60)
+                                    .toString()
+                                    .padStart(2, "0")}
+                            </DebugTimerText>
+                        </DebugTimerView>
+                    </ErrorBoundary>
                 ) : null}
-                <ButtonContainer fadeBackground={false}>
-                    {showClose ? (
-                        <Button onPress={this.onClose}>
-                            <Times />
-                        </Button>
-                    ) : null}
-                    {showRestart ? (
-                        <Button onPress={this.onRestart}>
-                            <StepBackward />
-                        </Button>
-                    ) : null}
-                    {isPaused ? (
-                        <Button onPress={this.onResume}>
-                            <Play />
-                        </Button>
-                    ) : (
-                        <Button onPress={this.onPause}>
-                            <Pause />
-                        </Button>
-                    )}
-                    {showSkip ? (
-                        <Button onPress={this.onSkip}>
-                            <StepForward />
-                        </Button>
-                    ) : null}
-                </ButtonContainer>
+                <ErrorBoundary>
+                    <ButtonContainer fadeBackground={false}>
+                        {showClose ? (
+                            <Button onPress={this.onClose}>
+                                <Times />
+                            </Button>
+                        ) : null}
+                        {showRestart ? (
+                            <Button onPress={this.onRestart}>
+                                <StepBackward />
+                            </Button>
+                        ) : null}
+                        {isPaused ? (
+                            <Button onPress={this.onResume}>
+                                <Play />
+                            </Button>
+                        ) : (
+                            <Button onPress={this.onPause}>
+                                <Pause />
+                            </Button>
+                        )}
+                        {showSkip ? (
+                            <Button onPress={this.onSkip}>
+                                <StepForward />
+                            </Button>
+                        ) : null}
+                    </ButtonContainer>
+                </ErrorBoundary>
             </Container>
         )
     }

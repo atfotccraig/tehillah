@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import { SizeContext } from "app/context"
 import { relativeSize, selectCss } from "app/helpers"
 import { NormalColor } from "app/colors"
+import { ErrorBoundary } from "./error-boundary"
 
 const Text = styled.Text`
     ${selectCss(
@@ -28,14 +29,16 @@ const Line = ({ children, repeat, repeatText }) => {
     return (
         <SizeContext.Consumer>
             {context => (
-                <Text context={context}>
-                    {children}
-                    {repeat ? (
-                        <RepeatText context={context}>
-                            {" " + repeatText}
-                        </RepeatText>
-                    ) : null}
-                </Text>
+                <ErrorBoundary>
+                    <Text context={context}>
+                        {children}
+                        {repeat ? (
+                            <RepeatText context={context}>
+                                {" " + repeatText}
+                            </RepeatText>
+                        ) : null}
+                    </Text>
+                </ErrorBoundary>
             )}
         </SizeContext.Consumer>
     )
