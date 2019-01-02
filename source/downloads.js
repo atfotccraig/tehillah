@@ -79,6 +79,27 @@ export const TreasuredPossessionFiles = [
     "treasured_possession_when_yahweh_comes.mp3",
 ]
 
+export const WonderfulMakerName = "wonderful_maker_2019_01_02"
+export const WonderfulMakerUri = `${BaseUri}/${WonderfulMakerName}.zip`
+export const WonderfulMakerSize = "45.2mb"
+
+export const WonderfulMakerFiles = [
+    "wonderful_maker_2019_01_02.zip",
+    "wonderful_maker_a_new_day_dawns.mp3",
+    "wonderful_maker_a_new_song.mp3",
+    "wonderful_maker_all_or_nothing.mp3",
+    "wonderful_maker_breathe_on_me.mp3",
+    "wonderful_maker_forever.mp3",
+    "wonderful_maker_hold_nothing_back.mp3",
+    "wonderful_maker_i_stand_in_awe.mp3",
+    "wonderful_maker_return.mp3",
+    "wonderful_maker_tehillah_95.mp3",
+    "wonderful_maker_the_prayer.mp3",
+    "wonderful_maker_till_the_masters_return.mp3",
+    "wonderful_maker_wonderful_maker.mp3",
+    "wonderful_maker_you_take_my_breath_away.mp3",
+]
+
 export default {
     BaseUri,
     BecauseOfTheLambName,
@@ -97,4 +118,8 @@ export default {
     TreasuredPossessionUri,
     TreasuredPossessionSize,
     TreasuredPossessionFiles,
+    WonderfulMakerName,
+    WonderfulMakerUri,
+    WonderfulMakerSize,
+    WonderfulMakerFiles,
 }
