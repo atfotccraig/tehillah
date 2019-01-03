@@ -21,6 +21,11 @@ class TrackList extends Component {
         showBrowseButton: PropTypes.bool.isRequired,
         tracks: PropTypes.object.isRequired,
         labels: PropTypes.object.isRequired,
+        onDownloadsChanged: PropTypes.func,
+    }
+
+    static defaultProps = {
+        onDownloadsChanged: undefined,
     }
 
     isPlayListAllowed = () => {
@@ -57,6 +62,7 @@ class TrackList extends Component {
 
     async componentDidMount() {
         const { tracks } = this.props
+
         const albums = Object.keys(tracks)
 
         const hasDownloaded = await Promise.all(
@@ -67,20 +73,15 @@ class TrackList extends Component {
             ),
         )
 
-        const hasDownloadedAny = hasDownloaded.some(album => album === "yes")
-
-        let state = {
-            hasDownloadedAny,
-        }
+        const state = {}
 
         for (let i = 0; i < albums.length; i++) {
-            state = {
-                ...state,
-                [`hasDownloaded${albums[i]}`]: hasDownloaded[i] === "yes",
-            }
+            state[`hasDownloaded${albums[i]}`] = hasDownloaded[i] === "yes"
         }
 
-        this.setState(state)
+        this.setState(state, () => {
+            this.onDownloadsChanged()
+        })
     }
 
     onDownloaded = async album => {
@@ -88,9 +89,40 @@ class TrackList extends Component {
 
         await AsyncStorage.setItem(`has-downloaded-${name}`, `yes`)
 
-        this.setState({
-            [`hasDownloaded${album}`]: true,
-        })
+        this.setState(
+            {
+                [`hasDownloaded${album}`]: true,
+            },
+            () => {
+                this.onDownloadsChanged()
+            },
+        )
+    }
+
+    onDownloadsChanged = () => {
+        const { tracks, onDownloadsChanged } = this.props
+
+        const downloads = {}
+        const albums = Object.keys(tracks)
+
+        for (let i = 0; i < albums.length; i++) {
+            downloads[albums[i]] = this.state[`hasDownloaded${albums[i]}`]
+        }
+
+        const hasDownloadedAny = Object.keys(downloads).some(
+            album => downloads[album],
+        )
+
+        this.setState(
+            {
+                hasDownloadedAny,
+            },
+            () => {
+                if (onDownloadsChanged) {
+                    onDownloadsChanged(downloads, hasDownloadedAny)
+                }
+            },
+        )
     }
 
     onDeleted = async album => {
@@ -98,9 +130,14 @@ class TrackList extends Component {
 
         await AsyncStorage.setItem(`has-downloaded-${name}`, `no`)
 
-        this.setState({
-            [`hasDownloaded${album}`]: false,
-        })
+        this.setState(
+            {
+                [`hasDownloaded${album}`]: false,
+            },
+            () => {
+                this.onDownloadsChanged()
+            },
+        )
     }
 
     render() {

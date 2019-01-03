@@ -59,6 +59,8 @@ class App extends Component {
         playList: [],
         playListPosition: 0,
         trackListScrollPosition: 0,
+        downloads: [],
+        hasDownloadedAny: false,
     }
 
     async componentDidMount() {
@@ -130,21 +132,12 @@ class App extends Component {
     }
 
     onRandom = async () => {
-        const albums = Object.keys(Tracks)
+        const { downloads } = this.state
 
-        const downloads = await Promise.all(
-            albums.map(album =>
-                AsyncStorage.getItem(
-                    `has-downloaded-${Downloads[`${album}Name`]}`,
-                ),
-            ),
+        const album = randomItem(
+            Object.keys(downloads).filter(album => downloads[album]),
         )
 
-        const downloadedAlbums = albums.filter(
-            (_, index) => downloads[index] === "yes",
-        )
-
-        const album = randomItem(downloadedAlbums)
         const track = randomItem(Object.keys(Tracks[album]))
 
         return this.setState({
@@ -212,6 +205,13 @@ class App extends Component {
         }
     }
 
+    onDownloadsChanged = (downloads, hasDownloadedAny) => {
+        this.setState({
+            downloads,
+            hasDownloadedAny,
+        })
+    }
+
     render() {
         const { track, width, height, isPlayList, isRandom } = this.state
 
@@ -253,6 +253,7 @@ class App extends Component {
                 onMomentumScrollEnd={this.onMomentumScrollEnd}
                 contentOffset={{ x: 0, y: trackListScrollPosition }}
                 onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
+                onDownloadsChanged={this.onDownloadsChanged}
             />
         )
 
