@@ -14,7 +14,6 @@ import { AccentColor, NormalLightColor } from "../colors"
 
 class TrackList extends Component {
     static propTypes = {
-        onScroll: PropTypes.func.isRequired,
         onRandom: PropTypes.func.isRequired,
         onOpenPlayList: PropTypes.func.isRequired,
         onBrowse: PropTypes.func.isRequired,
@@ -106,11 +105,11 @@ class TrackList extends Component {
 
     render() {
         const {
-            onScroll,
             onRandom,
             onOpenPlayList,
             onBrowse,
             showBrowseButton,
+            ...rest
         } = this.props
 
         const { hasDownloadedAny } = this.state
@@ -119,10 +118,7 @@ class TrackList extends Component {
             <IsPlayListContext.Consumer>
                 {isPlayList => (
                     <Fragment>
-                        <TrackListContainer
-                            onScroll={onScroll}
-                            scrollEventThrottle={250}
-                        >
+                        <TrackListContainer {...rest}>
                             <StatusBar
                                 barStyle="dark-content"
                                 backgroundColor={BackgroundColor}

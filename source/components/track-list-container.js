@@ -22,16 +22,12 @@ const Container = styled.ScrollView.attrs(props => ({
     background-color: ${BackgroundColor};
 `
 
-const TrackListContainer = ({ children, onScroll }) => (
+const TrackListContainer = ({ children, ...rest }) => (
     <SizeContext.Consumer>
         {size => (
             <IsPlayListContext.Consumer>
                 {isPlayList => (
-                    <Container
-                        size={size}
-                        isPlayList={isPlayList}
-                        onScroll={onScroll ? onScroll : _ => null}
-                    >
+                    <Container size={size} isPlayList={isPlayList} {...rest}>
                         {children}
                     </Container>
                 )}
@@ -39,13 +35,5 @@ const TrackListContainer = ({ children, onScroll }) => (
         )}
     </SizeContext.Consumer>
 )
-
-TrackListContainer.propTypes = {
-    onScroll: PropTypes.func,
-}
-
-TrackListContainer.defaultProps = {
-    onScroll: undefined,
-}
 
 export { TrackListContainer }

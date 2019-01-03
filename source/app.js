@@ -58,6 +58,7 @@ class App extends Component {
         isPlayList: false,
         playList: [],
         playListPosition: 0,
+        trackListScrollPosition: 0,
     }
 
     async componentDidMount() {
@@ -170,9 +171,10 @@ class App extends Component {
         })
     }
 
-    onScroll = async () => {
+    onMomentumScrollEnd = async e => {
         this.setState({
             hasSeenScrollIntro: true,
+            trackListScrollPosition: e.nativeEvent.contentOffset.y,
         })
 
         await AsyncStorage.setItem("has-seen-scroll-intro", "yes")
@@ -233,7 +235,12 @@ class App extends Component {
     }
 
     renderTrackList = () => {
-        const { isPlayList, playList, showBrowseButton } = this.state
+        const {
+            isPlayList,
+            playList,
+            showBrowseButton,
+            trackListScrollPosition,
+        } = this.state
 
         const trackList = (
             <TrackList
@@ -243,7 +250,8 @@ class App extends Component {
                 onBrowse={this.onBrowse}
                 onOpenPlayList={this.onOpenPlayList}
                 onRandom={this.onRandom}
-                onScroll={this.onScroll}
+                onMomentumScrollEnd={this.onMomentumScrollEnd}
+                contentOffset={{ x: 0, y: trackListScrollPosition }}
                 onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
             />
         )
