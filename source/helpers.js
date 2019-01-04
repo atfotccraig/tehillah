@@ -16,10 +16,16 @@ const relativeSize = (
     context,
     original = { width: 1024, height: 768 },
 ) => {
-    return Math.min(
-        (context.width / original.width) * size,
-        (context.height / original.height) * size,
-    )
+    // return Math.min(
+    //     (context.width / original.width) * size,
+    //     (context.height / original.height) * size,
+    // )
+
+    // ...we want to make this look better on smaller
+    // screens so let's sacrifice vertical space to make
+    // horizontal scaling better
+
+    return (context.width / original.width) * size
 }
 
 const selectCss = (ios, android) => {

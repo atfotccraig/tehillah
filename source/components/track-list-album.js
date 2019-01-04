@@ -14,8 +14,8 @@ import { Button } from "./button"
 const AlbumNameView = styled.View`
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    padding-top: ${props => relativeSize(32, props.size)}px;
+    align-items: center;
+    margin-top: ${props => relativeSize(32, props.size)}px;
 `
 
 const AlbumNameText = styled.Text`

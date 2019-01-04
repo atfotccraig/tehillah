@@ -251,7 +251,9 @@ class App extends Component {
                 onOpenPlayList={this.onOpenPlayList}
                 onRandom={this.onRandom}
                 onMomentumScrollEnd={this.onMomentumScrollEnd}
-                contentOffset={{ x: 0, y: trackListScrollPosition }}
+                contentOffset={
+                    isPlayList ? null : { x: 0, y: trackListScrollPosition }
+                }
                 onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
                 onDownloadsChanged={this.onDownloadsChanged}
             />
