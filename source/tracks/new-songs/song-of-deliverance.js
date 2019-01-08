@@ -29,9 +29,9 @@ const SongOfDeliverance = props => (
         <Verse>
             <Line>Speak to the heavens</Line>
             <Line>and they answer the earth</Line>
-            <Line>And make Your creatures</Line>
+            <Line>And make your creatures</Line>
             <Line>lie down in peace</Line>
-            <Line>Speak Your life into their heart</Line>
+            <Line>Speak your life into their heart</Line>
         </Verse>
         <Verse name="one">
             <Line>You are my hiding place</Line>
