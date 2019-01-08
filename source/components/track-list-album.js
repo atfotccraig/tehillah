@@ -31,7 +31,7 @@ const AlbumNameText = styled.Text`
 `
 
 const AlbumSizeText = styled(AlbumNameText)`
-    font-size: ${props => relativeSize(18, props.size)}px;
+    font-size: ${props => relativeSize(22, props.size)}px;
     color: ${NormalLightColor};
 `
 
@@ -46,9 +46,9 @@ const AlbumNameIcon = styled.View`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
-    margin: 0 4px;
+    width: ${props => relativeSize(64, props.size)}px;
+    height: ${props => relativeSize(64, props.size)}px;
+    margin: 0 ${props => relativeSize(8, props.size)}px;
 `
 
 class TrackListAlbum extends Component {
@@ -179,40 +179,36 @@ class TrackListAlbum extends Component {
         const { isDownloading } = this.state
 
         return (
-            <AlbumNameMeta>
-                {isDownloaded ? (
-                    isPlaylist ? null : (
-                        <AlbumNameIcon>
-                            <Button
-                                onPress={this.onDelete}
-                                thickness={3}
-                                size={48}
-                            >
-                                <Trash width={23.625} height={27} />
-                            </Button>
-                        </AlbumNameIcon>
-                    )
-                ) : isDownloading ? (
-                    <AlbumNameIcon>
-                        <HourglassHalf width={18} height={24} />
-                    </AlbumNameIcon>
-                ) : (
-                    <AlbumNameIcon>
-                        <Button
-                            onPress={this.onDownload}
-                            thickness={3}
-                            size={48}
-                        >
-                            <CloudDownload width={27} height={21.6} />
-                        </Button>
-                    </AlbumNameIcon>
+            <SizeContext.Consumer>
+                {size => (
+                    <AlbumNameMeta>
+                        {isDownloaded ? (
+                            isPlaylist ? null : (
+                                <AlbumNameIcon size={size}>
+                                    <Button onPress={this.onDelete}>
+                                        <Trash />
+                                    </Button>
+                                </AlbumNameIcon>
+                            )
+                        ) : isDownloading ? (
+                            <AlbumNameIcon size={size}>
+                                <HourglassHalf />
+                            </AlbumNameIcon>
+                        ) : (
+                            <AlbumNameIcon size={size}>
+                                <Button onPress={this.onDownload}>
+                                    <CloudDownload />
+                                </Button>
+                            </AlbumNameIcon>
+                        )}
+                        {!isPlaylist ? (
+                            <AlbumSizeText size={size}>
+                                {Downloads[`${name}Size`]}
+                            </AlbumSizeText>
+                        ) : null}
+                    </AlbumNameMeta>
                 )}
-                {!isPlaylist ? (
-                    <AlbumSizeText size={size}>
-                        {Downloads[`${name}Size`]}
-                    </AlbumSizeText>
-                ) : null}
-            </AlbumNameMeta>
+            </SizeContext.Consumer>
         )
     }
 }

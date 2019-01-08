@@ -10,7 +10,7 @@ import { TrackListAlbum } from "./track-list-album"
 import { TrackListContainer } from "./track-list-container"
 import { TrackListTrack } from "./track-list-track"
 import Downloads from "app/downloads"
-import { AccentColor, NormalLightColor } from "../colors"
+import { AccentLightColor, NormalLightColor } from "../colors"
 
 class TrackList extends Component {
     static propTypes = {
@@ -170,7 +170,7 @@ class TrackList extends Component {
                                 <Random
                                     fill={
                                         hasDownloadedAny
-                                            ? AccentColor
+                                            ? AccentLightColor
                                             : NormalLightColor
                                     }
                                 />
@@ -183,7 +183,7 @@ class TrackList extends Component {
                                     <OrderedList
                                         fill={
                                             hasDownloadedAny
-                                                ? AccentColor
+                                                ? AccentLightColor
                                                 : NormalLightColor
                                         }
                                     />

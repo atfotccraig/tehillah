@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Svg, { Path } from "react-native-svg"
 import { SizeContext } from "app/context"
 import { relativeSize } from "app/helpers"
-import { AccentLightColor } from "app/colors"
+import { NormalLightColor } from "app/colors"
 
 class HourglassHalf extends Component {
     static propTypes = {
@@ -13,7 +13,7 @@ class HourglassHalf extends Component {
     }
 
     static defaultProps = {
-        fill: AccentLightColor,
+        fill: NormalLightColor,
         width: 24,
         height: 32,
     }
