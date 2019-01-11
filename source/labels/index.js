@@ -1,6 +1,7 @@
 import BecauseOfTheLamb from "./because-of-the-lamb"
 import NewSongs from "./new-songs"
 import PeaceWithYou from "./peace-with-you"
+import PleasingYou from "./pleasing-you"
 import Refined from "./refined"
 import TreasuredPossession from "./treasured-possession"
 import WonderfulMaker from "./wonderful-maker"
@@ -11,6 +12,7 @@ export {
     Refined,
     TreasuredPossession,
     WonderfulMaker,
+    PleasingYou,
     BecauseOfTheLamb,
 }
 
@@ -20,5 +22,6 @@ export default {
     Refined,
     TreasuredPossession,
     WonderfulMaker,
+    PleasingYou,
     BecauseOfTheLamb,
 }

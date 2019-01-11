@@ -53,6 +53,26 @@ export const PeaceWithYouFiles = [
     "peace_with_you_your_love.mp3",
 ]
 
+export const PleasingYouName = "pleasing_you_2019_01_11"
+export const PleasingYouUri = `${BaseUri}/${PleasingYouName}.zip`
+export const PleasingYouSize = "20.2mb"
+
+export const PleasingYouFiles = [
+    "pleasing_you_2019_01_11.zip",
+    "pleasing_you_i_am_loved.mp3",
+    "pleasing_you_offering.mp3",
+    "pleasing_you_pleasing_you.mp3",
+    "pleasing_you_praise_yahweh_in_the_light_of_the_fire.mp3",
+    "pleasing_you_rejoice_in_the_lamb.mp3",
+    "pleasing_you_speak_to_me.mp3",
+    "pleasing_you_tehillim_124.mp3",
+    "pleasing_you_the_answer_to_my_question.mp3",
+    "pleasing_you_through_your_eyes.mp3",
+    "pleasing_you_waiting_here.mp3",
+    "pleasing_you_what_will_you_say.mp3",
+    "pleasing_you_you_alone.mp3",
+]
+
 export const RefinedName = "refined_2018_12_27"
 export const RefinedUri = `${BaseUri}/${RefinedName}.zip`
 export const RefinedSize = "47mb"
@@ -127,6 +147,10 @@ export default {
     PeaceWithYouUri,
     PeaceWithYouSize,
     PeaceWithYouFiles,
+    PleasingYouName,
+    PleasingYouUri,
+    PleasingYouSize,
+    PleasingYouFiles,
     RefinedName,
     RefinedUri,
     RefinedSize,
