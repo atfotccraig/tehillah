@@ -25,7 +25,17 @@ const relativeSize = (
     // screens so let's sacrifice vertical space to make
     // horizontal scaling better
 
-    return (context.width / original.width) * size
+    // return (context.width / original.width) * size
+
+    // that didn't work out, so now I want to take an average
+    // to accommodate high-end Apple devices with far more
+    // horizontal space than vertical space
+
+    return Math.round(
+        ((context.width / original.width) * size +
+            (context.height / original.height) * size) /
+            2,
+    )
 }
 
 const selectCss = (ios, android) => {

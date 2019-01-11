@@ -165,9 +165,14 @@ class App extends Component {
     }
 
     onMomentumScrollEnd = async e => {
+        const { hasSeenScrollIntro } = this.state
+
+        if (hasSeenScrollIntro) {
+            return
+        }
+
         this.setState({
             hasSeenScrollIntro: true,
-            trackListScrollPosition: e.nativeEvent.contentOffset.y,
         })
 
         await AsyncStorage.setItem("has-seen-scroll-intro", "yes")
@@ -251,9 +256,6 @@ class App extends Component {
                 onOpenPlayList={this.onOpenPlayList}
                 onRandom={this.onRandom}
                 onMomentumScrollEnd={this.onMomentumScrollEnd}
-                contentOffset={
-                    isPlayList ? null : { x: 0, y: trackListScrollPosition }
-                }
                 onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
                 onDownloadsChanged={this.onDownloadsChanged}
             />

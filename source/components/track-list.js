@@ -1,16 +1,34 @@
 import React, { Component, Fragment } from "react"
-import { AsyncStorage, Platform, StatusBar } from "react-native"
+import styled from "styled-components"
+import { AsyncStorage, Platform, StatusBar, Text } from "react-native"
 import PropTypes from "prop-types"
-import { IsPlayListContext } from "app/context"
+import { IsPlayListContext, SizeContext } from "app/context"
 import { BackgroundColor } from "app/colors"
 import { Chrome, OrderedList, Random, Safari } from "app/icons"
+import { relativeSize } from "app/helpers"
 import { Button } from "./button"
 import { ButtonContainer } from "./button-container"
 import { TrackListAlbum } from "./track-list-album"
-import { TrackListContainer } from "./track-list-container"
 import { TrackListTrack } from "./track-list-track"
 import Downloads from "app/downloads"
 import { AccentLightColor, NormalLightColor } from "../colors"
+
+const Container = styled.FlatList.attrs(props => ({
+    contentContainerStyle: {
+        paddingHorizontal: props.isPlayList
+            ? relativeSize(50, props.size)
+            : relativeSize(150, props.size),
+        paddingVertical: props.isPlayList
+            ? relativeSize(100, props.size)
+            : relativeSize(150, props.size),
+        alignItems: "flex-start",
+    },
+}))`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: ${BackgroundColor};
+`
 
 class TrackList extends Component {
     static propTypes = {
@@ -50,6 +68,7 @@ class TrackList extends Component {
 
     state = {
         hasDownloadedAny: false,
+        offset: 0,
     }
 
     constructor(...params) {
@@ -82,6 +101,14 @@ class TrackList extends Component {
         this.setState(state, () => {
             this.onDownloadsChanged()
         })
+
+        setTimeout(async () => {
+            const offset = await AsyncStorage.getItem("track-list-offset")
+
+            this.setState({
+                offset: offset ? JSON.parse(offset) : 0,
+            })
+        }, 0)
     }
 
     onDownloaded = async album => {
@@ -140,108 +167,155 @@ class TrackList extends Component {
         )
     }
 
+    onMomentumScrollEnd = async ({ nativeEvent }, isPlayList) => {
+        if (isPlayList) {
+            return
+        }
+
+        await AsyncStorage.setItem(
+            "track-list-offset",
+            JSON.stringify(nativeEvent.contentOffset.y),
+        )
+    }
+
     render() {
         const {
             onRandom,
             onOpenPlayList,
             onBrowse,
             showBrowseButton,
+            tracks,
+            onMomentumScrollEnd,
             ...rest
         } = this.props
 
-        const { hasDownloadedAny } = this.state
+        const { hasDownloadedAny, offset } = this.state
+
+        const items = []
+        const albumsNames = Object.keys(tracks)
+
+        for (const i in albumsNames) {
+            const albumName = albumsNames[i]
+            const trackNames = Object.keys(tracks[albumName])
+
+            items.push({ type: "album", albumName, key: albumName })
+
+            for (const j in trackNames) {
+                const trackName = trackNames[j]
+
+                items.push({
+                    type: "track",
+                    albumName,
+                    trackName,
+                    key: albumName + trackName,
+                })
+            }
+        }
 
         return (
-            <IsPlayListContext.Consumer>
-                {isPlayList => (
-                    <Fragment>
-                        <TrackListContainer {...rest}>
-                            <StatusBar
-                                barStyle="dark-content"
-                                backgroundColor={BackgroundColor}
-                            />
-                            {this.renderAlbums()}
-                        </TrackListContainer>
-                        <ButtonContainer>
-                            <Button
-                                onPress={onRandom}
-                                isDisabled={!hasDownloadedAny}
-                            >
-                                <Random
-                                    fill={
-                                        hasDownloadedAny
-                                            ? AccentLightColor
-                                            : NormalLightColor
-                                    }
+            <SizeContext.Consumer>
+                {size => (
+                    <IsPlayListContext.Consumer>
+                        {isPlayList => (
+                            <Fragment>
+                                <StatusBar
+                                    barStyle="dark-content"
+                                    backgroundColor={BackgroundColor}
                                 />
-                            </Button>
-                            {!isPlayList && this.isPlayListAllowed() ? (
-                                <Button
-                                    onPress={onOpenPlayList}
-                                    isDisabled={!hasDownloadedAny}
-                                >
-                                    <OrderedList
-                                        fill={
-                                            hasDownloadedAny
-                                                ? AccentLightColor
-                                                : NormalLightColor
+                                <Container
+                                    data={items}
+                                    renderItem={this.renderItem}
+                                    initialNumToRender={15}
+                                    removeClippedSubviews={true}
+                                    onMomentumScrollEnd={e => {
+                                        this.onMomentumScrollEnd(e, isPlayList)
+
+                                        if (onMomentumScrollEnd) {
+                                            onMomentumScrollEnd(e)
                                         }
-                                    />
-                                </Button>
-                            ) : null}
-                            {showBrowseButton ? (
-                                <Button onPress={onBrowse}>
-                                    {Platform.select({
-                                        ios: <Safari />,
-                                        android: <Chrome />,
-                                    })}
-                                </Button>
-                            ) : null}
-                        </ButtonContainer>
-                    </Fragment>
+                                    }}
+                                    size={size}
+                                    ref={view => {
+                                        view &&
+                                            view.getScrollResponder &&
+                                            view.getScrollResponder().scrollTo({
+                                                x: 0,
+                                                y: isPlayList ? 0 : offset,
+                                            })
+                                    }}
+                                    isPlayList={isPlayList}
+                                    {...rest}
+                                />
+                                <ButtonContainer>
+                                    <Button
+                                        onPress={onRandom}
+                                        isDisabled={!hasDownloadedAny}
+                                    >
+                                        <Random
+                                            fill={
+                                                hasDownloadedAny
+                                                    ? AccentLightColor
+                                                    : NormalLightColor
+                                            }
+                                        />
+                                    </Button>
+                                    {!isPlayList && this.isPlayListAllowed() ? (
+                                        <Button
+                                            onPress={onOpenPlayList}
+                                            isDisabled={!hasDownloadedAny}
+                                        >
+                                            <OrderedList
+                                                fill={
+                                                    hasDownloadedAny
+                                                        ? AccentLightColor
+                                                        : NormalLightColor
+                                                }
+                                            />
+                                        </Button>
+                                    ) : null}
+                                    {showBrowseButton ? (
+                                        <Button onPress={onBrowse}>
+                                            {Platform.select({
+                                                ios: <Safari />,
+                                                android: <Chrome />,
+                                            })}
+                                        </Button>
+                                    ) : null}
+                                </ButtonContainer>
+                            </Fragment>
+                        )}
+                    </IsPlayListContext.Consumer>
                 )}
-            </IsPlayListContext.Consumer>
+            </SizeContext.Consumer>
         )
     }
 
-    renderAlbums = () => {
-        const { tracks } = this.props
+    renderItem = ({ item: { type, albumName, trackName } }) => {
+        const { labels, onPlay } = this.props
 
-        return Object.keys(tracks).map(album => this.renderAlbum(album))
-    }
+        const hasDownloaded = this.state[`hasDownloaded${albumName}`]
 
-    renderAlbum = album => {
-        const { labels } = this.props
-
-        const hasDownloaded = this.state[`hasDownloaded${album}`]
-
-        return (
-            <Fragment key={album}>
+        if (type === "album") {
+            return (
                 <TrackListAlbum
-                    name={album}
-                    label={labels[album].Album}
+                    name={albumName}
+                    label={labels[albumName].Album}
                     isDownloaded={hasDownloaded}
                     onDownloaded={this.onDownloaded}
                     onDeleted={this.onDeleted}
                 />
-                {this.renderTracksForAlbum(album, hasDownloaded)}
-            </Fragment>
-        )
-    }
+            )
+        }
 
-    renderTracksForAlbum = (album, hasDownloaded) => {
-        const { tracks, labels, onPlay } = this.props
-
-        return Object.keys(tracks[album]).map(track => {
+        if (type === "track") {
             return (
                 <TrackListTrack
-                    key={album + track}
-                    label={labels[album][track]}
-                    onPress={() => onPlay(album, track)}
+                    label={labels[albumName][trackName]}
+                    onPress={() => onPlay(albumName, trackName)}
                     isDisabled={!hasDownloaded}
                 />
             )
-        })
+        }
     }
 }
 

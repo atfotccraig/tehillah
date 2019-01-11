@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "styled-components"
 import { IsPlayListContext, SizeContext } from "app/context"
 import { BackgroundColor } from "app/colors"
