@@ -108,7 +108,7 @@ class TrackList extends Component {
             this.setState({
                 offset: offset ? JSON.parse(offset) : 0,
             })
-        }, 0)
+        }, 750)
     }
 
     onDownloaded = async album => {

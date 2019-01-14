@@ -1,25 +1,62 @@
 import React from "react"
-
-import {
-    Line,
-    Repeat,
-    Title,
-    Track,
-    Verse,
-    Yahweh,
-    Yahshua,
-    Yisrael,
-} from "app/components"
-
+import { Line, Title, Track, Verse } from "app/components"
 import Labels from "app/labels"
 
 const Offering = props => (
-    <Track cues={["00:00", "00:05"]} music="pleasing_you_offering" {...props}>
+    <Track
+        cues={[
+            "00:00",
+            "00:14",
+            "00:38",
+            "00:51",
+            "01:15",
+            "01:41",
+            "02:32",
+            "02:44",
+        ]}
+        music="pleasing_you_offering"
+        {...props}
+    >
         <Title>
             <Labels.PleasingYou.Offering />
         </Title>
         <Verse>
-            <Line>words</Line>
+            <Line>You do not delight in sacrifice</Line>
+            <Line>You do not delight in offering</Line>
+            <Line>Or surely I would bring</Line>
+            <Line>Or surely I would bring</Line>
+        </Verse>
+        <Verse>
+            <Line>But the sacrifice that you desire</Line>
+            <Line>is a broken, contrite heart</Line>
+        </Verse>
+        <Verse>
+            <Line>I could never bring an offering</Line>
+            <Line>when it hasn't cost me anything</Line>
+            <Line>You paid the price for me</Line>
+            <Line>I'll count the cost for you</Line>
+        </Verse>
+        <Verse>
+            <Line>Create in me a steadfast heart</Line>
+            <Line>and cast me not away</Line>
+            <Line>Restore to me the joy you give</Line>
+            <Line>to those upheld by you</Line>
+        </Verse>
+        <Verse repeat>
+            <Line>Let my tongue sing aloud</Line>
+            <Line>of your righteousness</Line>
+            <Line>Open up my lips</Line>
+            <Line>to declare your praise</Line>
+        </Verse>
+        <Verse>
+            <Line>You desire truth</Line>
+            <Line>in the inward parts</Line>
+            <Line>and in the hidden place</Line>
+            <Line>you make me wise</Line>
+        </Verse>
+        <Verse>
+            <Line>So wash me and I'll be clean</Line>
+            <Line>to bring an offering</Line>
         </Verse>
     </Track>
 )
