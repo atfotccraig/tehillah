@@ -93,6 +93,26 @@ export const RefinedFiles = [
     "refined_youre_my_defender.mp3",
 ]
 
+export const TheBetrothalName = "the_betrothal_2019_01_22"
+export const TheBetrothalUri = `${BaseUri}/${TheBetrothalName}.zip`
+export const TheBetrothalSize = "20mb"
+
+export const TheBetrothalFiles = [
+    "the_betrothal_2019_01_22.zip",
+    "the_betrothal_can_you_hear.mp3",
+    "the_betrothal_come_have_you_way.mp3",
+    "the_betrothal_come_rejoice.mp3",
+    "the_betrothal_declaration_of_faith.mp3",
+    "the_betrothal_gather_us.mp3",
+    "the_betrothal_in_your_presence.mp3",
+    "the_betrothal_tehillim_9.mp3",
+    "the_betrothal_tehillim_42.mp3",
+    "the_betrothal_the_betrothal.mp3",
+    "the_betrothal_waiting_for_you.mp3",
+    "the_betrothal_well_remember.mp3",
+    "the_betrothal_you_are_yahweh.mp3",
+]
+
 export const TreasuredPossessionName = "treasured_possession_2018_12_27"
 export const TreasuredPossessionUri = `${BaseUri}/${TreasuredPossessionName}.zip`
 export const TreasuredPossessionSize = "38.2mb"
@@ -155,6 +175,10 @@ export default {
     RefinedUri,
     RefinedSize,
     RefinedFiles,
+    TheBetrothalName,
+    TheBetrothalUri,
+    TheBetrothalSize,
+    TheBetrothalFiles,
     TreasuredPossessionName,
     TreasuredPossessionUri,
     TreasuredPossessionSize,
