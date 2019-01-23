@@ -112,12 +112,12 @@ class TrackListAlbum extends Component {
                     console.log(`filter ${file}: ${e.message}`)
                 }
 
-                this.setState({
-                    isDownloading: false,
-                })
-
                 if (onDownloaded) {
-                    onDownloaded(name)
+                    onDownloaded(name, () => {
+                        this.setState({
+                            isDownloading: false,
+                        })
+                    })
                 }
             })
             .error(error => {

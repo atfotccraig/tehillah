@@ -111,7 +111,7 @@ class TrackList extends Component {
         }, 750)
     }
 
-    onDownloaded = async album => {
+    onDownloaded = async (album, onDone) => {
         const name = Downloads[`${album}Name`]
 
         await AsyncStorage.setItem(`has-downloaded-${name}`, `yes`)
@@ -121,12 +121,12 @@ class TrackList extends Component {
                 [`hasDownloaded${album}`]: true,
             },
             () => {
-                this.onDownloadsChanged()
+                this.onDownloadsChanged(onDone)
             },
         )
     }
 
-    onDownloadsChanged = () => {
+    onDownloadsChanged = onDone => {
         const { tracks, onDownloadsChanged } = this.props
 
         const downloads = {}
@@ -147,6 +147,9 @@ class TrackList extends Component {
             () => {
                 if (onDownloadsChanged) {
                     onDownloadsChanged(downloads, hasDownloadedAny)
+                }
+                if (onDone) {
+                    onDone()
                 }
             },
         )
