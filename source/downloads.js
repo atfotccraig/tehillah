@@ -20,6 +20,26 @@ export const BecauseOfTheLambFiles = [
     "because_of_the_lamb_yom_kippur.mp3",
 ]
 
+export const FaithHasASoundName = "faith_has_a_sound_2019_01_29"
+export const FaithHasASoundUri = `${BaseUri}/${FaithHasASoundName}.zip`
+export const FaithHasASoundSize = "21.7mb"
+
+export const FaithHasASoundFiles = [
+    "faith_has_a_sound_2019_01_29.zip",
+    "faith_has_a_sound_count_the_cost.mp3",
+    "faith_has_a_sound_faith_has_a_sound.mp3",
+    "faith_has_a_sound_go_through_the_gates.mp3",
+    "faith_has_a_sound_lift_your_hands_in_worship.mp3",
+    "faith_has_a_sound_my_one_desire.mp3",
+    "faith_has_a_sound_my_prayer.mp3",
+    "faith_has_a_sound_pure.mp3",
+    "faith_has_a_sound_tehillim_30.mp3",
+    "faith_has_a_sound_tehillim_46.mp3",
+    "faith_has_a_sound_ten_words_love_song.mp3",
+    "faith_has_a_sound_the_choice_to_rejoice.mp3",
+    "faith_has_a_sound_you_still_love_me.mp3",
+]
+
 export const NewSongsName = "new_songs_2019_01_02"
 export const NewSongsUri = `${BaseUri}/${NewSongsName}.zip`
 export const NewSongsSize = "15.1mb"
@@ -159,6 +179,10 @@ export default {
     BecauseOfTheLambUri,
     BecauseOfTheLambSize,
     BecauseOfTheLambFiles,
+    FaithHasASoundName,
+    FaithHasASoundUri,
+    FaithHasASoundSize,
+    FaithHasASoundFiles,
     NewSongsName,
     NewSongsUri,
     NewSongsSize,

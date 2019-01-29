@@ -1,4 +1,5 @@
 import BecauseOfTheLamb from "./because-of-the-lamb"
+import FaithHasASound from "./faith-has-a-sound"
 import NewSongs from "./new-songs"
 import PeaceWithYou from "./peace-with-you"
 import PleasingYou from "./pleasing-you"
@@ -15,6 +16,7 @@ export {
     WonderfulMaker,
     PleasingYou,
     TheBetrothal,
+    FaithHasASound,
     BecauseOfTheLamb,
 }
 
@@ -26,5 +28,6 @@ export default {
     WonderfulMaker,
     PleasingYou,
     TheBetrothal,
+    FaithHasASound,
     BecauseOfTheLamb,
 }

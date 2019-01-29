@@ -170,7 +170,7 @@ class TrackList extends Component {
         )
     }
 
-    onMomentumScrollEnd = async ({ nativeEvent }, isPlayList) => {
+    onScroll = async ({ nativeEvent }, isPlayList) => {
         if (isPlayList) {
             return
         }
@@ -188,7 +188,7 @@ class TrackList extends Component {
             onBrowse,
             showBrowseButton,
             tracks,
-            onMomentumScrollEnd,
+            onScroll,
             ...rest
         } = this.props
 
@@ -230,13 +230,14 @@ class TrackList extends Component {
                                     renderItem={this.renderItem}
                                     initialNumToRender={15}
                                     removeClippedSubviews={true}
-                                    onMomentumScrollEnd={e => {
-                                        this.onMomentumScrollEnd(e, isPlayList)
+                                    onScroll={e => {
+                                        this.onScroll(e, isPlayList)
 
-                                        if (onMomentumScrollEnd) {
-                                            onMomentumScrollEnd(e)
+                                        if (onScroll) {
+                                            onScroll(e)
                                         }
                                     }}
+                                    scrollEventThrottle={250}
                                     size={size}
                                     ref={view => {
                                         view &&

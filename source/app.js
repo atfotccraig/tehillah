@@ -164,7 +164,7 @@ class App extends Component {
         })
     }
 
-    onMomentumScrollEnd = async e => {
+    onScroll = async e => {
         const { hasSeenScrollIntro } = this.state
 
         if (hasSeenScrollIntro) {
@@ -240,12 +240,7 @@ class App extends Component {
     }
 
     renderTrackList = () => {
-        const {
-            isPlayList,
-            playList,
-            showBrowseButton,
-            trackListScrollPosition,
-        } = this.state
+        const { isPlayList, playList, showBrowseButton } = this.state
 
         const trackList = (
             <TrackList
@@ -255,7 +250,7 @@ class App extends Component {
                 onBrowse={this.onBrowse}
                 onOpenPlayList={this.onOpenPlayList}
                 onRandom={this.onRandom}
-                onMomentumScrollEnd={this.onMomentumScrollEnd}
+                onScroll={this.onScroll}
                 onPlay={isPlayList ? this.onQueueTrack : this.onPlayTrack}
                 onDownloadsChanged={this.onDownloadsChanged}
             />
