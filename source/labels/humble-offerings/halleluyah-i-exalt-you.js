@@ -1,3 +1,3 @@
-const HalleluyahIExaltYou = () => "Halleluyah I Exalt You"
+const HalleluyahIExaltYou = () => "Halleluyah, I Exalt You"
 
 export { HalleluyahIExaltYou }
