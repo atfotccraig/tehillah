@@ -3,6 +3,7 @@ import { ButtonContainer } from "./button-container"
 import { ErrorBoundary } from "./error-boundary"
 import { ButtonIntro } from "./button-intro"
 import { Hebrew } from "./hebrew"
+import { Hekal } from "./hekal"
 import { Immanuel } from "./immanuel"
 import { Line } from "./line"
 import { PlayList } from "./play-list"
@@ -26,6 +27,7 @@ export {
     ErrorBoundary,
     ButtonIntro,
     Hebrew,
+    Hekal,
     Immanuel,
     Line,
     PlayList,
