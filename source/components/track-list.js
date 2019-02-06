@@ -237,10 +237,11 @@ class TrackList extends Component {
                                             onScroll(e)
                                         }
                                     }}
-                                    scrollEventThrottle={250}
                                     size={size}
+                                    scrollEventThrottle={250}
                                     ref={view => {
-                                        view &&
+                                        __DEV__ &&
+                                            view &&
                                             view.getScrollResponder &&
                                             view.getScrollResponder().scrollTo({
                                                 x: 0,

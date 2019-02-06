@@ -40,6 +40,28 @@ export const FaithHasASoundFiles = [
     "faith_has_a_sound_you_still_love_me.mp3",
 ]
 
+export const HumbleOfferingsName = "humble_offerings_2018_02_06"
+export const HumbleOfferingsUri = `${BaseUri}/${HumbleOfferingsName}.zip`
+export const HumbleOfferingsSize = "20.6mb"
+
+export const HumbleOfferingsFiles = [
+    "humble_offerings_2018_02_06.zip",
+    "humble_offerings_around_the_mountain.mp3",
+    "humble_offerings_be_silent_before_him.mp3",
+    "humble_offerings_come_have_your_way.mp3",
+    "humble_offerings_every_tribe_every_tongue.mp3",
+    "humble_offerings_great_is_your_name.mp3",
+    "humble_offerings_halleluyah_i_exalt_you.mp3",
+    "humble_offerings_hes_alive.mp3",
+    "humble_offerings_humble_offering.mp3",
+    "humble_offerings_i_choose_you.mp3",
+    "humble_offerings_praise_and_esteem.mp3",
+    "humble_offerings_tehillim_149.mp3",
+    "humble_offerings_tsephanyah_3.mp3",
+    "humble_offerings_you_are_worthy.mp3",
+    "humble_offerings_you_gave_all.mp3",
+]
+
 export const NewSongsName = "new_songs_2019_01_02"
 export const NewSongsUri = `${BaseUri}/${NewSongsName}.zip`
 export const NewSongsSize = "15.1mb"
@@ -183,6 +205,10 @@ export default {
     FaithHasASoundUri,
     FaithHasASoundSize,
     FaithHasASoundFiles,
+    HumbleOfferingsName,
+    HumbleOfferingsUri,
+    HumbleOfferingsSize,
+    HumbleOfferingsFiles,
     NewSongsName,
     NewSongsUri,
     NewSongsSize,
