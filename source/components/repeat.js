@@ -10,6 +10,10 @@ const Repeat = ({ name, verses }) => {
         }
     })
 
+    if (!found) {
+        throw new Error(`Could not find verse named ${verse.props.name}`)
+    }
+
     return found
 }
 
