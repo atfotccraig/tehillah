@@ -7,6 +7,7 @@ import PleasingYou from "./pleasing-you"
 import Refined from "./refined"
 import TheBetrothal from "./the-betrothal"
 import TreasuredPossession from "./treasured-possession"
+import TrueWorship from "./true-worship"
 import WonderfulMaker from "./wonderful-maker"
 
 export {
@@ -19,6 +20,7 @@ export {
     TheBetrothal,
     FaithHasASound,
     HumbleOfferings,
+    TrueWorship,
     BecauseOfTheLamb,
 }
 
@@ -32,5 +34,6 @@ export default {
     TheBetrothal,
     FaithHasASound,
     HumbleOfferings,
+    TrueWorship,
     BecauseOfTheLamb,
 }

@@ -174,6 +174,26 @@ export const TreasuredPossessionFiles = [
     "treasured_possession_when_yahweh_comes.mp3",
 ]
 
+export const TrueWorshipName = "true_worship_2019_02_13"
+export const TrueWorshipUri = `${BaseUri}/${TrueWorshipName}.zip`
+export const TrueWorshipSize = "22.9mb"
+
+export const TrueWorshipFiles = [
+    "true_worship_2019_02_13.zip",
+    "true_worship_arise_shine.mp3",
+    "true_worship_halleluyah.mp3",
+    "true_worship_king_josiah.mp3",
+    "true_worship_let_the_king_almighty_come.mp3",
+    "true_worship_my_deliverance.mp3",
+    "true_worship_our_coming_king.mp3",
+    "true_worship_refuge.mp3",
+    "true_worship_rise_up.mp3",
+    "true_worship_song_of_the_bride.mp3",
+    "true_worship_tehillah_100.mp3",
+    "true_worship_the_still_small_voice.mp3",
+    "true_worship_the_voice_of_yahweh.mp3",
+]
+
 export const WonderfulMakerName = "wonderful_maker_2019_01_02"
 export const WonderfulMakerUri = `${BaseUri}/${WonderfulMakerName}.zip`
 export const WonderfulMakerSize = "45.2mb"
@@ -233,6 +253,10 @@ export default {
     TreasuredPossessionUri,
     TreasuredPossessionSize,
     TreasuredPossessionFiles,
+    TrueWorshipName,
+    TrueWorshipUri,
+    TrueWorshipSize,
+    TrueWorshipFiles,
     WonderfulMakerName,
     WonderfulMakerUri,
     WonderfulMakerSize,
