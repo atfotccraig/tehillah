@@ -174,11 +174,12 @@ export const TreasuredPossessionFiles = [
     "treasured_possession_when_yahweh_comes.mp3",
 ]
 
-export const TrueWorshipName = "true_worship_2019_02_13"
+export const TrueWorshipName = "true_worship_2019_02_27"
 export const TrueWorshipUri = `${BaseUri}/${TrueWorshipName}.zip`
 export const TrueWorshipSize = "22.9mb"
 
 export const TrueWorshipFiles = [
+    "true_worship_2019_02_27.zip",
     "true_worship_2019_02_13.zip",
     "true_worship_arise_shine.mp3",
     "true_worship_halleluyah.mp3",
