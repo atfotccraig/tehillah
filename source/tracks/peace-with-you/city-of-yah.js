@@ -41,7 +41,7 @@ const CityOfYah = props => (
             <Line>
                 Be excited, oh dwelling of <Yahweh />!
             </Line>
-            <Line>￼￼He is coming to live in your midst</Line>
+            <Line>He is coming to live in your midst</Line>
         </Verse>
         <Verse name="three">
             <Line>He’ll make your officers peace</Line>
