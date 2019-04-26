@@ -48,13 +48,13 @@ const AroundTheMountain = props => (
         </Verse>
         <Verse name="one">
             <Line>And every time</Line>
-            <Line>you meet me in the wilderness</Line>
-            <Line>And every time, you pick me up</Line>
+            <Line>You meet me in the wilderness</Line>
+            <Line>And every time, You pick me up</Line>
             <Line>and speak into my heart</Line>
         </Verse>
         <Verse name="two">
             <Line>And every time</Line>
-            <Line>you tell me that you love me</Line>
+            <Line>You tell me that You love me</Line>
             <Line>And in that moment I know I am free</Line>
         </Verse>
         <Repeat name="one" />
@@ -63,18 +63,18 @@ const AroundTheMountain = props => (
             <Line>Standing at a crossroads</Line>
             <Line>two paths before my face</Line>
             <Line>Asking for directions</Line>
-            <Line>so I’ll walk in your grace</Line>
+            <Line>so I’ll walk in Your grace</Line>
         </Verse>
         <Verse>
             <Line>Often-times before this</Line>
             <Line>I’ve had to make a choice</Line>
             <Line>Then I never listened</Line>
-            <Line>never stopped to hear your voice</Line>
+            <Line>never stopped to hear Your voice</Line>
         </Verse>
         <Verse>
             <Line>But every time</Line>
-            <Line>you meet me in the wilderness</Line>
-            <Line>And every time, you pick me up</Line>
+            <Line>You meet me in the wilderness</Line>
+            <Line>And every time, You pick me up</Line>
             <Line>and speak into my heart</Line>
         </Verse>
         <Repeat name="two" />
