@@ -12,35 +12,35 @@ const HalleluyahIExaltYou = props => (
             <Labels.HumbleOfferings.HalleluyahIExaltYou />
         </Title>
         <Verse name="one">
-            <Line>Halleluyah, I exalt you</Line>
+            <Line>Halleluyah, I exalt You</Line>
             <Line>and my heart will stand in wonder</Line>
             <Line>
                 Mighty <Yahweh />, come and meet me
             </Line>
-            <Line>I am desperate for your presence</Line>
+            <Line>I am desperate for Your presence</Line>
         </Verse>
         <Verse>
             <Line>You are magnificent</Line>
-            <Line>My being seeks you</Line>
+            <Line>My being seeks You</Line>
             <Line>I won’t be satisfied</Line>
             <Line>with any other</Line>
         </Verse>
         <Verse>
-            <Line>Turn my heart to your instructions</Line>
+            <Line>Turn my heart to Your instructions</Line>
             <Line>They will shield me and sustain me</Line>
             <Line>Please accept my humble offering</Line>
-            <Line>I am broken, you can heal me</Line>
+            <Line>I am broken, You can heal me</Line>
         </Verse>
         <Verse>
             <Line>You are my hiding place</Line>
             <Line>You are my portion</Line>
-            <Line>Your laws have been my songs</Line>
+            <Line>Your Laws have been my songs</Line>
             <Line>in my sojourning</Line>
         </Verse>
         <Verse>
             <Line>Let my heart be pure and perfect</Line>
             <Line>Your compassions they revive me</Line>
-            <Line>I will sing of your great wonder</Line>
+            <Line>I will sing of Your great wonder</Line>
             <Line>and my lips will pour forth praises</Line>
         </Verse>
         <Repeat name="one" />
