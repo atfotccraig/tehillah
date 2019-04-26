@@ -25,7 +25,7 @@ const TenWordsLoveSong = props => (
         <Verse>
             <Line>And Elohim spoke all these words, saying</Line>
             <Line>
-                I am <Yahweh />, your Elohim, who brought you
+                I am <Yahweh />, Your Elohim, who brought you
             </Line>
             <Line>out of the land of Mitsrayim</Line>
             <Line>out of the house of slavery</Line>
@@ -40,19 +40,19 @@ const TenWordsLoveSong = props => (
             <Line>
                 For I am <Yahweh />, your jealous El
             </Line>
-            <Line>Love me only that I might do you well</Line>
+            <Line>Love Me only that I might do you well</Line>
         </Verse>
         <Verse>
             <Line>You shall not bring</Line>
-            <Line>the name of Elohim to naught</Line>
+            <Line>the Name of Elohim to naught</Line>
             <Line>You shall keep the sabbath day</Line>
             <Line>it’s set apart</Line>
         </Verse>
         <Verse>
             <Line>In six days I made the heaven</Line>
             <Line>and the earth and the sea</Line>
-            <Line>And I made you to look like me</Line>
-            <Line>to look like me</Line>
+            <Line>And I made you to look like Me</Line>
+            <Line>to look like Me</Line>
         </Verse>
         <Verse>
             <Line>You shall respect and you shall honour</Line>
@@ -71,12 +71,12 @@ const TenWordsLoveSong = props => (
             <Line>You do not want</Line>
             <Line>what doesn’t belong to you</Line>
             <Line>You only want to do what I want you to</Line>
-            <Line>You are my greatest love</Line>
-            <Line>the apple of my eye</Line>
+            <Line>You are My greatest love</Line>
+            <Line>the apple of My eye</Line>
         </Verse>
         <Verse repeat>
-            <Line>You are my greatest love</Line>
-            <Line>the apple of my eye</Line>
+            <Line>You are My greatest love</Line>
+            <Line>the apple of My eye</Line>
         </Verse>
     </Track>
 )
