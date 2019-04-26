@@ -30,12 +30,12 @@ const IAmLoved = props => (
         </Title>
         <Verse name="one">
             <Line>I am loved, I am loved</Line>
-            <Line>I am loved by the king</Line>
+            <Line>I am loved by the King</Line>
             <Line>And it is such a wonderful thing</Line>
         </Verse>
         <Verse name="two">
             <Line>I am loved, I am loved</Line>
-            <Line>I am loved by the king</Line>
+            <Line>I am loved by the King</Line>
             <Line>Come and join in the song that I sing</Line>
         </Verse>
         <Repeat name="one" />
@@ -47,7 +47,7 @@ const IAmLoved = props => (
         </Verse>
         <Verse>
             <Line>But when, on that day</Line>
-            <Line>the perfect one comes</Line>
+            <Line>the Perfect One comes</Line>
             <Line>I declare that by His blood I’m bought</Line>
         </Verse>
         <Repeat name="one" />
@@ -55,8 +55,8 @@ const IAmLoved = props => (
         <Verse>
             <Line>Faith will remain and hope will not fail</Line>
             <Line>But love is the greatest of all</Line>
-            <Line>And so I will wait until you return</Line>
-            <Line>and your bride will respond to your call</Line>
+            <Line>And so I will wait until You return</Line>
+            <Line>and Your bride will respond to Your call</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
