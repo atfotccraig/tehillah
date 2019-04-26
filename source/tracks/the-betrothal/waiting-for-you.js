@@ -29,15 +29,15 @@ const WaitingForYou = props => (
             <Labels.TheBetrothal.WaitingForYou />
         </Title>
         <Verse>
-            <Line>My heart yearns for you, Yah</Line>
-            <Line>I have no other hope, but you</Line>
+            <Line>My heart yearns for You, Yah</Line>
+            <Line>I have no other hope, but You</Line>
         </Verse>
         <Verse>
             <Line>I’ve walked through the wilderness</Line>
             <Line>I’ve come to the point of surrender</Line>
         </Verse>
         <Verse>
-            <Line>My soul cries for your truth</Line>
+            <Line>My soul cries for Your truth</Line>
             <Line>I have relinquished my own wants</Line>
         </Verse>
         <Verse>
@@ -45,8 +45,8 @@ const WaitingForYou = props => (
             <Line>The things that will bind me to this earth</Line>
         </Verse>
         <Verse>
-            <Line>I know you hear my wounded cry</Line>
-            <Line>I know you see my trembling hands</Line>
+            <Line>I know You hear my wounded cry</Line>
+            <Line>I know You see my trembling hands</Line>
         </Verse>
         <Verse>
             <Line>I have no other place to turn</Line>
@@ -58,14 +58,14 @@ const WaitingForYou = props => (
         </Verse>
         <Verse>
             <Line>The battle seems long in desperate times</Line>
-            <Line>But I know the vict’ry is in you</Line>
+            <Line>But I know the vict’ry is in You</Line>
         </Verse>
         <Verse>
-            <Line>And when you return, Yah</Line>
+            <Line>And when You return, Yah</Line>
             <Line>Please have compassion on my life</Line>
         </Verse>
         <Verse>
-            <Line>My eyes long to see you, master</Line>
+            <Line>My eyes long to see You, Master</Line>
             <Line>I hope my faith stands firm in time</Line>
         </Verse>
         <Verse name="one">
@@ -73,8 +73,8 @@ const WaitingForYou = props => (
             <Line>I will lay bare my stumbling heart</Line>
         </Verse>
         <Verse name="two">
-            <Line>I will hold faith in your great word</Line>
-            <Line>And I will wait for your reward</Line>
+            <Line>I will hold faith in Your great Word</Line>
+            <Line>And I will wait for Your reward</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
