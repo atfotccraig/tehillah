@@ -40,7 +40,7 @@ const TheAnswerToMyQuestion = props => (
         </Verse>
         <Verse>
             <Line>I stumble, I fall</Line>
-            <Line>from your narrow way</Line>
+            <Line>from Your narrow way</Line>
             <Line>So many times</Line>
             <Line>I don’t know what to say</Line>
         </Verse>
@@ -49,16 +49,16 @@ const TheAnswerToMyQuestion = props => (
             <Line>I don’t know where to begin</Line>
         </Verse>
         <Verse>
-            <Line>But you call out my name</Line>
-            <Line>and you reach out your hand</Line>
-            <Line>Then you pull me to my feet</Line>
-            <Line>and you teach me how to stand</Line>
+            <Line>But You call out my name</Line>
+            <Line>and You reach out Your hand</Line>
+            <Line>Then You pull me to my feet</Line>
+            <Line>and You teach me how to stand</Line>
         </Verse>
         <Verse>
-            <Line>Yes you call out my name</Line>
-            <Line>and you reach out your hand</Line>
-            <Line>Then you pull me to my feet</Line>
-            <Line>and you teach me how to stand</Line>
+            <Line>Yes You call out my name</Line>
+            <Line>and You reach out Your hand</Line>
+            <Line>Then You pull me to my feet</Line>
+            <Line>and You teach me how to stand</Line>
         </Verse>
         <Verse repeat>
             <Line>Wash me clean, make me strong</Line>
@@ -67,13 +67,13 @@ const TheAnswerToMyQuestion = props => (
         <Verse>
             <Line>Once I was lost</Line>
             <Line>and alone in the dark</Line>
-            <Line>but now you have given</Line>
+            <Line>but now You have given</Line>
             <Line>a light for my path</Line>
         </Verse>
         <Verse>
             <Line>My eyes have been opened</Line>
             <Line>and my ears have heard</Line>
-            <Line>The life that is found in your word</Line>
+            <Line>The life that is found in Your Word</Line>
         </Verse>
         <Verse>
             <Line>I moved out of darkness</Line>
@@ -87,16 +87,16 @@ const TheAnswerToMyQuestion = props => (
             <Line>This is where my life begins</Line>
         </Verse>
         <Verse>
-            <Line>When you called out my name</Line>
-            <Line>and you reached out your hand</Line>
-            <Line>Then you pulled me to my feet</Line>
-            <Line>and you taught me how to stand</Line>
+            <Line>When You called out my name</Line>
+            <Line>and You reached out Your hand</Line>
+            <Line>Then You pulled me to my feet</Line>
+            <Line>and You taught me how to stand</Line>
         </Verse>
         <Verse>
-            <Line>Yes you called out my name</Line>
-            <Line>and you reached out your hand</Line>
-            <Line>Then you pulled me to my feet</Line>
-            <Line>and you taught me how to stand</Line>
+            <Line>Yes You called out my name</Line>
+            <Line>and You reached out Your hand</Line>
+            <Line>Then You pulled me to my feet</Line>
+            <Line>and You taught me how to stand</Line>
         </Verse>
         <Verse>
             <Line>Now I stand</Line>
