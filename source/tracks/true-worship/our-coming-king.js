@@ -29,16 +29,16 @@ const OurComingKing = props => (
             <Labels.TrueWorship.OurComingKing />
         </Title>
         <Verse name="one">
-            <Line>The king is looking down on earth</Line>
+            <Line>The King is looking down on earth</Line>
             <Line>He’s seated on the throne</Line>
             <Line>To Him we lift our voices high</Line>
             <Line>We worship Him alone</Line>
         </Verse>
         <Verse name="two">
-            <Line>He’s the mighty one of heaven</Line>
-            <Line>the one that we adore</Line>
+            <Line>He’s the Mighty One of heaven</Line>
+            <Line>the One that we adore</Line>
             <Line>
-                We’ll praise the worthy name of <Yahweh />
+                We’ll praise the worthy Name of <Yahweh />
             </Line>
             <Line>now and ever more</Line>
         </Verse>
@@ -53,7 +53,7 @@ const OurComingKing = props => (
         <Verse>
             <Line>And even though it sometimes feels</Line>
             <Line>like there’s no hope</Line>
-            <Line>our king prepares to rise</Line>
+            <Line>our King prepares to rise</Line>
             <Line>in all His might</Line>
         </Verse>
         <Verse name="three">
@@ -66,7 +66,7 @@ const OurComingKing = props => (
             <Line>For a time it may appear</Line>
             <Line>that darkness overcame</Line>
             <Line>but wait and see as Elohim</Line>
-            <Line>restores His righteous name</Line>
+            <Line>restores His righteous Name</Line>
         </Verse>
         <Repeat name="three" />
         <Repeat name="four" />
@@ -80,14 +80,14 @@ const OurComingKing = props => (
             <Line>And hope will rise</Line>
             <Line>and love will be our banner</Line>
             <Line>
-                as <Yahweh /> comes with his amazing grace
+                as <Yahweh /> comes with His amazing grace
             </Line>
         </Verse>
         <Repeat name="five" />
         <Repeat name="six" />
         <Verse repeat>
             <Line>
-                As <Yahweh /> comes with his amazing grace
+                As <Yahweh /> comes with His amazing grace
             </Line>
         </Verse>
     </Track>
