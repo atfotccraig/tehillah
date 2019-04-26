@@ -27,31 +27,31 @@ const IChooseYou = props => (
             <Line>I’m presented with a choice to make</Line>
             <Line>time and time again</Line>
             <Line>And though I know what I should do</Line>
-            <Line>I need your help again</Line>
+            <Line>I need Your help again</Line>
         </Verse>
         <Verse>
-            <Line>The road to where you’re leading me</Line>
+            <Line>The road to where You’re leading me</Line>
             <Line>Is narrow and alone</Line>
             <Line>
                 But <Yahweh /> come and take my hand
             </Line>
-            <Line>I know you’ll take me home</Line>
+            <Line>I know You’ll take me home</Line>
         </Verse>
         <Verse name="one">
-            <Line>And I choose you every time</Line>
-            <Line>I choose you, I’m yours</Line>
-            <Line>and you are mine</Line>
+            <Line>And I choose You every time</Line>
+            <Line>I choose You, I’m Yours</Line>
+            <Line>and You are mine</Line>
         </Verse>
         <Verse name="two">
-            <Line>I choose you</Line>
+            <Line>I choose You</Line>
             <Line>though my heart is breaking</Line>
-            <Line>I choose you, I know you’ll mend</Line>
+            <Line>I choose You, I know You’ll mend</Line>
             <Line>the aching deep inside</Line>
         </Verse>
         <Verse name="three">
-            <Line>I choose you</Line>
+            <Line>I choose You</Line>
             <Line>I will not take another</Line>
-            <Line>I choose you over family</Line>
+            <Line>I choose You over family</Line>
             <Line>father, sister, brother</Line>
         </Verse>
         <Repeat name="one" />
@@ -59,13 +59,13 @@ const IChooseYou = props => (
         <Repeat name="three" />
         <Verse repeat>
             <Line>
-                I choose you, <Yahweh /> Elohim
+                I choose You, <Yahweh /> Elohim
             </Line>
-            <Line>I choose you</Line>
-            <Line>to come and be my king</Line>
+            <Line>I choose You</Line>
+            <Line>to come and be my King</Line>
         </Verse>
         <Verse>
-            <Line>I choose you</Line>
+            <Line>I choose You</Line>
         </Verse>
     </Track>
 )
