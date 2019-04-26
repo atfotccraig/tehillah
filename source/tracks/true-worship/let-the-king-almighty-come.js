@@ -40,33 +40,33 @@ const LetTheKingAlmightyCome = props => (
             <Line>Be lifted up, everlasting doors</Line>
         </Verse>
         <Verse name="three" repeat repeatText="x3">
-            <Line>Let the king almighty come!</Line>
+            <Line>Let the King Almighty come!</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Repeat name="three" />
         <Verse name="four" repeat>
-            <Line>Who is this mighty king?</Line>
+            <Line>Who is this Mighty King?</Line>
             <Line>Who is this about whom we sing?</Line>
             <Line>Who is this we adore?</Line>
             <Line>Who is this that we’re waiting for?</Line>
         </Verse>
         <Verse name="five">
             <Line>
-                His name is <Yahweh />, awesome and strong
+                His Name is <Yahweh />, awesome and strong
             </Line>
             <Line>
-                His name is <Yahweh />, salvation’s song
+                His Name is <Yahweh />, salvation’s song
             </Line>
             <Line>Let your life declare this song!</Line>
         </Verse>
         <Verse>
             <Line>
-                His name is <Yahweh />, oh He’s
+                His Name is <Yahweh />, oh He’s
             </Line>
             <Line>so awesome and strong</Line>
             <Line>
-                You know His name is <Yahweh />, salvation’s song
+                You know His Name is <Yahweh />, salvation’s song
             </Line>
             <Line>Let your life declare this song!</Line>
         </Verse>
@@ -82,11 +82,11 @@ const LetTheKingAlmightyCome = props => (
         <Repeat name="five" />
         <Verse>
             <Line>
-                His name is <Yahweh />, oh He’s
+                His Name is <Yahweh />, oh He’s
             </Line>
             <Line>so awesome and strong</Line>
             <Line>
-                I said His name is <Yahweh />, salvation’s song
+                I said His Name is <Yahweh />, salvation’s song
             </Line>
             <Line>Let your life declare this song!</Line>
         </Verse>
