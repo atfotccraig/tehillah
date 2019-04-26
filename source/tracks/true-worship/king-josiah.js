@@ -44,7 +44,7 @@ const KingJosiah = props => (
         </Verse>
         <Verse>
             <Line>Then he made a solemn oath to live</Line>
-            <Line>by the teaching of the word</Line>
+            <Line>by the teaching of the Word</Line>
             <Line>And he promised that he’d lead the land</Line>
             <Line>by the truth of what he’d heard</Line>
         </Verse>
@@ -55,7 +55,7 @@ const KingJosiah = props => (
             <Line>that are standing in my way</Line>
         </Verse>
         <Verse name="two">
-            <Line>I want to chase down your instruction</Line>
+            <Line>I want to chase down Your instruction</Line>
             <Line>with everything in me</Line>
             <Line>
                 Come remove the veil, <Yahweh />
@@ -65,7 +65,7 @@ const KingJosiah = props => (
         <Verse>
             <Line>Now that I have seen the truth</Line>
             <Line>let me never turn away</Line>
-            <Line>Keep my feet upon your path</Line>
+            <Line>Keep my feet upon Your path</Line>
             <Line>every night and day</Line>
         </Verse>
         <Verse>
@@ -78,7 +78,7 @@ const KingJosiah = props => (
         </Verse>
         <Verse>
             <Line>And I will make a solemn oath to live</Line>
-            <Line>by the teaching of the word</Line>
+            <Line>by the teaching of the Word</Line>
             <Line>And I promise I will be a light</Line>
             <Line>shining in the world</Line>
         </Verse>
