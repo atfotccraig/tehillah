@@ -20,14 +20,14 @@ const DeclarationOfFaith = props => (
         <Verse>
             <Line>I will strengthen my hands</Line>
             <Line>stand firm on my feet</Line>
-            <Line>For with you on our side</Line>
+            <Line>For with You on our side</Line>
             <Line>we’ll never be beat</Line>
         </Verse>
         <Verse repeat>
             <Line>Your joy gives me strength</Line>
             <Line>Your grace makes me stand</Line>
             <Line>Knowing that I</Line>
-            <Line>am safe in your hand</Line>
+            <Line>am safe in Your hand</Line>
         </Verse>
         <Verse>
             <Line>I will go forth in praise</Line>
@@ -36,10 +36,10 @@ const DeclarationOfFaith = props => (
             <Line>I look to the sky</Line>
         </Verse>
         <Verse>
-            <Line>I will stand on your truth</Line>
+            <Line>I will stand on Your truth</Line>
             <Line>I’ll never back down</Line>
-            <Line>For you are my song</Line>
-            <Line>the king of renown</Line>
+            <Line>For You are my song</Line>
+            <Line>the King of renown</Line>
         </Verse>
         <Verse repeat>
             <Line>Your banner is raised</Line>
