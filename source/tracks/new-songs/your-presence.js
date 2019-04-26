@@ -13,28 +13,28 @@ const YourPresence = props => (
         </Title>
         <Verse name="one">
             <Line>I lift my hands, an offering</Line>
-            <Line>to honour and esteem my king</Line>
-            <Line>I raise my voice, to you I sing</Line>
+            <Line>to honour and esteem my King</Line>
+            <Line>I raise my voice, to You I sing</Line>
             <Line>an honest prayer of thanksgiving</Line>
         </Verse>
         <Verse>
-            <Line>For the day I called you answered me</Line>
+            <Line>For the day I called You answered me</Line>
             <Line>There is nowhere else I’d rather be</Line>
             <Line>You will never change</Line>
-            <Line>and you will remain</Line>
+            <Line>and You will remain</Line>
             <Line>Some may fall away, but I want to stay</Line>
         </Verse>
         <Verse>
-            <Line>In your presence is life’s essence</Line>
+            <Line>In Your presence is life’s essence</Line>
             <Line>there is no-one else worth standing for</Line>
-            <Line>In your presence is life’s essence</Line>
+            <Line>In Your presence is life’s essence</Line>
             <Line>You can fill my life with joy and peace</Line>
         </Verse>
         <Verse>
-            <Line>In your presence is life’s essence</Line>
+            <Line>In Your presence is life’s essence</Line>
             <Line>there is nothing else worth bowing to</Line>
-            <Line>In your presence is life’s essence</Line>
-            <Line>it is why I live, I will praise you</Line>
+            <Line>In Your presence is life’s essence</Line>
+            <Line>it is why I live, I will praise You</Line>
         </Verse>
         <Repeat name="one" />
     </Track>
