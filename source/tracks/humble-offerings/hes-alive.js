@@ -53,7 +53,7 @@ const HesAlive = props => (
         </Verse>
         <Verse>
             <Line>And then when He arose He came</Line>
-            <Line>and asked me “Do you love me?”</Line>
+            <Line>and asked me “Do you love Me?”</Line>
             <Line>He restored me to right-standing</Line>
             <Line>on that day</Line>
         </Verse>
@@ -69,7 +69,7 @@ const HesAlive = props => (
             <Line>And no-one would believe me</Line>
             <Line>when I told them what He’d done</Line>
             <Line>But still I will declare</Line>
-            <Line>that He’s the light</Line>
+            <Line>that He’s the Light</Line>
         </Verse>
         <Verse repeat>
             <Line>He’s alive! He’s risen from the dead</Line>
