@@ -34,7 +34,7 @@ const CanYouHear = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse name="three" repeat>
-            <Line>Sing praises to the mighty king</Line>
+            <Line>Sing praises to the Mighty King</Line>
             <Line>Praises, lift your voice and sing</Line>
             <Line>
                 Praises to <Yahweh /> who reigns forever
