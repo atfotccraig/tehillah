@@ -14,15 +14,15 @@ const YouAreWorthy = props => (
         <Verse>
             <Line>You are worthy of all honour</Line>
             <Line>You are worthy of all fame</Line>
-            <Line>You are worthy, we lift you higher</Line>
-            <Line>You are worthy, we praise your name</Line>
+            <Line>You are worthy, we lift You higher</Line>
+            <Line>You are worthy, we praise Your Name</Line>
         </Verse>
         <Verse repeat>
-            <Line>And we will sing a song of love to you</Line>
+            <Line>And we will sing a song of love to You</Line>
             <Line>And we will shout in adoration</Line>
             <Line>And we’ll declare</Line>
-            <Line>the wonders of your majesty</Line>
-            <Line>We’ll make you known in all creation</Line>
+            <Line>the wonders of Your majesty</Line>
+            <Line>We’ll make You known in all creation</Line>
         </Verse>
         <Verse>
             <Line>You are worthy to be worshipped</Line>
@@ -32,9 +32,9 @@ const YouAreWorthy = props => (
         </Verse>
         <Verse repeat>
             <Line>Halleluyah, praise the Lamb</Line>
-            <Line>Halleluyah, praise your wondrous name</Line>
+            <Line>Halleluyah, praise your Wondrous Name</Line>
             <Line>Halleluyah, praise the Lamb</Line>
-            <Line>Halleluyah, praise your wondrous name</Line>
+            <Line>Halleluyah, praise your Wondrous Name</Line>
         </Verse>
     </Track>
 )
