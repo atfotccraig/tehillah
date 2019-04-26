@@ -13,16 +13,16 @@ const GatherUs = props => (
         </Title>
         <Verse repeat name="one">
             <Line>Gather us, gather us</Line>
-            <Line>We are the remnant of your people</Line>
-            <Line>We are the chosen of your bride</Line>
-            <Line>We are the remnant of your people</Line>
-            <Line>Gather us to your side</Line>
+            <Line>We are the remnant of Your people</Line>
+            <Line>We are the chosen of Your bride</Line>
+            <Line>We are the remnant of Your people</Line>
+            <Line>Gather us to Your side</Line>
         </Verse>
         <Verse>
-            <Line>We declare that you are He</Line>
-            <Line>The one who causes us to be</Line>
-            <Line>You are the rock on whom we stand</Line>
-            <Line>and we are safely in your hand</Line>
+            <Line>We declare that You are He</Line>
+            <Line>The One who causes us to be</Line>
+            <Line>You are the Rock on whom we stand</Line>
+            <Line>and we are safely in Your hand</Line>
         </Verse>
         <Repeat name="one" />
     </Track>
