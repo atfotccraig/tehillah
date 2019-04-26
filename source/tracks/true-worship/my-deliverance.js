@@ -30,7 +30,7 @@ const MyDeliverance = props => (
                 <Yahweh />, my strength and my song
             </Line>
             <Line>
-                <Yahweh />, I love you alone
+                <Yahweh />, I love You alone
             </Line>
         </Verse>
         <Repeat name="one" />
@@ -52,7 +52,7 @@ const MyDeliverance = props => (
                 <Yahweh />, my strength and my song
             </Line>
             <Line>
-                <Yahweh />, I love you alone
+                <Yahweh />, I love You alone
             </Line>
         </Verse>
         <Verse repeat repeatText="x7">
