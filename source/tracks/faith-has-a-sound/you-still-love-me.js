@@ -25,8 +25,8 @@ const YouStillLoveMe = props => (
             <Labels.FaithHasASound.YouStillLoveMe />
         </Title>
         <Verse name="one">
-            <Line>You, you took me out</Line>
-            <Line>You, you set me free</Line>
+            <Line>You, You took me out</Line>
+            <Line>You, You set me free</Line>
             <Line>You washed me clean</Line>
             <Line>How can it be?</Line>
         </Verse>
@@ -40,8 +40,8 @@ const YouStillLoveMe = props => (
         <Verse>
             <Line>It would have been enough to be</Line>
             <Line>to live a life completely set free</Line>
-            <Line>But above all that, you still bless me</Line>
-            <Line>You still bless me, you still bless me</Line>
+            <Line>But above all that, You still bless me</Line>
+            <Line>You still bless me, You still bless me</Line>
         </Verse>
         <Verse name="two">
             <Line>Everywhere that I turn</Line>
@@ -49,17 +49,17 @@ const YouStillLoveMe = props => (
             <Line>My husband’s eyes always on me</Line>
         </Verse>
         <Verse>
-            <Line>How you care for me</Line>
+            <Line>How You care for me</Line>
         </Verse>
         <Repeat name="two" />
         <Verse repeat>
-            <Line>How you care for me</Line>
+            <Line>How You care for me</Line>
         </Verse>
         <Verse>
             <Line>Your love will everlasting be</Line>
             <Line>I just can’t wait to see</Line>
-            <Line>when you return for me</Line>
-            <Line>For, after all, you still love me</Line>
+            <Line>when You return for me</Line>
+            <Line>For, after all, You still love me</Line>
         </Verse>
         <Verse repeat repeatText="x3">
             <Line>You still love me</Line>
