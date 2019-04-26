@@ -33,32 +33,32 @@ const EternitySingsOfYou = props => (
             <Line>Isn’t it amazing, isn’t it amazing</Line>
         </Verse>
         <Verse name="two">
-            <Line>Who you are, who you are, who you are</Line>
+            <Line>Who You are, who You are, who You are</Line>
         </Verse>
         <Verse repeat name="three">
             <Line>Isn’t it so wonderful, isn’t it so wonderful</Line>
         </Verse>
         <Verse name="four">
-            <Line>What you do, what you do, what you do</Line>
+            <Line>What You do, what You do, what you do</Line>
         </Verse>
         <Verse repeat>
-            <Line>I stand in awe of you, I stand in awe of you</Line>
-            <Line>Eternity sings of your praise</Line>
+            <Line>I stand in awe of You, I stand in awe of You</Line>
+            <Line>Eternity sings of Your praise</Line>
         </Verse>
         <Verse repeat name="seven">
-            <Line>You are worthy, you are worthy</Line>
-            <Line>you are worthy</Line>
+            <Line>You are worthy, You are worthy</Line>
+            <Line>You are worthy</Line>
         </Verse>
         <Verse name="eight">
-            <Line>Eternity sings of you!</Line>
+            <Line>Eternity sings of You!</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Repeat name="three" />
         <Repeat name="four" />
         <Verse repeat>
-            <Line>I stand in awe of you, I stand in awe of you</Line>
-            <Line>Eternity sings of your praise</Line>
+            <Line>I stand in awe of You, I stand in awe of You</Line>
+            <Line>Eternity sings of Your praise</Line>
         </Verse>
         <Repeat name="seven" />
         <Repeat name="eight" />
