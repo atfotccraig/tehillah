@@ -25,13 +25,13 @@ const Halleluyah = props => (
         </Title>
         <Verse>
             <Line>If I were just to see</Line>
-            <Line>one glimpse of your majesty</Line>
+            <Line>one glimpse of Your majesty</Line>
             <Line>my life would never be the same</Line>
         </Verse>
         <Verse>
             <Line>If I could only understand</Line>
-            <Line>the wonder of your face</Line>
-            <Line>the splendour of your name</Line>
+            <Line>the wonder of Your face</Line>
+            <Line>the splendour of Your Name</Line>
         </Verse>
         <Verse>
             <Line>Then I would fall down on my knees</Line>
@@ -39,37 +39,37 @@ const Halleluyah = props => (
             <Line>and out would flow this song</Line>
         </Verse>
         <Verse>
-            <Line>And I’d sing with words you gave to me</Line>
-            <Line>to tell of who you are</Line>
-            <Line>You are the mighty one</Line>
+            <Line>And I’d sing with words You gave to me</Line>
+            <Line>to tell of who You are</Line>
+            <Line>You are The Mighty One</Line>
         </Verse>
         <Verse repeat>
-            <Line>I’d sing to you, bring to you</Line>
+            <Line>I’d sing to You, bring to You</Line>
             <Line>the song that all creation sings</Line>
         </Verse>
         <Verse repeat>
-            <Line>Halleluyah to the king of kings</Line>
+            <Line>Halleluyah to the King of kings</Line>
             <Line>Halleluyah</Line>
-            <Line>Halleluyah creator of all things</Line>
+            <Line>Halleluyah Creator of all things</Line>
             <Line>Halleluyah</Line>
         </Verse>
         <Verse>
             <Line>Worthy! Worthy!</Line>
             <Line>
-                <Yahweh /> almighty
+                <Yahweh /> Almighty
             </Line>
         </Verse>
         <Verse>
             <Line>Worthy! You are worthy!</Line>
             <Line>
-                <Yahweh /> almighty
+                <Yahweh /> Almighty
             </Line>
             <Line>and so we sing</Line>
         </Verse>
         <Verse repeat repeatText="x5">
-            <Line>Halleluyah to the king of kings</Line>
+            <Line>Halleluyah to the King of kings</Line>
             <Line>Halleluyah</Line>
-            <Line>Halleluyah creator of all things</Line>
+            <Line>Halleluyah Creator of all things</Line>
             <Line>Halleluyah</Line>
         </Verse>
         <Verse>
