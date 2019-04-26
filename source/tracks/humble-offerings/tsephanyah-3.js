@@ -38,25 +38,25 @@ const Tsephanyah3 = props => (
         </Verse>
         <Verse name="three">
             <Line>You are mighty, mighty to save</Line>
-            <Line>You are silent in your love</Line>
+            <Line>You are silent in Your love</Line>
             <Line>You are mighty, mighty to save</Line>
             <Line>I will never be ashamed</Line>
         </Verse>
         <Verse name="four">
             <Line>You’ll settle me forever</Line>
-            <Line>You’ll take me for your praise</Line>
-            <Line>I will trust in you forever</Line>
+            <Line>You’ll take me for Your praise</Line>
+            <Line>I will trust in You forever</Line>
         </Verse>
         <Verse name="five">
             <Line>You’ll settle me forever</Line>
-            <Line>You’ll take me for your praise</Line>
+            <Line>You’ll take me for Your praise</Line>
             <Line>
-                I will trust in you <Yahweh />
+                I will trust in You <Yahweh />
             </Line>
         </Verse>
         <Verse repeat name="six">
             <Line>You are mighty, mighty to save</Line>
-            <Line>You are silent in your love</Line>
+            <Line>You are silent in Your love</Line>
             <Line>You are mighty, mighty to save</Line>
             <Line>I will never be ashamed</Line>
         </Verse>
