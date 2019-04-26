@@ -23,19 +23,19 @@ const ComeRejoice = props => (
             <Labels.TheBetrothal.ComeRejoice />
         </Title>
         <Verse>
-            <Line>You rejoice in the righteous of your people</Line>
-            <Line>You rejoice in the righteous of your bride</Line>
-            <Line>You rejoice in the righteous of your people</Line>
-            <Line>You rejoice, you rejoice, you rejoice</Line>
+            <Line>You rejoice in the righteous of Your people</Line>
+            <Line>You rejoice in the righteous of Your bride</Line>
+            <Line>You rejoice in the righteous of Your people</Line>
+            <Line>You rejoice, You rejoice, You rejoice</Line>
         </Verse>
         <Verse>
             <Line>Halleluyah, halleluyah, halleluyah</Line>
-            <Line>You rejoice, you rejoice, you rejoice</Line>
+            <Line>You rejoice, You rejoice, You rejoice</Line>
         </Verse>
         <Verse>
-            <Line>Sing a song oh the righteous of his people</Line>
-            <Line>Sing a song oh the righteous of his bride</Line>
-            <Line>Sing a song oh the righteous of his people</Line>
+            <Line>Sing a song oh the righteous of His people</Line>
+            <Line>Sing a song oh the righteous of His bride</Line>
+            <Line>Sing a song oh the righteous of His people</Line>
             <Line>Sing a song, sing a song, sing a song</Line>
         </Verse>
         <Verse>
@@ -44,13 +44,13 @@ const ComeRejoice = props => (
         </Verse>
         <Verse>
             <Line>Clap your hands</Line>
-            <Line>oh the righteous of his people</Line>
+            <Line>oh the righteous of His people</Line>
             <Line>Clap your hands</Line>
-            <Line>oh the righteous of his bride</Line>
+            <Line>oh the righteous of His bride</Line>
         </Verse>
         <Verse>
             <Line>Clap your hands</Line>
-            <Line>oh the righteous of his people</Line>
+            <Line>oh the righteous of His people</Line>
             <Line>Clap your hands, clap your hands</Line>
             <Line>clap your hands</Line>
         </Verse>
@@ -60,9 +60,9 @@ const ComeRejoice = props => (
             <Line>clap your hands</Line>
         </Verse>
         <Verse>
-            <Line>Come rejoice oh the righteous of his people</Line>
-            <Line>Come rejoice oh the righteous of his bride</Line>
-            <Line>Come rejoice oh the righteous of his people</Line>
+            <Line>Come rejoice oh the righteous of His people</Line>
+            <Line>Come rejoice oh the righteous of His bride</Line>
+            <Line>Come rejoice oh the righteous of His people</Line>
             <Line>Come rejoice, come rejoice, come rejoice</Line>
         </Verse>
         <Verse repeat>
