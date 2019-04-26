@@ -32,11 +32,11 @@ const HumbleOffering = props => (
         </Title>
         <Verse name="one">
             <Line>This is my humble offering</Line>
-            <Line>I bring it to you freely</Line>
+            <Line>I bring it to You freely</Line>
             <Line>It isn't much, but this is all I have</Line>
         </Verse>
         <Verse name="two">
-            <Line>I know you can use it</Line>
+            <Line>I know You can use it</Line>
             <Line>and make it something special</Line>
             <Line>Father, please accept this offering</Line>
             <Line>from my hand</Line>
@@ -48,8 +48,8 @@ const HumbleOffering = props => (
         </Verse>
         <Verse>
             <Line>And You always use the simple things</Line>
-            <Line>to accomplish your great plan</Line>
-            <Line>So would you use</Line>
+            <Line>to accomplish Your great plan</Line>
+            <Line>So would You use</Line>
             <Line>this humble offering in my hand</Line>
         </Verse>
         <Repeat name="one" />
@@ -61,7 +61,7 @@ const HumbleOffering = props => (
         </Verse>
         <Verse>
             <Line>from the offerings that others bring</Line>
-            <Line>but you look to the heart</Line>
+            <Line>but You look to the heart</Line>
             <Line>and this humble offering</Line>
             <Line>moved you from the start</Line>
         </Verse>
@@ -69,11 +69,11 @@ const HumbleOffering = props => (
         <Repeat name="two" />
         <Verse>
             <Line>An alabaster flask of costly oil</Line>
-            <Line>broken and poured out for you</Line>
-            <Line>the anointing for your toil</Line>
+            <Line>broken and poured out for You</Line>
+            <Line>the anointing for Your toil</Line>
         </Verse>
         <Verse>
-            <Line>And gladly you rejoice in that</Line>
+            <Line>And gladly You rejoice in that</Line>
             <Line>which others would despise</Line>
             <Line>Please accept this</Line>
             <Line>humble offering of my life</Line>
