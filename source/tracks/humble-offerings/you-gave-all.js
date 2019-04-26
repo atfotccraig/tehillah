@@ -22,20 +22,20 @@ const YouGaveAll = props => (
         </Title>
         <Verse name="one">
             <Line>Here I am now</Line>
-            <Line>I fall at your feet</Line>
-            <Line>And in your presence</Line>
+            <Line>I fall at Your feet</Line>
+            <Line>And in Your presence</Line>
             <Line>I’m made complete</Line>
         </Verse>
         <Verse name="two">
             <Line>You touched my life</Line>
             <Line>and made me clean</Line>
-            <Line>And by your blood</Line>
+            <Line>And by Your blood</Line>
             <Line>I’ve been redeemed and healed</Line>
         </Verse>
         <Verse>
             <Line>You have called me by my name</Line>
             <Line>You have bought me at great cost</Line>
-            <Line>You gave your life to seek</Line>
+            <Line>You gave Your life to seek</Line>
             <Line>and save what was lost</Line>
         </Verse>
         <Repeat name="one" />
@@ -43,11 +43,11 @@ const YouGaveAll = props => (
         <Verse repeat>
             <Line>You have called me by my name</Line>
             <Line>You have bought me at great cost</Line>
-            <Line>You gave your life to seek</Line>
+            <Line>You gave Your life to seek</Line>
             <Line>and save what was lost</Line>
         </Verse>
         <Verse>
-            <Line>You gave your life to seek</Line>
+            <Line>You gave Your life to seek</Line>
             <Line>and save what was lost</Line>
         </Verse>
     </Track>
