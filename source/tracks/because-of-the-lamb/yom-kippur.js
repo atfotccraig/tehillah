@@ -36,21 +36,21 @@ const YomKippur = props => (
             <Line>
                 <Yahweh /> has done great things
             </Line>
-            <Line>He has brought us near to his throne</Line>
+            <Line>He has brought us near to His throne</Line>
         </Verse>
         <Verse name="two">
             <Line>He is our Elohim</Line>
-            <Line>He’s also the high priest</Line>
-            <Line>He has bought us with his blood</Line>
+            <Line>He’s also the High Priest</Line>
+            <Line>He has bought us with His own Blood</Line>
         </Verse>
         <Verse name="three">
             <Line>
                 Halleluyah, praise <Yahweh />
             </Line>
-            <Line>Halleluyah, praise his name</Line>
+            <Line>Halleluyah, praise His Name</Line>
             <Line>We will sing and celebrate this great day</Line>
             <Line>
-                For <Yahshua /> is king of kings
+                For <Yahshua /> is King of kings
             </Line>
         </Verse>
         <Repeat name="one" />
@@ -59,12 +59,12 @@ const YomKippur = props => (
         <Verse>
             <Line>We will sing and celebrate this great day</Line>
             <Line>
-                For <Yahshua /> is king of kings
+                For <Yahshua /> is King of kings
             </Line>
         </Verse>
         <Verse>
             <Line>
-                For <Yahshua /> is king of kings
+                For <Yahshua /> is King of kings
             </Line>
         </Verse>
     </Track>
