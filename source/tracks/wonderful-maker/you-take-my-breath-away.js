@@ -30,7 +30,7 @@ const YouTakeMyBreathAway = props => (
         </Title>
         <Verse>
             <Line>I see a sky of deepest blue</Line>
-            <Line>I hear the wind as it sings to you</Line>
+            <Line>I hear the wind as it sings to You</Line>
         </Verse>
         <Verse>
             <Line>I could never dream up</Line>
@@ -40,25 +40,25 @@ const YouTakeMyBreathAway = props => (
         </Verse>
         <Verse>
             <Line>And even in the blackest night</Line>
-            <Line>I see your face</Line>
+            <Line>I see Your face</Line>
             <Line>as the stars give off their light</Line>
         </Verse>
         <Verse>
             <Line>The tallest mountain standing proud</Line>
-            <Line>declares your wonder</Line>
+            <Line>declares Your wonder</Line>
             <Line>and majesty out loud</Line>
         </Verse>
         <Verse name="one">
             <Line>And I wonder</Line>
-            <Line>did you do this all for me?</Line>
+            <Line>did You do this all for me?</Line>
             <Line>And I wonder</Line>
             <Line>about the beauty that I see</Line>
         </Verse>
         <Verse name="two">
             <Line>And I wonder</Line>
-            <Line>did you do this all for me?</Line>
+            <Line>did You do this all for me?</Line>
             <Line>And I wonder</Line>
-            <Line>are these your fingerprints I see?</Line>
+            <Line>are these Your fingerprints I see?</Line>
         </Verse>
         <Verse repeat>
             <Line>You take my breath away</Line>
@@ -84,7 +84,7 @@ const YouTakeMyBreathAway = props => (
         </Verse>
         <Verse>
             <Line>All creation with one voice</Line>
-            <Line>sings your praise</Line>
+            <Line>sings Your praise</Line>
             <Line>and presents to me a choice</Line>
         </Verse>
         <Repeat name="one" />
