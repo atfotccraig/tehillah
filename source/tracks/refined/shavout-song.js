@@ -19,7 +19,7 @@ const ShavoutSong = props => (
         </Verse>
         <Verse>
             <Line>We have been brought near</Line>
-            <Line>Call on him in fear</Line>
+            <Line>Call on Him in fear</Line>
             <Line>Come rejoice with me</Line>
             <Line>So that the world can see</Line>
         </Verse>
