@@ -38,7 +38,7 @@ const SongOfTheBride = props => (
         </Title>
         <Verse name="one">
             <Line>Rise up bride of Messiah</Line>
-            <Line>Rise up bride of the king</Line>
+            <Line>Rise up bride of the King</Line>
             <Line>Strip off your old, dirty garments</Line>
             <Line>It's time to wash and be clean</Line>
         </Verse>
@@ -54,7 +54,7 @@ const SongOfTheBride = props => (
             <Line>Hosanna! Hosanna! Hosanna!</Line>
             <Line>The wedding feast has begun!</Line>
             <Line>Hosanna! Hosanna! Hosanna!</Line>
-            <Line>We are the bride of the one!</Line>
+            <Line>We are the bride of the One!</Line>
         </Verse>
         <Verse name="four">
             <Line>Our husband stands in the garden</Line>
@@ -65,16 +65,16 @@ const SongOfTheBride = props => (
         <Verse name="five">
             <Line>Oh Israel do you hear it?</Line>
             <Line>
-                <Yahweh /> our saviour is one
+                <Yahweh /> our Saviour is One
             </Line>
-            <Line>Our bridegroom has gone out before us</Line>
+            <Line>Our Bridegroom has gone out before us</Line>
             <Line>and every battle He's won!</Line>
         </Verse>
         <Verse name="six" repeat>
             <Line>Hosanna! Hosanna! Hosanna!</Line>
             <Line>The wedding feast has begun!</Line>
             <Line>Hosanna! Hosanna! Hosanna!</Line>
-            <Line>We are the bride of the one!</Line>
+            <Line>We are the bride of the One!</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
