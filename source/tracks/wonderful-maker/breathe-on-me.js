@@ -31,22 +31,22 @@ const BreatheOnMe = props => (
             <Labels.WonderfulMaker.BreatheOnMe />
         </Title>
         <Verse>
-            <Line>To know you</Line>
-            <Line>the power of your sacrifice</Line>
+            <Line>To know You</Line>
+            <Line>the power of Your sacrifice</Line>
             <Line>What a wond’rous gift</Line>
-            <Line>Forgiven, invited in your presence</Line>
+            <Line>Forgiven, invited in Your presence</Line>
             <Line>Unimaginable</Line>
         </Verse>
         <Verse>
             <Line>
                 <Yahshua />, oh guardian of my life
             </Line>
-            <Line>Salvation, healer of my soul</Line>
+            <Line>Salvation, Healer of my soul</Line>
         </Verse>
         <Verse>
-            <Line>My hope is in you, it’s in you</Line>
+            <Line>My hope is in You, it’s in You</Line>
             <Line>Oh revealer of truth</Line>
-            <Line>I will follow you</Line>
+            <Line>I will follow You</Line>
         </Verse>
         <Verse>
             <Line>All of me is totally inadequate</Line>
@@ -56,15 +56,15 @@ const BreatheOnMe = props => (
             <Line>See me dance for joy</Line>
         </Verse>
         <Verse>
-            <Line>To be close to you</Line>
+            <Line>To be close to You</Line>
             <Line>Your love brings me through</Line>
             <Line>What else would I do?</Line>
-            <Line>I am found in you</Line>
+            <Line>I am found in You</Line>
         </Verse>
         <Verse repeat>
-            <Line>My hope is in you, it’s in you</Line>
+            <Line>My hope is in You, it’s in You</Line>
             <Line>Oh revealer of truth</Line>
-            <Line>I will follow you</Line>
+            <Line>I will follow You</Line>
         </Verse>
         <Verse repeat repeatText="x4">
             <Line>Breathe on me</Line>
