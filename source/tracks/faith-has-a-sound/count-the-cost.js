@@ -35,7 +35,7 @@ const CountTheCost = props => (
         <Verse>
             <Line>I know that we’ve been called</Line>
             <Line>for such a time as this</Line>
-            <Line>To come before the king</Line>
+            <Line>To come before the King</Line>
             <Line>in fear and lowliness</Line>
         </Verse>
         <Verse>
@@ -53,7 +53,7 @@ const CountTheCost = props => (
         <Verse>
             <Line>But we can enter in</Line>
             <Line>if we would count the cost</Line>
-            <Line>and ask the king for grace</Line>
+            <Line>and ask the King for grace</Line>
             <Line>that no one would be lost</Line>
             <Line>No one would be lost</Line>
         </Verse>
@@ -72,7 +72,7 @@ const CountTheCost = props => (
         <Verse name="three">
             <Line>If my life it must be forfeit</Line>
             <Line>let me not give up the fight</Line>
-            <Line>For I know my saviour’s waiting</Line>
+            <Line>For I know my Saviour’s waiting</Line>
             <Line>in His power and His might</Line>
         </Verse>
         <Repeat name="one" />
@@ -87,10 +87,10 @@ const CountTheCost = props => (
         </Verse>
         <Verse>
             <Line>You’re seated on the throne</Line>
-            <Line>you plead for those condemned</Line>
-            <Line>So all who call on you</Line>
-            <Line>will be with you in the end</Line>
-            <Line>Will be with you in the end</Line>
+            <Line>You plead for those condemned</Line>
+            <Line>So all who call on You</Line>
+            <Line>will be with You in the end</Line>
+            <Line>Will be with You in the end</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -100,7 +100,7 @@ const CountTheCost = props => (
         <Verse repeat>
             <Line>If my life it must be forfeit</Line>
             <Line>let me not give up the fight</Line>
-            <Line>For I know my saviour’s waiting</Line>
+            <Line>For I know my Saviour’s waiting</Line>
             <Line>in His power and His might</Line>
         </Verse>
     </Track>
