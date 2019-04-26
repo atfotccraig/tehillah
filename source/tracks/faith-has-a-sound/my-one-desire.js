@@ -35,7 +35,7 @@ const MyOneDesire = props => (
         </Verse>
         <Verse name="one">
             <Line>
-                <Yahweh />, you are my one desire
+                <Yahweh />, You are my one desire
             </Line>
             <Line>and nothing else</Line>
             <Line>could ever compare or satisfy</Line>
@@ -43,14 +43,14 @@ const MyOneDesire = props => (
         <Verse name="two">
             <Line>And no matter what</Line>
             <Line>this world throws at me</Line>
-            <Line>you are the one</Line>
+            <Line>You are the One</Line>
             <Line>that I want to please</Line>
         </Verse>
         <Verse name="three">
             <Line>Darkness may come</Line>
             <Line>death knock on my door</Line>
             <Line>My lips will praise</Line>
-            <Line>your name ever more</Line>
+            <Line>Your Name ever more</Line>
         </Verse>
         <Repeat name="two" />
         <Repeat name="three" />
@@ -62,26 +62,26 @@ const MyOneDesire = props => (
         <Repeat name="one" />
         <Verse name="four">
             <Line>All of my heart</Line>
-            <Line>seeks after you</Line>
+            <Line>seeks after You</Line>
             <Line>In all of this mess</Line>
-            <Line>you still remain true</Line>
+            <Line>You still remain true</Line>
         </Verse>
         <Verse name="five">
             <Line>Weeping may come</Line>
-            <Line>but you wipe away tears</Line>
+            <Line>but You wipe away tears</Line>
             <Line>When I am afraid</Line>
-            <Line>you conquer my fears</Line>
+            <Line>You conquer my fears</Line>
         </Verse>
         <Repeat name="four" />
         <Repeat name="five" />
         <Verse>
-            <Line>And you are my one desire</Line>
+            <Line>And You are my one desire</Line>
             <Line>and nothing else</Line>
             <Line>could ever compare or satisfy</Line>
         </Verse>
         <Verse repeat>
             <Line>
-                <Yahweh />, you are my one desire
+                <Yahweh />, You are my one desire
             </Line>
             <Line>and nothing else</Line>
             <Line>could ever compare or satisfy</Line>
