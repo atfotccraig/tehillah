@@ -43,19 +43,19 @@ const BecauseOfTheLamb = props => (
             <Line>Our fathers before us have sinned</Line>
             <Line>and have done what is wrong</Line>
             <Line>
-                in your eyes <Yahweh />
+                in Your eyes <Yahweh />
             </Line>
         </Verse>
         <Verse name="one">
             <Line>But, through the blood</Line>
             <Line>the blood of the Lamb</Line>
-            <Line>We are here in your presence, today</Line>
+            <Line>We are here in Your presence, today</Line>
         </Verse>
         <Verse name="two">
             <Line>But, through the blood</Line>
             <Line>the blood of the Lamb</Line>
             <Line>
-                We are here in your presence, <Yahweh />
+                We are here in Your presence, <Yahweh />
             </Line>
         </Verse>
         <Verse>
@@ -81,7 +81,7 @@ const BecauseOfTheLamb = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
-            <Line>We are here in your presence, today</Line>
+            <Line>We are here in Your presence, today</Line>
         </Verse>
     </Track>
 )
