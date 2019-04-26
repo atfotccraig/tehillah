@@ -26,13 +26,13 @@ const ComeSingASongWithMe = props => (
         <Verse repeat name="one">
             <Line>Come sing a song with me</Line>
             <Line>Come sing a song of praise</Line>
-            <Line>Come sing a song to the ancient of days</Line>
+            <Line>Come sing a song to the Ancient of Days</Line>
         </Verse>
         <Verse repeat name="two">
             <Line>
-                Oh <Yahshua />, you are, you are my king
+                Oh <Yahshua />, You are, You are my King
             </Line>
-            <Line>You are my master and my elohim</Line>
+            <Line>You are my Master and my Elohim</Line>
         </Verse>
         <Verse name="three">
             <Line>Come sing a song with me</Line>
