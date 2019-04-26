@@ -23,23 +23,23 @@ const WonderfulMaker = props => (
             <Labels.WonderfulMaker.WonderfulMaker />
         </Title>
         <Verse>
-            <Line>To you, I will sing</Line>
+            <Line>To You, I will sing</Line>
             <Line>for as long as I breathe</Line>
             <Line>Boasting in adoration</Line>
-            <Line>the wonder of my maker</Line>
+            <Line>the wonder of my Maker</Line>
         </Verse>
         <Verse>
-            <Line>Let praise for you</Line>
+            <Line>Let praise for You</Line>
             <Line>be ever on my lips</Line>
-            <Line>Just like you rejoice</Line>
-            <Line>in your created works</Line>
+            <Line>Just like You rejoice</Line>
+            <Line>in Your created works</Line>
         </Verse>
         <Verse>
             <Line>You clothe yourself</Line>
             <Line>with wondrous splendour</Line>
             <Line>You wrap yourself in light itself</Line>
             <Line>Stretching out the curtains of heaven</Line>
-            <Line>The deep holds up your throne</Line>
+            <Line>The deep holds up Your throne</Line>
         </Verse>
         <Verse>
             <Line>Your favour goes beyond the heavens</Line>
@@ -50,14 +50,14 @@ const WonderfulMaker = props => (
         </Verse>
         <Verse name="one">
             <Line>
-                Oh <Yahweh />, you alone save man
+                Oh <Yahweh />, You alone save man
             </Line>
-            <Line>Every being takes refuge in you</Line>
-            <Line>and we are filled with what you give</Line>
-            <Line>With you hope springs to life</Line>
+            <Line>Every being takes refuge in You</Line>
+            <Line>and we are filled with what You give</Line>
+            <Line>With You hope springs to life</Line>
         </Verse>
         <Verse name="two">
-            <Line>The earth is satisfied by you</Line>
+            <Line>The earth is satisfied by You</Line>
             <Line>Your righteous works sustain all life</Line>
             <Line>Making thick clouds your chariots</Line>
             <Line>You walk on the wings of the wind</Line>
