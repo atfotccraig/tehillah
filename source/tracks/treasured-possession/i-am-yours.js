@@ -22,29 +22,29 @@ const IAmYours = props => (
         </Title>
         <Verse name="one">
             <Line>Light my lamp, make my darkness light</Line>
-            <Line>Delight yourself in me</Line>
+            <Line>Delight Yourself in me</Line>
             <Line>Light my lamp, make my darkness light</Line>
             <Line>Oh lover of my soul</Line>
         </Verse>
         <Verse>
-            <Line>You have called me by my name, I am yours</Line>
-            <Line>Where you go, I go, I am yours</Line>
-            <Line>In your presence I find joy, I am yours</Line>
-            <Line>I’m the apple of your eye, I am yours</Line>
+            <Line>You have called me by my name, I am Yours</Line>
+            <Line>Where You go, I go, I am Yours</Line>
+            <Line>In Your presence I find joy, I am Yours</Line>
+            <Line>I’m the apple of Your eye, I am Yours</Line>
         </Verse>
         <Verse name="two">
-            <Line>When your voice thunders from the heavens</Line>
+            <Line>When Your voice thunders from the heavens</Line>
             <Line>As my heart trembles in hopeful expectation</Line>
-            <Line>I know I’ll find shelter in your booth</Line>
+            <Line>I know I’ll find shelter in Your booth</Line>
             <Line>I will rest in peace</Line>
-            <Line>for you are my salvation</Line>
+            <Line>for You are my salvation</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
-            <Line>Your eyes are always on me, I am yours</Line>
-            <Line>Your hands moulded my heart, I am yours</Line>
-            <Line>You understand my ways, I am yours</Line>
-            <Line>I stand in awe of you, I am yours</Line>
+            <Line>Your eyes are always on me, I am Yours</Line>
+            <Line>Your hands moulded my heart, I am Yours</Line>
+            <Line>You understand my ways, I am Yours</Line>
+            <Line>I stand in awe of You, I am Yours</Line>
         </Verse>
         <Repeat name="two" />
         <Repeat name="one" />
