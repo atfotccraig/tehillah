@@ -17,16 +17,16 @@ const Tehillim89 = props => (
             </Line>
             <Line>Forever, forever I sing</Line>
             <Line>With my mouth I make known</Line>
-            <Line>all your wonders</Line>
+            <Line>all Your wonders</Line>
             <Line>Forever, forever I sing</Line>
         </Verse>
         <Verse name="one" repeat>
             <Line>
-                I sing to you <Yahweh />, you are my Elohim
+                I sing to You <Yahweh />, You are my Elohim
             </Line>
             <Line>Your word is planted in my heart</Line>
-            <Line>and makes me sing praises to you</Line>
-            <Line>praises to you, my king</Line>
+            <Line>and makes me sing praises to You</Line>
+            <Line>praises to You, my King</Line>
         </Verse>
         <Verse>
             <Line>
@@ -34,13 +34,13 @@ const Tehillim89 = props => (
             </Line>
             <Line>Forever, forever I sing</Line>
             <Line>With my mouth I make known</Line>
-            <Line>all your wonders</Line>
+            <Line>all Your wonders</Line>
             <Line>Forever, forever I sing</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
-            <Line>praises to you</Line>
-            <Line>praises to you, my king</Line>
+            <Line>praises to You</Line>
+            <Line>praises to You, my King</Line>
         </Verse>
     </Track>
 )
