@@ -29,27 +29,27 @@ const Tehillim9 = props => (
         </Title>
         <Verse>
             <Line>
-                I praise you, oh <Yahweh />
+                I praise You, oh <Yahweh />
             </Line>
             <Line>with all my heart</Line>
-            <Line>I sing and exult in your name</Line>
+            <Line>I sing and exult in Your Name</Line>
         </Verse>
         <Verse>
             <Line>My enemies turn back</Line>
-            <Line>and perish before you</Line>
-            <Line>for you judge in righteousness</Line>
+            <Line>and perish before You</Line>
+            <Line>for You judge in righteousness</Line>
         </Verse>
         <Verse>
             <Line>
                 <Yahweh /> is my refuge
             </Line>
             <Line>in times of trouble</Line>
-            <Line>and those known by you trust in you</Line>
+            <Line>and those known by You trust in You</Line>
         </Verse>
         <Verse>
-            <Line>For you’ve not forsaken</Line>
-            <Line>those seeking your truth</Line>
-            <Line>remembering your faithfulness</Line>
+            <Line>For You’ve not forsaken</Line>
+            <Line>those seeking Your truth</Line>
+            <Line>remembering Your faithfulness</Line>
         </Verse>
         <Verse name="one">
             <Line>
@@ -60,41 +60,41 @@ const Tehillim9 = props => (
         </Verse>
         <Verse name="two">
             <Line>
-                Arise, master <Yahweh />
+                Arise, Master <Yahweh />
             </Line>
-            <Line>and let all men see you</Line>
+            <Line>and let all men see You</Line>
             <Line>exalted in righteousness</Line>
         </Verse>
         <Verse>
             <Line>
-                Oh <Yahweh />, our master
+                Oh <Yahweh />, our Master
             </Line>
             <Line>crowned with great splendour</Line>
-            <Line>creation resounds with your praise</Line>
+            <Line>creation resounds with Your praise</Line>
         </Verse>
         <Verse>
             <Line>For I see the heavens</Line>
-            <Line>the work of your fingers</Line>
-            <Line>established by your command</Line>
+            <Line>the work of Your fingers</Line>
+            <Line>established by Your command</Line>
         </Verse>
         <Verse>
             <Line>The sea knows its limits</Line>
             <Line>lifts up its breakers</Line>
-            <Line>The waters recede at your word</Line>
+            <Line>The waters recede at Your word</Line>
         </Verse>
         <Verse>
             <Line>All things that are living</Line>
-            <Line>you formed it and made it</Line>
-            <Line>declaring your majesty</Line>
+            <Line>You formed it and made it</Line>
+            <Line>declaring Your majesty</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Repeat name="one" />
         <Verse repeat>
             <Line>
-                Arise, master <Yahweh />
+                Arise, Master <Yahweh />
             </Line>
-            <Line>and let all men see you</Line>
+            <Line>and let all men see You</Line>
             <Line>exalted in righteousness</Line>
         </Verse>
     </Track>
