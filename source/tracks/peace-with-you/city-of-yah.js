@@ -24,9 +24,9 @@ const CityOfYah = props => (
         <Verse name="one" repeat>
             <Line>I will not fear, I will have faith</Line>
             <Line>
-                I will trust in my maker, <Yahweh />
+                I will trust in my Maker, <Yahweh />
             </Line>
-            <Line>In Elohim, whose word I praise</Line>
+            <Line>In Elohim, whose Word I praise</Line>
             <Line>Oh, what can man do to me?</Line>
         </Verse>
         <Verse>
@@ -36,7 +36,7 @@ const CityOfYah = props => (
             <Line>The way of peace is gone</Line>
         </Verse>
         <Verse name="two">
-            <Line>Behold! Your redeemer is coming!</Line>
+            <Line>Behold! Your Redeemer is coming!</Line>
             <Line>In compassion He’ll build you back up</Line>
             <Line>
                 Be excited, oh dwelling of <Yahweh />!
@@ -55,9 +55,9 @@ const CityOfYah = props => (
         <Verse>
             <Line>I will not fear, I will have faith</Line>
             <Line>
-                I will trust in my maker, <Yahweh />
+                I will trust in my Maker, <Yahweh />
             </Line>
-            <Line>In Elohim, whose word I praise</Line>
+            <Line>In Elohim, whose Word I praise</Line>
             <Line>Oh, what can man do to me?</Line>
         </Verse>
         <Repeat name="two" />
