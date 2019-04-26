@@ -24,14 +24,14 @@ const GreatIsYourName = props => (
             <Line>
                 <Yahshua />, Mashiach
             </Line>
-            <Line>We bow before your throne</Line>
+            <Line>We bow before Your throne</Line>
             <Line>in adoration and praise</Line>
         </Verse>
         <Verse name="one">
-            <Line>Great is your name</Line>
+            <Line>Great is Your Name</Line>
             <Line>and greatly to be praised</Line>
             <Line>Awesome in power, mighty in strength</Line>
-            <Line>Great is your name! Great is your name!</Line>
+            <Line>Great is Your Name! Great is Your Name!</Line>
         </Verse>
         <Verse>
             <Line>
@@ -45,17 +45,17 @@ const GreatIsYourName = props => (
             <Line>
                 <Yahshua />, right hand of Elohim
             </Line>
-            <Line>salvation is with you</Line>
-            <Line>And in you everything has been made</Line>
+            <Line>salvation is with You</Line>
+            <Line>And in You everything has been made</Line>
         </Verse>
         <Verse repeat>
-            <Line>Great is your name</Line>
+            <Line>Great is Your Name</Line>
             <Line>and greatly to be praised</Line>
             <Line>Awesome in power, mighty in strength</Line>
-            <Line>Great is your name! Great is your name!</Line>
+            <Line>Great is Your Name! Great is Your Name!</Line>
         </Verse>
         <Verse>
-            <Line>Great is your name!</Line>
+            <Line>Great is Your Name!</Line>
         </Verse>
     </Track>
 )
