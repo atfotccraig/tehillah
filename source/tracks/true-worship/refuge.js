@@ -27,37 +27,37 @@ const Refuge = props => (
         <Verse name="one">
             <Line>Refuge, stronghold, shelter from the storm</Line>
             <Line>
-                <Yahweh /> saviour, of a woman born, and I say
+                <Yahweh /> Saviour, of a woman born, and I say
             </Line>
             <Line>Refuge, stronghold, shelter from the storm</Line>
             <Line>
-                <Yahweh /> saviour, of a woman born
+                <Yahweh /> Saviour, of a woman born
             </Line>
         </Verse>
         <Verse>
             <Line>I cry aloud</Line>
-            <Line>and in your loving mercy </Line>
-            <Line>you answered me</Line>
+            <Line>and in Your loving mercy </Line>
+            <Line>You answered me</Line>
         </Verse>
         <Verse>
-            <Line>I reach for you</Line>
+            <Line>I reach for You</Line>
             <Line>in times of trouble</Line>
-            <Line>you are not far from me</Line>
+            <Line>You are not far from me</Line>
         </Verse>
         <Verse>
             <Line>My light, my song</Line>
             <Line>You lift me up</Line>
             <Line>You do not abandon me</Line>
-            <Line>‘Cause you’re my...</Line>
+            <Line>‘Cause You’re my...</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
             <Line>
                 Your invitation comes to my heart, <Yahweh />
             </Line>
-            <Line>You’re asking me to seek your face</Line>
+            <Line>You’re asking me to seek Your face</Line>
             <Line>
-                I’ll seek your face with all that I am, <Yahweh />
+                I’ll seek Your face with all that I am, <Yahweh />
             </Line>
             <Line>now come and meet me in this place</Line>
         </Verse>
@@ -65,43 +65,43 @@ const Refuge = props => (
             <Line>
                 Your invitation comes to my heart, <Yahweh />
             </Line>
-            <Line>You’re asking me to seek your face</Line>
+            <Line>You’re asking me to seek Your face</Line>
             <Line>
-                I’ll seek your face with all that I am, <Yahweh />
+                I’ll seek Your face with all that I am, <Yahweh />
             </Line>
             <Line>now come and meet me in this place</Line>
-            <Line>‘Cause you’re my...</Line>
+            <Line>‘Cause You’re my...</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
             <Line>
-                There’s one thing that I ask of you now, <Yahweh />
+                There’s one thing that I ask of You now, <Yahweh />
             </Line>
             <Line>The thing that I will always pursue</Line>
             <Line>
-                Forever just to dwell in your house, <Yahweh />
+                Forever just to dwell in Your house, <Yahweh />
             </Line>
-            <Line>eternally to be with you</Line>
+            <Line>eternally to be with You</Line>
         </Verse>
         <Verse>
             <Line>
-                There’s one thing that I ask of you now, <Yahweh />
+                There’s one thing that I ask of You now, <Yahweh />
             </Line>
             <Line>The thing that I will always pursue</Line>
             <Line>
-                Forever just to dwell in your house, <Yahweh />
+                Forever just to dwell in Your house, <Yahweh />
             </Line>
-            <Line>eternally to be with you</Line>
-            <Line>‘Cause you’re my...</Line>
+            <Line>eternally to be with You</Line>
+            <Line>‘Cause You’re my...</Line>
         </Verse>
         <Verse repeat>
             <Line>Refuge, stronghold, shelter from the storm</Line>
             <Line>
-                <Yahweh /> saviour, of a woman born, and I say
+                <Yahweh /> Saviour, of a woman born, and I say
             </Line>
             <Line>Refuge, stronghold, shelter from the storm</Line>
             <Line>
-                <Yahweh /> saviour, of a woman born
+                <Yahweh /> Saviour, of a woman born
             </Line>
         </Verse>
     </Track>
