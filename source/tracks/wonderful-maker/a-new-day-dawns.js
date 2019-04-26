@@ -40,7 +40,7 @@ const ANewDayDawns = props => (
             <Line>Now is the time</Line>
             <Line>to stand and to be counted</Line>
             <Line>The kingdom is near to everyone</Line>
-            <Line>who calls upon His name</Line>
+            <Line>who calls upon His Name</Line>
         </Verse>
         <Verse name="two">
             <Line>Now is the time</Line>
@@ -55,14 +55,14 @@ const ANewDayDawns = props => (
             <Line>and coming in His might</Line>
         </Verse>
         <Verse repeat>
-            <Line>Hosanna! The king is on His way!</Line>
+            <Line>Hosanna! The King is on His way!</Line>
             <Line>Hosanna! Prepare your heart today!</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Repeat name="three" />
         <Verse repeat repeatText="x3">
-            <Line>Hosanna! The king is on His way!</Line>
+            <Line>Hosanna! The King is on His way!</Line>
             <Line>Hosanna! Prepare your heart today!</Line>
         </Verse>
         <Verse>
