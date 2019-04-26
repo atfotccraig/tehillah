@@ -34,49 +34,49 @@ const YouAreYahweh = props => (
         </Title>
         <Verse>
             <Line>Empty me of me</Line>
-            <Line>so that I can be more like you</Line>
+            <Line>so that I can be more like You</Line>
         </Verse>
         <Verse>
-            <Line>Fill me up with you</Line>
-            <Line>so that I can do all your will</Line>
+            <Line>Fill me up with You</Line>
+            <Line>so that I can do all Your will</Line>
         </Verse>
         <Verse>
-            <Line>Let me know your heart</Line>
+            <Line>Let me know Your heart</Line>
             <Line>let me seek it out</Line>
             <Line>with every breath I take</Line>
         </Verse>
         <Verse>
             <Line>Let me be set apart</Line>
-            <Line>let me honour you</Line>
+            <Line>let me honour You</Line>
             <Line>with every move I make</Line>
         </Verse>
         <Verse name="one">
             <Line>
-                For you are <Yahweh />, great and strong
+                For You are <Yahweh />, great and strong
             </Line>
             <Line>
-                Yes you are <Yahweh />, the mighty One
+                Yes You are <Yahweh />, the Mighty One
             </Line>
         </Verse>
         <Verse name="two">
             <Line>
-                Oh you are <Yahweh />, I worship you
+                Oh You are <Yahweh />, I worship You
             </Line>
-            <Line>All that you command me I will do</Line>
+            <Line>All that You command me I will do</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
             <Line>Now I give my life</Line>
-            <Line>a living sacrifice all for you</Line>
+            <Line>a living sacrifice all for You</Line>
         </Verse>
         <Verse>
-            <Line>Come and shine your light</Line>
+            <Line>Come and shine Your light</Line>
             <Line>chase away the night</Line>
-            <Line>Bring your truth</Line>
+            <Line>Bring Your truth</Line>
         </Verse>
         <Verse>
-            <Line>Let me run with your word</Line>
+            <Line>Let me run with Your Word</Line>
             <Line>let me take it to the nations all around</Line>
         </Verse>
         <Verse>
@@ -91,7 +91,7 @@ const YouAreYahweh = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
-            <Line>All that you command me I will do</Line>
+            <Line>All that You command me I will do</Line>
         </Verse>
     </Track>
 )
