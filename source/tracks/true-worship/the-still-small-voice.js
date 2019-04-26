@@ -25,13 +25,13 @@ const TheStillSmallVoice = props => (
         </Title>
         <Verse>
             <Line>Elijah ran away into the wilderness so far</Line>
-            <Line>And there your {"Ruaḥ"} met with him</Line>
+            <Line>And there Your {"Ruaḥ"} met with him</Line>
             <Line>You always know just where we are</Line>
         </Verse>
         <Verse>
             <Line>He found a cave and went inside</Line>
             <Line>and hid himself away</Line>
-            <Line>And then he heard your voice</Line>
+            <Line>And then he heard Your voice</Line>
             <Line>begin to speak aloud and say</Line>
         </Verse>
         <Verse repeat>
@@ -41,33 +41,33 @@ const TheStillSmallVoice = props => (
         <Verse>
             <Line>And then the mountain it was shaken</Line>
             <Line>by a great and mighty wind</Line>
-            <Line>But you were not in the wind</Line>
+            <Line>But You were not in the wind</Line>
         </Verse>
         <Verse>
             <Line>And then the earth it shook</Line>
             <Line>the ground did quake</Line>
-            <Line>But you were not in the quake</Line>
+            <Line>But You were not in the quake</Line>
         </Verse>
         <Verse>
             <Line>And then a raging fire burned</Line>
             <Line>with flames reaching high</Line>
-            <Line>But you were not in the fire</Line>
+            <Line>But You were not in the fire</Line>
         </Verse>
         <Verse>
             <Line>But in the whisper</Line>
             <Line>the still small voice</Line>
-            <Line>there you are to be found</Line>
+            <Line>there You are to be found</Line>
         </Verse>
         <Verse>
             <Line>And in the whisper</Line>
-            <Line>you speak my name</Line>
+            <Line>You speak my name</Line>
             <Line>and it’s a beautiful sound</Line>
         </Verse>
         <Verse>
             <Line>So like Elijah went and acted</Line>
-            <Line>on the words he heard you speak</Line>
+            <Line>on the words he heard You speak</Line>
             <Line>I will go, I will live</Line>
-            <Line>and your presence I will seek</Line>
+            <Line>and Your presence I will seek</Line>
         </Verse>
         <Verse repeat>
             <Line>Hide me now in the cleft of the rock</Line>
