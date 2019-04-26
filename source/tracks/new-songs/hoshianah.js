@@ -58,7 +58,7 @@ const Hoshianah = props => (
         <Verse name="one">
             <Line>Hoshianah! In the highest</Line>
             <Line>Hoshianah! Ben {"Dawiḏ"}</Line>
-            <Line>Hoshianah! You, who came in the name</Line>
+            <Line>Hoshianah! You, who came in the Name</Line>
             <Line>
                 so <Yisrael /> is saved
             </Line>
@@ -66,19 +66,19 @@ const Hoshianah = props => (
         <Verse name="two">
             <Line>Hoshianah! In the highest</Line>
             <Line>Hoshianah! Redeemer</Line>
-            <Line>Hoshianah! To the lamb that was slain</Line>
+            <Line>Hoshianah! To the Lamb that was slain</Line>
             <Line>ruler of heaven and earth</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
-            <Line>We hold fast to His name</Line>
+            <Line>We hold fast to His Name</Line>
             <Line>in which we make our claim</Line>
             <Line>A sceptre of straightness</Line>
             <Line>is the sign of His reign</Line>
         </Verse>
         <Verse>
-            <Line>We sing our praise to you</Line>
+            <Line>We sing our praise to You</Line>
             <Line>
                 giving thanks to <Yahweh />
             </Line>
@@ -93,11 +93,11 @@ const Hoshianah = props => (
             <Line>
                 Halleluyah for <Yahshua />!
             </Line>
-            <Line>Halleluyah to the king</Line>
+            <Line>Halleluyah to the King</Line>
             <Line>
                 Halleluyah for <Yahshua />
             </Line>
-            <Line>the name that saves!</Line>
+            <Line>the Name that saves!</Line>
         </Verse>
     </Track>
 )
