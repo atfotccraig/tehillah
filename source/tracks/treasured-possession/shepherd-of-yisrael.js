@@ -24,35 +24,35 @@ const ShepherdOfYisrael = props => (
         </Title>
         <Verse>
             <Line>Your presence fills the heavens</Line>
-            <Line>on this earth you are all I desire</Line>
-            <Line>In the mighty grip of your hand</Line>
-            <Line>I am always with you, I am safe</Line>
+            <Line>on this earth You are all I desire</Line>
+            <Line>In the mighty grip of Your hand</Line>
+            <Line>I am always with You, I am safe</Line>
         </Verse>
         <Verse name="one">
             <Line>You who dwell, in set-apartness</Line>
-            <Line>Oh shine forth, shepherd of Tsiyon</Line>
+            <Line>Oh shine forth, Shepherd of Tsiyon</Line>
             <Line>Look from heaven, give ear to my cry</Line>
-            <Line>Come visit us, the rock of my heart</Line>
+            <Line>Come visit us, the Rock of my heart</Line>
         </Verse>
         <Verse>
             <Line>You’re my refuge and my fortress</Line>
             <Line>my only comfort in times of distress</Line>
-            <Line>Let your face Yah, shine upon us</Line>
+            <Line>Let Your face Yah, shine upon us</Line>
             <Line>turn us back so that we may be saved</Line>
         </Verse>
         <Verse name="two">
             <Line>I lift my eyes, to the heavens</Line>
-            <Line>Unto you, who dwell on high</Line>
-            <Line>In constant hope, to hear you calling</Line>
-            <Line>When you stand, in the promised land</Line>
+            <Line>Unto You, who dwell on high</Line>
+            <Line>In constant hope, to hear You calling</Line>
+            <Line>When You stand, in the Promised Land</Line>
         </Verse>
         <Verse>
             <Line>
                 Oh hope of <Yisrael />, to us show favour
             </Line>
-            <Line>only you bring my being to life</Line>
+            <Line>only You bring my being to life</Line>
             <Line>You surround me with loving-kindness</Line>
-            <Line>in joy and peace I find shelter in you</Line>
+            <Line>in joy and peace I find shelter in You</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -60,13 +60,13 @@ const ShepherdOfYisrael = props => (
             <Line>
                 Oh hope of <Yisrael />, to us show favour
             </Line>
-            <Line>only you bring my being to life</Line>
+            <Line>only You bring my being to life</Line>
             <Line>You surround me with loving-kindness</Line>
-            <Line>in joy and peace I find shelter in you</Line>
+            <Line>in joy and peace I find shelter in You</Line>
         </Verse>
         <Verse>
             <Line>You surround me with loving-kindness</Line>
-            <Line>in joy and peace I find shelter in you</Line>
+            <Line>in joy and peace I find shelter in You</Line>
         </Verse>
     </Track>
 )
