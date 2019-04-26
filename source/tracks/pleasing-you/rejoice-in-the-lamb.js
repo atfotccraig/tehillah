@@ -32,17 +32,17 @@ const RejoiceInTheLamb = props => (
                 that <Yahweh /> is on high?
             </Line>
             <Line>Do you know, can you feel</Line>
-            <Line>that His word is alive?</Line>
+            <Line>that His Word is alive?</Line>
         </Verse>
         <Verse>
-            <Line>Rejoice in the lamb</Line>
+            <Line>Rejoice in the Lamb</Line>
             <Line>who paid the price</Line>
             <Line>Rejoice in the perfect sacrifice</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse repeat>
-            <Line>Rejoice in the lamb</Line>
+            <Line>Rejoice in the Lamb</Line>
             <Line>who paid the price</Line>
             <Line>Rejoice in the perfect sacrifice</Line>
         </Verse>
