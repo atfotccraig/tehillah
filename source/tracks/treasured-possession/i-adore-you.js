@@ -22,29 +22,29 @@ const IAdoreYou = props => (
             <Labels.TreasuredPossession.IAdoreYou />
         </Title>
         <Verse>
-            <Line>Here in your presence</Line>
+            <Line>Here in Your presence</Line>
             <Line>is where I want to be</Line>
-            <Line>and the look in your eyes</Line>
+            <Line>and the look in Your eyes</Line>
             <Line>is all I want to see</Line>
-            <Line>I adore you</Line>
+            <Line>I adore You</Line>
         </Verse>
         <Verse>
-            <Line>When you’re here beside me</Line>
-            <Line>my joy is complete</Line>
-            <Line>When I see that you love me</Line>
-            <Line>my heart skips a beat</Line>
+            <Line>When you’re here beside Me</Line>
+            <Line>My joy is complete</Line>
+            <Line>When I see that you love Me</Line>
+            <Line>My heart skips a beat</Line>
             <Line>I adore you</Line>
         </Verse>
         <Verse>
             <Line>When my heart is broken</Line>
-            <Line>you’re all that I need</Line>
+            <Line>You’re all that I need</Line>
             <Line>As the whirlwind surrounds me</Line>
-            <Line>you bring me to my feet</Line>
+            <Line>You bring me to my feet</Line>
             <Line>I adore You</Line>
         </Verse>
         <Verse>
             <Line>When you are in danger</Line>
-            <Line>I leap to my feet</Line>
+            <Line>I leap to My feet</Line>
             <Line>I will move all the mountains</Line>
             <Line>to answer you in need</Line>
             <Line>I adore you</Line>
