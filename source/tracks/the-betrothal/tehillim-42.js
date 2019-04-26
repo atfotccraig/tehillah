@@ -42,7 +42,7 @@ const Tehillim42 = props => (
             <Line>As the deer it longs</Line>
             <Line>for the water streams</Line>
             <Line>So my being longs</Line>
-            <Line>for you, oh Elohim</Line>
+            <Line>for You, oh Elohim</Line>
         </Verse>
         <Verse repeat>
             <Line>My being longs, for Elohim</Line>
