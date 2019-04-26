@@ -34,14 +34,14 @@ const ShoutWithJoy = props => (
             <Line>Shout with joy, to Elohim</Line>
         </Verse>
         <Verse>
-            <Line>All the earth will bow to you</Line>
-            <Line>They’ll sing praises just to you</Line>
+            <Line>All the earth will bow to You</Line>
+            <Line>They’ll sing praises just to You</Line>
         </Verse>
         <Verse>
-            <Line>Sing the splendour of your name</Line>
-            <Line>Sing the splendour of your name</Line>
-            <Line>Sing the splendour of your name</Line>
-            <Line>Esteem your praise, they’ll shout with joy</Line>
+            <Line>Sing the splendour of Your Name</Line>
+            <Line>Sing the splendour of Your Name</Line>
+            <Line>Sing the splendour of Your Name</Line>
+            <Line>Esteem Your praise, they’ll shout with joy</Line>
         </Verse>
         <Verse>
             <Line>Come see the works of Elohim</Line>
