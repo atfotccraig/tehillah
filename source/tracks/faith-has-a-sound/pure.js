@@ -43,23 +43,23 @@ const Pure = props => (
         </Verse>
         <Verse name="three">
             <Line>And so I’m drawing near</Line>
-            <Line>to the wonder of your throne</Line>
+            <Line>to the wonder of Your throne</Line>
         </Verse>
         <Verse name="four">
             <Line>With one prayer</Line>
             <Line>with one desire</Line>
-            <Line>would you hear my cry</Line>
+            <Line>would You hear my cry</Line>
         </Verse>
         <Verse name="five">
             <Line>Let my life be pure</Line>
-            <Line>as I live for your name</Line>
+            <Line>as I live for Your Name</Line>
             <Line>Let my life be pure</Line>
             <Line>I’ll never be the same</Line>
         </Verse>
         <Verse name="six">
             <Line>Let my life be pure</Line>
-            <Line>as I live for you</Line>
-            <Line>Would you let me bring</Line>
+            <Line>as I live for You</Line>
+            <Line>Would You let me bring</Line>
             <Line>a pleasing offering</Line>
         </Verse>
         <Repeat name="five" />
@@ -68,12 +68,12 @@ const Pure = props => (
             <Line>I know that there are times</Line>
             <Line>when all I do is make mistakes</Line>
             <Line>And I know that there are times</Line>
-            <Line>when you look at me</Line>
-            <Line>and your heart breaks</Line>
+            <Line>when You look at me</Line>
+            <Line>and Your heart breaks</Line>
         </Verse>
         <Verse>
             <Line>But here I stand again</Line>
-            <Line>humbled at your throne</Line>
+            <Line>humbled at Your throne</Line>
         </Verse>
         <Repeat name="four" />
         <Repeat name="five" />
