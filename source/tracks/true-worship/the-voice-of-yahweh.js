@@ -78,7 +78,7 @@ const TheVoiceOfYahweh = props => (
             <Line>
                 Bow down to <Yahweh />
             </Line>
-            <Line>Bow down in the set apart place</Line>
+            <Line>Bow down in the Set Apart Place</Line>
         </Verse>
         <Verse>
             <Line>For He reigns</Line>
