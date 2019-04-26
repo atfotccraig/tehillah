@@ -22,16 +22,16 @@ const SongOfDeliverance = props => (
             <Labels.NewSongs.SongOfDeliverance />
         </Title>
         <Verse>
-            <Line>Set me as a seal upon your heart</Line>
-            <Line>Look to me as the apple of your eye</Line>
+            <Line>Set me as a seal upon Your heart</Line>
+            <Line>Look to me as the apple of Your eye</Line>
             <Line>Never, ever let me go</Line>
         </Verse>
         <Verse>
             <Line>Speak to the heavens</Line>
             <Line>and they answer the earth</Line>
-            <Line>And make your creatures</Line>
+            <Line>And make Your creatures</Line>
             <Line>lie down in peace</Line>
-            <Line>Speak your life into their heart</Line>
+            <Line>Speak Your life into their heart</Line>
         </Verse>
         <Verse name="one">
             <Line>You are my hiding place</Line>
@@ -48,7 +48,7 @@ const SongOfDeliverance = props => (
             <Line>and the mountains sing for joy</Line>
             <Line>The heavens rejoice</Line>
             <Line>and the earth is glad</Line>
-            <Line>Everything is in my hand</Line>
+            <Line>Everything is in My hand</Line>
         </Verse>
         <Repeat name="one" />
         <Verse repeat repeatText="x5">
