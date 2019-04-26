@@ -33,14 +33,14 @@ const HoldNothingBack = props => (
         </Verse>
         <Verse name="two">
             <Line>I will offer myself</Line>
-            <Line>for the sake of your name</Line>
-            <Line>The living one</Line>
+            <Line>for the sake of Your Name</Line>
+            <Line>The Living One</Line>
         </Verse>
         <Verse name="three" repeat>
             <Line>I will not be silent</Line>
             <Line>no I will ever be singing</Line>
             <Line>I will raise my voice up</Line>
-            <Line>to you the praises I’m bringing</Line>
+            <Line>to You the praises I’m bringing</Line>
         </Verse>
         <Verse name="four">
             <Line>I will not give up</Line>
@@ -49,13 +49,13 @@ const HoldNothingBack = props => (
         </Verse>
         <Verse name="five">
             <Line>Each step I take is</Line>
-            <Line>for your kingdom’s sake</Line>
-            <Line>Shine your light</Line>
+            <Line>for Your Kingdom’s sake</Line>
+            <Line>Shine Your light</Line>
         </Verse>
         <Verse name="six" repeat>
             <Line>I will stand in wonder</Line>
             <Line>and see my enemies scattered</Line>
-            <Line>In the light of your face</Line>
+            <Line>In the light of Your face</Line>
             <Line>the power of darkness is shattered</Line>
         </Verse>
         <Repeat name="one" />
