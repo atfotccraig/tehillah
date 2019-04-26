@@ -24,7 +24,7 @@ const Tehillim91 = props => (
         </Title>
         <Verse repeat>
             <Line>He who dwells in the secret place</Line>
-            <Line>of the most high</Line>
+            <Line>of the Most High</Line>
         </Verse>
         <Verse repeat>
             <Line>
@@ -50,8 +50,8 @@ const Tehillim91 = props => (
             <Line>my Elohim in whom I trust</Line>
         </Verse>
         <Verse repeat name="two">
-            <Line>When I call on you, you just answer me</Line>
-            <Line>When I’m in distress you deliver me</Line>
+            <Line>When I call on You, You just answer me</Line>
+            <Line>When I’m in distress You deliver me</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
