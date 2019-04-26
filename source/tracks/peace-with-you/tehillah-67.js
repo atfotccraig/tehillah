@@ -42,31 +42,31 @@ const Tehillah67 = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
-            <Line>So, let all the people praise you, oh master</Line>
+            <Line>So, let all the people praise You, oh Master</Line>
             <Line>let nations be glad and sing for joy</Line>
         </Verse>
         <Verse>
-            <Line>For judgement is yours</Line>
-            <Line>in all your uprightness</Line>
+            <Line>For judgement is Yours</Line>
+            <Line>in all Your uprightness</Line>
             <Line>You lead nations on this earth</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse name="three">
-            <Line>Yes, let all the people praise you, oh master</Line>
-            <Line>Let all the nations praise you alone</Line>
+            <Line>Yes, let all the people praise You, oh Master</Line>
+            <Line>Let all the nations praise You alone</Line>
         </Verse>
         <Verse name="four">
             <Line>The earth give her increase</Line>
-            <Line>For you bless in abundance</Line>
-            <Line>In awe, we’ll bow before you</Line>
+            <Line>For You bless in abundance</Line>
+            <Line>In awe, we’ll bow before You</Line>
         </Verse>
         <Repeat name="three" />
         <Repeat name="four" />
         <Repeat name="three" />
         <Repeat name="four" />
         <Verse repeat>
-            <Line>In awe, we’ll bow before you</Line>
+            <Line>In awe, we’ll bow before You</Line>
         </Verse>
     </Track>
 )
