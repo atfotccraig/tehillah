@@ -89,7 +89,7 @@ const AVoiceInTheWilderness = props => (
         </Verse>
         <Verse repeat>
             <Line>
-                <Yahweh /> your Elohim is your redeemer
+                <Yahweh /> Your Elohim is your redeemer
             </Line>
             <Line>Return to Him, He’s the one!</Line>
         </Verse>
