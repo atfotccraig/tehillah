@@ -22,9 +22,9 @@ const SpeakToMe = props => (
         </Title>
         <Verse repeat name="one">
             <Line>Speak to me, I’m listening</Line>
-            <Line>Speak to me, I’m waiting here for you</Line>
+            <Line>Speak to me, I’m waiting here for You</Line>
             <Line>Speak to me, I’m listening</Line>
-            <Line>I want to know you as you are</Line>
+            <Line>I want to know You as You are</Line>
         </Verse>
         <Verse>
             <Line>Sometimes life can get me down</Line>
@@ -35,23 +35,23 @@ const SpeakToMe = props => (
             </Line>
         </Verse>
         <Verse>
-            <Line>Cause when you speak my name</Line>
+            <Line>Cause when You speak my name</Line>
             <Line>I want to hear the call</Line>
             <Line>hear the call</Line>
         </Verse>
         <Verse>
             <Line>Speak to me, I’m listening</Line>
-            <Line>Speak to me, I’m waiting here for you</Line>
+            <Line>Speak to me, I’m waiting here for You</Line>
             <Line>Speak to me, I’m listening</Line>
-            <Line>I want to know you as you are</Line>
+            <Line>I want to know You as You are</Line>
         </Verse>
         <Verse>
-            <Line>Your word was once so far away</Line>
-            <Line>I didn’t know your truth</Line>
+            <Line>Your Word was once so far away</Line>
+            <Line>I didn’t know Your truth</Line>
             <Line>or hear the words you say</Line>
         </Verse>
         <Verse>
-            <Line>But now your grace</Line>
+            <Line>But now Your grace</Line>
             <Line>has brought it near</Line>
             <Line>You opened up my eyes</Line>
             <Line>and gave me ears to hear</Line>
