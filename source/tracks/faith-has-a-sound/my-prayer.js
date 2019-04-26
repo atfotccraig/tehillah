@@ -28,9 +28,9 @@ const MyPrayer = props => (
             <Line>You do not want my offering</Line>
         </Verse>
         <Verse name="two">
-            <Line>The only thing you ask</Line>
-            <Line>is that I love you back</Line>
-            <Line>the way that you first love me</Line>
+            <Line>The only thing You ask</Line>
+            <Line>is that I love You back</Line>
+            <Line>the way that You first love me</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -38,7 +38,7 @@ const MyPrayer = props => (
             <Line>
                 Oh <Yahweh />, <Yahweh />
             </Line>
-            <Line>You’re the one to whom I give my heart</Line>
+            <Line>You’re the One to whom I give my heart</Line>
             <Line>
                 <Yahweh />, <Yahweh />
             </Line>
@@ -46,18 +46,18 @@ const MyPrayer = props => (
         </Verse>
         <Verse>
             <Line>Why do I always run away</Line>
-            <Line>Whenever you are drawing near</Line>
+            <Line>Whenever You are drawing near</Line>
         </Verse>
         <Verse>
             <Line>I wanna stop and turn</Line>
-            <Line>and see you face to face</Line>
-            <Line>‘Cause in your presence I am changed</Line>
+            <Line>and see You face to face</Line>
+            <Line>‘Cause in Your presence I am changed</Line>
         </Verse>
         <Verse repeat name="three">
             <Line>
                 Oh <Yahweh />, <Yahweh />
             </Line>
-            <Line>You’re the one to whom I give my heart</Line>
+            <Line>You’re the One to whom I give my heart</Line>
             <Line>
                 Oh <Yahweh />, <Yahweh />
             </Line>
@@ -65,7 +65,7 @@ const MyPrayer = props => (
         </Verse>
         <Verse repeat>
             <Line>Take my life, take my love</Line>
-            <Line>Take all of me I give it all for you</Line>
+            <Line>Take all of me I give it all for You</Line>
         </Verse>
         <Repeat name="three" />
     </Track>
