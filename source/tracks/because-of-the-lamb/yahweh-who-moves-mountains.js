@@ -29,11 +29,11 @@ const YahwehWhoMovesMountains = props => (
         </Title>
         <Verse name="one">
             <Line>
-                ‘cause you’re <Yahweh />
+                ‘cause You’re <Yahweh />
             </Line>
             <Line>who moves the mountains</Line>
-            <Line>and you’re the one who always</Line>
-            <Line>makes good on his word</Line>
+            <Line>and You’re the one who always</Line>
+            <Line>makes good on His Word</Line>
         </Verse>
         <Verse name="two">
             <Line>Your joy is rising like a fountain</Line>
@@ -42,15 +42,15 @@ const YahwehWhoMovesMountains = props => (
         </Verse>
         <Verse>
             <Line>Oh give me eyes to see the truth</Line>
-            <Line>To see the things you’re gonna do</Line>
+            <Line>To see the things You’re gonna do</Line>
             <Line>I wanna trust, I wanna know</Line>
-            <Line>I wanna follow where you go</Line>
+            <Line>I wanna follow where You go</Line>
         </Verse>
         <Verse>
-            <Line>You give me hope, you give me grace</Line>
+            <Line>You give me hope, You give me grace</Line>
             <Line>to stand and laugh in evil’s face</Line>
-            <Line>You go before, you make a way</Line>
-            <Line>and I will stand on what you say</Line>
+            <Line>You go before, You make a way</Line>
+            <Line>and I will stand on what You say</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -60,7 +60,7 @@ const YahwehWhoMovesMountains = props => (
             <Line>The time has come, the time is now</Line>
             <Line>for all the world to come and bow</Line>
             <Line>
-                before <Yahweh />, before our king
+                before <Yahweh />, before our King
             </Line>
             <Line>let all creation rise and sing</Line>
         </Verse>
@@ -70,7 +70,7 @@ const YahwehWhoMovesMountains = props => (
         <Repeat name="two" />
         <Verse>
             <Line>
-                ‘cause you’re <Yahweh />
+                ‘cause You’re <Yahweh />
             </Line>
             <Line>who moves the mountains</Line>
         </Verse>
