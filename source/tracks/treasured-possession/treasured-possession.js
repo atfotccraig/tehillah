@@ -41,7 +41,7 @@ const TreasuredPossession = props => (
             </Line>
             <Line>Set-apart and chosen</Line>
             <Line>
-                People of almighty <Yahweh />
+                People of Almighty <Yahweh />
             </Line>
             <Line>redeemed by His outstretched arm</Line>
         </Verse>
@@ -53,7 +53,7 @@ const TreasuredPossession = props => (
         </Verse>
         <Verse name="three">
             <Line>Oh favoured one, lift your eyes to Him</Line>
-            <Line>boast in His set-apart name</Line>
+            <Line>boast in His Set-Apart Name</Line>
             <Line>
                 <Yahweh /> is your shield and your solid rock
             </Line>
@@ -61,13 +61,13 @@ const TreasuredPossession = props => (
         </Verse>
         <Verse name="four">
             <Line>
-                Oh master <Yahweh /> there is none like you
+                Oh Master <Yahweh /> there is none like You
             </Line>
-            <Line>creation resounds with your praise</Line>
+            <Line>creation resounds with Your praise</Line>
             <Line>
-                ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼The ones you establish are never moved
+                ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼The ones You establish are never moved
             </Line>
-            <Line>they walk in the light of your face</Line>
+            <Line>they walk in the light of Your face</Line>
         </Verse>
         <Repeat name="three" />
         <Repeat name="one" />
