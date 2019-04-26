@@ -42,7 +42,7 @@ const WhateverIs = props => (
         </Verse>
         <Verse>
             <Line>It is Messiah who works what is good</Line>
-            <Line>So let him fill your life</Line>
+            <Line>So let Him fill your life</Line>
             <Line>Be a sweet-smelling fragrance to Him</Line>
             <Line>and you’ll have peace</Line>
         </Verse>
@@ -51,7 +51,7 @@ const WhateverIs = props => (
         <Repeat name="three" />
         <Verse name="four">
             <Line>
-                The master <Yahshua />
+                The Master <Yahshua />
             </Line>
             <Line>it’s Him that you serve</Line>
             <Line>So let Him guard your heart</Line>
