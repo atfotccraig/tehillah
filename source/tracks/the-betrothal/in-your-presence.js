@@ -31,12 +31,12 @@ const InYourPresence = props => (
             <Labels.TheBetrothal.InYourPresence />
         </Title>
         <Verse name="one">
-            <Line>In your presence</Line>
+            <Line>In Your presence</Line>
             <Line>my fear is defeated</Line>
             <Line>All uncertainty is driven away</Line>
         </Verse>
         <Verse name="two">
-            <Line>In your presence</Line>
+            <Line>In Your presence</Line>
             <Line>is strength when I need it</Line>
             <Line>And words when I</Line>
             <Line>don’t know what to say</Line>
@@ -44,13 +44,13 @@ const InYourPresence = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse repeat>
-            <Line>How can I stand before the king?</Line>
+            <Line>How can I stand before the King?</Line>
             <Line>How can I not want to give everything?</Line>
         </Verse>
         <Verse name="three">
-            <Line>For you are worthy</Line>
-            <Line>there’s no one like you</Line>
-            <Line>You’re the king of all the earth</Line>
+            <Line>For You are worthy</Line>
+            <Line>there’s no one like You</Line>
+            <Line>You’re the King of all the earth</Line>
         </Verse>
         <Verse name="four">
             <Line>And I find shelter</Line>
@@ -61,7 +61,7 @@ const InYourPresence = props => (
         <Repeat name="three" />
         <Repeat name="four" />
         <Verse repeat name="five">
-            <Line>Halleluyah, to you I bring my offering</Line>
+            <Line>Halleluyah, to You I bring my offering</Line>
             <Line>Halleluyah, to no-one else will I sing</Line>
         </Verse>
         <Repeat name="three" />
