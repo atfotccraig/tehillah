@@ -26,11 +26,11 @@ const PraiseAndEsteem = props => (
             <Line>
                 Praise and esteem belong to <Yahweh />
             </Line>
-            <Line>Praise and esteem belong to our king</Line>
+            <Line>Praise and esteem belong to our King</Line>
             <Line>
                 Praise and esteem belong to <Yahweh />
             </Line>
-            <Line>Praise and esteem belong to our king</Line>
+            <Line>Praise and esteem belong to our King</Line>
         </Verse>
         <Verse name="two">
             <Line>This is my Elohim</Line>
@@ -49,11 +49,11 @@ const PraiseAndEsteem = props => (
             <Line>
                 Praise and esteem belong to <Yahweh />
             </Line>
-            <Line>Praise and esteem belong to our king</Line>
+            <Line>Praise and esteem belong to our King</Line>
             <Line>
                 Praise and esteem belong to <Yahweh />
             </Line>
-            <Line>Praise and esteem belong to our king</Line>
+            <Line>Praise and esteem belong to our King</Line>
         </Verse>
         <Repeat name="two" />
         <Repeat name="one" />
