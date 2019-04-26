@@ -32,7 +32,7 @@ const EveryTribeEveryTongue = props => (
         </Title>
         <Verse name="one">
             <Line>Every tribe, every tongue, every nation</Line>
-            <Line>Praise the master and the king</Line>
+            <Line>Praise the Master and the King</Line>
             <Line>of all creation</Line>
         </Verse>
         <Verse name="two">
@@ -47,14 +47,14 @@ const EveryTribeEveryTongue = props => (
             <Line>
                 sing to <Yahweh /> alone
             </Line>
-            <Line>Let the wonders of His name</Line>
+            <Line>Let the wonders of His Name</Line>
             <Line>be made known</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Repeat name="three" />
         <Verse>
-            <Line>His word has gone out</Line>
+            <Line>His Word has gone out</Line>
             <Line>and it will not return to Him void</Line>
             <Line>Until He returns</Line>
             <Line>and all unrighteousness</Line>
@@ -67,7 +67,7 @@ const EveryTribeEveryTongue = props => (
             <Line>Let us be glad</Line>
             <Line>and rejoice and give praise to the Lamb</Line>
             <Line>For we are His bride</Line>
-            <Line>and our husband is the wonderful “I Am”</Line>
+            <Line>and our Husband is the wonderful “I Am”</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -79,7 +79,7 @@ const EveryTribeEveryTongue = props => (
             <Line>
                 sing to <Yahweh /> alone
             </Line>
-            <Line>Let the wonders of His name</Line>
+            <Line>Let the wonders of His Name</Line>
             <Line>be made known</Line>
         </Verse>
     </Track>
