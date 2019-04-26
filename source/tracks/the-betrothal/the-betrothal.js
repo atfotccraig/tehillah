@@ -23,8 +23,8 @@ const TheBetrothal = props => (
             <Labels.TheBetrothal.TheBetrothal />
         </Title>
         <Verse>
-            <Line>Behold my beloved</Line>
-            <Line>Let me allure you to the wilderness</Line>
+            <Line>Behold My beloved</Line>
+            <Line>Let Me allure you to the wilderness</Line>
             <Line>There I will speak</Line>
             <Line>tender words to your heart</Line>
             <Line>and lead you to your inheritance</Line>
@@ -33,11 +33,11 @@ const TheBetrothal = props => (
             <Line>The time is here, the time is now</Line>
             <Line>and I have led you through the wilderness</Line>
             <Line>The time is here, the time is now</Line>
-            <Line>and I have clothed myself in brightness</Line>
+            <Line>and I have clothed Myself in brightness</Line>
         </Verse>
         <Verse name="two">
             <Line>And I’ll betroth you as a bride</Line>
-            <Line>as a bride unto me forever</Line>
+            <Line>as a bride unto Me forever</Line>
             <Line>And I’ll betroth you as a bride</Line>
             <Line>as a bride in righteousness</Line>
         </Verse>
@@ -45,23 +45,23 @@ const TheBetrothal = props => (
             <Line>And in right-ruling and compassion</Line>
             <Line>I’ll betroth you as a bride</Line>
             <Line>
-                And you will know me, bride of <Yahweh />
+                And you will know Me, bride of <Yahweh />
             </Line>
-            <Line>Forevermore you’ll be by my side</Line>
+            <Line>Forevermore you’ll be by My side</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
-            <Line>Let me be your bride forever</Line>
-            <Line>Let me follow where you lead me</Line>
+            <Line>Let me be Your bride forever</Line>
+            <Line>Let me follow where You lead me</Line>
             <Line>You alone shall be my first love</Line>
             <Line>No one else could capture my heart</Line>
         </Verse>
         <Verse>
             <Line>Though I stumbled</Line>
             <Line>in the path before this</Line>
-            <Line>Now your love redeemed and cleansed me</Line>
+            <Line>Now Your love redeemed and cleansed me</Line>
             <Line>Come beloved I am ready</Line>
-            <Line>Evermore to be by your side</Line>
+            <Line>Evermore to be by Your side</Line>
         </Verse>
         <Repeat name="two" />
         <Repeat name="three" />
