@@ -67,14 +67,14 @@ const GoThroughTheGates = props => (
         <Verse name="seven">
             <Line>He brings His salvation</Line>
             <Line>He brings His reward</Line>
-            <Line>He is the messiah</Line>
-            <Line>the true living word</Line>
+            <Line>He is the Messiah</Line>
+            <Line>the true Living Word</Line>
         </Verse>
         <Verse name="eight">
             <Line>His song goes before Him</Line>
             <Line>and this His decree</Line>
             <Line>“I’m coming to fetch you</Line>
-            <Line>and bring you to me!”</Line>
+            <Line>and bring You to me!”</Line>
         </Verse>
         <Repeat name="six" />
         <Repeat name="seven" />
