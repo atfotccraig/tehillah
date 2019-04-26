@@ -21,16 +21,16 @@ const WalkWithMe = props => (
             <Labels.Refined.WalkWithMe />
         </Title>
         <Verse repeat>
-            <Line>I walk with you</Line>
+            <Line>I walk with You</Line>
             <Line>in the cool of the evening</Line>
-            <Line>I talk with you</Line>
+            <Line>I talk with You</Line>
             <Line>at the break of dawn</Line>
         </Verse>
         <Verse repeat name="one">
             <Line>Hear my prayer</Line>
-            <Line>as I seek your face</Line>
+            <Line>as I seek Your face</Line>
             <Line>walk with me</Line>
-            <Line>as I live in your loving-commitment</Line>
+            <Line>as I live in Your loving-commitment</Line>
         </Verse>
         <Verse repeat repeatText="x3" name="two">
             <Line>You alone are worthy of my praise</Line>
