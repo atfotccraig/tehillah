@@ -61,14 +61,14 @@ const IAmFree = props => (
             </Line>
         </Verse>
         <Verse>
-            <Line>So I’ll be what my saviour</Line>
+            <Line>So I’ll be what my Saviour</Line>
             <Line>redeemed me to be</Line>
             <Line>and I’ll not let you win anymore</Line>
         </Verse>
         <Verse>
             <Line>There is nothing you can do</Line>
             <Line>to me from now on</Line>
-            <Line>that will steal what my maker gave me</Line>
+            <Line>that will steal what my Maker gave me</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
