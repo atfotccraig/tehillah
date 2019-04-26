@@ -31,15 +31,15 @@ const Tehillim149 = props => (
             </Line>
             <Line>Sing a new song to Him</Line>
             <Line>lovingly-committed ones</Line>
-            <Line>Praise Him in the set-apart place</Line>
+            <Line>Praise Him in the Set-Apart place</Line>
         </Verse>
         <Verse name="two">
-            <Line>Rejoice in your maker</Line>
+            <Line>Rejoice in Your Maker</Line>
             <Line>oh children of Tsiyon</Line>
-            <Line>Exult in your sovereign today</Line>
+            <Line>Exult in Your Sovereign today</Line>
         </Verse>
         <Verse name="three">
-            <Line>Praise His name in a dance!</Line>
+            <Line>Praise His Name in a dance!</Line>
             <Line>Sing praises to Him</Line>
             <Line>with the tambourine and lyre</Line>
             <Line>
