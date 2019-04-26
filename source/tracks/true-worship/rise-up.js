@@ -49,7 +49,7 @@ const RiseUp = props => (
             <Line>We can see the mountains trembling</Line>
             <Line>We can feel the valleys quake</Line>
             <Line>As the righteous ones of Elohim</Line>
-            <Line>are rising up for His name’s sake</Line>
+            <Line>are rising up for His Name’s sake</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
@@ -57,7 +57,7 @@ const RiseUp = props => (
             <Line>In His presence evil flees, but</Line>
             <Line>
                 those who trust in <Yahweh />
-                ’s mighty name
+                ’s Mighty Name
             </Line>
             <Line>will find salvation on their knees</Line>
         </Verse>
