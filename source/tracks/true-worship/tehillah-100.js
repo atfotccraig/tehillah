@@ -55,7 +55,7 @@ const Tehillah100 = props => (
         </Verse>
         <Verse>
             <Line>
-                Give thanks to <Yahweh /> and bless His name
+                Give thanks to <Yahweh /> and bless His Name
             </Line>
             <Line>For He is eternally good</Line>
             <Line>His loving-kindness is everlasting</Line>
