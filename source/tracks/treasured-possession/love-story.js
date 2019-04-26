@@ -61,13 +61,13 @@ const LoveStory = props => (
         </Verse>
         <Verse>
             <Line>So He showed her what it meant to be alive</Line>
-            <Line>and he brought her to a place</Line>
+            <Line>and He brought her to a place</Line>
             <Line>where she was safe</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
             <Line>Then an enemy set out to take His place</Line>
-            <Line>and he promised her</Line>
+            <Line>and He promised her</Line>
             <Line>that He would make it safe</Line>
         </Verse>
         <Verse>
@@ -100,7 +100,7 @@ const LoveStory = props => (
         <Verse>
             <Line>Here’s the story</Line>
             <Line>of the greatest love on earth</Line>
-            <Line>Of the One who died for the one who lived</Line>
+            <Line>of the One who died for the one who lived</Line>
         </Verse>
         <Verse>
             <Line>And He rose again and will return</Line>
