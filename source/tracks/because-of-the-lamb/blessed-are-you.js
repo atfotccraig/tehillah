@@ -25,18 +25,18 @@ const BlessedAreYou = props => (
         </Title>
         <Verse repeat>
             <Line>
-                Blessed are you <Yahweh />
+                Blessed are You <Yahweh />
             </Line>
             <Line>King of the universe</Line>
             <Line>Who brings forth bread from the earth</Line>
             <Line>Who brings forth bread from the earth</Line>
         </Verse>
         <Verse repeat repeatText="x5" name="one">
-            <Line>Blessed are you</Line>
+            <Line>Blessed are You</Line>
         </Verse>
         <Verse name="two">
             <Line>
-                Blessed are you <Yahweh />
+                Blessed are You <Yahweh />
             </Line>
         </Verse>
         <Repeat name="one" />
