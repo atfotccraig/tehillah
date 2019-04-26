@@ -45,7 +45,7 @@ const WhoHeIs = props => (
         </Verse>
         <Verse name="one">
             <Line>His name is Almighty</Line>
-            <Line>His name is Divine</Line>
+            <Line>His name is divine</Line>
             <Line>His banner is love</Line>
             <Line>His purpose to shine</Line>
         </Verse>
@@ -53,19 +53,19 @@ const WhoHeIs = props => (
             <Line>A light in the darkness</Line>
             <Line>magnificent one</Line>
             <Line>Our blessed redeemer</Line>
-            <Line>the wonderful son</Line>
+            <Line>the Wonderful Son</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse repeat>
             <Line>And He's mighty!</Line>
-            <Line>Lift your voice to the king</Line>
+            <Line>Lift your voice to the King</Line>
             <Line>And He's worthy!</Line>
             <Line>Can you hear angels sing?</Line>
         </Verse>
         <Verse repeat>
             <Line>Halleluyah! Halleluyah!</Line>
-            <Line>To the one who made</Line>
+            <Line>To the One who made</Line>
             <Line>heaven and earth</Line>
             <Line>Halleluyah! Halleluyah!</Line>
             <Line>Come rise up and declare</Line>
