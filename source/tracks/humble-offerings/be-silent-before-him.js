@@ -23,21 +23,21 @@ const BeSilentBeforeHim = props => (
         </Title>
         <Verse repeat name="one">
             <Line>
-                <Yahweh /> is in His set-apart <Hekal />
+                <Yahweh /> is in His Set-Apart <Hekal />
             </Line>
             <Line>Let all the earth be silent before Him</Line>
             <Line>His splendour shall cover the heavens</Line>
             <Line>and His praise will fill the earth</Line>
         </Verse>
         <Verse>
-            <Line>I bow myself toward you</Line>
-            <Line>And give thanks to your name </Line>
-            <Line>For though you are exalted</Line>
-            <Line>your right hand still saves me</Line>
+            <Line>I bow myself toward You</Line>
+            <Line>And give thanks to Your Name </Line>
+            <Line>For though You are exalted</Line>
+            <Line>Your right hand still saves me</Line>
         </Verse>
         <Verse>
             <Line>
-                <Yahweh /> is in His set-apart <Hekal />
+                <Yahweh /> is in His Set-Apart <Hekal />
             </Line>
             <Line>Let all the earth be silent before Him</Line>
             <Line>His splendour shall cover the heavens</Line>
