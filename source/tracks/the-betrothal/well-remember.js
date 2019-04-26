@@ -28,26 +28,26 @@ const WellRemember = props => (
             <Line>We’ll remember</Line>
             <Line>never to forget</Line>
             <Line>We’ll remember</Line>
-            <Line>that you’ve never left us yet</Line>
+            <Line>that You’ve never left us yet</Line>
         </Verse>
         <Verse name="two">
             <Line>We’ll remember</Line>
-            <Line>all the good that you have done</Line>
+            <Line>all the good that You have done</Line>
             <Line>And on this day</Line>
-            <Line>we will praise the most high one</Line>
+            <Line>we will praise the Most High One</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
             <Line>Our fathers before us</Line>
             <Line>dwelt in tents for forty years</Line>
-            <Line>But you were their beacon</Line>
-            <Line>in the cloud where you appeared</Line>
+            <Line>But You were their beacon</Line>
+            <Line>in the cloud where You appeared</Line>
         </Verse>
         <Verse>
-            <Line>And so our hearts cry to you, father</Line>
+            <Line>And so our hearts cry to You, Father</Line>
             <Line>come and be our light</Line>
-            <Line>We long to see you, long to know you</Line>
+            <Line>We long to see You, long to know You</Line>
             <Line>You are our delight</Line>
         </Verse>
         <Repeat name="one" />
@@ -56,7 +56,7 @@ const WellRemember = props => (
         <Repeat name="two" />
         <Verse>
             <Line>And on this day</Line>
-            <Line>we will praise the most high one</Line>
+            <Line>we will praise the Most High One</Line>
         </Verse>
     </Track>
 )
