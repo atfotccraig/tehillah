@@ -24,7 +24,7 @@ const Tehillim46 = props => (
             <Line>
                 Come see the works of <Yahweh />
             </Line>
-            <Line>The ruins he has wrought on the earth</Line>
+            <Line>The ruins He has wrought on the earth</Line>
             <Line>Causing all fighting to cease</Line>
             <Line>unto the end of the earth</Line>
         </Verse>
@@ -43,7 +43,7 @@ const Tehillim46 = props => (
             <Line>
                 Come see the works of <Yahweh />
             </Line>
-            <Line>The ruins he has wrought on the earth</Line>
+            <Line>The ruins He has wrought on the earth</Line>
             <Line>Causing all fighting to cease</Line>
             <Line>unto the end of the earth</Line>
         </Verse>
