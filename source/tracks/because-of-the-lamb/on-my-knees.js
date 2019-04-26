@@ -25,12 +25,12 @@ const OnMyKnees = props => (
             <Line>You never told me</Line>
             <Line>that this life would be easy</Line>
             <Line>You only promised that</Line>
-            <Line>you would never ever leave me</Line>
+            <Line>You would never ever leave me</Line>
         </Verse>
         <Verse>
-            <Line>So I come to you now</Line>
+            <Line>So I come to You now</Line>
             <Line>seeking grace to hold on</Line>
-            <Line>‘Cause you’re the one</Line>
+            <Line>‘Cause You’re the one</Line>
             <Line>who makes me strong</Line>
             <Line>You’re the one</Line>
             <Line>who makes me strong</Line>
