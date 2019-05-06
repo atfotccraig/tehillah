@@ -25,9 +25,9 @@ const Tehillah95 = props => (
         </Title>
         <Verse name="one">
             <Line>Come let us sing, come let us sing</Line>
-            <Line>Come sing a song to our creator</Line>
+            <Line>Come sing a song to our Creator</Line>
             <Line>Come let us sing, come let us sing</Line>
-            <Line>Come and rejoice before our maker</Line>
+            <Line>Come and rejoice before our Maker</Line>
         </Verse>
         <Verse repeat name="two">
             <Line>Lift your voice, come bow down</Line>
@@ -48,7 +48,7 @@ const Tehillah95 = props => (
             <Line>Honour the sovereign of all nations</Line>
             <Line>Come let us sing, come let us sing</Line>
             <Line>
-                Come kneel before <Yahweh /> our maker
+                Come kneel before <Yahweh /> our Maker
             </Line>
         </Verse>
         <Repeat name="one" />
