@@ -22,21 +22,21 @@ const WhatWillYouSay = props => (
         </Title>
         <Verse>
             <Line>When the skies have rolled away</Line>
-            <Line>and I stand before your throne</Line>
-            <Line>When your rule and reign</Line>
+            <Line>and I stand before Your throne</Line>
+            <Line>When Your rule and reign</Line>
             <Line>is here to stay</Line>
-            <Line>What will you say?</Line>
+            <Line>What will You say?</Line>
         </Verse>
         <Verse>
-            <Line>When your fire clears the dross away</Line>
+            <Line>When Your fire clears the dross away</Line>
             <Line>and my deeds are burnt as hay</Line>
-            <Line>If my life I did not give to you</Line>
+            <Line>If my life I did not give to You</Line>
             <Line>there’s no way to pay</Line>
         </Verse>
         <Verse repeat>
             <Line>Please do not let me be led astray</Line>
-            <Line>as I follow in your way</Line>
-            <Line>Every word you speak is truth</Line>
+            <Line>as I follow in Your Way</Line>
+            <Line>Every word You speak is truth</Line>
             <Line>From my heart I will obey</Line>
         </Verse>
         <Verse>
@@ -52,16 +52,16 @@ const WhatWillYouSay = props => (
             <Line>or will my heart betray?</Line>
         </Verse>
         <Verse repeat>
-            <Line>Let my life be found in you</Line>
-            <Line>and my deeds be done for you</Line>
-            <Line>For without you I have none</Line>
+            <Line>Let my life be found in You</Line>
+            <Line>and my deeds be done for You</Line>
+            <Line>For without You I have none</Line>
             <Line>My salvation is undone</Line>
         </Verse>
         <Verse>
-            <Line>When I come before you face-to-face</Line>
+            <Line>When I come before You face-to-face</Line>
             <Line>and my life is on display</Line>
             <Line>When I give account of all I’ve done</Line>
-            <Line>what will you say?</Line>
+            <Line>what will You say?</Line>
         </Verse>
     </Track>
 )
