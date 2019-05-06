@@ -50,14 +50,14 @@ const ComeYahshuaCome = props => (
                 Come <Yahshua /> come!
             </Line>
             <Line>
-                We bless you in the name of <Yahweh />
+                We bless You in the Name of <Yahweh />
             </Line>
         </Verse>
         <Verse name="two">
             <Line>
                 Praise <Yahweh /> among the nations
             </Line>
-            <Line>Declare His name in all the earth</Line>
+            <Line>Declare His Name in all the earth</Line>
             <Line>Make known His kingdom to the peoples</Line>
             <Line>His rule, His reign is drawing near</Line>
         </Verse>
@@ -89,7 +89,7 @@ const ComeYahshuaCome = props => (
             <Line>
                 Praise <Yahweh /> among the nations
             </Line>
-            <Line>Declare His name in all the earth</Line>
+            <Line>Declare His Name in all the earth</Line>
             <Line>Make known His kingdom to the peoples</Line>
             <Line>His rule, His reign is drawing near</Line>
         </Verse>
