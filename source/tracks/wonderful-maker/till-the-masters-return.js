@@ -38,7 +38,7 @@ const TillTheMastersReturn = props => (
         <Verse repeat>
             <Line>We will hear, we will obey</Line>
             <Line>We will keep faith</Line>
-            <Line>till the master’s return</Line>
+            <Line>till the Master’s return</Line>
         </Verse>
         <Verse>
             <Line>There’s a cry that echoes</Line>
@@ -71,7 +71,7 @@ const TillTheMastersReturn = props => (
         <Verse repeat>
             <Line>We will sing, we will declare</Line>
             <Line>We will cry out</Line>
-            <Line>till the master’s return</Line>
+            <Line>till the Master’s return</Line>
         </Verse>
     </Track>
 )
