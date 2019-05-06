@@ -27,27 +27,27 @@ const YoureMyDefender = props => (
         </Title>
         <Verse>
             <Line>In the shadows</Line>
-            <Line>my heart cries to you</Line>
+            <Line>my heart cries to You</Line>
             <Line>Surrounded by evil</Line>
             <Line>attacked without cause</Line>
         </Verse>
         <Verse>
             <Line>In my distress and my sorrow</Line>
-            <Line>I call upon you</Line>
-            <Line>My help is in you, Yah</Line>
-            <Line>my eyes are on you</Line>
+            <Line>I call upon You</Line>
+            <Line>My help is in You, Yah</Line>
+            <Line>my eyes are on You</Line>
         </Verse>
         <Verse name="one">
             <Line>You alone are my defender</Line>
-            <Line>and you shield me from harm</Line>
-            <Line>I take refuge in you</Line>
-            <Line>for you are my only hope</Line>
+            <Line>and You shield me from harm</Line>
+            <Line>I take refuge in You</Line>
+            <Line>for You are my only hope</Line>
         </Verse>
         <Verse name="two">
             <Line>When the waves crash all around me</Line>
-            <Line>you speak to the storm</Line>
+            <Line>You speak to the storm</Line>
             <Line>You’re my hiding place</Line>
-            <Line>and oh I trust in you alone</Line>
+            <Line>and oh I trust in You alone</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -56,9 +56,9 @@ const YoureMyDefender = props => (
         <Repeat name="two" />
         <Verse>
             <Line>You are my defender</Line>
-            <Line>and you shield me from harm</Line>
-            <Line>I take refuge in you</Line>
-            <Line>for you are my only hope</Line>
+            <Line>and You shield me from harm</Line>
+            <Line>I take refuge in You</Line>
+            <Line>for You are my only hope</Line>
         </Verse>
         <Repeat name="two" />
         <Verse />
