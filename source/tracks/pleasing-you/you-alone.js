@@ -14,22 +14,22 @@ const YouAlone = props => (
         <Verse repeat>
             <Line>My lips could never tell</Line>
             <Line>of all Your wonders</Line>
-            <Line>My heart desires you alone</Line>
-            <Line>I hear you in the roaring of the thunders</Line>
-            <Line>I know you're seated on the throne</Line>
+            <Line>My heart desires You alone</Line>
+            <Line>I hear You in the roaring of the thunders</Line>
+            <Line>I know You're seated on the throne</Line>
         </Verse>
         <Verse repeat>
             <Line>You alone can make my being tremble</Line>
             <Line>You alone can make the darkness flee</Line>
-            <Line>At your voice the host of heav'n assemble</Line>
+            <Line>At Your voice the host of heav'n assemble</Line>
             <Line>You have come to set the captives free</Line>
         </Verse>
         <Verse repeat>
-            <Line>I fall down at your feet in adoration</Line>
-            <Line>I long to look upon your face</Line>
+            <Line>I fall down at Your feet in adoration</Line>
+            <Line>I long to look upon Your face</Line>
             <Line>My voice is raised in exaltation</Line>
             <Line>
-                <Yahweh />, I’m humbled at your grace
+                <Yahweh />, I’m humbled at Your grace
             </Line>
         </Verse>
         <Verse repeat repeatText="x3">
