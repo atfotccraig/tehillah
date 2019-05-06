@@ -27,39 +27,39 @@ const AllICanGive = props => (
         <Verse>
             <Line>If the trees of the field can clap their hands</Line>
             <Line>what about me?</Line>
-            <Line>If the song of the wind can praise your name</Line>
+            <Line>If the song of the wind can praise Your Name</Line>
             <Line>what about me?</Line>
         </Verse>
         <Verse>
             <Line>If the mountains bring peace</Line>
-            <Line>and the sun obey your voice</Line>
+            <Line>and the sun obey Your voice</Line>
             <Line>then what about me?</Line>
             <Line>All creation declare there is none to compare</Line>
             <Line>so what about me?</Line>
         </Verse>
         <Verse name="one">
             <Line>I will not be outdone by creation</Line>
-            <Line>in your image you’ve given me life</Line>
+            <Line>in Your image You’ve given me life</Line>
             <Line>If the rocks can cry out in amazement</Line>
             <Line>my whole being will surely rejoice!</Line>
         </Verse>
         <Verse name="two">
             <Line>I will dance like the meadows in springtime</Line>
             <Line>I will sing like the birds in the trees</Line>
-            <Line>I will praise you with all that is in me</Line>
+            <Line>I will praise You with all that is in me</Line>
             <Line>all that I am is all I can give</Line>
         </Verse>
         <Verse>
-            <Line>My eyes will focus on your precepts</Line>
-            <Line>My mouth declare your righteousness</Line>
+            <Line>My eyes will focus on Your precepts</Line>
+            <Line>My mouth declare Your righteousness</Line>
             <Line>My hands be raised in thankful praise</Line>
-            <Line>My feet walk in your steadfast ways</Line>
+            <Line>My feet walk in Your steadfast ways</Line>
         </Verse>
         <Verse>
-            <Line>I am planted in your house, Yah</Line>
-            <Line>and I flourish in your courts</Line>
+            <Line>I am planted in Your house, Yah</Line>
+            <Line>and I flourish in Your courts</Line>
             <Line>Let my life sing a song</Line>
-            <Line>that will praise your name</Line>
+            <Line>that will praise Your Name</Line>
             <Line>and my heart stand forever in awe</Line>
         </Verse>
         <Repeat name="one" />
@@ -67,7 +67,7 @@ const AllICanGive = props => (
         <Repeat name="one" />
         <Repeat name="two" />
         <Verse>
-            <Line>I will praise you with all that is in me</Line>
+            <Line>I will praise You with all that is in me</Line>
             <Line>all that I am is all I can give</Line>
         </Verse>
     </Track>
