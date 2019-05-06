@@ -57,7 +57,7 @@ const HereIAm = props => (
             <Line>Here I am to seek Your face</Line>
             <Line>Here I am to give You praise</Line>
             <Line>Here I am to seek Your reign</Line>
-            <Line>Here I am to esteem Your name</Line>
+            <Line>Here I am to esteem Your Name</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
