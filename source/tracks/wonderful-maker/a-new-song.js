@@ -22,38 +22,38 @@ const ANewSong = props => (
         </Title>
         <Verse>
             <Line>You’ve put a new song in my mouth</Line>
-            <Line>I am blessed because I trust in you</Line>
-            <Line>I recount the wonders you have done</Line>
-            <Line>There is no-one to compare with you</Line>
+            <Line>I am blessed because I trust in You</Line>
+            <Line>I recount the wonders You have done</Line>
+            <Line>There is no-one to compare with You</Line>
         </Verse>
         <Verse>
-            <Line>I delight to do your will</Line>
-            <Line>Yes, your torah is within my heart</Line>
+            <Line>I delight to do Your will</Line>
+            <Line>Yes, Your Torah is within my heart</Line>
             <Line>You have opened up my ears</Line>
-            <Line>In your scroll it is prescribed for me</Line>
+            <Line>In Your scroll it is prescribed for me</Line>
         </Verse>
         <Verse name="one" repeat>
-            <Line>And I will wait for you</Line>
-            <Line>incline your ear to me</Line>
+            <Line>And I will wait for You</Line>
+            <Line>incline Your ear to me</Line>
             <Line>and hear my cry</Line>
         </Verse>
         <Verse>
             <Line>I cannot restrain my lips</Line>
             <Line>to proclaim the news of righteousness</Line>
             <Line>Your grace and truth encompass me</Line>
-            <Line>In your pleasure, Yah, deliver me</Line>
+            <Line>In Your pleasure, Yah, deliver me</Line>
         </Verse>
         <Verse>
             <Line>You’ve put your precepts in my heart</Line>
             <Line>Now my feet are set on solid ground</Line>
-            <Line>Walking in your steadfast word</Line>
-            <Line>With your goodness I am satisfied</Line>
+            <Line>Walking in Your steadfast Word</Line>
+            <Line>With Your goodness I am satisfied</Line>
         </Verse>
         <Repeat name="one" />
         <Verse>
-            <Line>My heart belongs to you alone</Line>
+            <Line>My heart belongs to You alone</Line>
             <Line>You have captured me</Line>
-            <Line>with your great love</Line>
+            <Line>with Your great love</Line>
         </Verse>
     </Track>
 )
