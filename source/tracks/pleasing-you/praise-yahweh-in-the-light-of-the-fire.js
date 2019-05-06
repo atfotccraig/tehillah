@@ -70,7 +70,7 @@ const PraiseYahwehInTheLightOfTheFire = props => (
         <Verse>
             <Line>Everytime that you feel</Line>
             <Line>all alone and afraid</Line>
-            <Line>just call on His name</Line>
+            <Line>just call on His Name</Line>
             <Line>and you will be saved</Line>
         </Verse>
         <Repeat name="one" />
