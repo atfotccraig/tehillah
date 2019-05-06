@@ -21,24 +21,24 @@ const WaitingHere = props => (
             <Labels.PleasingYou.WaitingHere />
         </Title>
         <Verse name="one">
-            <Line>I’m breathing in the fear of you</Line>
+            <Line>I’m breathing in the fear of You</Line>
             <Line>My heart is changed, my life renewed</Line>
-            <Line>I’m breathing in the fear of you</Line>
-            <Line>Everything I am I give to you</Line>
+            <Line>I’m breathing in the fear of You</Line>
+            <Line>Everything I am I give to You</Line>
         </Verse>
         <Verse name="two">
-            <Line>I’m walking in the light of you</Line>
-            <Line>Your word, the lamp</Line>
+            <Line>I’m walking in the light of You</Line>
+            <Line>Your Word, the lamp</Line>
             <Line>has shown me truth</Line>
-            <Line>￼￼I’m walking in the light of you</Line>
-            <Line>Everyday my feet will follow you</Line>
+            <Line>￼￼I’m walking in the light of You</Line>
+            <Line>Everyday my feet will follow You</Line>
         </Verse>
         <Verse name="three" repeat>
-            <Line>I am standing in the hope of you</Line>
+            <Line>I am standing in the hope of You</Line>
             <Line>and no matter what I won’t be moved</Line>
-            <Line>I am standing in the hope of you</Line>
+            <Line>I am standing in the hope of You</Line>
             <Line>
-                <Yahweh /> I am waiting here for you
+                <Yahweh /> I am waiting here for You
             </Line>
         </Verse>
         <Repeat name="one" />
@@ -46,7 +46,7 @@ const WaitingHere = props => (
         <Repeat name="three" />
         <Verse>
             <Line>
-                <Yahweh /> I am waiting here for you
+                <Yahweh /> I am waiting here for You
             </Line>
         </Verse>
     </Track>
