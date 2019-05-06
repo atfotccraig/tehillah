@@ -24,16 +24,16 @@ const HowWouldItBe = props => (
             <Labels.Refined.HowWouldItBe />
         </Title>
         <Verse>
-            <Line>Should the pot ask the potter to answer?</Line>
+            <Line>Should the pot ask the Potter to answer?</Line>
             <Line>Can man’s eyes view the world at a glance?</Line>
             <Line>If it is in our own power to save us</Line>
             <Line>then maybe we should just give it a chance</Line>
         </Verse>
         <Verse name="one">
             <Line>How would it look, how would it look</Line>
-            <Line>if we all just obeyed you?</Line>
+            <Line>if we all just obeyed You?</Line>
             <Line>How would it be, how would it be</Line>
-            <Line>if we all did what you asked?</Line>
+            <Line>if we all did what You asked?</Line>
         </Verse>
         <Verse>
             <Line>If we have laid the earth in its foundations</Line>
@@ -45,13 +45,13 @@ const HowWouldItBe = props => (
         <Repeat name="one" />
         <Verse name="two">
             <Line>Teach us what we do not see</Line>
-            <Line>What you purposed will always stand</Line>
+            <Line>What You purposed will always stand</Line>
             <Line>Your laws are for our own good</Line>
-            <Line>It’s how we love you and our fellow man</Line>
+            <Line>It’s how we love You and our fellow man</Line>
         </Verse>
         <Verse>
-            <Line>There is nothing we can give you</Line>
-            <Line>that you didn’t give us first</Line>
+            <Line>There is nothing we can give You</Line>
+            <Line>that You didn’t give us first</Line>
             <Line>It is not for man who walks this earth</Line>
             <Line>to direct his own steps</Line>
         </Verse>
