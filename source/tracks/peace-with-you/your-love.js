@@ -38,9 +38,9 @@ const YourLove = props => (
         <Verse repeat>
             <Line>The hosts of the heavens and all of</Line>
             <Line>the things that live on this earth</Line>
-            <Line>sing all their praise to you</Line>
+            <Line>sing all their praise to You</Line>
             <Line>and offers the worship</Line>
-            <Line>that you deserve</Line>
+            <Line>that You deserve</Line>
         </Verse>
         <Verse>
             <Line>As I view creation, as seasons bring</Line>
@@ -50,16 +50,16 @@ const YourLove = props => (
         </Verse>
         <Verse>
             <Line>I strive to be faithful</Line>
-            <Line>and give you the joy of my perfect heart</Line>
-            <Line>To worship you only</Line>
+            <Line>and give You the joy of my perfect heart</Line>
+            <Line>To worship You only</Line>
             <Line>and shine with the light</Line>
-            <Line>you placed in the dark</Line>
+            <Line>You placed in the dark</Line>
         </Verse>
         <Verse repeat>
-            <Line>Oh fill me with your love</Line>
+            <Line>Oh fill me with Your love</Line>
             <Line>without it my life is empty and dark</Line>
-            <Line>I give my life to you</Line>
-            <Line>and vow to love you</Line>
+            <Line>I give my life to You</Line>
+            <Line>and vow to love You</Line>
             <Line>with all of my heart</Line>
         </Verse>
         <Verse />
