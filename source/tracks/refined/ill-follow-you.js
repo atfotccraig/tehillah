@@ -33,21 +33,21 @@ const IllFollowYou = props => (
                 Blessed <Yahshua />, this is my confession
             </Line>
             <Line>Me and my house we serve</Line>
-            <Line>only you alone</Line>
+            <Line>only You alone</Line>
         </Verse>
         <Verse name="two">
             <Line>Saviour and Redeemer</Line>
-            <Line>Being in your presence</Line>
+            <Line>Being in Your presence</Line>
             <Line>is my greatest desire</Line>
         </Verse>
         <Verse name="three">
             <Line>Refine me, remould me</Line>
-            <Line>take me as your own</Line>
+            <Line>take me as Your own</Line>
             <Line>Cleanse me, fill me</Line>
             <Line>until I’m white as snow</Line>
         </Verse>
         <Verse name="five">
-            <Line>Oooooh, I’ll follow after you</Line>
+            <Line>Oooooh, I’ll follow after You</Line>
         </Verse>
         <Verse name="six">
             <Line>Oooooh, show me all that’s true</Line>
