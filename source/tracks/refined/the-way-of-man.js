@@ -26,7 +26,7 @@ const TheWayOfMan = props => (
             <Line>There is a way that seems right to man</Line>
             <Line>There is a way that we can understand</Line>
             <Line>Oh man, but how does it look</Line>
-            <Line>in the eyes of your creator?</Line>
+            <Line>in the eyes of your Creator?</Line>
         </Verse>
         <Verse>
             <Line>His eyes are on the ways of man</Line>
@@ -64,7 +64,7 @@ const TheWayOfMan = props => (
             <Line>There is a way that seems right to man</Line>
             <Line>There is a way that we can understand</Line>
             <Line>Oh man, but the path of life</Line>
-            <Line>is in the hand of your creator</Line>
+            <Line>is in the hand of your Creator</Line>
         </Verse>
     </Track>
 )
