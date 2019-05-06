@@ -13,28 +13,28 @@ const SetMeFree = props => (
         </Title>
         <Verse>
             <Line>When this world becomes too much to bear</Line>
-            <Line>I come to you in prayer</Line>
+            <Line>I come to You in prayer</Line>
             <Line>When my soul just can’t take the suffering</Line>
-            <Line>I ask you, Yah, do you care?</Line>
+            <Line>I ask you, Yah, do You care?</Line>
         </Verse>
         <Verse>
-            <Line>Can you hear the outcry in my heart?</Line>
+            <Line>Can You hear the outcry in my heart?</Line>
             <Line>When it feels like there’s no way to turn</Line>
             <Line>You’re the only one to take the pain</Line>
-            <Line>will you save me?</Line>
+            <Line>will You save me?</Line>
         </Verse>
         <Verse>
             <Line>When my hope has left me all alone</Line>
-            <Line>I come to you in prayer</Line>
+            <Line>I come to You in prayer</Line>
             <Line>In my deepest place I know</Line>
-            <Line>you’re always near</Line>
+            <Line>You’re always near</Line>
             <Line>I beg you, Yah, find me there</Line>
         </Verse>
         <Verse>
-            <Line>Please don’t turn your face away from me</Line>
+            <Line>Please don’t turn Your face away from me</Line>
             <Line>Take me home to everlasting peace</Line>
             <Line>There is nothing left for me right here</Line>
-            <Line>will you save me?</Line>
+            <Line>will You save me?</Line>
         </Verse>
         <Verse repeat>
             <Line>Set me free, set me free, set me free</Line>
