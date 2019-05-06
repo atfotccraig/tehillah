@@ -28,21 +28,21 @@ const Tehillah92 = props => (
             <Line>
                 It is good to give thanks to <Yahweh />
             </Line>
-            <Line>Sing praises to Him, most high</Line>
+            <Line>Sing praises to Him, Most High</Line>
             <Line>Recount daily His loving-commitment</Line>
             <Line>and each night His trustworthiness</Line>
         </Verse>
         <Verse name="two">
             <Line>You have made me rejoice</Line>
-            <Line>with your work, Yah</Line>
-            <Line>Shout for joy at the works of your hands</Line>
-            <Line>How marvellous is all you do</Line>
+            <Line>with Your work, Yah</Line>
+            <Line>Shout for joy at the works of Your hands</Line>
+            <Line>How marvellous is all You do</Line>
             <Line>Your thoughts unsearchable</Line>
         </Verse>
         <Verse name="three">
             <Line>A fool will never understand</Line>
             <Line>His wickedness destroyed</Line>
-            <Line>But you lift up my horn like an ox</Line>
+            <Line>But You lift up my horn like an ox</Line>
             <Line>and anoint me with fresh oil</Line>
         </Verse>
         <Verse name="four">
@@ -56,11 +56,11 @@ const Tehillah92 = props => (
         </Verse>
         <Verse name="five">
             <Line>Their lives declare His uprightness</Line>
-            <Line>Our rock and our righteousness</Line>
+            <Line>Our Rock and our righteousness</Line>
             <Line>
                 So always give thanks to <Yahweh />
             </Line>
-            <Line>Sing praises to Him, most high</Line>
+            <Line>Sing praises to Him, Most high</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -71,7 +71,7 @@ const Tehillah92 = props => (
             <Line>
                 So always give thanks to <Yahweh />
             </Line>
-            <Line>Sing praises to Him, most high</Line>
+            <Line>Sing praises to Him, Most High</Line>
         </Verse>
     </Track>
 )
