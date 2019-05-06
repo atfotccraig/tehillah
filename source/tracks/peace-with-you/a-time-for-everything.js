@@ -29,7 +29,7 @@ const ATimeForEverything = props => (
         </Verse>
         <Verse>
             <Line>So help me do the best I can</Line>
-            <Line>to walk with you ‘cording to plan</Line>
+            <Line>to walk with You ‘cording to plan</Line>
             <Line>Fight the good fight, finish the race</Line>
             <Line>and not to end in second place</Line>
         </Verse>
@@ -40,21 +40,21 @@ const ATimeForEverything = props => (
             <Line>to weep, to laugh, to mourn, to dance</Line>
         </Verse>
         <Verse>
-            <Line>Thank you for all that’s from your hand</Line>
+            <Line>Thank You for all that’s from Your hand</Line>
             <Line>Give me all I need to stand</Line>
             <Line>Faith to hold fast and unfeigned love</Line>
-            <Line>knowing you lead from above</Line>
+            <Line>knowing You lead from above</Line>
         </Verse>
         <Verse name="one">
             <Line>You gave me life to play my part</Line>
-            <Line>to worship you with all my heart</Line>
+            <Line>to worship You with all my heart</Line>
             <Line>This precious time I will not waste</Line>
             <Line>for all my deeds there’s time and place</Line>
         </Verse>
         <Verse name="two">
-            <Line>And when I stand before your face</Line>
+            <Line>And when I stand before Your face</Line>
             <Line>I hope to say “I’ve run the race”</Line>
-            <Line>That you will take me by the hand</Line>
+            <Line>That You will take me by the hand</Line>
             <Line>and say “Well done! It’s like we planned”</Line>
         </Verse>
         <Repeat name="one" />
