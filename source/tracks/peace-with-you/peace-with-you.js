@@ -28,35 +28,35 @@ const PeaceWithYou = props => (
         </Title>
         <Verse>
             <Line>Deep in the heart of my soul</Line>
-            <Line>I know you’ll never forsake me</Line>
+            <Line>I know You’ll never forsake me</Line>
             <Line>As long as this stormy wind blows</Line>
-            <Line>I’ll cling to the truth of your word</Line>
+            <Line>I’ll cling to the truth of Your Word</Line>
         </Verse>
         <Verse>
             <Line>The suff’ring of those that I love</Line>
             <Line>The burden’s just too much to bear</Line>
             <Line>The chaos screams loud around me</Line>
-            <Line>but I know there’s peace here with you</Line>
+            <Line>but I know there’s peace here with You</Line>
         </Verse>
         <Verse name="one">
-            <Line>Draw me close to you</Line>
-            <Line>There’s no one else for me, but you</Line>
+            <Line>Draw me close to You</Line>
+            <Line>There’s no one else for me, but You</Line>
         </Verse>
         <Verse name="two">
             <Line>The sorrow is too much</Line>
             <Line>I can’t see the way out</Line>
-            <Line>I know that you’ll carry me through</Line>
+            <Line>I know that You’ll carry me through</Line>
         </Verse>
         <Verse name="three">
             <Line>There is peace</Line>
-            <Line>there is peace here with you</Line>
-            <Line>Draw me close and I’ll cling to you</Line>
+            <Line>there is peace here with You</Line>
+            <Line>Draw me close and I’ll cling to You</Line>
         </Verse>
         <Verse name="four">
             <Line>There is no one else</Line>
-            <Line>that can do what you do</Line>
+            <Line>that can do what You do</Line>
             <Line>There is peace</Line>
-            <Line>there is peace here with you</Line>
+            <Line>there is peace here with You</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -66,7 +66,7 @@ const PeaceWithYou = props => (
         <Repeat name="four" />
         <Verse>
             <Line>There is peace</Line>
-            <Line>there is peace here with you</Line>
+            <Line>there is peace here with You</Line>
         </Verse>
     </Track>
 )
