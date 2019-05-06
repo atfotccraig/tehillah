@@ -20,7 +20,7 @@ const Return = props => (
             <Line>love me spontaneously</Line>
         </Verse>
         <Verse>
-            <Line>In your compassion</Line>
+            <Line>In Your compassion</Line>
             <Line>wipe out my bloodguilt</Line>
             <Line>As dew in sunrise</Line>
             <Line>like chaff blown in the wind</Line>
