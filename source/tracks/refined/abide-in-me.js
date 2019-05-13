@@ -28,25 +28,25 @@ const AbideInMe = props => (
             <Line>
                 I am <Yahweh /> your Elohim
             </Line>
-            <Line>Walk before me and be perfect</Line>
+            <Line>Walk before Me and be perfect</Line>
         </Verse>
         <Verse name="one">
             <Line>Let not your heart grow faint</Line>
-            <Line>Seek first my kingdom</Line>
+            <Line>Seek first My kingdom</Line>
             <Line>Let not your heart grow faint</Line>
             <Line>and I’ll take care of the rest</Line>
         </Verse>
         <Verse name="two">
             <Line>My love for you is everlasting</Line>
-            <Line>Draw close to me in loving-kindness</Line>
-            <Line>Abide in me, I’ll give you peace</Line>
-            <Line>Beloved put your trust in me</Line>
+            <Line>Draw close to Me in loving-kindness</Line>
+            <Line>Abide in Me, I’ll give you peace</Line>
+            <Line>Beloved put your trust in Me</Line>
         </Verse>
         <Verse repeat name="three">
             <Line>
                 I am <Yahweh /> your Elohim
             </Line>
-            <Line>Walk before me and be perfect</Line>
+            <Line>Walk before Me and be perfect</Line>
         </Verse>
         <Repeat name="one" />
         <Repeat name="two" />
@@ -57,7 +57,7 @@ const AbideInMe = props => (
             <Line>
                 I am <Yahweh /> your Elohim
             </Line>
-            <Line>Beloved put your trust in me</Line>
+            <Line>Beloved put your trust in Me</Line>
         </Verse>
     </Track>
 )

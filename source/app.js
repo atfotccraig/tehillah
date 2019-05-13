@@ -10,7 +10,6 @@ import { randomItem } from "app/helpers"
 import { ButtonIntro, ErrorBoundary, PlayList, TrackList } from "./components"
 import { IsPlayListContext, IsRandomContext, SizeContext } from "./context"
 import { BackgroundColor } from "./colors"
-import Downloads from "./downloads"
 
 const AppContainer = styled.SafeAreaView`
     display: flex;
@@ -18,6 +17,7 @@ const AppContainer = styled.SafeAreaView`
     height: 100%;
     flex-direction: column;
     align-items: center;
+    background-color: ${BackgroundColor};
 `
 
 const Columns = styled.View`

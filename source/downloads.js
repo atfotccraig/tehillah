@@ -62,6 +62,26 @@ export const HumbleOfferingsFiles = [
     "humble_offerings_you_gave_all.mp3",
 ]
 
+export const LivingWatersName = "living_waters_2019_05_12"
+export const LivingWatersUri = `${BaseUri}/${LivingWatersName}.zip`
+export const LivingWatersSize = "20mb"
+
+export const LivingWatersFiles = [
+    "living_waters_2019_05_12.zip",
+    "living_waters_a_bridge_prepared.mp3",
+    "living_waters_house_on_the_rock.mp3",
+    "living_waters_never_alone.mp3",
+    "living_waters_shalom.mp3",
+    "living_waters_shemoth.mp3",
+    "living_waters_tehillim_19.mp3",
+    "living_waters_tehillim_23.mp3",
+    "living_waters_tehillim_65.mp3",
+    "living_waters_tehillim_96.mp3",
+    "living_waters_tehillim_131.mp3",
+    "living_waters_tehillim_134.mp3",
+    "living_waters_what_youve_done.mp3",
+]
+
 export const NewSongsName = "new_songs_2019_01_02"
 export const NewSongsUri = `${BaseUri}/${NewSongsName}.zip`
 export const NewSongsSize = "15.1mb"
@@ -230,6 +250,10 @@ export default {
     HumbleOfferingsUri,
     HumbleOfferingsSize,
     HumbleOfferingsFiles,
+    LivingWatersName,
+    LivingWatersUri,
+    LivingWatersSize,
+    LivingWatersFiles,
     NewSongsName,
     NewSongsUri,
     NewSongsSize,
