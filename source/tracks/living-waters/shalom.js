@@ -1,5 +1,5 @@
 import React from "react"
-import { Line, Repeat, Title, Track, Verse, Yahweh, Yahshua, Yisrael } from "app/components"
+import { Line, Repeat, Title, Track, Verse } from "app/components"
 import Labels from "app/labels"
 
 const Shalom = props => (
