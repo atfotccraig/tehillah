@@ -43,7 +43,7 @@ const IAmLoved = props => (
         <Verse>
             <Line>Words come and go</Line>
             <Line>and knowledge will fade</Line>
-            <Line>Even prophesies become as naught</Line>
+            <Line>Even prophecies become as naught</Line>
         </Verse>
         <Verse>
             <Line>But when, on that day</Line>
