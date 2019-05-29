@@ -55,7 +55,7 @@ const Tehillim149 = props => (
         <Verse name="five">
             <Line>Exalt Elohim with your mouth!</Line>
             <Line>He executes vengeance</Line>
-            <Line>￼￼￼￼￼￼￼￼on all of the nations</Line>
+            <Line>on all of the nations</Line>
             <Line>He binds up their sovereigns with chains</Line>
         </Verse>
         <Verse>
