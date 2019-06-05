@@ -82,13 +82,14 @@ export const LivingWatersFiles = [
     "living_waters_what_youve_done.mp3",
 ]
 
-export const NewSongsName = "new_songs_2019_05_29"
+export const NewSongsName = "new_songs_2019_06_05"
 export const NewSongsUri = `${BaseUri}/${NewSongsName}.zip`
-export const NewSongsSize = "21.1mb"
+export const NewSongsSize = "26.4mb"
 
 export const NewSongsFiles = [
     "new_songs_2019_01_02.zip",
     "new_songs_2019_05_29.zip",
+    "new_songs_2019_06_05.zip",
     "new_songs_ancient_way.mp3",
     "new_songs_here_i_am.mp3",
     "new_songs_hoshianah.mp3",
@@ -96,6 +97,7 @@ export const NewSongsFiles = [
     "new_songs_shabbat_shalom.mp3",
     "new_songs_song_of_deliverance.mp3",
     "new_songs_your_presence.mp3",
+    "new_songs_youre_all_i_need.mp3",
 ]
 
 export const PeaceWithYouName = "peace_with_you_2018_12_27"

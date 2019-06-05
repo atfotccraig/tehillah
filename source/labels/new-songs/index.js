@@ -5,6 +5,7 @@ import { KingOfKings } from "./king-of-kings"
 import { ShabbatShalom } from "./shabbat-shalom"
 import { SongOfDeliverance } from "./song-of-deliverance"
 import { YourPresence } from "./your-presence"
+import { YoureAllINeed } from "./youre-all-i-need"
 
 const Album = () => "New Songs"
 
@@ -16,6 +17,7 @@ export {
     ShabbatShalom,
     SongOfDeliverance,
     YourPresence,
+    YoureAllINeed,
     Album,
 }
 
@@ -27,5 +29,6 @@ export default {
     ShabbatShalom,
     SongOfDeliverance,
     YourPresence,
+    YoureAllINeed,
     Album,
 }

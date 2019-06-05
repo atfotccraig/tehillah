@@ -5,6 +5,7 @@ import { KingOfKings } from "./king-of-kings"
 import { ShabbatShalom } from "./shabbat-shalom"
 import { SongOfDeliverance } from "./song-of-deliverance"
 import { YourPresence } from "./your-presence"
+import { YoureAllINeed } from "./youre-all-i-need"
 
 export {
     AncientWay,
@@ -14,6 +15,7 @@ export {
     ShabbatShalom,
     SongOfDeliverance,
     YourPresence,
+    YoureAllINeed,
 }
 
 export default {
@@ -24,4 +26,5 @@ export default {
     ShabbatShalom,
     SongOfDeliverance,
     YourPresence,
+    YoureAllINeed,
 }
