@@ -77,7 +77,7 @@ const TreasuredPossession = props => (
         <Repeat name="three" />
         <Verse>
             <Line>Who is like you, beloved people</Line>
-            <Line>he has you set in the palm of His hand</Line>
+            <Line>He has you set in the palm of His hand</Line>
             <Line>Oh favoured one, you are His treasure</Line>
         </Verse>
         <Verse repeat repeatText="x3">
