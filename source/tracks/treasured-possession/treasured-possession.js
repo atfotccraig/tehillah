@@ -65,7 +65,7 @@ const TreasuredPossession = props => (
             </Line>
             <Line>creation resounds with Your praise</Line>
             <Line>
-                ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼The ones You establish are never moved
+               The ones You establish are never moved
             </Line>
             <Line>they walk in the light of Your face</Line>
         </Verse>
