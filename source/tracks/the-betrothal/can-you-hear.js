@@ -13,7 +13,7 @@ const CanYouHear = props => (
             "00:45",
             "01:17",
             "01:32",
-            "02:18",
+            "01:52",
         ]}
         music="the_betrothal_can_you_hear"
         {...props}
